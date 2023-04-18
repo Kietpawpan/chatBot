@@ -1,8 +1,15 @@
-This code was modified from https://github.com/Varshithvhegde/chatbot, which is under MIT License (https://github.com/Varshithvhegde/chatbot#license). The krut and mnre logo images are form Wikipedia, which are in public domain: https://commons.wikimedia.org/wiki/File:%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%A3%E0%B8%A7%E0%B8%87%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3HD.png#/media/ไฟล์:ตรากระทรวงทรัพยากรHD.png; https://commons.wikimedia.org/wiki/File:Thai_government_Garuda_emblem_(Version_2).svg#/media/ไฟล์:Thai_government_Garuda_emblem_(Version_2).svg
+This code was modified from https://github.com/Varshithvhegde/chatbot, 
+which is under MIT License (https://github.com/Varshithvhegde/chatbot#license). 
+The krut and mnre logo images are form Wikipedia, which are in public domain: 
+https://commons.wikimedia.org/wiki/File:%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%
+B8%A3%E0%B8%B0%E0%B8%97%E0%B8%A3%E0%B8%A7%E0%B8%87%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%
+B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3HD.png#/media/ไฟล์:ตรากระทรวงทรัพยากรHD.png; 
+https://commons.wikimedia.org/wiki/File:Thai_government_Garuda_emblem_(Version_2).
+svg#/media/ไฟล์:Thai_government_Garuda_emblem_(Version_2).svg
 
 Aside from the above, the license for all OTHER content in this repository is as follows:
 
------------------------------------------------------------------------------
+-------------------------------------------
 Copyright (c) 2023 Monte Kietpawpan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
