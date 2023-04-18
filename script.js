@@ -84,7 +84,7 @@ function waitAndResponce(inputText) {
             break;
 
         case "help":
-            sendTextMessage("<span class='sk'>โปรดเลือกบริการค่ะ<br> พิมพ์ว่า<br><span class='bold'>'info'</span> - ขอข้อมูล <br><span class='bold'>'see'</span> - ติดตามความคืบหน้า<br><span class='bold'>'go'</span> - นัดวันรับข้อมูล<br><span class='bold'>'fee'</span> - ชำระค่าสำเนาข้อมูล<br><span class='bold'>'call'</span> - ติดต่อเจ้าหน้าที่<br><span class='bold'>'clear'</span> - ลบข้อความสนทนา<br>");
+            sendTextMessage("<span class='sk'>วิธีใช้บริการ<br> พิมพ์ว่า<br><span class='bold'>'info'</span> - ขอข้อมูล <br><span class='bold'>'see'</span> - ติดตามความคืบหน้า<br><span class='bold'>'go'</span> - นัดวันรับข้อมูล<br><span class='bold'>'fee'</span> - ชำระค่าสำเนาข้อมูล<br><span class='bold'>'call'</span> - ติดต่อเจ้าหน้าที่<br><span class='bold'>'clear'</span> - ลบข้อความสนทนา<br>");
             break;
 
         case "resume":
