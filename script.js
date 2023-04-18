@@ -171,7 +171,7 @@ function waitAndResponce(inputText) {
 
         default:
             setTimeout(() => {
-                sendTextMessage("ท่านพิมพ์ชื่อบริการไม่ถูกต้องค่ะ<br>กรุณาตรวจสอบข้อความอีกครั้ง หรือพิมพ์ <a class='alink'> 'help'</a></span> เพื่อเลิกบริการค่ะ");
+                sendTextMessage("โปรดตรวจสอบข้อความอีกครั้ง หรือพิมพ์ว่า <a class='alink'> 'help'</a></span> ค่ะ");
             }, 2000);
             break;
     }
