@@ -1,4 +1,5 @@
 # chatBot
-Prototype chatbot of MNRE Service Link Center 
+This is a prototype chatbot of MNRE Service Link Center. Click here to see it. 
+
 ## Credit
-The code is modified from https://github.com/Varshithvhegde/chatbot
+Varshith V Hegde wrote the original chatbot code, available at https://github.com/Varshithvhegde/chatbot.
