@@ -84,7 +84,7 @@ function waitAndResponce(inputText) {
             break;
 
         case "help":
-            sendTextMessage("<span class='sk'>วิธีใช้บริการ<br> พิมพ์ว่า<br><span class='bold'>'info'</span> - ขอข้อมูล <br><span class='bold'>'see'</span> - ติดตามความคืบหน้า<br><span class='bold'>'go'</span> - นัดวันรับข้อมูล<br><span class='bold'>'fee'</span> - ชำระค่าสำเนาข้อมูล<br><span class='bold'>'call'</span> - ติดต่อเจ้าหน้าที่<br><span class='bold'>'clear'</span> - ลบข้อความสนทนา<br>");
+            sendTextMessage("<span class='sk'>วิธีใช้บริการ<br> พิมพ์ว่า<br><span class='bold'>'info'</span> - ขอข้อมูล <br><span class='bold'>'see'</span> - ติดตามความคืบหน้า<br><span class='bold'>'go'</span> - นัดวันรับข้อมูล<br><span class='bold'>'fee'</span> - ชำระค่าสำเนาข้อมูล<br><span class='bold'>'fix'</span> - แจ้งปัญหาการใช้งาน<br><span class='bold'>'call'</span> - ติดต่อเจ้าหน้าที่<br><span class='bold'>'clear'</span> - ลบข้อความสนทนา<br>");
             break;
 
         case "resume":
@@ -92,7 +92,7 @@ function waitAndResponce(inputText) {
             break;
 
         case "info":
-            sendTextMessage("<span class='sk'>ขอได้ 2 ช่องทางค่ะ :<br><span class='bold'>1. ส่งจดหมายถึงปลัดกระทรวง<br>2. ส่งอีเมลถึง servicelink@mnre.go.th</span><br>");
+            sendTextMessage("ยื่นคำขอออนไลน์ได้เลยค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/index.html'> <div class='socialItem'><img class='socialItemI' src='images/info.png' alt=''></div> </a></div>");
             break;
 
         case "see":
@@ -118,7 +118,7 @@ function waitAndResponce(inputText) {
             break;
 
         case "fee":
-            sendTextMessage("โอนเงินบัญชีธนาคารกรุงไทย หมายเลขบัญชี 184-6-00591-4 ชื่อบัญชี สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม แล้วส่งหลักฐานการโอนเงินทางไลน์ GECC สป.ทส. ในวันที่ชำระค่าธรรมเนียม สป.ทส. จะออกใบเสร็จต่อไปค่ะ");
+           sendTextMessage("โอนผ่านธนาคารได้ค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/CopyFee.html'> <div class='socialItem'><img class='socialItemI' src='images/ktb.png' alt=''></div> </a></div>");
             break;
 
 	 case "call":
@@ -136,7 +136,11 @@ function waitAndResponce(inputText) {
             break;
 
         case "go":
-            sendTextMessage("โปรดตรวจสอบวันว่าง<br><br><div class='social'><a target='_blank' href='https://github.com/Varshithvhegde'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
+            sendTextMessage("นัดหมายได้เลยค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/SeeMe.html'> <div class='socialItem'><img class='socialItemI' src='images/go.png' alt=''></div> </a></div>");
+            break;
+
+    case "fix":
+            sendTextMessage("เชิญแจ้งปัญหาที่นี่ค่ะ | กดปุ่ม New Issue<div class='social'><a target='_blank' href='https://github.com/Kietpawpan/chatBot/issues'> <div class='socialItem'><img class='socialItemI' src='images/github-mark-white.png' alt=''></div> </a></div>");
             break;
 
         case "time":
