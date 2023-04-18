@@ -122,7 +122,7 @@ function waitAndResponce(inputText) {
             break;
 
 	 case "call":
-            sendTextMessage("โทร. 1310 ได้ทุกวัน (เว้นวันหยุดราชการ) ตั้งแต่เวลา 08.00 - 17.00 น. ไม่พักกลางวันค่ะ");
+            sendTextMessage("โทร. 1310 ตั้งแต่เวลา 08.00 - 17.00 น. ไม่พักกลางวันค่ะ");
             break;
         case "clear":
             clearChat();
