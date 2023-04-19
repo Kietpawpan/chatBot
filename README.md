@@ -5,7 +5,7 @@ This is a prototype [chatbot of MNRE Service Link Center](https://kietpawpan.git
 Varshith V Hegde wrote the original chatbot code, available at https://github.com/Varshithvhegde/chatbot.
 
 ## Version History 
-### v1.0.2 | Future
+### v1.0.2 | 19 April 2023
 - Change bg image (MNRE logo)
 
 ### v1.0.1 | 19 April 2023 
