@@ -6,8 +6,9 @@ Varshith V Hegde wrote the original chatbot code, available at https://github.co
 
 ## Version History 
 ### V1.0.3
-- Update FQA
+- Update FAQ
 - Change FAQ icon
+- Add infoX at Google
 
 ### v1.0.2 | 19 April 2023
 - Change bg image (MNRE logo)
