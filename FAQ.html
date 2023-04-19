@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<!This code was modified from https://github.com/Varshithvhegde/chatbot/blob/main/index.html by Monte Kietpawpan> 
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+
+    <title>MNRE | FAQ</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+
+<body onload="startFunction()">
+
+
+  <nav>
+
+        <div class="navbar">
+            <img class="dpimg" onclick="openFullScreenDP()" src="images/mnre.png" alt="">
+            <div class="personalInfo">
+                <label id="name">ศุนย์บริการร่วม ทส.</label>
+                <label id="lastseen"></label>
+            </div>
+        </div>
+
+    </nav>
+
+ <div class="scrollable" id="myScrollable">
+      <div id="chatting" class="chatting">
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="โปรดพิมพ์คำถามค่ะ.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">ปลูกป่า</a></li>
+  <li><a href="#">ขายแบต</a></li>
+
+  <li><a href="#">นำไม้เคลื่อนที่</a></li>
+  <li><a href="#">หมายเลขโทรศัพท์กรมป่าไม้</a></li>
+
+  <li><a href="http://www.mnre.go.th">เว็บไซต์กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</a></li>
+  <li><a href="#">ขายคาร์บอนเครดิต</a></li>
+  <li><a href="#">ทิ้งของเสียอันตราย</a></li>
+</ul>
+
+</div>
+</div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
