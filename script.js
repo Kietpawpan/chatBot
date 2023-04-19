@@ -84,7 +84,7 @@ function waitAndResponce(inputText) {
             break;
 
         case "help":
-            sendTextMessage("<span class='sk'>วิธีใช้บริการ<br> พิมพ์ว่า<br><span class='bold'>'info'</span> - ขอข้อมูล <br><span class='bold'>'see'</span> - ติดตามความคืบหน้า<br><span class='bold'>'go'</span> - นัดวันรับข้อมูล<br><span class='bold'>'fee'</span> - ชำระค่าสำเนาข้อมูล<br><span class='bold'>'fix'</span> - แจ้งปัญหาการใช้งาน<br><span class='bold'>'call'</span> - ติดต่อเจ้าหน้าที่<br><span class='bold'>'clear'</span> - ลบข้อความสนทนา<br>");
+            sendTextMessage("<span class='sk'>วิธีใช้บริการ<br> พิมพ์ว่า<br><span class='bold'>'info'</span> - ขอข้อมูล <br><span class='bold'>'see'</span> - ติดตามความคืบหน้า<br><span class='bold'>'go'</span> - นัดวันรับข้อมูล<br><span class='bold'>'fee'</span> - ชำระค่าสำเนาข้อมูล<br><span class='bold'>'fix'</span> - แจ้งปัญหาการใช้งาน<br><span class='bold'>'faq'</span> - ขอคำปรึกษา<br><span class='bold'>'call'</span> - ติดต่อเจ้าหน้าที่<br><span class='bold'>'clear'</span> - ลบข้อความสนทนา<br>");
             break;
 
         case "resume":
@@ -139,8 +139,12 @@ function waitAndResponce(inputText) {
             sendTextMessage("นัดหมายได้เลยค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/SeeMe.html'> <div class='socialItem'><img class='socialItemI' src='images/go.png' alt=''></div> </a></div>");
             break;
 
-    case "fix":
+        case "fix":
             sendTextMessage("เชิญแจ้งปัญหาที่นี่ค่ะ | กดปุ่ม New Issue<div class='social'><a target='_blank' href='https://github.com/Kietpawpan/chatBot/issues'> <div class='socialItem'><img class='socialItemI' src='images/github-mark-white.png' alt=''></div> </a></div>");
+            break;
+ 
+        case "faq":
+            sendTextMessage("เชิญปรึกษาที่นี่ค่ะ<div class='social'><a target='_blank' href='FAQ.html'> <div class='socialItem'><img class='socialItemI' src='images/faq.png' alt=''></div> </a></div>");
             break;
 
         case "time":
