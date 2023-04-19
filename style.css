@@ -16,6 +16,7 @@ nav{
     display: flex;
     height: 6%;
     background-color: #202c33;
+    width: 85%;
 }
 
 .navbar{
@@ -58,8 +59,9 @@ nav{
     color: #fff;
     display: flex;
     height: 88%;
+    width: 85%;
     flex-direction: column;
-    background-image: url('images/mnre-bg.png');
+    background-image: url('images/mnre-bg2.png');
     align-items: flex-end;
     position: relative;
     -ms-overflow-style: none; 
@@ -302,7 +304,7 @@ footer{
     position: relative;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 85%;
     color: white;
     text-align: center;
     height: auto;
