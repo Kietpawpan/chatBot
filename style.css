@@ -60,6 +60,8 @@ nav{
     height: 88%;
     flex-direction: column;
     background-image: url('images/mnre-bg2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
     align-items: flex-end;
     position: relative;
     -ms-overflow-style: none; 
