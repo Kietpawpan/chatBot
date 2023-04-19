@@ -9,6 +9,7 @@ Varshith V Hegde wrote the original chatbot code, available at https://github.co
 - Update FAQ
 - Change FAQ icon
 - Add infoX at Google
+- Corrected org name.
 
 ### v1.0.2 | 19 April 2023
 - Change bg image (MNRE logo)
