@@ -8,6 +8,7 @@ Varshith V Hegde wrote the original chatbot code, available at https://github.co
 ### v1.0.2 | 19 April 2023
 - Change bg image (MNRE logo)
 - no-repeat bg
+- Add FAQ service
 
 ### v1.0.1 | 19 April 2023 
 - Change bg image (Envelops)
