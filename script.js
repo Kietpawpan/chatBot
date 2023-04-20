@@ -92,7 +92,7 @@ function waitAndResponce(inputText) {
             break;
 
         case "info":
-            sendTextMessage("ยื่นคำขอออนไลน์ได้เลยค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/index.html'> <div class='socialItem'><img class='socialItemI' src='images/info.png' alt=''></div> </a></div>");
+            sendTextMessage("ยื่นคำขอออนไลน์ได้เลยค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/index.html'> <div class='socialItem'><img class='socialItemI' src='images/info.svg' alt=''></div> </a></div>");
             break;
 
         case "see":
@@ -118,11 +118,11 @@ function waitAndResponce(inputText) {
             break;
 
         case "fee":
-           sendTextMessage("โอนผ่านธนาคารได้ค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/CopyFee.html'> <div class='socialItem'><img class='socialItemI' src='images/ktb.png' alt=''></div> </a></div>");
+           sendTextMessage("โอนผ่านธนาคารได้ค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/CopyFee.html'> <div class='socialItem'><img class='socialItemI' src='images/pay.svg' alt=''></div> </a></div>");
             break;
 
 	 case "call":
-            sendTextMessage("โทร. 1310 (ไม่พักกลางวัน) หรือ <br>สนทนากับเจ้าหน้าที่ทางไลน์นี้ค่ะ <div class='social'><a target='_blank' href='https://lin.ee/O9TyPRw'><div class='socialItem'><img class='socialItemI' src='images/line.png' alt=''></div></a></div>");
+            sendTextMessage("โทร. 1310 (ไม่พักกลางวัน) หรือ <br>สนทนากับเจ้าหน้าที่ทางไลน์นี้ค่ะ <div class='social'><a target='_blank' href='https://lin.ee/O9TyPRw'><div class='socialItem'><img class='socialItemI' src='images/officer.svg' alt=''></div></a></div>");
             break;
         case "clear":
             clearChat();
@@ -136,15 +136,15 @@ function waitAndResponce(inputText) {
             break;
 
         case "go":
-            sendTextMessage("นัดหมายได้เลยค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/SeeMe.html'> <div class='socialItem'><img class='socialItemI' src='images/go.png' alt=''></div> </a></div>");
+            sendTextMessage("นัดหมายได้เลยค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/SeeMe.html'> <div class='socialItem'><img class='socialItemI' src='images/go.svg' alt=''></div> </a></div>");
             break;
 
         case "fix":
-            sendTextMessage("เชิญแจ้งปัญหาที่นี่ค่ะ | กดปุ่ม New Issue<div class='social'><a target='_blank' href='https://github.com/Kietpawpan/chatBot/issues'> <div class='socialItem'><img class='socialItemI' src='images/github-mark-white.png' alt=''></div> </a></div>");
+            sendTextMessage("เชิญแจ้งปัญหาที่นี่ค่ะ | กดปุ่ม New Issue<div class='social'><a target='_blank' href='https://github.com/Kietpawpan/chatBot/issues'> <div class='socialItem'><img class='socialItemI' src='images/comment.svg' alt=''></div> </a></div>");
             break;
  
         case "faq":
-            sendTextMessage("เชิญปรึกษาที่นี่ค่ะ<div class='social'><a target='_blank' href='FAQ.html'> <div class='socialItem'><img class='socialItemI' src='images/FAQ.png' alt=''></div> </a></div>");
+            sendTextMessage("เชิญปรึกษาที่นี่ค่ะ<div class='social'><a target='_blank' href='FAQ.html'> <div class='socialItem'><img class='socialItemI' src='images/FAQ.svg' alt=''></div> </a></div>");
             break;
 
         case "time":
