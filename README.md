@@ -12,6 +12,7 @@ Varshith V Hegde wrote the original chatbot code, available at https://github.co
 - Disable input in A001.html
 - Set placeholder font color
 - Adjust #Question font size
+- Add menu icon
 
 ### V1.0.0 | 20 April 2023
 - Prototype
