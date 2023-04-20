@@ -79,7 +79,7 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("สวัสดีค่ะ<br><br><span class='bold'><a class='alink'>ศูนย์บริการร่วม กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</a></span> ยินดีให้บริการค่ะ<span class='bold'><br>โปรดพิมพ์คำว่า</span><span class='bold'><a class='alink'> 'help'</a></span> หรือกด <span class='bold'><a class='alink'>เมนู</a></span> ด้านล่าง เพื่อเลือกบริการค่ะ<br>");
+                sendTextMessage("สวัสดีค่ะ<br><br><span class='bold'><a class='alink'>ศูนย์บริการร่วม กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</a></span> ยินดีให้บริการค่ะ<span class='bold'><br>โปรดกด</span><span class='bold'><a class='alink'> เมนู</a></span> ด้านล่าง หรือพิมพ์ว่า <span class='bold'><a class='alink'> help</a></span> เพื่อเลือกบริการค่ะ<br>");
             }, 2000);
             break;
 

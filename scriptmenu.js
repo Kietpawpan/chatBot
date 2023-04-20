@@ -79,7 +79,7 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("ขอข้อมูลข่าวสาร<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/index.html'> <div class='socialItem'><img class='socialItemI' src='images/info.png' alt=''></div> </a></div><br>ติดตามผลการพิจารณาคำขอ<br><br>ชำระค่าธรรมเนียม<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/CopyFee.html'> <div class='socialItem'><img class='socialItemI' src='images/ktb.png' alt=''></div> </a></div>Chat กับเจ้าหน้าที่ <div class='social'><a target='_blank' href='https://lin.ee/O9TyPRw'><div class='socialItem'><img class='socialItemI' src='images/line.png' alt=''></div></a></div>นัดรับข้อมูล<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/SeeMe.html'> <div class='socialItem'><img class='socialItemI' src='images/go.png' alt=''></div> </a></div>ขอคำปรึกษา<div class='social'><a target='_blank' href='FAQ.html'> <div class='socialItem'><img class='socialItemI' src='images/FAQ.png' alt=''></div> </a></div>แนะนำติชม<div class='social'><a target='_blank' href='https://github.com/Kietpawpan/chatBot/issues'> <div class='socialItem'><img class='socialItemI' src='images/github-mark-white.png' alt=''></div> </a></div>");
+                sendTextMessage("ขอข้อมูลข่าวสาร<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/index.html'> <div class='socialItem'><img class='socialItemI' src='images/info.png' alt=''></div> </a></div>ติดตามผลการพิจารณาคำขอ พิมพ์ว่า see ที่นี่ค่ะ<div class='social'><a target='_blank' href='index.html'> <div class='socialItem'><img class='socialItemI' src='images/track.svg' alt=''></div> </a></div>ชำระค่าธรรมเนียม<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/CopyFee.html'> <div class='socialItem'><img class='socialItemI' src='images/ktb.png' alt=''></div> </a></div>Chat กับเจ้าหน้าที่ <div class='social'><a target='_blank' href='https://lin.ee/O9TyPRw'><div class='socialItem'><img class='socialItemI' src='images/line.png' alt=''></div></a></div>นัดรับข้อมูล<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/SeeMe.html'> <div class='socialItem'><img class='socialItemI' src='images/go.png' alt=''></div> </a></div>ขอคำปรึกษา<div class='social'><a target='_blank' href='FAQ.html'> <div class='socialItem'><img class='socialItemI' src='images/FAQ.png' alt=''></div> </a></div>แนะนำติชม<div class='social'><a target='_blank' href='https://github.com/Kietpawpan/chatBot/issues'> <div class='socialItem'><img class='socialItemI' src='images/github-mark-white.png' alt=''></div> </a></div>");
 
 
 
@@ -87,103 +87,15 @@ function waitAndResponce(inputText) {
             }, 2000);
                 break;
               
-        case "help":
-            sendTextMessage("<span class='sk'>วิธีใช้บริการ<br> พิมพ์ว่า<br><span class='bold'>'info'</span> - ขอข้อมูล <br><span class='bold'>'see'</span> - ติดตามความคืบหน้า<br><span class='bold'>'go'</span> - นัดวันรับข้อมูล<br><span class='bold'>'fee'</span> - ชำระค่าสำเนาข้อมูล<br><span class='bold'>'fix'</span> - แจ้งปัญหาการใช้งาน<br><span class='bold'>'faq'</span> - ขอคำปรึกษา<br><span class='bold'>'call'</span> - ติดต่อเจ้าหน้าที่<br><span class='bold'>'clear'</span> - ลบข้อความสนทนา<br>");
-            break;
-
-        case "resume":
-            sendTextMessage(resumeString);
-            break;
-
-        case "info":
-            sendTextMessage("ยื่นคำขอออนไลน์ได้เลยค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/index.html'> <div class='socialItem'><img class='socialItemI' src='images/info.png' alt=''></div> </a></div>");
-            break;
-
-        case "see":
-            sendTextMessage("ขอทราบรหัสคำขอที่ สป.ทส. ได้แจ้งท่านค่ะ เช่น nn650412356");
-            break;
    
-        case "ควาย":
-            sendTextMessage("ขอบคุณสำหรับคำติชม ดิฉันจะปรับปรุงบริการให้ดีขึ้นค่ะ");
-            break;
-
-        case "ขอบคุณ":
-            sendTextMessage("ยินดีค่ะ หวังว่าจะได้บริการท่านอีกนะคะ");
-            break;
-
-        case "ขอบคุณค่ะ":
-            sendTextMessage("ยินดีค่ะ หวังว่าจะได้บริการท่านอีกนะคะ");
-            break;
-	case "ขอบคุณครับ":
-            sendTextMessage("ยินดีค่ะ หวังว่าจะได้บริการท่านอีกนะคะ");
-            break;
-        case "nn650412356":
-            sendTextMessage("รหัสคำขอนี้เป็นเพียงตัวอย่าง ไม่มีข้อมูลความคืบหน้าค่ะ");
-            break;
-
-        case "fee":
-           sendTextMessage("โอนผ่านธนาคารได้ค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/CopyFee.html'> <div class='socialItem'><img class='socialItemI' src='images/ktb.png' alt=''></div> </a></div>");
-            break;
-
-	 case "call":
-            sendTextMessage("โทร. 1310 (ไม่พักกลางวัน) หรือ <br>สนทนากับเจ้าหน้าที่ทางไลน์นี้ค่ะ <div class='social'><a target='_blank' href='https://lin.ee/O9TyPRw'><div class='socialItem'><img class='socialItemI' src='images/line.png' alt=''></div></a></div>");
-            break;
-        case "clear":
-            clearChat();
-            break;
         // case "about":
 
         //     break;
 
-        case "contact":
-            sendTextMessage(contactString);
-            break;
-
-        case "go":
-            sendTextMessage("นัดหมายได้เลยค่ะ<div class='social'><a target='_blank' href='https://kietpawpan.github.io/iRequest/SeeMe.html'> <div class='socialItem'><img class='socialItemI' src='images/go.png' alt=''></div> </a></div>");
-            break;
-
-        case "fix":
-            sendTextMessage("เชิญแจ้งปัญหาที่นี่ค่ะ | กดปุ่ม New Issue<div class='social'><a target='_blank' href='https://github.com/Kietpawpan/chatBot/issues'> <div class='socialItem'><img class='socialItemI' src='images/github-mark-white.png' alt=''></div> </a></div>");
-            break;
- 
-        case "faq":
-            sendTextMessage("เชิญปรึกษาที่นี่ค่ะ<div class='social'><a target='_blank' href='FAQ.html'> <div class='socialItem'><img class='socialItemI' src='images/FAQ.png' alt=''></div> </a></div>");
-            break;
-
-        case "time":
-            var date = new Date();
-            sendTextMessage("Current time is " + date.getHours() + ":" + date.getMinutes());
-            break;
-
-        case "date":
-            var date = new Date();
-            sendTextMessage("Current date is " + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear());
-            break;
-
-        case "hai":
-            sendTextMessage("สวัสดีค่ะ ต้องการติดต่อเรื่องใดค่ะ?");
-            break;
-
-        case "hello":
-            sendTextMessage("สวัสดีค่ะ ต้องการติดต่อเรื่องใดค่ะ?");
-            break;
-        
-        case "hi":
-            sendTextMessage("สวัสดีค่ะ ต้องการติดต่อเรื่องใดค่ะ?");
-            break;
-        
-        case "hey":
-            sendTextMessage("สวัสดีค่ะ ต้องการติดต่อเรื่องใดค่ะ?");
-            break;
-       
-        case "website":
-            sendTextMessage("<a target='_blank' href='http://slc.mnre.go.th/'>เว็บไซต์ศูนย์บริการร่วม ทส.</a>");
-            break;
-
+    
         default:
             setTimeout(() => {
-                sendTextMessage("โปรดตรวจสอบข้อความอีกครั้ง หรือพิมพ์ว่า <a class='alink'> 'help'</a></span> ค่ะ");
+                sendTextMessage("โปรดกดปุ่ม <a class='alink'> home </a></span> ด้านล่างก่อนค่ะ");
             }, 2000);
             break;
     }
