@@ -17,7 +17,7 @@
     <meta property="og:image:height" content="300">
     <meta property="og:updated_time" content="1440432930" />
 
-<title>MNRE | Chatbot</title>
+<title>MNRE | FAQ</title>
 
 <style>
 * {
@@ -33,7 +33,6 @@
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
-  color: white; 
 }
 
 #Answer {
@@ -58,7 +57,9 @@
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: blue;
+  color: #DADBDD;
+  background-color:;
+  text-align: center;
 
 </style>
 
@@ -81,41 +82,22 @@
 
  <div class="scrollable" id="myScrollable">
       <div id="chatting" class="chatting">
-<input type="text" id="Question" color="white" placeholder="วิธีต่ออายุใบอนุญาตกิจการน้ำบาดาล" title="คำตอบ" disabled>
+<input type="text" id="Question" placeholder="วิธีต่ออายุใบอนุญาตกิจการน้ำบาดาล" title="คำตอบ" disabled>
 
 <ul id="Answer">
 <li><a href="#">1. ก่อนใบอนุญาตสิ้นอายุ ให้ยื่นคำขอตาม<u>แบบ นบ. 2</u> ต่อพนักงานน้ำบาดาลประจำท้องที่ในเขตน้ำบาดาลจังหวัดนั้น (สำนักงานทรัพยากรธรรมชาติและสิ่งแวดล้อมจังหวัดในเขตน้ำบาลจังหวัดนั้น) ยกเว้นจังหวัดที่ถ่ายโอนภารกิจให้แก่องค์กรปกครองส่วนท้องถิ่น (เชียงใหม่ ขอนแก่น และนครราชสีมา) ให้ยื่นคำขอต่ออายุใบอนุญาตต่อนายกเทศมนตรี หรือนายกองค์การบริหารส่วนตำบลในพื้นที่ พร้อมเอกสารหรือหลักฐานตามที่ระบุไว้ในแบบคำขอ (กรณีการต่ออายุใบอนุญาตบ่อน้ำบาดาลเดิม ผู้รับใบอนุญาตไม่ต้องยื่นคำขอต่ออายุใบอนุญาตเจาะน้ำบาดาล)<br><br>
 2. หากเอกสารหรือหลักฐานไม่ถูกต้องครบถ้วน เจ้าหน้าที่จะแจ้งให้ผู้ขอรับใบอนุญาตแก้ไขเพิ่มเติม หรือยื่นเอกสารหรือหลักฐานเพิ่มเติมให้ถูกต้องครบถ้วน หากผู้ขอรับใบอนุญาตไม่ดำเนินการตามที่ได้รับแจ้งภายใน 15 วัน ถือว่าผู้ขอรับใบอนุญาตทิ้งคำขอและเจ้าหน้าที่จะสั่งจำหน่ายเรื่องออก<br><br>
-3. ระยะเวลาดำเนินการ 1 วัน 1 ชั่วโมง นับแต่วันที่เอกสารครบถ้วน
-<br><br>
-</a>
+3. ระยะเวลาดำเนินการ 1 วัน 1 ชั่วโมง นับแต่วันที่เอกสารครบถ้วน</a>
+<br>
 </li>
 <li><a href="../pdf/gw2.pdf">แบบคำขอต่ออายุใบอนุญาตน้ำบาดาล (แบบ นบ. 2)</a></li>
 <li><a href="../pdf/gwOfficer2560.pdf">พนักงานน้ำบาดาลประจำท้องที่</a></li>
-<li><a href="../pdf/gw2manual.pdf">รายละเอียดตามคู่มือประชาชนค่ะ</a></li>
+<li><a href="../pdf/gw2manual.pdf">รายละเอียดตามคู่มือประชาชนค่ะ</a><br></li>
+<li><a href="../FAQ.html" style="color:#0000FF">สอบถามเพิ่มเติม</a></li>
 </ul>
 
 </div>
 </div>
-
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("Question");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("Answer");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>
 
 </body>
 </html>
