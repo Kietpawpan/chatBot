@@ -13,6 +13,7 @@ Varshith V Hegde wrote the original chatbot code, available at https://github.co
 - Set placeholder font color
 - Adjust #Question font size
 - Add menu icon
+- Increase font-size in sendBar
 
 ### V1.0.0 | 20 April 2023
 - Prototype
