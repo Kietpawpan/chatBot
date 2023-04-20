@@ -144,7 +144,7 @@ function waitAndResponce(inputText) {
             break;
  
         case "faq":
-            sendTextMessage("เชิญปรึกษาที่นี่ค่ะ<div class='social'><a target='_blank' href='FAQ.html'> <div class='socialItem'><img class='socialItemI' src='images/FAQ.svg' alt=''></div> </a></div>");
+            sendTextMessage("เชิญปรึกษาที่นี่ค่ะ<div class='social'><a target='_blank' href='FAQ.html'> <div class='socialItem'><img class='socialItemI' src='images/faq.svg' alt=''></div> </a></div>");
             break;
 
         case "time":
