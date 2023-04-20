@@ -1,1 +1,121 @@
-A001.html
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<!This code was modified from https://github.com/Varshithvhegde/chatbot/blob/main/index.html> 
+
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="../images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+
+<title>MNRE | Chatbot</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#Question {
+  background-image: url('');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  color: white; 
+}
+
+#Answer {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Answer li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; 
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#Answer li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+
+</style>
+
+</head>
+
+<body onload="startFunction()">
+
+
+  <nav>
+
+        <div class="navbar">
+            <img class="dpimg" onclick="openFullScreenDP()" src="../images/mnre.png" alt="">
+            <div class="personalInfo">
+                <label id="name">ศูนย์บริการร่วม ทส.</label>
+                <label id="lastseen"></label>
+            </div>
+        </div>
+
+    </nav>
+
+ <div class="scrollable" id="myScrollable">
+      <div id="chatting" class="chatting">
+<input type="text" id="Question" color="white" placeholder="วิธีต่ออายุใบอนุญาตกิจการน้ำบาดาล" title="คำตอบ" disabled>
+
+<ul id="Answer">
+<li><a href="#">1. ก่อนใบอนุญาตสิ้นอายุ ให้ยื่นคำขอตาม<u>แบบ นบ. 2</u> ต่อพนักงานน้ำบาดาลประจำท้องที่ในเขตน้ำบาดาลจังหวัดนั้น (สำนักงานทรัพยากรธรรมชาติและสิ่งแวดล้อมจังหวัดในเขตน้ำบาลจังหวัดนั้น) ยกเว้นจังหวัดที่ถ่ายโอนภารกิจให้แก่องค์กรปกครองส่วนท้องถิ่น (เชียงใหม่ ขอนแก่น และนครราชสีมา) ให้ยื่นคำขอต่ออายุใบอนุญาตต่อนายกเทศมนตรี หรือนายกองค์การบริหารส่วนตำบลในพื้นที่ พร้อมเอกสารหรือหลักฐานตามที่ระบุไว้ในแบบคำขอ (กรณีการต่ออายุใบอนุญาตบ่อน้ำบาดาลเดิม ผู้รับใบอนุญาตไม่ต้องยื่นคำขอต่ออายุใบอนุญาตเจาะน้ำบาดาล)<br><br>
+2. หากเอกสารหรือหลักฐานไม่ถูกต้องครบถ้วน เจ้าหน้าที่จะแจ้งให้ผู้ขอรับใบอนุญาตแก้ไขเพิ่มเติม หรือยื่นเอกสารหรือหลักฐานเพิ่มเติมให้ถูกต้องครบถ้วน หากผู้ขอรับใบอนุญาตไม่ดำเนินการตามที่ได้รับแจ้งภายใน 15 วัน ถือว่าผู้ขอรับใบอนุญาตทิ้งคำขอและเจ้าหน้าที่จะสั่งจำหน่ายเรื่องออก<br><br>
+3. ระยะเวลาดำเนินการ 1 วัน 1 ชั่วโมง นับแต่วันที่เอกสารครบถ้วน
+<br><br>
+</a>
+</li>
+<li><a href="../pdf/gw2.pdf">แบบคำขอต่ออายุใบอนุญาตน้ำบาดาล (แบบ นบ. 2)</a></li>
+<li><a href="../pdf/gwOfficer2560.pdf">พนักงานน้ำบาดาลประจำท้องที่</a></li>
+<li><a href="../pdf/gw2manual.pdf">รายละเอียดตามคู่มือประชาชนค่ะ</a></li>
+</ul>
+
+</div>
+</div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("Question");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("Answer");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
