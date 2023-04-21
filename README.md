@@ -5,9 +5,8 @@ This is a prototype [chatbot of MNRE Service Link Center](https://kietpawpan.git
 Varshith V Hegde wrote the original chatbot code, available at https://github.com/Varshithvhegde/chatbot.
 
 ## Version History 
-### v1.0.2 | April 2023
-- Improve FAQ A001.html
-- Add files (A002, A003) and associated pdf files
+### v1.0.2 | 21 April 2023
+- Add faq files and associated pdf files
 - Change file names and paths (chat.js/chat.css/menu.js) 
 - Ass more files in faq
 
