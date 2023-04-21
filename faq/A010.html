@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<!This code was modified from https://github.com/Varshithvhegde/chatbot/blob/main/index.html> 
+
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/chat.css">
+    <script src="../js/chat.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="../images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+
+<title>MNRE | FAQ</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#Question {
+  background-image: url('');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#Answer {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Answer li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; 
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#Answer li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  background-color:;
+  text-align: center;
+
+</style>
+
+</head>
+
+<body onload="startFunction()">
+
+
+  <nav>
+
+        <div class="navbar">
+            <img class="dpimg" onclick="openFullScreenDP()" src="../images/mnre.png" alt="">
+            <div class="personalInfo">
+                <label id="name">ศูนย์บริการร่วม ทส.</label>
+                <label id="lastseen"></label>
+            </div>
+        </div>
+
+    </nav>
+
+ <div class="scrollable" id="myScrollable">
+      <div id="chatting" class="chatting">
+<input type="text" id="Question" placeholder="การจดทะเบียน NGO สิ่งแวดล้อมและทรัพยากรธรรมชาติ" title="คำตอบ" disabled>
+
+<ul id="Answer">
+<li><a href="#">
+ต้องมีคุณลักษณะเป็นองค์กรเอกชนด้านการคุ้มครองสิ่งแวดล้อมและอนุรักษ์ทรัพยากรธรรมชาติ ได้แก่ 1. เป็นนิติบุคคลตามกฎหมายไทยหรือกฎหมายต่างประเทศ  2. มีกิจกรรมที่เกี่ยวข้องโดยตรงกับการคุ้มครองสิ่งแวดล้อมและอนุรักษ์ทรัพยากรธรรมชาติ  3. มิได้มีวัตถุประสงค์ในทางการเมือง หรือมุ่งค้ากำไรจากการประกอบกิจกรรม  และ 4. ถ้าเป็นนิติบุคคลตามกฎหมายต่างประเทศ ต้องมีสำนักงานสาขาทำการอยู่ในประเทศไทยด้วย </a></li>
+<li><a href="https://datacenter.deqp.go.th/ngos/member/member-register/"><b>วิธีการ</b><br>
+1. กรณีลงทะเบียนผ่านระบบออนไลน์<br>
+    - สามารถยื่นการจดทะเบียน ได้ที่  https://datacenter.deqp.go.th/ngos<br>
+2. กรณีขอยื่นจดทะเบียนผ่านการจัดส่งทางไปรษณีย์<br>
+    - สามารถดาวน์โหลดเอกสารแบบฟอร์มการขอจดทะเบียนฯ ตามแบบ คส.1 ได้ที่เมนู ดาวน์โหลดเอกสาร<br>
+3. หลักฐานเอกสารที่เกี่ยวข้อง<br>
+&nbsp;&nbsp;&nbsp; 3.1 หนังสือนำขอความอนุเคราะห์จดทะเบียนฯ ถึง อธิบดีกรมส่งเสริมคุณภาพสิ่งแวดล้อม<br>
+&nbsp;&nbsp;&nbsp; 3.2 สำเนาใบสำคัญแสดงการเป็นนิติบุคคลที่มีคำรับรองขององค์กรเอกชน (สมาคม = ส.ค.4, มูลนิธิ ม.น.3)<br>
+&nbsp;&nbsp;&nbsp; 3.3 สำเนาข้อบังคับขององค์กรเอกชน<br>
+&nbsp;&nbsp;&nbsp; 3.4 หลักฐานการเป็นตัวแทนขององค์กรเอกชน<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1) สำเนาบัตรประจำตัวประชาชนของตัวแทนองค์กรเอกชน (กรณี มอบอำนาจให้ผู้อื่นดำเนินการแทน ต้องมี ใบมอบอำนาจและสำเนาบัตรประจำตัวประชาชนของผู้รับมอบอำนาจแนบมาพร้อมนี้ด้วย)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          (2) ประวัติความเป็นมาขององค์กร<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         (3) รายชื่อคณะกรรมการขององค์กรเอกชน (แผนผังโครงสร้างองค์กร)<br>
+ &nbsp;&nbsp;&nbsp;   3.5 หลักฐานแสดงกิจกรรมหรือแผนงานด้านการคุ้มครองหรืออนุรักษ์ทรัพยากรธรรมชาติ พร้อมภาพประกอบ เช่น แผนงาน หรือโครงการที่เคยดำเนินการมาแล้ว ไม่น้อยกว่า 3 ปี พร้อมรายละเอียดกิจกรรมโครงการและรูปกิจกรรมที่เกี่ยวข้องแสดงให้เห็นกิจกรรมที่ผ่านมาขององค์กรอย่างชัดเจน เป็นต้น (กรณีที่หน่วยงานหรือองค์กรเอกชน ที่มีสถานะทางนิติบุคคล น้อยกว่า 3 ปี ให้แนบหนังสือการรับรองการทำงานด้านสิ่งแวดล้อม ทั้งนี้ ผู้รับรองจะต้องเป็นเจ้าหน้าที่ของรัฐในพื้นที่ที่ทางหน่วยงาน/องค์กรเอกชนร่วมทำงานด้วย หรือเป็นองค์กรเอกชนฯ ที่ได้จดทะเบียนกับกรมส่งเสริมคุณภาพสิ่งแวดล้อม)<br>
+<font color="red" size="-1">ทั้งนี้ เอกสาร ข้อ 3.2 -3.4 ผู้มีอำนาจจะต้องลงลายมือกำกับบนเอกสารทุกหน้า<br></font>
+
+สอบถามรายละเอียด โทร. 0 2298 5358 หรือ 0 2278 8400 ต่อ 1743
+
+</a>
+<br>
+</li>
+<li><a href="https://datacenter.deqp.go.th/ngos/download/">ดาวน์โหลดเอกสาร</a></li>
+<li><a href="https://datacenter.deqp.go.th/ngos/member/member-register/">ที่มา: </b> https://datacenter.deqp.go.th/ngos/member/member-register/</a></li><br>
+<li><a href="../FAQ.html" style="color:#0000FF">สอบถามเพิ่มเติม</a></li>
+</ul>
+
+</div>
+</div>
+
+</body>
+</html>
