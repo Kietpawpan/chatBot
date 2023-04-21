@@ -7,7 +7,7 @@ Varshith V Hegde wrote the original chatbot code, available at https://github.co
 ## Version History 
 ### v1.0.2 | April 2023
 - Improve FAQ A001.html
-- Add html files (A002, A003)
+- Add files (A002, A003) and associated pdf files
 - Change file names and paths (chat.js/chat.css/menu.js) 
 - Ass more files in faq
 
