@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<!This code was modified from https://github.com/Varshithvhegde/chatbot/blob/main/index.html> 
+
+<html lang="en">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="js/chat.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+
+<title>MNRE | Chatbot</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#Question {
+  background-image: url('images/search.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#Answer {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Answer li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; 
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#Answer li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+
+</head>
+
+<body onload="startFunction()">
+
+
+  <nav>
+
+        <div class="navbar">
+            <img class="dpimg" onclick="openFullScreenDP()" src="images/mnre.png" alt="">
+            <div class="personalInfo">
+                <label id="name">ศูนย์บริการร่วม ทส.</label>
+                <label id="lastseen"></label>
+            </div>
+        </div>
+
+    </nav>
+<input type="text" id="Question" onkeyup="myFunction()" placeholder="โปรดพิมพ์ชื่อและนามสกุลของผู้ขอข้อมูลข่าวสาร" title="ID" disabled style:"color:black">
+ <div class="scrollable" id="myScrollable">
+      <div id="chatting" class="chatting">
+<ul id="Answer">
+  <li><a href="#">
+<form id="frm1">
+  ชื่อ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" value=""> (ไม่ต้องมีคำนำหน้า)<br>
+</form> 
+<form id="frm2">
+  นามสกุล: <input type="text" name="lname" value=""><br><br>
+</form> 
+
+<form id="frm3">
+<label> เจ้าหน้าที่: </label>
+<select>
+<option value = "1">นายประจักษชัย อาจคงหาญ</option>
+<option value = "2">นางสาวทัศนีย์ เดชปรารมย์</option>
+<option value = "3">นายพิพัฒน์ พึ่งบุญ</option>
+<option value = "4">นางจิราพร กาญจนาอร่ามวงษ์</option>
+<option value = "5">นางสาวจิราภา ฮะซุ่นเฮง</option>
+</select>
+</form>
+
+<button onclick="myFunction()">รหัสคำขอ</button>
+
+<p id="idGen"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("frm1");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value;
+  }
+  var y = document.getElementById("frm2");
+  var text2 = "";
+  var j;
+  for (j = 0; j < y.length ;j++) {
+    text2 += y.elements[j].value;
+  }
+  var part1 = text.split("");
+  var part2 = text2.split("");
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1;
+  var yyyy = today.getFullYear();
+  var yy = yyyy.toString().substr(-2);
+  if(dd<10){ dd='0'+dd;}
+  if(mm<10){ mm='0'+mm;}
+  var hh = today.getHours();
+  if(hh<10){ hh='0'+hh;}
+  var f = part1[0]
+  if(f=="ก"){ f="A";} 
+  else if(f=="ข"){ f="B";} 
+  else if(f=="ค"){ f="C";} 
+  else if(f=="ฆ"){ f="D";} 
+  else if(f=="ง"){ f="E";} 
+  else if(f=="จ"){ f="F";} 
+  else if(f=="ฉ"){ f="G";} 
+  else if(f=="ช"){ f="H";} 
+  else if(f=="ซ"){ f="J";} 
+  else if(f=="ฌ"){ f="K";} 
+  else if(f=="ญ"){ f="L";} 
+  else if(f=="ฎ"){ f="M";} 
+  else if(f=="ฏ"){ f="N";} 
+  else if(f=="ฐ"){ f="Z";} 
+  else if(f=="ฑ"){ f="P";} 
+  else if(f=="ฒ"){ f="Q";} 
+  else if(f=="ณ"){ f="R";} 
+  else if(f=="ด"){ f="S";} 
+  else if(f=="ต"){ f="T";} 
+  else if(f=="ท"){ f="U";} 
+  else if(f=="ธ"){ f="V";} 
+  else if(f=="น"){ f="W";} 
+  else if(f=="บ"){ f="X";} 
+  else if(f=="ป"){ f="Y";} 
+  else if(f=="ผ"){ f="Z";} 
+  else if(f=="ฝ"){ f="A";} 
+  else if(f=="พ"){ f="B";} 
+  else if(f=="ฟ"){ f="C";} 
+  else if(f=="ภ"){ f="D";} 
+  else if(f=="ม"){ f="E";} 
+  else if(f=="ย"){ f="F";} 
+  else if(f=="ร"){ f="G";} 
+  else if(f=="ล"){ f="H";} 
+  else if(f=="ว"){ f="J";} 
+  else if(f=="ศ"){ f="K";} 
+  else if(f=="ษ"){ f="L";} 
+  else if(f=="ส"){ f="M";} 
+  else if(f=="ห"){ f="N";} 
+  else if(f=="ฬ"){ f="P";} 
+  else if(f=="อ"){ f="Q";} 
+  else if(f=="ฮ"){ f="R";} 
+  else if(f=="โ"){ f="S";} 
+  else if(f=="ใ"){ f="T";} 
+  else if(f=="ไ"){ f="U";} 
+  else if(f=="ฤ"){ f="V";} 
+  else if(f=="เ"){ f="X";} 
+  else {f="Y";} 
+  var s = part2[0]
+  if(s=="ก"){ s="A";} 
+  else if(s=="ข"){ s="B";} 
+  else if(s=="ค"){ s="C";} 
+  else if(s=="ฆ"){ s="D";} 
+  else if(s=="ง"){ s="E";} 
+  else if(s=="จ"){ s="F";} 
+  else if(s=="ฉ"){ s="G";} 
+  else if(s=="ช"){ s="H";} 
+  else if(s=="ซ"){ s="J";} 
+  else if(s=="ฌ"){ s="K";} 
+  else if(s=="ญ"){ s="L";} 
+  else if(s=="ฎ"){ s="M";} 
+  else if(s=="ฏ"){ s="N";} 
+  else if(s=="ฐ"){ s="Z";} 
+  else if(s=="ฑ"){ s="P";} 
+  else if(s=="ฒ"){ s="Q";} 
+  else if(s=="ณ"){ s="R";} 
+  else if(s=="ด"){ s="S";} 
+  else if(s=="ต"){ s="T";} 
+  else if(s=="ท"){ s="U";} 
+  else if(s=="ธ"){ s="V";} 
+  else if(s=="น"){ s="W";} 
+  else if(s=="บ"){ s="X";} 
+  else if(s=="ป"){ s="Y";} 
+  else if(s=="ผ"){ s="Z";} 
+  else if(s=="ฝ"){ s="A";} 
+  else if(s=="พ"){ s="B";} 
+  else if(s=="ฟ"){ s="C";} 
+  else if(s=="ภ"){ s="D";} 
+  else if(s=="ม"){ s="E";} 
+  else if(s=="ย"){ s="F";} 
+  else if(s=="ร"){ s="G";} 
+  else if(s=="ล"){ s="H";} 
+  else if(s=="ว"){ s="J";} 
+  else if(s=="ศ"){ s="K";} 
+  else if(s=="ษ"){ s="L";} 
+  else if(s=="ส"){ s="M";} 
+  else if(s=="ห"){ s="N";} 
+  else if(s=="ฬ"){ s="P";} 
+  else if(s=="อ"){ s="Q";} 
+  else if(s=="ฮ"){ s="R";} 
+  else if(s=="โ"){ s="S";} 
+  else if(s=="ใ"){ s="T";} 
+  else if(s=="ไ"){ s="U";} 
+  else if(s=="ฤ"){ s="V";} 
+  else if(s=="เ"){ s="X";} 
+  else { s="Y";} 
+  
+  window.alert(document.getElementById("idGen").innerHTML = "รหัสคำขอของ คุณ" + text + " " + text2 + " " + "คือ " + f + s + yy + mm + dd + hh);
+
+}
+</script>
+</script>
+<button onclick="window.print()">Print</button>
+</a></li>
+</div>
+</div>
+</body>
+</html>
+
