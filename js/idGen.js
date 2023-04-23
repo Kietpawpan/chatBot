@@ -138,5 +138,5 @@ function myFunction() {
   else if(s=="ฤ"){ s="V";} 
   else if(s=="เ"){ s="X";} 
   else { s="Y";}  
-  window.alert(document.getElementById("idGen").innerHTML = "รหัสคำขอของ คุณ" + text + " " + text2 + " " + "คือ " + f + s + yz + mz + dd + hh + " " + "ออกโดย " + officer + " เมื่อวันที่ " + dd + " " + mx + " พ.ศ. " + yyyy + " เวลา " + hh + " : " + min + " น.");
+  window.alert(document.getElementById("idGen").innerHTML = "รหัสคำขอของ คุณ" + text + " " + text2 + " " + "คือ\n" + f + s + yz + mz + dd + hh + " " + "\nออกโดย\n" + officer + " \nเมื่อวันที่ " + dd + " " + mx + " พ.ศ. " + yyyy + " \nเวลา " + hh + " : " + min + " น.");
 }
