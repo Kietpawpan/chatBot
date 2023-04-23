@@ -6,7 +6,7 @@ Varshith V Hegde wrote the original chatbot code, available at https://github.co
 
 ## Version History 
 ### v.1.0.3 | 23 April 2023
-- Chnage index content to the proposal phase
+- Chnage the content of index.html 
 - Include IDGen.html
 
 ### v1.0.2 | 21 April 2023
