@@ -1,7 +1,7 @@
 /* 
 Copyright © 2023 Monte Kietpawpan
 I wrote this code on Sunday,
-April 23, 2023 at the wife's house
+April 23, 2023, published with
 MIT License 
 */
 
