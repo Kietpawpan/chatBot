@@ -71,7 +71,7 @@ var org = "สำนักงานปลัดกระทรวงทรัพ
  }
 
  // Copy the text in the textarea filled form and tell the user
- function copyForm() {
+ copyForm() {
    const element = document.querySelector('#iRequest');
    element.select();
    element.setSelectionRange(0, 99999);
