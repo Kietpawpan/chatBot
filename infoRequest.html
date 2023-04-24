@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!Copyright © 2023 Monte Kietpawpan | MIT License>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/chat.css">
+        <link rel="stylesheet" href="css/answer.css">
+    <script src="js/chat.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+
+<title>MNRE | Chatbot</title>
+</head>
+
+<body onload="startFunction()">
+    	<nav>
+        <div class="navbar">
+            <img class="dpimg" onclick="openFullScreenDP()" src="images/mnre.png" alt="">
+            <div class="personalInfo">
+                <label id="name">ศูนย์บริการร่วม ทส.</label>
+                <label id="lastseen"></label>
+            </div>
+        </div>
+    	</nav>
+	<input type="text" id="Question" placeholder="ยื่นคำขอข้อมูลข่าวสาร" title="ID" disabled>
+ 	<div class="scrollable" id="myScrollable">
+      <div id="chatting" class="chatting">
+	<ul id="Answer">
+   		<li><a href="#">
+			<form id="frm1">
+  				ชื่อ-นามสกุล ผู้ขอ:&nbsp;&nbsp;&nbsp;<input type="text" name="fname" value="" size="30"> <br>(มีคำนำหน้า เช่น นายมนตรี เกียรติเผ่าพันธ์)<br>
+			</form> 
+			<form id="frm2">
+  				หมายเลขบัตรประจำตัวประชาชน 13 หลัก: <input type="text" name="lname" value="" size="13"><br><br>
+			</form> 
+			<form id="frm54">
+  				หมายเลขโทรศัพท์: <input type="text" name="tel" value="" size="10"><br><br>
+			</form> 
+
+
+			<form id="frm3">
+				หน่วยงานที่มีข้อมูล:
+					<select name="orgName" id="orgName">
+						<option value = "servicelinkcenter@mnre.go.th">สป.ทส.</option>
+						<option value = "kietpawpan@gmail.com">องค์การสวนสัตว์</option>
+					</select>
+			</form>
+             	<form name="info1" id="frm5"><br>
+  				โปรดระบุข้อมูลข่าวสารที่ท่านต้องการ <br>รายการที่ 1:&nbsp;&nbsp;<input type="text" name="infowanted1" value="" size="60"><br>
+			</form> 
+
+            	<form name="info2" id="frm52"><br>
+  				รายการที่ 2:&nbsp;&nbsp;<input type="text" name="infowanted2" value="" size="60"><br>
+			</form> 
+
+ 	            <form name="info3" id="frm53"><br>
+  				รายการอื่น ๆ: &nbsp;&nbsp;<input type="text" name="infowanted3" value="" size="55"><br>
+			</form> <br>
+
+
+            	<form name="obj" id="frm4">
+  				เพื่อนำไปใช้ในการ:&nbsp;&nbsp;<input type="text" name="myObj" value="" size="50"><br>
+                                     (ผู้ขอไม่จำเป็นต้องบอกเหตุผล แต่จะช่วยให้เจ้าหน้าที่ใช้ดุลพินิจอย่างเหมาะสม)
+			</form> 
+			
+			<button onclick="myFunction()">ร่างคำขอ</button>
+	<textarea id="iRequest" name="example" row="20" cols="80" style="height: 150px"></textarea>
+			<script src="js/iRequest.js"></script>
+			<button onclick="window.print()">Copy</button>
+		         </a>
+		</li>
+         </div>
+         </div>
+</body>
+</html>
