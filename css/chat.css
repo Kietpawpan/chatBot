@@ -294,6 +294,14 @@ nav{
     border-radius: 10px;
 }
 
+textarea {    
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+}
+
 input:disabled{
     background-color: #fbfbf9;
 }
