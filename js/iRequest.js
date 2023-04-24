@@ -88,5 +88,5 @@ var org = "สำนักงานปลัดกระทรวงทรัพ
   window.alert("คุณได้คัดลอกร่างคำขอไว้บน clipboard สามารถวางในอีเมลต่อไป");
 }
   sendEmail() {
-  window.alert(document.getElementById("orgEmail").innerHTML = "โปรดส่งอีเมลไปยัง servicelinkcenter@mnre.go.th และสามารถติดตามเรื่องที่ศูนย์บริการร่วม ทส. โทร 1310 กด 0")
+  window.alert(document.getElementById("orgEmail").innerHTML = "โปรดส่งอีเมลไปยัง servicelinkcenter@mnre.go.th และสามารถติดตามเรื่องที่ศูนย์บริการร่วม ทส. โทร 1310 กด 0");
   }
