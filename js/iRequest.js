@@ -68,7 +68,6 @@ var org = "สำนักงานปลัดกระทรวงทรัพ
    
   // Show the code in the window alert
   window.alert(document.getElementById("iRequest").innerHTML = 
-          //     "เรื่อง ขอข้อมูลข่าวสาร" +
                "\n\nเรียน " + opener + "\n\nข้าพเจ้า " + text + " หมายเลขบัตรประจำตัวประชาชน " + text2 + " มีความประสงค์ขอข้อมูลข่าวสารของ" + org + 
                         " ดังต่อไปนี้\n" +
             "1. " + info1 + 
