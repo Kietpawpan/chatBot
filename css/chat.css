@@ -296,8 +296,7 @@ nav{
 
 textarea {    
     position: relative;
-    left: 30px;
-    right: 30px;
+    left: 8px;
 }
 
 input:disabled{
