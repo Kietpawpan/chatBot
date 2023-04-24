@@ -1,7 +1,8 @@
 # chatBot
 This is a prototype [chatbot of MNRE Service Link Center](https://kietpawpan.github.io/chatBot/). 
 This bot can
-- generate customer ID with [idGen]
+- generate customer ID with [idGen](https://kietpawpan.github.io/chatBot/IDGen.html)
+- 
 __Algorithm:__
 ```
 // Create input form to get customer name (form 1)
