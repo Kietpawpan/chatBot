@@ -68,7 +68,8 @@ var org = "สำนักงานปลัดกระทรวงทรัพ
    
   // Show the code in the window alert
   window.alert(document.getElementById("iRequest").innerHTML = 
-            "เรียน " + opener + "\n\nข้าพเจ้า " + text + " หมายเลขบัตรประจำตัวประชาชน " + text2 + " มีความประสงค์ขอข้อมูลข่าวสารของ" + org + 
+               "เรื่อง ขอข้อมูลข่าวสาร" +
+               "\n\nเรียน " + opener + "\n\nข้าพเจ้า " + text + " หมายเลขบัตรประจำตัวประชาชน " + text2 + " มีความประสงค์ขอข้อมูลข่าวสารของ" + org + 
                         " ดังต่อไปนี้\n" +
             "1. " + info1 + 
             "\n2. " + info2 +
@@ -86,4 +87,6 @@ var org = "สำนักงานปลัดกระทรวงทรัพ
   document.execCommand('copy');
   window.alert("คุณได้คัดลอกร่างคำขอไว้บน clipboard สามารถวางในอีเมลต่อไป");
 }
-
+  sendEmail() {
+  window.alert(document.getElementById("orgEmail").innerHTML = "โปรดส่งอีเมลไปยัง servicelinkcenter@mnre.go.th และสามารถติดตามเรื่องที่ศูนย์บริการร่วม ทส. โทร 1310 กด 0")
+  }
