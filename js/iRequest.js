@@ -77,8 +77,6 @@ var org = "สำนักงานปลัดกระทรวงทรัพ
                         "\nเพื่อนำไปใช้ในการ" + obj +
             "\n\nจึงเรียนมาเพื่อโปรดจัดหาข้อมูลข่าวสารดังกล่าวให้แก่ข้าพเจ้าด้วย จะขอบคุณยิ่ง" +
             "\n\nขอแสดงความนับถือ" + "\n" + text + "\nโทร. " + tel);
-  window.alert(document.getElementById("orgEmail").innerHTML = 
-               "servicelink@mnre.go.th");
 }
 
 // Copy the text in the textarea filled form and tell the user
