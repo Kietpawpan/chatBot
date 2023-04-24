@@ -31,8 +31,7 @@ var d = document.getElementById("frm4");
   for (k = 0; k < d.length ;k++) {
     obj += d.elements[k].value;
   }
-
-
+  
 var e = document.getElementById("frm5");
   var info1 = "";
   var l;
@@ -79,4 +78,26 @@ var org = "สำนักงานปลัดกระทรวงทรัพ
             "\n\nขอแสดงความนับถือ" + "\n" + text + "\nโทร. " + tel);
 }
 
+function copyForm() {
+  const element = document.querySelector('#myForm');
+  element.select();
+  element.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+  window.alert("คุณได้คัดลอกร่างคำขอไว้บน clipboard สามารถวางในอีเมลต่อไป")
+}
 
+/*
+<div>
+  <button onclick="copyMyEmail()">Copy Email Address</button>
+</div>
+<br>
+ <a href="http://9x9go.github.io/reviews"><b>Free Edition:</b><br>9 &#215 9 Go Reviews</a>
+<script>
+function copyMyEmail() {
+  const element = document.querySelector('#myEmail');
+  element.select();
+  element.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+  window.alert("You have copied monteodawesti@gmail.com to clipboard.")
+}
+*/
