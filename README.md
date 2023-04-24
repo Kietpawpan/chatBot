@@ -8,6 +8,7 @@ __Algorithm:__
 // Create input from to get customer surname (form 2)
 // Create dropdown list of officers' names who issue the customer ID (form 3)
 // Generate the coses from form 1 and 2 plus and the date of ID issue.
+```
 
 ## Credit
 Varshith V Hegde wrote the original chatbot code, available at https://github.com/Varshithvhegde/chatbot.
