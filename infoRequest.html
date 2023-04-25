@@ -88,14 +88,18 @@
                         </div><br>
 			<div>
 	                   <textarea id="iRequest" row="30" cols="70" style="height: 300px"></textarea>
+			  	 <button onclick="copyForm()">คัดลอกข้อความ</button>
+			</div><br>
+			
+			<div id="orgEmail"></div><br>
+			<textarea id="emailForCopy" row="3"></textarea><br>
+			<button onclick="copyEmail()">คัดลอกอีเมล</button>
 			</div>
-			<script src="js/iRequest.js"></script><br>
-			<div>
-			<button onclick="copyForm()">คัดลอกข้อความ</button></div><br>
-<div id="orgEmail"></div><br>
-		         </a>
+            	</a>
 		</li>
+         <li><center><div id="copyRight"></div></center></li>
          </div>
          </div>
+	<script src="js/iRequest.js"></script><br>
 </body>
 </html>
