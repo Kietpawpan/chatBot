@@ -11,20 +11,26 @@ input, select, textarea {
 
 }
 
-input[name=fname]{
+input[name=fname] {
      	width:50%;
 }
 
-input[name=iDCard]{
+input[name=iDCard] {
      	width:50%;
 }
-
-input[name=house]{
+  
+input[name=house] {
      	width:100%;
 }
 
-input[name=tel]{
+input[name=tel] {
      	width:50%;
+}
+
+textarea[id=emailForCopy] {
+	height:30px;
+      padding: 2px 20px;
+
 }
 
 
