@@ -60,7 +60,19 @@ var e4 = document.getElementById("frm54");
     tel += e4.elements[l4].value;
   }
 
+var a1 = document.getElementById("frm7");
+  var house = "";
+  var h1;
+  for (h1 = 0; h1 < a1.length ;h1++) {
+    house += a1.elements[h1].value;
+  }
 
+var a2 = document.getElementById("frm6");
+  var checkType = "";
+  var h2;
+  for (h2 = 0; h2 < a2.length ;h2++) {
+    checkType += a2.elements[h2].value;
+  }
 
 var opener = "ปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม";
 var org = "สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม";
@@ -68,12 +80,12 @@ var org = "สำนักงานปลัดกระทรวงทรัพ
    
   // Show the code in the window alert
   window.alert(document.getElementById("iRequest").innerHTML = 
-            "เรื่อง ขอข้อมูลข่าวสารของราชการ\n\nเรียน " + opener + "\n\nข้าพเจ้า " + text + " หมายเลขบัตรประจำตัวประชาชน " + text2 + " มีความประสงค์ขอข้อมูลข่าวสารของ" + org + 
+            "เรื่อง ขอข้อมูลข่าวสารของราชการ\n\nเรียน " + opener + "\n\nข้าพเจ้า " + text + " หมายเลขบัตรประจำตัวประชาชน " + text2 + " อยู่" + house + " มีความประสงค์ขอข้อมูลข่าวสารของ" + org + 
                         " ดังต่อไปนี้\n" +
             "1. " + info1 + 
             "\n2. " + info2 +
             "\n3. " + info3 +
-                        "\nเพื่อนำไปใช้ในการ" + obj +
+                        "\nโดย" + checkType + " เพื่อนำไปใช้ในการ" + obj +
             "\n\nจึงเรียนมาเพื่อโปรดจัดหาข้อมูลข่าวสารดังกล่าวให้แก่ข้าพเจ้าด้วย จะขอบคุณยิ่ง" +
             "\n\nขอแสดงความนับถือ" + "\n" + text + "\nโทร. " + tel);
 }
