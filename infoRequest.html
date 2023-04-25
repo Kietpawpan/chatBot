@@ -16,6 +16,7 @@
     <meta property="og:updated_time" content="1440432930" />
 
 <title>MNRE | Chatbot</title>
+
 </head>
 
 <body onload="startFunction()">
@@ -34,15 +35,17 @@
 	<ul id="Answer">
    		<li><a href="#">
 			<form id="frm1">
-  				ชื่อ-นามสกุล ผู้ขอ:&nbsp;&nbsp;&nbsp;<input type="text" name="fname" value="" size="30"> <br>(มีคำนำหน้า เช่น นายมนตรี เกียรติเผ่าพันธ์)<br>
+  				ชื่อ-นามสกุล ผู้ขอ:&nbsp;&nbsp;&nbsp;<input type="text" name="fname" value="" size="35" placeholder="นาย...."  style="width:258px"> <br><br>
 			</form> 
 			<form id="frm2">
-  				หมายเลขบัตรประจำตัวประชาชน 13 หลัก: <input type="text" name="lname" value="" size="13"><br><br>
+  				หมายเลขบัตรประจำตัวประชาชน: <input type="text" name="lname" value="" size="13" placeholder="xxxxxxxxxxxxx"  style="width:170px"><br><br>
+			</form> 
+			<form id="frm7">
+  				ที่อยู่ปัจจุบัน: <input type="text" name="house" value="" size="50" placeholder="บ้านเลขที่..."  style="width:170px"><br><br>
 			</form> 
 			<form id="frm54">
-  				หมายเลขโทรศัพท์: <input type="text" name="tel" value="" size="10"><br><br>
+  				หมายเลขโทรศัพท์: <input type="text" name="tel" value="" size="10" placeholder="081xxxxxxx" style="width:110px"><br><br>
 			</form> 
-
 
 			<form id="frm3">
 				หน่วยงานที่มีข้อมูล:
@@ -60,24 +63,34 @@
 			</form> 
 
  	        <form name="info3" id="frm53"><br>
-  				รายการอื่น ๆ: &nbsp;&nbsp;<input type="text" name="infowanted3" value="" size="55"><br>
+  				รายการอื่น ๆ: &nbsp;&nbsp;<input type="text" name="infowanted3" value="" size="58"><br>
 			</form> <br>
 
 
             	<form name="obj" id="frm4">
-  				เพื่อนำไปใช้ในการ:&nbsp;&nbsp;<input type="text" name="myObj" value="" size="50"><br>
-                                     (ผู้ขอไม่จำเป็นต้องบอกเหตุผล แต่จะช่วยให้เจ้าหน้าที่ใช้ดุลพินิจอย่างเหมาะสม)
+  				เพื่อนำไปใช้ในการ:&nbsp;&nbsp;<input type="text" name="myObj" value="" size="53"><br>
+                                     <font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ผู้ขอไม่จำเป็นต้องบอกเหตุผล แต่การบอก อาจช่วยให้หน่วยงานใช้ดุลพินิจอย่างถูกต้อง)</font>
 			</form> 
+
+			<form id="frm6">
+				ต้องการ:
+					<select name="check-Type" id="checkType">
+						<option value = "ขอตรวจดู">ขอตรวจดู</option>
+						<option value = "ขอสำเนา">ขอสำเนา (มีค่าธรรมเนียม)</option>
+                                                <option value = "ขอสำเนาที่มีคำรับรองถูกต้อง">ขอสำเนาที่มีคำรับรองถูกต้อง (มีค่าธรรมเนียม)</option>
+                                                <option value = "ขอไฟล์อิเล็กทรอนิกส์">ขอไฟล์อิเล็กทรอนิกส์</option>
+					</select>
+			</form>
+
 			<div>
 			<button onclick="myFunction()">ดูร่างคำขอ</button>
                         </div><br>
 			<div>
-	                   <textarea id="iRequest" row="30" cols="70" style="height: 250px"></textarea>
+	                   <textarea id="iRequest" row="30" cols="70" style="height: 300px"></textarea>
 			</div>
 			<script src="js/iRequest.js"></script><br>
 			<div>
 			<button onclick="copyForm()">คัดลอกร่างคำขอ</button></div><br>
-                        สามารถยื่นคำขอทางอีเมล
 		         </a>
 		</li>
          </div>
