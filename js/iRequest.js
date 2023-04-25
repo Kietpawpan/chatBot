@@ -1,6 +1,6 @@
 /* 
 Copyright © 2023 Monte Kietpawpan
-v.1.0.0 | April 25, 2023
+v.1.0.5 | April 25, 2023
 MIT License 
 */
 
@@ -103,7 +103,8 @@ else{eMail = "";}
             "\n\nจึงเรียนมาเพื่อดำเนินการให้ตามความประสงค์ของข้าพเจ้าต่อไปด้วย จักขอบคุณมาก" +
             "\n\nขอแสดงความนับถือ" + "\n" + text + " ผู้ขอ\nโทร. " + tel);
        document.getElementById("orgEmail").innerHTML = 
-            "โปรดกดปุ่มคัดลอกข้อความ แล้ววางในอีเมลของท่าน ส่งไปยัง" + text3 + " ทางอีเมล "+ eMail + " ได้เลยค่ะ";
+            "โปรดกดปุ่มคัดลอกข้อความ ส่งไปยัง" + text3 + " ทางอีเมล "+ eMail + " ได้เลยค่ะ";
+       document.getElementById("emailForCopy").innerHTML = eMail;
 }
 
 function copyForm() {
@@ -111,6 +112,14 @@ function copyForm() {
   element.select();
   element.setSelectionRange(0, 99999);
   document.execCommand('copy');
-  window.alert("คุณได้คัดลอกร่างคำขอไว้บน clipboard แล้ว สามารถวางในอีเมล เพื่อส่งต่อไปค่ะ");
+  window.alert("คุณได้คัดลอกร่างคำขอไว้บน clipboard แล้ว สามารถวางในอีเมล เพื่อส่งต่อไปได้เลยค่ะ");
+}
+
+function copyEmail() {
+  const element = document.querySelector('#emailForCopy');
+  element.select();
+  element.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+  window.alert("คุณได้คัดลอก Email Address ไว้บน clipboard แล้ว สามารถวางในอีเมล เพื่อส่งต่อไปได้เลยค่ะ");
 }
 
