@@ -7,10 +7,10 @@ This bot can
 
 __Algorithm:__
 ```
-// Create input form to get customer name (form 1)
-// Create input from to get customer surname (form 2)
-// Create dropdown list of officers' names who issue the customer ID (form 3)
-// Generate the coses from form 1 and 2 plus and the date of ID issue.
+// Create UI of a form, with input boxed, an output textarea, and buttons
+// Get values from each input and format the input a an eMail text
+// Allow the user to copy the output text in the textarea to paste it in any private eMail.
+
 ```
 
 ## Credit
