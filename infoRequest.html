@@ -48,7 +48,7 @@
 			</form> 
 
 			<form id="frm3">
-				หน่วยงานที่มีข้อมูล:
+				หน่วยงานที่มีข้อมูลข่าวสาร:
 					<select name="orgName" type="text">
 						<option value = "สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม">สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</option>
 						<option value = "องค์การสวนสัตว์แห่งประเทศไทย">องค์การสวนสัตว์แห่งประเทศไทย</option>
@@ -56,21 +56,21 @@
 		</select>
 			</form>
              	<form name="info1" id="frm5"><br>
-  				โปรดระบุข้อมูลข่าวสารที่ท่านต้องการ <br>รายการที่ 1:&nbsp;&nbsp;<input type="text" name="infowanted1" value="" size="60"><br>
+  				ข้อมูลข่าวสารที่ขอ <br>รายการที่ 1<br><input type="text" name="infowanted1" value="" size="60" placeholder="รายงานการประชุม..."><br>
 			</form> 
 
             	<form name="info2" id="frm52"><br>
-  				รายการที่ 2:&nbsp;&nbsp;<input type="text" name="infowanted2" value="" size="60"><br>
+  				รายการที่ 2<br><input type="text" name="infowanted2" value="" size="60" placeholder="หนังสือสำนักงาน..."><br>
 			</form> 
 
  	        <form name="info3" id="frm53"><br>
-  				รายการอื่น ๆ: &nbsp;&nbsp;<input type="text" name="infowanted3" value="" size="58"><br>
+  				รายการอื่น ๆ<br><input type="text" name="infowanted3" value="" size="58" placeholder="หนังสือขอความเป็นธรรม..."><br>
 			</form> <br>
 
 
             	<form name="obj" id="frm4">
-  				เพื่อนำไปใช้ในการ:&nbsp;&nbsp;<input type="text" name="myObj" value="" size="53"><br>
-                                     <font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ผู้ขอไม่จำเป็นต้องบอกเหตุผล แต่การบอก อาจช่วยให้หน่วยงานใช้ดุลพินิจอย่างถูกต้อง)</font>
+  				เพื่อนำไปใช้ในการ<br><input type="text" name="myObj" value="" size="53" placeholder="จัดทำคำชี้แจงต่อคณะกรรมการ..."><br>
+                                     <font size="-1">(ผู้ขอไม่จำเป็นต้องบอกเหตุผล แต่การบอก อาจช่วยให้หน่วยงานใช้ดุลพินิจอย่างถูกต้อง)</font>
 			</form> 
 
 			<form id="frm6">
@@ -82,7 +82,7 @@
                                                 <option value = "ขอไฟล์อิเล็กทรอนิกส์">ขอไฟล์อิเล็กทรอนิกส์</option>
 					</select>
 			</form>
-
+<br>
 			<div>
 			<button onclick="myFunction()">ดูร่างคำขอ</button>
                         </div><br>
@@ -91,7 +91,8 @@
 			</div>
 			<script src="js/iRequest.js"></script><br>
 			<div>
-			<button onclick="copyForm()">คัดลอกร่างคำขอ</button></div><br>
+			<button onclick="copyForm()">คัดลอกข้อความ</button></div><br>
+<div id="orgEmail"></div><br>
 		         </a>
 		</li>
          </div>
