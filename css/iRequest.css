@@ -5,8 +5,34 @@
 }
 
 input, select, textarea {
-font-size: 80%;
+	font-size: 110%;
+  	width:100%;
 }
+
+input[name=fname]{
+     	width:50%;
+      padding: 10px 20px;
+}
+
+input[name=iDCard]{
+     	width:50%;
+ 	padding: 10px 20px;
+}
+
+input[name=house]{
+     	width:100%;
+ 	padding: 10px 20px;
+}
+
+input[name=tel]{
+     	width:50%;
+ 	padding: 10px 20px;
+}
+
+select {
+   	width:100%;
+ 	padding: 10px 20px;
+}	
 
 body{
     padding-top: 1vh;
