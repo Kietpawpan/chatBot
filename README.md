@@ -7,9 +7,9 @@ This bot can
 
 __Algorithm:__
 ```
-// Create UI of a form, with input boxed, an output textarea, and buttons
-// Get values from each input and format the input a an eMail text
-// Allow the user to copy the output text in the textarea to paste it in any private eMail.
+// Create the form UI, with input boxes, an output textarea, and two buttons.
+// Get values from each input and format them as an eMail text.
+// Allow the user to copy the output text and to paste it in his or her eMail UI.
 
 ```
 
