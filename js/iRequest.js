@@ -21,10 +21,16 @@ function myFunction() {
     text2 += y.elements[j].value;
   }
   
+
   // Get data from Form 3
-  var z = document.getElementById("orgName");
-  var officer = z.value;
- 
+  var z = document.getElementById("frm3");
+  var text3 = "";
+  var j1;
+  for (j1 = 0; j1 < z.length ;j1++) {
+    text3 += z.elements[j1].value;
+  }
+
+
 var d = document.getElementById("frm4");
   var obj = "";
   var k;
@@ -74,20 +80,28 @@ var a2 = document.getElementById("frm6");
     checkType += a2.elements[h2].value;
   }
 
-var opener = "ปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม";
-var org = "สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม";
+var opener = "โปรดระบุชื่อผู้รับ";
+if(text3=="สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"){opener = "ปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม";}
+else if(text3=="องค์การสวนสัตว์แห่งประเทศไทย"){opener = "ผู้อำนวยการองค์การสวนสัตว์";}
+else if(text3=="กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช"){opener = "อธิบดีกรมอุทยานแห่งชาติสัตว์ป่า และพันธุ์พืช";}
+else{opener = "มนตรี";}
 
+var eMail ="โปรดระบุอีเมล";
+if(text3=="สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"){eMail = "servicelinkcenter@mnre.go.th";}
+else if(text3=="องค์การสวนสัตว์แห่งประเทศไทย"){eMail = "saraban@sepo.go.th";}
+else if(text3=="กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช"){eMail = "saraban@dnp.go.th";}
+else{eMail = "";}
    
   // Show the code in the window alert
   window.alert(document.getElementById("iRequest").innerHTML = 
-            "เรื่อง ขอข้อมูลข่าวสารของราชการ\n\nเรียน " + opener + "\n\nข้าพเจ้า " + text + " หมายเลขบัตรประจำตัวประชาชน " + text2 + " อยู่" + house + " มีความประสงค์ขอข้อมูลข่าวสารของ" + org + 
+            "โปรดคัดลอกข้อความด้านล่างนี้ ส่งอีเมลไปยัง " + eMail + " ค่ะ\n\nเรื่อง ขอข้อมูลข่าวสารของราชการ\n\nเรียน " + opener + "\n\nข้าพเจ้า " + text + " หมายเลขบัตรประจำตัวประชาชน " + text2 + " อยู่" + house + " มีความประสงค์ขอข้อมูลข่าวสารของ" + text3 + 
                         " ดังต่อไปนี้\n" +
             "1. " + info1 + 
             "\n2. " + info2 +
             "\n3. " + info3 +
                         "\nโดย" + checkType + " เพื่อนำไปใช้ในการ" + obj +
-            "\n\nจึงเรียนมาเพื่อโปรดจัดหาข้อมูลข่าวสารดังกล่าวให้แก่ข้าพเจ้าด้วย จะขอบคุณยิ่ง" +
-            "\n\nขอแสดงความนับถือ" + "\n" + text + "\nโทร. " + tel);
+            "\n\nจึงเรียนมาเพื่อดำเนินการให้ตามความประสงค์ของข้าพเจ้าต่อไปด้วย จักขอบคุณมาก" +
+            "\n\nขอแสดงความนับถือ" + "\n" + text + " ผู้ขอ\nโทร. " + tel);
 }
 
 function copyForm() {
@@ -95,6 +109,6 @@ function copyForm() {
   element.select();
   element.setSelectionRange(0, 99999);
   document.execCommand('copy');
-  window.alert("คุณได้คัดลอกร่างคำขอไว้บน clipboard แล้ว สามารถวางในอีเมลต่อไปค่ะ");
+  window.alert("คุณได้คัดลอกร่างคำขอไว้บน clipboard แล้ว สามารถวางในอีเมล เพื่อส่งต่อไปค่ะ");
 }
 
