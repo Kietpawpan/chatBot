@@ -7,7 +7,8 @@
   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/iRequest.css">
-        <link rel="stylesheet" href="css/answer.css">
+    <link rel="stylesheet" href="css/answer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/chat.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="images/krut.png" />
@@ -29,13 +30,13 @@
             </div>
         </div>
     	</nav>
-	<input type="text" id="Question" placeholder="ยื่นคำขอข้อมูลข่าวสารของกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม" title="ID" disabled>
+	<input type="text" id="Question" placeholder="ขอข้อมูลข่าวสารของกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม" title="ID" disabled>
  	<div class="scrollable" id="myScrollable">
       <div id="chatting" class="chatting">
 	<ul id="Answer">
    		<li><a href="#">
 			<form id="frm1">
-  				ชื่อ-นามสกุล<br><input type="text" name="fname" value="" size="35" placeholder="นาย...."> <br><br>
+  				ชื่อ-นามสกุล ผู้ขอ<br><input type="text" name="fname" value="" size="35" placeholder="นาย...."> <br><br>
 			</form> 
 			<form id="frm2">
   				หมายเลขบัตรประจำตัวประชาชน<br><input type="text" name="iDCard" value="" size="13" placeholder="xxxxxxxxxxxxx"><br><br>
@@ -51,8 +52,19 @@
 				หน่วยงานที่มีข้อมูลข่าวสาร:
 					<select name="orgName" type="text">
 						<option value = "สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม">สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</option>
-						<option value = "องค์การสวนสัตว์แห่งประเทศไทย">องค์การสวนสัตว์แห่งประเทศไทย</option>
+			                        <option value = "กรมควบคุมมลพิษ">กรมควบคุมมลพิษ</option>
+						<option value = "กรมส่งเสริมคุณภาพสิ่งแวดล้อม">กรมส่งเสริมคุณภาพสิ่งแวดล้อม</option>
+						<option value = "สำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม">สำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม</option>
 			                        <option value = "กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช">กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช</option>
+						<option value = "กรมป่าไม้">กรมป่าไม้</option>
+						<option value = "กรมทรัพยากรทางทะเลและชายฝั่ง">กรมทรัพยากรทางทะเลและชายฝั่ง</option>
+			                        <option value = "กรมทรัพยากรธรณี">กรมทรัพยากรธรณี</option>
+						<option value = "กรมทรัพยากรน้ำ">กรมทรัพยากรน้ำ</option>
+						<option value = "กรมทรัพยากรน้ำบาดาล">กรมทรัพยากรน้ำบาดาล</option>
+						<option value = "องค์การสวนสัตว์แห่งประเทศไทย">องค์การสวนสัตว์แห่งประเทศไทย</option>
+						<option value = "องค์การอุตสาหกรรมป่าไม้">องค์การอุตสาหกรรมป่าไม้</option>												<option value = "องค์การบริหารจัดการก๊าซเรือนกระจก">องค์การบริหารจัดการก๊าซเรือนกระจก</option>
+				        	<option value = "สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ">สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ</option>
+
 		</select>
 			</form>
              	<form name="info1" id="frm5"><br>
@@ -84,16 +96,17 @@
 			</form>
 <br>
 			<div>
-			<button onclick="myFunction()">ดูร่างคำขอ</button>
+			<button class="btn" onclick="myFunction()"><i class="fa fa- fa-pencil-square-o"></i> พิมพ์คำขอ</button>
                         </div><br>
 			<div>
 	                   <textarea id="iRequest" row="30" cols="70" style="height: 300px"></textarea>
-			  	 <button onclick="copyForm()">คัดลอกข้อความ</button>
-			</div><br>
-			
+			  	 <button class="btn" onclick="copyForm()"><i class="fa fa-copy"></i> คัดลอกข้อความ</button></div><br>			
 			<div id="orgEmail"></div><br>
 			<textarea id="emailForCopy" row="3"></textarea><br>
-			<button onclick="copyEmail()">คัดลอกอีเมล</button>
+                        <button class="btn" onclick="sendGmail()"><i class="fa fa-google"></i> ส่งด้วย Gmail</button>
+                        <button class="btn" onclick="sendiMail()"><i class="fa fa-apple"></i> ส่งด้วย iPhone</button>
+			<button class="btn" onclick="copyEmail()"><i class="fa fa-copy"></i> คัดลอกอีเมล (ถ้าปุ่มด้านซ้ายไม่ทำงาน)</button>
+                        
 			</div>
             	</a>
 		</li>
