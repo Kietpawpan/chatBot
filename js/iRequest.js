@@ -4,6 +4,7 @@ v.1.0.5 | April 25, 2023
 MIT License 
 */
 
+
 // Get data from Form 1
 function myFunction() {
   var x = document.getElementById("frm1");
@@ -84,17 +85,39 @@ var opener = "โปรดระบุชื่อผู้รับ";
 if(text3=="สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"){opener = "ปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม";}
 else if(text3=="องค์การสวนสัตว์แห่งประเทศไทย"){opener = "ผู้อำนวยการองค์การสวนสัตว์";}
 else if(text3=="กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช"){opener = "อธิบดีกรมอุทยานแห่งชาติสัตว์ป่า และพันธุ์พืช";}
+else if(text3=="กรมควบคุมมลพิษ"){opener = "อธิบดีกรมควบคุมมลพิษ";}
+else if(text3=="กรมส่งเสริมคุณภาพสิ่งแวดล้อม"){opener = "อธิบดีกรมส่งเสริมคุณภาพสิ่งแวดล้อม";}
+else if(text3=="สำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม"){opener = "เลขาธิการสำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม";}
+else if(text3=="กรมป่าไม้"){opener = "อธิบดีกรมป่าไม้";}
+else if(text3=="กรมทรัพยากรทางทะเลและชายฝั่ง"){opener = "อธิบดีกรมทรัพยากรทางทะเลและชายฝั่ง";}
+else if(text3=="กรมทรัพยากรธรณี"){opener = "อธิบดีกรมทรัพยากรธรณี";}
+else if(text3=="กรมทรัพยากรน้ำ"){opener = "อธิบดีกรมทรัพยากรน้ำ";}
+else if(text3=="กรมทรัพยากรน้ำบาดาล"){opener = "อธิบดีกรมทรัพยากรน้ำบาดาล";}
+else if(text3=="องค์การอุตสาหกรรมป่าไม้"){opener = "ผู้อำนวยการองค์การอุตสาหกรรมป่าไม้";}
+else if(text3=="องค์การบริหารจัดการก๊าซเรือนกระจก"){opener = "ผู้อำนวยการองค์การบริหารจัดการก๊าซเรือนกระจก";}
+else if(text3=="สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ"){opener = "ผู้อำนวยการสำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ";}
 else{opener = "มนตรี";}
 
 var eMail ="โปรดระบุอีเมล";
 if(text3=="สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"){eMail = "servicelinkcenter@mnre.go.th";}
-else if(text3=="องค์การสวนสัตว์แห่งประเทศไทย"){eMail = "saraban@sepo.go.th";}
+else if(text3=="องค์การสวนสัตว์แห่งประเทศไทย"){eMail = "saraban@zoothailand.org";}
 else if(text3=="กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช"){eMail = "saraban@dnp.go.th";}
+else if(text3=="กรมควบคุมมลพิษ"){eMail = "saraban@pcd.go.th";}
+else if(text3=="กรมส่งเสริมคุณภาพสิ่งแวดล้อม"){eMail = "saraban@deqp.mail.go.th";}
+else if(text3=="สำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม"){eMail = "saraban@onep.go.th";}
+else if(text3=="กรมป่าไม้"){eMail = "saraban@forest.go.th";}
+else if(text3=="กรมทรัพยากรทางทะเลและชายฝั่ง"){eMail = "saraban@dmcr.mail.go.th";}
+else if(text3=="กรมทรัพยากรธรณี"){eMail = "saraban@dmr.mail.go.th";}
+else if(text3=="กรมทรัพยากรน้ำ"){eMail = "saraban@dwr.mail.go.th";}
+else if(text3=="กรมทรัพยากรน้ำบาดาล"){eMail = "saraban@dgr.mail.go.th";}
+else if(text3=="องค์การอุตสาหกรรมป่าไม้"){eMail = "saraban@fio.co.th";}
+else if(text3=="องค์การบริหารจัดการก๊าซเรือนกระจก"){eMail = "saraban_tgo@tgo.or.th";}
+else if(text3=="สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ"){eMail = "saraban@bedo.or.th";}
 else{eMail = "";}
    
   // Show the code in the window alert
   window.alert(document.getElementById("iRequest").innerHTML = 
-            "เรื่อง ขอข้อมูลข่าวสารของราชการ\n\nเรียน " + opener + "\n\nข้าพเจ้า " + text + " หมายเลขบัตรประจำตัวประชาชน " + text2 + " อยู่" + house + " มีความประสงค์ขอข้อมูลข่าวสารของ" + text3 + 
+            "เรียน " + opener + "\n\nข้าพเจ้า " + text + " หมายเลขบัตรประจำตัวประชาชน " + text2 + " อยู่" + house + " มีความประสงค์ขอข้อมูลข่าวสารของ" + text3 + 
                         " ดังต่อไปนี้\n" +
             "1. " + info1 + 
             "\n2. " + info2 +
@@ -123,3 +146,118 @@ function copyEmail() {
   window.alert("คุณได้คัดลอก Email Address ไว้บน clipboard แล้ว สามารถวางในอีเมล เพื่อส่งต่อไปได้เลยค่ะ");
 }
 
+function sendGmail() {
+// Get data from Form 3
+  var z = document.getElementById("frm3");
+  var text3 = "";
+  var j1;
+  for (j1 = 0; j1 < z.length ;j1++) {
+    text3 += z.elements[j1].value;
+  }
+// Send by Gmail
+   if(text3=="สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"){
+   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=servicelinkcenter@mnre.go.th&cc=&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+   if(text3=="กรมควบคุมมลพิษ"){
+   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@pcd.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+  if(text3=="กรมส่งเสริมคุณภาพสิ่งแวดล้อม"){
+   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@deqp.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+if(text3=="สำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม"){
+   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@onep.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+
+  else if(text3=="องค์การสวนสัตว์แห่งประเทศไทย"){
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@zoothailand.org&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+  else if(text3=="กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช"){
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dnp.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+ else if(text3=="กรมป่าไม้"){
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@forest.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+else if(text3=="กรมทรัพยากรทางทะเลและชายฝั่ง"){
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dmcr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+else if(text3=="กรมทรัพยากรธรณี"){
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dmr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+else if(text3=="กรมทรัพยากรน้ำ"){
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dwr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+else if(text3=="กรมทรัพยากรน้ำบาดาล"){
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dgr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+else if(text3=="องค์การอุตสาหกรรมป่าไม้"){
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@fio.co.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+else if(text3=="องค์การบริหารจัดการก๊าซเรือนกระจก"){
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban_tgo@tgo.or.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+else if(text3=="สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ"){
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@bedo.or.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+  else{
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=&cc=&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+}
+
+
+   window.open("mailto:วางอีเมลตรงนี้ค่ะ?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=วางข้อความตรงนี้ค่ะ");
+
+
+function sendiMail() {
+// Get data from Form 3
+  var z = document.getElementById("frm3");
+  var text3 = "";
+  var j1;
+  for (j1 = 0; j1 < z.length ;j1++) {
+    text3 += z.elements[j1].value;
+  }
+// Send by iPhone
+   if(text3=="สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"){
+   window.open("mailto:servicelinkcenter@mnre.go.th?subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+ else if(text3=="สำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม"){
+   window.open("mailto:saraban@onep.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+  else if(text3=="กรมควบคุมมลพิษ"){
+   window.open("mailto:saraban@pcd.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+  else if(text3=="กรมส่งเสริมคุณภาพสิ่งแวดล้อม"){
+   window.open("mailto:saraban@deqp.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+else if(text3=="องค์การสวนสัตว์แห่งประเทศไทย"){
+   window.open("mailto:saraban@zoothailand.org?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+  else if(text3=="กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช"){
+   window.open("mailto:saraban@dnp.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+  else if(text3=="กรมป่าไม้"){
+   window.open("mailto:saraban@forest.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+  else if(text3=="กรมทรัพยากรทางทะเลและชายฝั่ง"){
+   window.open("mailto:saraban@dmcr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+
+  else if(text3=="กรมทรัพยากรธรณี"){
+   window.open("mailto:saraban@dmr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+  else if(text3=="กรมทรัพยากรน้ำ"){
+   window.open("mailto:saraban@dwr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+ else if(text3=="กรมทรัพยากรน้ำบาดาล"){
+   window.open("mailto:saraban@dgr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+ else if(text3=="องค์การอุตสาหกรรมป่าไม้"){
+   window.open("mailto:saraban@fio.co.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+ else if(text3=="องค์การบริหารจัดการก๊าซเรือนกระจก"){
+   window.open("mailto:saraban_tgo@tgo.or.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+ else if(text3=="สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ"){
+   window.open("mailto:saraban@bedo.or.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+
+  else{
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=&cc=&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+}
