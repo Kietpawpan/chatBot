@@ -17,6 +17,13 @@ __Algorithm:__
 Varshith V Hegde wrote the original chatbot code, available at https://github.com/Varshithvhegde/chatbot.
 
 ## Version History 
+### v1.0.5 | 26 April 2023
+- for UI design
+- New button needed
+- More org names and eMail needed
+- Privacy policy needed
+- Contact by LINE chat needed
+
 ### v.1.0.4 | 25 April 2023
 - Complete form
 - Without an eMail sending button
