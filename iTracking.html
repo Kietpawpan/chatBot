@@ -25,18 +25,18 @@
         <div class="navbar">
             <img class="dpimg" onclick="openFullScreenDP()" src="images/mnre.png" alt="">
             <div class="personalInfo">
-                <label id="name">ศูนย์บริการร่วม กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</label>
+                <label id="name">ศูนย์บริการร่วม ทส.</label>
                 <label id="lastseen"></label>
             </div>
         </div>
     	</nav>
-	<input type="text" id="Question" placeholder="โปรแกรมติดตามสถานะคำขอ | MNRE Tracking" title="ID" disabled>
+	<input type="text" id="Question" placeholder="ติดตามสถานะคำขอ | e-Tracking" title="ID" disabled>
  	<div class="scrollable" id="myScrollable">
       <div id="chatting" class="chatting">
 	<ul id="Answer">
    		<li><a href="#">
 			<form id="frm1">
-  				รหัสคำขอ<br><input type="text" name="fname" value="" size="35" placeholder="AA...."> <br><br>
+  				รหัสคำขอ<br><input type="text" name="fname" value="" size="35" placeholder="AA123456"> <br><br>
 			</form> 
 			
 			<form id="frm3">
@@ -67,9 +67,9 @@
 			  	 <br>			
 			<div id="orgEmail"></div><br>
 			<textarea id="emailForCopy" row="3"></textarea><br>
-                        <button class="btn" onclick="sendGmail()"><i class="fa fa-google"></i> ส่งด้วย Gmail</button>
-                        <button class="btn" onclick="sendiMail()"><i class="fa fa-apple"></i> ส่งด้วย iPhone</button>
-			<button class="btn" onclick="copyEmail()"><i class="fa fa-copy"></i> คัดลอกอีเมล (ถ้าปุ่มด้านซ้ายไม่ทำงาน)</button>
+                    <button class="btn" onclick="sendiMail()"><i class="fa fa-apple"></i> ส่งด้วย iPhone</button>    
+                    <button class="btn" onclick="sendGmail()"><i class="fa fa-google"></i> ส่งด้วย Gmail</button>
+  		    <button class="btn" onclick="copyEmail()"><i class="fa fa-copy"></i> คัดลอกอีเมล</button>
                         
 			</div>
             	</a>
