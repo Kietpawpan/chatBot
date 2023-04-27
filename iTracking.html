@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!Copyright © 2023 Monte Kietpawpan | MIT License>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/iRequest.css">
+    <link rel="stylesheet" href="css/answer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/chat.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+
+<title>MNRE | Chatbot</title>
+
+</head>
+
+<body onload="startFunction()">
+    	<nav>
+        <div class="navbar">
+            <img class="dpimg" onclick="openFullScreenDP()" src="images/mnre.png" alt="">
+            <div class="personalInfo">
+                <label id="name">ศูนย์บริการร่วม กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</label>
+                <label id="lastseen"></label>
+            </div>
+        </div>
+    	</nav>
+	<input type="text" id="Question" placeholder="โปรแกรมติดตามสถานะคำขอ | MNRE Tracking" title="ID" disabled>
+ 	<div class="scrollable" id="myScrollable">
+      <div id="chatting" class="chatting">
+	<ul id="Answer">
+   		<li><a href="#">
+			<form id="frm1">
+  				รหัสคำขอ<br><input type="text" name="fname" value="" size="35" placeholder="AA...."> <br><br>
+			</form> 
+			
+			<form id="frm3">
+				หน่วยงานเจ้าของเรื่อง:
+					<select name="orgName" type="text">
+						<option value = "สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม">สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</option>
+			                        <option value = "กรมควบคุมมลพิษ">กรมควบคุมมลพิษ</option>
+						<option value = "กรมส่งเสริมคุณภาพสิ่งแวดล้อม">กรมส่งเสริมคุณภาพสิ่งแวดล้อม</option>
+						<option value = "สำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม">สำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม</option>
+			                        <option value = "กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช">กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช</option>
+						<option value = "กรมป่าไม้">กรมป่าไม้</option>
+						<option value = "กรมทรัพยากรทางทะเลและชายฝั่ง">กรมทรัพยากรทางทะเลและชายฝั่ง</option>
+			                        <option value = "กรมทรัพยากรธรณี">กรมทรัพยากรธรณี</option>
+						<option value = "กรมทรัพยากรน้ำ">กรมทรัพยากรน้ำ</option>
+						<option value = "กรมทรัพยากรน้ำบาดาล">กรมทรัพยากรน้ำบาดาล</option>
+						<option value = "องค์การสวนสัตว์แห่งประเทศไทย">องค์การสวนสัตว์แห่งประเทศไทย</option>
+						<option value = "องค์การอุตสาหกรรมป่าไม้">องค์การอุตสาหกรรมป่าไม้</option>												<option value = "องค์การบริหารจัดการก๊าซเรือนกระจก">องค์การบริหารจัดการก๊าซเรือนกระจก</option>
+				        	<option value = "สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ">สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ</option>
+
+		</select>
+			</form>
+             	<br>
+			<div>
+			<button class="btn" onclick="myFunction()"><i class="fa fa- fa-search"></i> ติดตามความคืบหน้า</button>
+                        </div><br>
+			<div>
+	                   <textarea id="iRequest" row="30" cols="70" style="height: 300px"></textarea>
+			  	 <br>			
+			<div id="orgEmail"></div><br>
+			<textarea id="emailForCopy" row="3"></textarea><br>
+                        <button class="btn" onclick="sendGmail()"><i class="fa fa-google"></i> ส่งด้วย Gmail</button>
+                        <button class="btn" onclick="sendiMail()"><i class="fa fa-apple"></i> ส่งด้วย iPhone</button>
+			<button class="btn" onclick="copyEmail()"><i class="fa fa-copy"></i> คัดลอกอีเมล (ถ้าปุ่มด้านซ้ายไม่ทำงาน)</button>
+                        
+			</div>
+            	</a>
+		</li>
+         <li><center><div id="copyRight"></div></center></li>
+         </div>
+         </div>
+	<script src="js/iTrack.js"></script><br>
+</body>
+</html>
