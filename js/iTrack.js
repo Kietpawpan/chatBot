@@ -104,7 +104,7 @@ const date = new Date();
  else{thaiDay="";}
    
   // Report the progress, according to the submission ID
-	if(text=="AA123456"){window.alert("รหัสคำขอนี้ เป็นเพียงตัวอย่าง ไม่มีข้อมูลความคืบหน้าค่ะ");}
+	if(text=="AA99-999-999-99"){window.alert("รหัสคำขอนี้ เป็นเพียงตัวอย่าง ไม่มีข้อมูลความคืบหน้าค่ะ");}
 
 	else if(text=="SH124424"){ 
 		window.alert(document.getElementById("iRequest").innerHTML = 
