@@ -2,7 +2,7 @@
 This is a prototype [chatbot of MNRE Service Link Center](https://kietpawpan.github.io/chatBot/). 
 This bot can
 - generate customer ID with [idGen](https://kietpawpan.github.io/chatBot/IDGen.html)
-- track the progress of request submission with [e-Tracking](https://kietpawpan.github.io/chatBot/IDGen.html)
+- track the progress of request submission with [e-Tracking](https://kietpawpan.github.io/chatBot/iTracking.html)
 - answer questions about MNRE services
 - get a requestion for MNRE information from people.
 
