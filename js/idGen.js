@@ -6,7 +6,7 @@ MIT License
 */
 
 // Get data from Form 1
-function myFunction() {
+function genID() {
   var x = document.getElementById("frm1");
   var text = "";
   var i;
@@ -32,8 +32,9 @@ function myFunction() {
   var today = new Date();
   var min = today.getMinutes();
   var dd = today.getDate();
-  var mm = today.getMonth()+1;
-  var yyyy = today.getFullYear()+543;
+  var mm = today.getMonth() + 1;
+  var sc = today.getSeconds();
+  var yyyy = today.getFullYear() + 543;
   var yyyz = yyyy - 54;
   var yy = yyyy.toString().substr(-2);
   var hh = today.getHours();
@@ -49,6 +50,7 @@ function myFunction() {
   var mz = mm.toString().substr(-1);
   var mx = mm.toString();
   var mi = min + 12;
+
   
   // Change month numbers to month names in Thai
   if(mx=="01"){mx="มกราคม";}
@@ -269,7 +271,7 @@ function myFunction() {
   // Show the code in the window alert
   window.alert(document.getElementById("idGen").innerHTML = 
                "รหัสคำขอของ คุณ" + text + " " + text2 + " " + 
-               "คือ\n" + f + s + yz + "-" + mz + dz + "-" + hz + mi + " " + 
+               "คือ\n" + f + s + yz + "-" + mz + dz + "-" + hz + mi + "-" + sc + 
                "\nออกโดย\n" + officer + " \nเมื่อวันที่ " + 
                dd + " " + mx + " พ.ศ. " + yyyy + " \nเวลา " + 
                hh + " : " + min + " น.");
