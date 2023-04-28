@@ -48,6 +48,7 @@ function myFunction() {
   var yz = yyyz.toString().substr(-2);
   var mz = mm.toString().substr(-1);
   var mx = mm.toString();
+  var mi = min + 12;
   
   // Change month numbers to month names in Thai
   if(mx=="01"){mx="มกราคม";}
@@ -268,7 +269,7 @@ function myFunction() {
   // Show the code in the window alert
   window.alert(document.getElementById("idGen").innerHTML = 
                "รหัสคำขอของ คุณ" + text + " " + text2 + " " + 
-               "คือ\n" + f + s + yz + mz + dz + hz + " " + 
+               "คือ\n" + f + s + yz + "-" + mz + dz + "-" + hz + mi + " " + 
                "\nออกโดย\n" + officer + " \nเมื่อวันที่ " + 
                dd + " " + mx + " พ.ศ. " + yyyy + " \nเวลา " + 
                hh + " : " + min + " น.");
