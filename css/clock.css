@@ -1,9 +1,9 @@
 #clockContainer {
 	position: relative;
 	margin: auto;
-	height: 12vw;
+	height: 24vw;
 	/*to make the height and width responsive*/
-	width: 12vw;
+	width: 24vw;
 	background: url(../images/clock.png) no-repeat;
 	/*setting our background image*/
 	background-size: 100%;
