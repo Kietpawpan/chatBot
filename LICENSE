@@ -1,6 +1,8 @@
-This code was modified from https://github.com/Varshithvhegde/chatbot, 
+The code in this repository were modified from many sources:
+https://github.com/Varshithvhegde/chatbot, 
 which is under MIT License (https://github.com/Varshithvhegde/chatbot#license). 
-Images are form many sources: Wikipedia, which are in public domain: 
+
+Images are taken from many sources: Wikipedia, which are in public domain: 
 https://commons.wikimedia.org/wiki/File:%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%
 B8%A3%E0%B8%B0%E0%B8%97%E0%B8%A3%E0%B8%A7%E0%B8%87%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%
 B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3HD.png#/media/ไฟล์:ตรากระทรวงทรัพยากรHD.png; 
@@ -11,8 +13,8 @@ https://github.com/logos (GitHub logo);
 https://lin.ee/O9TyPRw (Line QR Code)
 https://fonts.google.com/icons (search/calendar/FAQ icons)
 
-This clock code (clock.js and clock.css) was 
-slightly modifed from
+This clock code under iTracking.html (clock.js and clock.css) 
+was slightly modified from
 https://www.geeksforgeeks.org/
 how-to-create-analog-clock-using-
 html-css-and-javascript
@@ -22,7 +24,8 @@ https://media.geeksforgeeks.org/wp-content/uploads/
 with the Copyright infromation given at
 https://www.geeksforgeeks.org/copyright-information/
 
-Aside from the above, the license for all OTHER content in this repository is as follows:
+Aside from the above, the license for all OTHER contents
+in this repository is as follows:
 
 -------------------------------------------
 Copyright (c) 2023 Monte Kietpawpan
@@ -47,7 +50,8 @@ SOFTWARE.
 
 ----------------------------------------
 
-Additional disclaimer from Monte Kietpawpan ("jTech") regarding the above license and chatBot's
-repository (hhttps://github.com/Kietpawpan/chatBot/): 
-I am providing code in the repository to you under an open source license. Because this is my
-personal repository, the license you receive to my code is from me, and not my employer (MNRE).
+Additional disclaimer from Monte Kietpawpan ("jTech") regarding the above license and 
+the chatBot repository (https://github.com/Kietpawpan/chatBot/): 
+I am providing code in the repository to you under an open source license. 
+Because this is my personal repository, the license you receive to my code is from me, 
+and not my employer (MNRE).
