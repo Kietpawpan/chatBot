@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!Copyright © 2023 Monte Kietpawpan | MIT License>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/chat.css">
+        <link rel="stylesheet" href="css/answer.css">
+    <script src="js/chat.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+
+<title>MNRE | Chatbot</title>
+</head>
+
+<body onload="startFunction()">
+    	<nav>
+        <div class="navbar">
+            <img class="dpimg" onclick="openFullScreenDP()" src="images/mnre.png" alt="">
+            <div class="personalInfo">
+                <label id="name">ศูนย์บริการร่วม ทส.</label>
+                <label id="lastseen"></label>
+            </div>
+        </div>
+    	</nav>
+	<input type="text" id="Question" placeholder="โปรแกรมออกรหัสคำขอ idGen" title="ID" disabled>
+ 	<div class="scrollable" id="myScrollable">
+      <div id="chatting" class="chatting">
+	<ul id="Answer">
+  		<li><a href="#">
+			<form id="frm1" style="width:100%">
+  				ชื่อผู้ขอ (ไม่ต้องมีคำนำหน้า)<br><input type="text" name="fname" value="" size="12" style="width:70%" placeholder="เช่น สมศรี ถ้าเป็นนิติบุคคล ให้ใส่ชื่อเฉพาะ เช่น ไทยวัสดุ"><br>
+			</form> 
+			<form id="frm2">
+  				นามสกุล<br><input type="text" name="lname" value="" size="12" style="width:70%" placeholder="ถ้ามี"><br><br>
+			</form> 
+
+			<form id="frm3">
+				หน่วยงานที่รับคำขอ: <br>
+					<select name="ourName" id="ourNameID" style="width:100%">
+						<option value = "สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม">สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม</option>
+						<option value = "สำนักงานนโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม">สำนักงานนโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม</option>
+						<option value = "กรมควบคุมมลพิษ">กรมควบคุมมลพิษ</option>
+						<option value = "กรมส่งเสริมคุณภาพสิ่งแวดล้อม">กรมส่งเสริมคุณภาพสิ่งแวดล้อม</option>
+						<option value = "กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช">กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช</option>
+<option value = "กรมทรัพยากรทางทะเลและชายฝั่ง">กรมทรัพยากรทางทะเลและชายฝั่ง</option>
+<option value = "กรมทรัพยากรธรณี">กรมทรัพยากรธรณี</option>
+<option value = "กรมทรัพยากรน้ำ">กรมทรัพยากรน้ำ</option>
+<option value = "กรมทรัพยากรน้ำบาดาล">กรมทรัพยากรน้ำบาดาล</option>
+<option value = "องค์การสวนสัตว์แห่งประเทศไทย">องค์การสวนสัตว์แห่งประเทศไทย</option>
+<option value = "องค์การสวนพฤกษศาสตร์">องค์การสวนพฤกษศาสตร์</option>
+<option value = "องค์การบริหารจัดการก๊าซเรือนกระจก (องค์การมหาชน)">องค์การบริหารจัดการก๊าซเรือนกระจก (องค์การมหาชน)</option>
+<option value = "สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ (องค์การมหาชน)">สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ (องค์การมหาชน)</option>
+
+
+
+					</select>
+			</form>
+			<button onclick="myFunction()">รหัสคำขอ</button>
+	<p id="idGen"></p>
+			<script src="js/idGen.js"></script>
+			<button onclick="window.print()">Print</button>
+		         </a>
+		</li>
+         </div>
+         </div>
+</body>
+</html>
