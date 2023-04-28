@@ -11,11 +11,12 @@ https://github.com/logos (GitHub logo);
 https://lin.ee/O9TyPRw (Line QR Code)
 https://fonts.google.com/icons (search/calendar/FAQ icons)
 
-This clock code was modifed from
+This clock code (clock.js and clock.css) was 
+slightly modifed from
 https://www.geeksforgeeks.org/
 how-to-create-analog-clock-using-
 html-css-and-javascript
-and the clock image from 
+and the clock image (clock.png) was modified from 
 https://media.geeksforgeeks.org/wp-content/uploads/
 20210302161254/imgonlinecomuaCompressToSizeOmNATjUMFKw-300x300.jpg
 with the Copyright infromation given at
