@@ -152,50 +152,50 @@ function sendGmail() {
   }
 // Send by Gmail
    if(text3=="สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"){
-   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=servicelinkcenter@mnre.go.th&cc=&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=servicelinkcenter@mnre.go.th&cc=&su=ขอติดตามความคืบหน้า&body=เรียน ปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม");}
 
    if(text3=="กรมควบคุมมลพิษ"){
-   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@pcd.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@pcd.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมควบคุมมลพิษ");}
 
   if(text3=="กรมส่งเสริมคุณภาพสิ่งแวดล้อม"){
-   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@deqp.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@deqp.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=รียน อธิบดีกรมส่งเสริมคุณภาพสิ่งแวดล้อม");}
 
 if(text3=="สำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม"){
-   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@onep.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@onep.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน เลขาธิการสำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม");}
 
 
   else if(text3=="องค์การสวนสัตว์แห่งประเทศไทย"){
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@zoothailand.org&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@zoothailand.org&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน ผู้อำนวยการองค์การสวนสัตว์แห่งประเทศไทย");}
 
   else if(text3=="กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช"){
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dnp.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dnp.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช");}
 
  else if(text3=="กรมป่าไม้"){
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@forest.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@forest.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมป่าไม้");}
 
 else if(text3=="กรมทรัพยากรทางทะเลและชายฝั่ง"){
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dmcr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dmcr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมทรัพยากรทางทะเลและชายฝั่ง");}
 
 else if(text3=="กรมทรัพยากรธรณี"){
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dmr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dmr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน อธิบดี");}
 
 else if(text3=="กรมทรัพยากรน้ำ"){
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dwr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dwr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมทรัพยากรน้ำ");}
 
 else if(text3=="กรมทรัพยากรน้ำบาดาล"){
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dgr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@dgr.mail.go.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมทรัพยากรน้ำบาดาล");}
 
 else if(text3=="องค์การอุตสาหกรรมป่าไม้"){
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@fio.co.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@fio.co.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน ผู้อำนวยการองค์การอุตสาหกรรมป่าไม้");}
 
 else if(text3=="องค์การบริหารจัดการก๊าซเรือนกระจก"){
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban_tgo@tgo.or.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban_tgo@tgo.or.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน ผู้อำนวยการองค์การบริหารจัดการก๊าซเรือนกระจก");}
 
 else if(text3=="สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ"){
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@bedo.or.th&cc=servicelinkcenter@mnre.go.th&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=saraban@bedo.or.th&cc=servicelinkcenter@mnre.go.th&su=ขอติดตามความคืบหน้า&body=เรียน ผู้อำนวยการสำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ");}
 
   else{
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=&cc=&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=&cc=&su=ขอติดตามความคืบหน้า&body=เรียน");}
 }
 
 
@@ -209,50 +209,50 @@ function sendiMail() {
   }
 // Send by iPhone
    if(text3=="สำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"){
-   window.open("mailto:servicelinkcenter@mnre.go.th?subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:servicelinkcenter@mnre.go.th?subject=ขอติดตามความคืบหน้า&body=เรียน ปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม");}
 
  else if(text3=="สำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม"){
-   window.open("mailto:saraban@onep.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@onep.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน เลขาธิการสำนักงานโยบายและแผนทรัพยากรธรรมชาติและสิ่งแวดล้อม");}
 
   else if(text3=="กรมควบคุมมลพิษ"){
-   window.open("mailto:saraban@pcd.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@pcd.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมควบคุมมลพิษ");}
 
   else if(text3=="กรมส่งเสริมคุณภาพสิ่งแวดล้อม"){
-   window.open("mailto:saraban@deqp.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@deqp.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมส่งเสริมคุณภาพสิ่งแวดล้อม");}
 
 else if(text3=="องค์การสวนสัตว์แห่งประเทศไทย"){
-   window.open("mailto:saraban@zoothailand.org?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@zoothailand.org?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน ผู้อำนวยการองค์การสวนสัตว์แห่งประเทศไทย");}
 
   else if(text3=="กรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช"){
-   window.open("mailto:saraban@dnp.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@dnp.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมอุทยานแห่งชาติ สัตว์ป่าและพันธุ์พืช");}
 
   else if(text3=="กรมป่าไม้"){
-   window.open("mailto:saraban@forest.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@forest.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมป่าไม้");}
 
   else if(text3=="กรมทรัพยากรทางทะเลและชายฝั่ง"){
-   window.open("mailto:saraban@dmcr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@dmcr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมทรัพยากรทางทะเลและชายฝั่ง");}
 
 
   else if(text3=="กรมทรัพยากรธรณี"){
-   window.open("mailto:saraban@dmr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@dmr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมทรัพยากรธรณี");}
 
   else if(text3=="กรมทรัพยากรน้ำ"){
-   window.open("mailto:saraban@dwr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@dwr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมทรัพยากรน้ำ");}
 
  else if(text3=="กรมทรัพยากรน้ำบาดาล"){
-   window.open("mailto:saraban@dgr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@dgr.mail.go.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน อธิบดีกรมทรัพยากรน้ำบาดาล");}
 
  else if(text3=="องค์การอุตสาหกรรมป่าไม้"){
-   window.open("mailto:saraban@fio.co.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@fio.co.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน ผู้อำนวยการองค์การอุตสาหกรรมป่าไม้");}
 
  else if(text3=="องค์การบริหารจัดการก๊าซเรือนกระจก"){
-   window.open("mailto:saraban_tgo@tgo.or.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban_tgo@tgo.or.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน ผู้อำนวยการองค์การบริหารจัดการก๊าซเรือนกระจก");}
 
  else if(text3=="สำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ"){
-   window.open("mailto:saraban@bedo.or.th?cc=servicelinkcenter@mnre.go.th&subject=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+   window.open("mailto:saraban@bedo.or.th?cc=servicelinkcenter@mnre.go.th&subject=ขอติดตามความคืบหน้า&body=เรียน ผู้อำนวยการสำนักงานพัฒนาเศรษฐกิจจากฐานชีวภาพ");}
 
   else{
- window.open("https://mail.google.com/mail/?view=cm&fs=1&to=&cc=&su=ขอข้อมูลข่าวสารของราชการ&body=[วางข้อความตรงนี้ค่ะ]");}
+ window.open("https://mail.google.com/mail/?view=cm&fs=1&to=&cc=&su=ขอติดตามความคืบหน้า&body=เรียน ");}
 }
 
 function sendMail() {
