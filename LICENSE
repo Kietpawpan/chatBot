@@ -24,11 +24,21 @@ https://media.geeksforgeeks.org/wp-content/uploads/
 with the Copyright infromation given at
 https://www.geeksforgeeks.org/copyright-information/
 
+The BAHTTEXT functions in iCopyFee.js were taken from
+https://github.com/earthchie/BAHTTEXT.js:
+ * @name BAHTTEXT.js
+ * @version 1.1.5
+ * @update May 1, 2017
+ * @website: https://github.com/earthchie/BAHTTEXT.js
+ * @author Earthchie http://www.earthchie.com/
+ * @license WTFPL v.2 - http://www.wtfpl.net/
+
 Aside from the above, the license for all OTHER contents
 in this repository is as follows:
 
 -------------------------------------------
-Copyright (c) 2023 Monte Kietpawpan
+MIT License
+Copyright (c) 2023 Monte Kietpawpan 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
