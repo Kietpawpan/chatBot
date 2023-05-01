@@ -3,10 +3,10 @@ Copyright © 2023 Monte Kietpawpan
 v.1.0.0 | May 1, 2023
 MIT License 
 
-The ThaiBath function was sligthly 
+The ThaiBath code was sligthly 
 modified from Sumeta Pongpanna's code
 at https://github.com/tpsumeta/ThaiBath.
-We fixed the 0 and 1 numbers bugs by
+We fixed some bugs by
 adding the following codes:
   if(totalFee == 0){thaibath = "ศูนย์บาทถ้วน";}
   else if (totalFee == 1){thaibath = "หนึ่งบาทถ้วน";}
