@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!Copyright © 2023 Monte Kietpawpan | MIT License>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/iRequest.css">
+    <link rel="stylesheet" href="css/answer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/chat.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+
+<title>MNRE | Chatbot</title>
+
+</head>
+
+<body onload="startFunction()">
+    	<nav>
+        <div class="navbar">
+            <img class="dpimg" onclick="openFullScreenDP()" src="images/mnre.png" alt="">
+            <div class="personalInfo">
+                <label id="name">ศูนย์บริการร่วม ทส.</label>
+                <label id="lastseen"></label>
+            </div>
+        </div>
+    	</nav>
+	<input type="text" id="Question" placeholder="ใบแจ้งค่าธรรมเนียมการขอสำเนาข้อมูลข่าวสารของราชการ" title="ID" disabled>
+ 	<div class="scrollable" id="myScrollable">
+      <div id="chatting" class="chatting">
+	<ul id="Answer">
+   		<li><a href="#">
+			<form id="frm1">
+  				ชื่อ-นามสกุล ผู้ขอ<br><input type="text" name="fname" value="" size="35" placeholder="นาย...."> <br><br>
+			</form> 
+			<form id="frm2">
+  				จำนวนข้อมูลข่าวสาร (หน้า)<br><input type="number" name="iDCard" value="0" size="13" placeholder="100"><br><br>
+			</form> 
+			<form id="frm3">
+  				จำนวนคำรับรองถูกต้อง (คำรับรอง)<br><input type="number" name="house" value="0" size="50" placeholder="100"><br><br>
+			</form>             			
+<br>
+			<div>
+			<button class="btn" onclick="copyFee()"><i class="fa fa-money"></i> ค่าธรรมเนียม</button>
+                        </div><br>
+			<div>
+	                   <textarea id="iRequest" row="50" cols="70" style="height: 420px"></textarea><br><br><br>
+                           <font size="-1"><center><b>"No Gift Policy ทส. โปรงใส และเป็นธรรม"</b></center></font>
+			  			
+            	</a>
+		</li>
+         <li><center><div id="copyRight"></div></center></li>
+         </div>
+         </div>
+	<script src="js/iCopyFee.js"></script><br>
+</body>
+</html>
