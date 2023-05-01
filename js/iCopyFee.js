@@ -1,6 +1,6 @@
 /* 
 Copyright © 2023 Monte Kietpawpan
-v.1.0.5 | April 25, 2023
+v.1.0.0 | May 1, 2023
 MIT License 
 
 The ThaiBath function was sligthly 
