@@ -105,7 +105,7 @@
 			</form> 
 			
 			<div>
-			<button class="btn" onclick="appointment()"><i class="fa fa-print"></i> ร่างคำร้อง</button>
+			<button class="btn" onclick="appointment()"><i class="fa fa-print"></i> พิมพ์ข้อความ</button>
                         </div><br>
 
 			<div>
@@ -115,16 +115,18 @@
 				cols="70" 
 				style="height: 420px">
 			</textarea>
+			<button 
+				class="btn" 
+				onclick="sendMail()">
+					<i class="fa fa-envelope"></i> ส่งข้อความ
+			</button>
  			<button 
 				class="btn" 
 				onclick="copyForm()">
 					<i class="fa fa-copy">
 					</i> คัดลอกข้อความ
 			</button>
-			<button 
-				class="btn" 
-				onclick="sendMail()">
-					<i class="fa fa-envelope"></i> ส่งข้อความ</button>
+
                         <button 
 			        class="btn" 
 				onclick="clearText()">
