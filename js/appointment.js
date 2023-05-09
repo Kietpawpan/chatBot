@@ -1,16 +1,16 @@
 /* Copyright (c) 2023 Monte Kietpawpan
  * All rights reserved.
- * appointment.js v1.0.0 | May 8, 2023
+ * appointment.js v1.0.1 | May 9, 2023
  */
 
 function appointment(){
  	var name = document.getElementById("userName").value;
 	var code = document.getElementById("requestCode").value;
-        var date = document.getElementById('datepicker1').value;
+        var date = document.getElementById('datepicker').value;
         var thTime = document.getElementById('yourTime').value;
         var sDate = date.toString();
         var datearray = sDate.split("/");
-        var newdatef = datearray[1] + '/' + datearray[0] + '/' + datearray[2];
+        var newdatef = datearray[0] + '/' + datearray[1] + '/' + datearray[2];
         var newDatef = newdatef.replace("/","-");
         var newDate2 = newDatef.replace("/","-");
         var fDate = new Date(newDate2);
