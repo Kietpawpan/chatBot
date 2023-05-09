@@ -6,7 +6,7 @@
 function appointment(){
  	var name = document.getElementById("userName").value;
 	var code = document.getElementById("requestCode").value;
-        var date = document.getElementById('datepicker').value;
+        var date = document.getElementById('datepicker2').value;
         var thTime = document.getElementById('yourTime').value;
         var sDate = date.toString();
         var datearray = sDate.split("/");
@@ -41,7 +41,7 @@ function copyForm() {
 function sendMail() {
  	var name = document.getElementById("userName").value;
 	var code = document.getElementById("requestCode").value;
-        var date = document.getElementById('datepicker').value;
+        var date = document.getElementById('datepicker2').value;
         var thTime = document.getElementById('yourTime').value;
         var sDate = date.toString();
         var datearray = sDate.split("/");
