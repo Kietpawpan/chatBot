@@ -6,12 +6,14 @@
 function appointment(){
  	var name = document.getElementById("userName").value;
 	var code = document.getElementById("requestCode").value;
-        var date = document.getElementById('confirmedDate').value;
+        var date = document.getElementById('datepicker').value;
         var thTime = document.getElementById('yourTime').value;
         var sDate = date.toString();
-        var datearray = sDate.split("-");
-        var newdatef = datearray[1] + '-' + datearray[0] + '-' + datearray[2];
-        var fDate = new Date(newdatef);
+        var datearray = sDate.split("/");
+        var newdatef = datearray[0] + '/' + datearray[1] + '/' + datearray[2];
+        var newDate1 = newdatef.replace("/","-");
+        var newDate2 = newDate1.replace("/","-");
+        var fDate = new Date(newDate2);
         var tDay = fDate.getDay();
         var tMonth = fDate.getMonth();
         var thYear = fDate.getFullYear()+543;
@@ -27,17 +29,7 @@ function appointment(){
 
 }
 
-function dateConfirm() {
-        var date = document.getElementById('datepicker').value;
-        var thTime = document.getElementById('yourTime').value;
-        var sDate = date.toString();
-        var datearray = sDate.split("/");
-        var newdatef = datearray[1] + '/' + datearray[0] + '/' + datearray[2];
-        var newDatef = newdatef.replace("/","-");
-        var newDate2 = newDatef.replace("/","-");
-        document.getElementById("confirmedDate").value=newDate2;
-    
-}
+
 function copyForm() {
   const element = document.querySelector('#myDate');
   element.select();
@@ -49,12 +41,14 @@ function copyForm() {
 function sendMail() {
  	var name = document.getElementById("userName").value;
 	var code = document.getElementById("requestCode").value;
-        var date = document.getElementById('confirmedDate').value;
+        var date = document.getElementById('datepicker').value;
         var thTime = document.getElementById('yourTime').value;
         var sDate = date.toString();
-        var datearray = sDate.split("-");
-        var newdatef = datearray[1] + '-' + datearray[0] + '-' + datearray[2];
-        var fDate = new Date(newdatef);
+        var datearray = sDate.split("/");
+        var newdatef = datearray[0] + '/' + datearray[1] + '/' + datearray[2];
+        var newDate1 = newdatef.replace("/","-");
+        var newDate2 = newDate1.replace("/","-");
+        var fDate = new Date(newDate2);
         var tDay = fDate.getDay();
         var tMonth = fDate.getMonth();
         var thYear = fDate.getFullYear()+543;
