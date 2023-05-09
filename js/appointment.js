@@ -3,10 +3,15 @@
  * appointment.js v1.0.1 | May 9, 2023
  */
 
+function confirm() {
+	var date = document.getElementById('datepicker').value;
+	var sDate = date.toString();
+     document.getElementById("datepicker2").value = sDate;
+}
 function appointment(){
- 	var name = document.getElementById("userName").value;
-	var code = document.getElementById("requestCode").value;
-        var date = document.getElementById('datepicker2').value;
+ 	   var name = document.getElementById("userName").value;
+	   var code = document.getElementById("requestCode").value;
+        var date = document.getElementById('datepicker').value;
         var thTime = document.getElementById('yourTime').value;
         var sDate = date.toString();
         var datearray = sDate.split("/");
@@ -41,7 +46,7 @@ function copyForm() {
 function sendMail() {
  	var name = document.getElementById("userName").value;
 	var code = document.getElementById("requestCode").value;
-        var date = document.getElementById('datepicker2').value;
+        var date = document.getElementById('datepicker').value;
         var thTime = document.getElementById('yourTime').value;
         var sDate = date.toString();
         var datearray = sDate.split("/");
