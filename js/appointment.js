@@ -29,7 +29,7 @@ function appointment(){
         var thMonth = monthName[tMonth]
 	if(code=="999" || code=="888"){
     document.getElementById("myDate").innerHTML = 
-		"เรียน ผู้อำนวยการศูนย์บริการร่วม ทส." + "\n\nข้าพเจ้า จะมารับข้อมูลข่าวสาร ตามรหัสคำขอ " + code + " ในวัน" +  thDay + "ที่ "  +  thDate + " " + thMonth + " " + thYear + " เวลา " + thTime + "\n\nจึงเรียนมาเพื่อโปรดทราบ\n\nขอแสดงความนับถือ" + "\n\n" + name+" ผู้ขอ";}
+		"เรียน ปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม" + "\n\nข้าพเจ้า จะมารับข้อมูลข่าวสาร ตามรหัสคำขอ " + code + " ในวัน" +  thDay + "ที่ "  +  thDate + " " + thMonth + " " + thYear + " เวลา " + thTime + "\n\nจึงเรียนมาเพื่อโปรดทราบ\n\nขอแสดงความนับถือ" + "\n\n" + name+" ผู้ขอ";}
         else{window.alert("รหัสคำขอไม่ถูกต้องค่ะ");}
 
 }
@@ -67,7 +67,7 @@ function sendMail() {
         var ending = "%0D%0A%0D%0Aจึงเรียนมาเพื่อโปรดทราบ%0D%0A%0D%0Aขอแสดงความนับถือ%0D%0A%0D%0A";
 	if(code=="999" || code=="888"){
  document.getElementById("datepicker").blur(); 
- window.open("mailto:servicelinkcenter@mnre.go.th?subject=ขอนัดหมายวันรับข้อมูลข่าวสารของราชการ&body=เรียน ผู้อำนวยการศูนย์บริการร่วม"+body+code+bodyDay+thDay+"ที่ " +thDate+" "+thMonth+
+ window.open("mailto:servicelinkcenter@mnre.go.th?subject=ขอนัดหมายวันรับข้อมูลข่าวสารของราชการ&body=เรียน ปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม"+body+code+bodyDay+thDay+"ที่ " +thDate+" "+thMonth+
 " "+thYear+" เวลา "+thTime+ending+name+" ผู้ขอ");
 
 
