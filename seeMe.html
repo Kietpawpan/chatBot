@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="css/answer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/chat.js"></script>
+   <link rel="stylesheet" href="css/calendarStyle.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="images/krut.png" />
     <meta property="og:image:width" content="300">
@@ -19,7 +27,7 @@
   window.console = window.console || function(t) {};
 </script>
 
-<link rel="stylesheet" href="css/datepicker.min.css">
+
 
 <title>MNRE | Chatbot</title>
 
@@ -63,15 +71,13 @@
 			</form> 
 
  		<h2>เลือกวันที่</h2>
-		<div class="form-floating mb-4 d-flex">
-  			<input 
+		<input 
 				type="text" 
-				class="datepicker_input form-control border-2 datepicker-input" 
-				id="datepicker1" 
+				id="datepicker" 
 				required="" 
 				placeholder="DD/MM/YYYY">
   			<label for="datepicker1">ทุกวัน (ไม่เว้นวันหยุดราชการ)</label>
-		</div>
+	
 
  		<h2>เวลา</h2>
 
@@ -156,29 +162,12 @@
          </div>
          </div>
 	<script src="js/appointment.js"></script><br>
-      
-        <script src="js/datepicker-full.min.js"></script>
-
-        <script id="rendered-js">
-
-/* Bootstrap 5 JS included */
-/* vanillajs-datepicker 1.1.4 JS included */
-
-		const getDatePickerTitle = elem => {
-		const label = elem.nextElementSibling;
- 		let titleText = '';
-  		if (label && label.tagName === 'LABEL') {
-    			titleText = label.textContent;} 
-		else {titleText = elem.getAttribute('aria-label') || '';}
-		return titleText;};
-		const elems = document.querySelectorAll('.datepicker_input');
-			for (const elem of elems) {
-  				const datepicker = new Datepicker(elem, {
-    				'format': 'dd/mm/yyyy', // UK format
-    				title: getDatePickerTitle(elem) });
-		}
-
-    </script>
-
+     
+     <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+       
 </body>
 </html>
