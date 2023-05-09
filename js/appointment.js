@@ -10,7 +10,7 @@ function appointment(){
         var thTime = document.getElementById('yourTime').value;
         var sDate = date.toString();
         var datearray = sDate.split("/");
-        var newdatef = datearray[0] + '/' + datearray[1] + '/' + datearray[2];
+        var newdatef = datearray[2] + '/' + datearray[0] + '/' + datearray[1];
         var newDate1 = newdatef.replace("/","-");
         var newDate2 = newDate1.replace("/","-");
         var fDate = new Date(newDate2);
@@ -45,7 +45,7 @@ function sendMail() {
         var thTime = document.getElementById('yourTime').value;
         var sDate = date.toString();
         var datearray = sDate.split("/");
-        var newdatef = datearray[0] + '/' + datearray[1] + '/' + datearray[2];
+        var newdatef = datearray[2] + '/' + datearray[0] + '/' + datearray[1];
         var newDate1 = newdatef.replace("/","-");
         var newDate2 = newDate1.replace("/","-");
         var fDate = new Date(newDate2);
