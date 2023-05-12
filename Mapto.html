@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!Copyright © 2023 Monte Kietpawpan | MIT License>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/iRequest.css">
+    <link rel="stylesheet" href="css/answer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/chat.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+
+<title>MNRE | Chatbot</title>
+
+</head>
+
+<body onload="startFunction()">
+    	<nav>
+        <div class="navbar">
+            <img class="dpimg" onclick="openFullScreenDP()" src="images/mnre.png" alt="">
+            <div class="personalInfo">
+                <label id="name">ศูนย์บริการร่วม ทส.</label>
+                <label id="lastseen"></label>
+            </div>
+        </div>
+    	</nav>
+
+<input 
+		type="text" 
+		id="Question" 
+		placeholder="ตรวจสอบเส้นทางไปกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม" 
+		title="ID" disabled>
+
+	<div class="scrollable" id="myScrollable">
+      	<div id="chatting" class="chatting">
+<ul id="Answer">
+	<li><a href="#">กรุณากดปุ่มด้านล่าง เพื่อกรอกข้อมูลจุดเริ่มต้น</a><br><br>
+<div>
+<center><button class="btn" onclick="showMap()"><i class="fa fa-map"></i> ตรวจสอบเส้นทาง</button></center>
+</div><br>
+</li>
+</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+function showMap(){
+window.open("https://www.google.co.th/maps/dir//%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%A3%E0%B8%A7%E0%B8%87%E0%B8%97%E0%B8%A3%E0%B8%B1%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A3%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%81%E0%B8%A7%E0%B8%94%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%A1+%E0%B8%8B%E0%B8%AD%E0%B8%A2+%E0%B8%9E%E0%B8%AB%E0%B8%A5%E0%B9%82%E0%B8%A2%E0%B8%98%E0%B8%B4%E0%B8%99+7+%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%87+%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B9%84%E0%B8%97+%E0%B9%80%E0%B8%82%E0%B8%95%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B9%84%E0%B8%97+%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3/@13.7848181,100.4984227,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x30e29c02fcb2af43:0x1aa6c89d20199256!2m2!1d100.5396226!2d13.7848215!3e3");
+}
+</script>
+         
+</body>
+</html>
