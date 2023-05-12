@@ -6,6 +6,7 @@ This bot can
 - answer questions about MNRE services with [e-FAQ](https://kietpawpan.github.io/chatBot/FAQ.html)
 - get a requestion for MNRE information from people with [e-Request](https://kietpawpan.github.io/chatBot/infoRequest.html)
 - make appointment with [seeMe](https://kietpawpan.github.io/chatBot/seeMe.html)
+- check the way to the Minitry with [mapTo](https://kietpawpan.github.io/chatBot/mapTo.html)
 
 __Algorithm:__
 ```
