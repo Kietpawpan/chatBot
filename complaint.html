@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!Copyright © 2023 Monte Kietpawpan | MIT License>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/iRequest.css">
+    <link rel="stylesheet" href="css/answer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/chat.js"></script>
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+<script>
+  window.console = window.console || function(t) {};
+</script>
+
+
+
+<title>MNRE | Chatbot</title>
+
+</head>
+
+<body onload="startFunction()">
+    	<nav>
+        <div class="navbar">
+            <img 
+		class="dpimg" 
+		onclick="openFullScreenDP()" 
+		src="images/mnre.png" alt="">
+            <div 
+		class="personalInfo">
+                	<label id="name">ศูนย์บริการร่วม ทส.</label>
+                	<label id="lastseen"></label>
+            </div>
+        </div>
+    	</nav>
+
+	<input 
+		type="text" 
+		id="Question" 
+		placeholder="ร้องเรียนงานบริการ" 
+		title="ID" disabled>
+
+ 	<div class="scrollable" id="myScrollable">
+      	<div id="chatting" class="chatting">
+	<ul id="Answer">
+   		<li><a href="#">
+			<form>
+  			ชื่อ-นามสกุล ผู้ร้องเรียน<br>
+			<input value="" type="text" id="userName" 
+				size="35" 
+				placeholder="นาย...."> <br><br>
+                                                            หมายเลขบัตรประจำตัวประชาชน<br>
+			<input value="" type="text" id="NID" 
+				size="35" 
+				placeholder="xxxxxxxxxxxxx"> 
+			<br><br>
+			</form> 
+
+ 		วันที่รับบริการ<br>
+		<input 
+				type="text" 
+				id="datepicker" 
+				required="" 
+				placeholder="ดด/วว/ปปปป">
+  			<br><br>
+	                       
+ 		เวลาที่รับบริการ<br>
+
+			<form>
+                           <select id="yourTime">
+				<option value="08.00 น.">08.00 น.</option>
+				<option>08.30 น.</option>
+				<option>09.00 น.</option>
+				<option value="09.30 น.">09.30 น.</option>
+				<option value="10.00 น.">10.00 น.</option>
+				<option value="10.30 น.">10.30 น.</option>
+				<option value="11.00 น.">11.00 น.</option>
+				<option value="11.30 น.">11.30 น.</option>
+				<option value="12.00 น.">12.00 น.</option>
+				<option value="12.30 น.">12.30 น.</option>
+				<option value="13.00 น.">13.00 น.</option>
+				<option value="13.30 น.">13.30 น.</option>
+				<option value="14.00  น.">14.00 น.</option>
+				<option value="14.30 น.">14.30 น.</option>
+				<option value="15.00 น.">15.00 น.</option>
+				<option value="15.30 น.">15.30 น.</option>
+				<option value="16.00 น.">16.00 น.</option>
+				<option value="16.30 น.">16.30 น.</option>
+				<option value="17.00 น.">17.00 น.</option>
+				<option value="17.30 น.">17.30 น.</option>
+				<option value="18.00 น.">18.00 น.</option>
+ 			   </select>
+  				
+
+<br><br>ข้อร้องเรียน (โปรดระบุ)
+			<textarea 
+				id="complaint" 
+				placeholder="ข้าพเจ้า...."
+				row="50" 
+				cols="70" 
+				style="height: 200px">
+			</textarea>
+
+			</form> 
+			
+			<div>
+			<button class="btn" onclick="complaint()"><i class="fa fa-print"></i> พิมพ์ข้อความ</button>
+                        </div><br>
+
+			<div>
+	                <textarea 
+				id="myDate" 
+				row="50" 
+				cols="70" 
+				style="height: 420px">
+			</textarea>
+ 			<button 
+				class="btn" 
+				onclick="copyForm()">
+					<i class="fa fa-copy">
+					</i> คัดลอกข้อความ
+			</button>
+
+                        <button 
+			        class="btn" 
+				onclick="clearText()">
+					<i class="fa fa-eraser"></i> ลบ
+			</button>
+<br><br><br><p>โปรดส่งอีเมลไปยัง</p>
+                        <textarea 
+				id="orgEmail" 
+                                height:30px"
+                         >servicelinkcenter@mnre.go.th</textarea>
+				<button 
+				class="btn" 
+				onclick="copyEmail()">
+					<i class="fa fa-copy">
+					</i> คัดลอกอีเมล
+			</button>
+			
+
+
+
+<br><br>
+                        <font size="-1"><center><b>"No Gift Policy ทส. โปรงใส และเป็นธรรม"</b></center></font>
+			</div>		
+            	</a>
+		</li>
+      
+         </div>
+         </div>
+	<script src="js/complaint.js"></script><br>
+     
+     <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+       
+</body>
+</html>
+<script type="text/javascript">
+  $(document).ready(function() {
+     $( "#datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+  } );
+
+  </script>
