@@ -12,40 +12,7 @@ function studyP3R1(){
     	var newDate1 = newdatef.replace("/","-");
     	var newDate2 = newDate1.replace("/","-");
     	var fDate = new Date(newDate2);
-
-     	var hw1 = "";
-	var dd1 = "2023-05-30";
-
-     	var hw2 = "";
-	var dd2 = "2023-06-30";
-
-     	var hw3 = "";
-	var dd3 = "";
-
-     	var hw4 = "";
-	var dd4 = "";
-
- 	if(new Date(dd1) > fDate){hw1="คัดไทย";}
- 	else{hw1="ครบกำหนดส่งคัดไทยแล้ว!!";}
-
-	if(new Date(dd2) > fDate){hw2="ท่องอาขยาน";}
- 	else{hw2=&#9888; + "ครบกำหนดท่องอาขยาน";}
-   
-     var toDo = "* " + dd1 + " " + hw1 + "\n" + 
-"* " + dd2 + " " + hw2 + "\n" +
-dd3 + " " + hw3 + "\n" +
-dd4 + " " + hw4 + "\n"; 	
-
-
- 
-    	var tDay = fDate.getDay();
-    	var tMonth = fDate.getMonth();
-    	var thYear = fDate.getFullYear()+543;
-    	const dayName = ["อาทิตย์", "จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","เสาร์"];
-    	const monthName = ["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ตุลาคม"];
-    	var thDate = fDate.getDate();
-    	var thDay = dayName[tDay];
-    	var thMonth = monthName[tMonth];
+	var subjects = "";
 	var mathIE = "หนังสือ Targeting Mathematics Workbook 3A + สมุด Math IE สีขาว\n\n";
 	var mathTH = "สมุดคณิตศาสตร์สีขาว (เล่ม 1) + แบบฝึกหัดคณิตฯ เล่ม 1 (รับเปิดเทอม)\n\n";    	
 	var thaiPrinciples = "สมุดภาษาไทยสีขาว (เล่ม 3) + ดรุณศึกษา + วรรณคดีลำนำ + ภาษาพาที\n\n";
@@ -64,7 +31,46 @@ dd4 + " " + hw4 + "\n";
 	var socialTH = "สมุดสังคมสีขาว (เล่ม 2) + หนังสือสังคม\n\n";
 	var computer = "สมุดวิทยาการคำนวณ (เล่ม 8)\n\n";
 	var history = "หนังสือประวัติศาสตร์ + สมุดสังคม ประวัติศาสตร์ (เล่ม 2)\n\n";
-	var subjects = "";
+
+    	var hw1 = "";
+	var dd1 = "2023-05-17";
+
+     	var hw2 = "";
+	var dd2 = "2023-06-30";
+
+     	var hw3 = "";
+	var dd3 = "2023-05-18";
+
+     	var hw4 = "";
+	var dd4 = "2023-06-09";
+
+ 	if(new Date(dd1) > fDate){hw1="ตัดผม ตัดเล็บ";}
+ 	else{hw1="&#9888; " + "ตัดผม ตัดเล็บก่อนเปิดเทอม";}
+
+	if(new Date(dd2) > fDate){hw2="ท่องอาขยาน 2 บท";}
+ 	else{hw2="&#9888; " + "ครบกำหนดท่องอาขยาน";}
+
+	if(new Date(dd3) >= fDate){hw3="เปิดเทอม ไม่มีคาบ 8 เลิก 15.30 น.";}
+ 	else{hw2="เปิดเทอมแล้ว";}
+
+	if(new Date(dd4) > fDate){hw4="Handwriting P.1-15";}
+ 	else{hw4="&#9888; " + "ครบกำหนดส่ง Handwriting P.1-15";}
+
+   
+     var toDo = 
+"* " + dd1 + " " + hw1 + "\n" +
+"* " + dd3 + " " + hw3 + "\n" +
+"* " + dd4 + " " + hw4 + "\n" + 
+"* " + dd2 + " " + hw2 + "\n";
+ 
+    	var tDay = fDate.getDay();
+    	var tMonth = fDate.getMonth();
+    	var thYear = fDate.getFullYear()+543;
+    	const dayName = ["อาทิตย์", "จันทร์","อังคาร","พุธ","พฤหัสบดี","ศุกร์","เสาร์"];
+    	const monthName = ["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ตุลาคม"];
+    	var thDate = fDate.getDate();
+    	var thDay = dayName[tDay];
+    	var thMonth = monthName[tMonth];
 	if(thDay=="จันทร์"){subjects = everyday + mathIE + socialTH;}
 	else if(thDay=="อังคาร"){subjects = everyday + socialIE + socialTH;}
 	else if(thDay=="พุธ"){subjects = everyday + funEng + devEng;}
@@ -72,8 +78,7 @@ dd4 + " " + hw4 + "\n";
 	else if(thDay=="ศุกร์"){subjects = everyday + art + computer;}
 	else{subjects="หยุดเรียน";}
 
-    document.getElementById("myDate").innerHTML = 
-	"วัน" +  thDay + "ที่ "  +  thDate + " " + thMonth + " " + thYear + ":\n\n" 
+    document.getElementById("myDate").innerHTML ="วัน" +  thDay + "ที่ "  +  thDate + " " + thMonth + " " + thYear + ":\n==================\n\n"   
 + subjects + "\n\n======\n" + toDo;
 }
  
