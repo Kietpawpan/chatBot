@@ -28,8 +28,8 @@ function studyP3R1(){
  	if(new Date(dd1) > fDate){hw1="คัดไทย";}
  	else{hw1="ครบกำหนดส่งคัดไทยแล้ว!!";}
 
-	if(new Date(dd2) > fDate){hw2="ท่องอขยาน";}
- 	else{hw2="ครบกำหนดท่องอาขยานแล้ว!!";}
+	if(new Date(dd2) > fDate){hw2="ท่องอาขยาน";}
+ 	else{hw2=&#9888; + "ครบกำหนดท่องอาขยาน";}
    
      var toDo = "* " + dd1 + " " + hw1 + "\n" + 
 "* " + dd2 + " " + hw2 + "\n" +
