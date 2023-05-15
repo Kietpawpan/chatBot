@@ -3,14 +3,41 @@
  * studyP3R1.js v1.0.1 | May 14, 2023
  */
 
+    
 function studyP3R1(){
-    	var date = document.getElementById('datepicker').value;
+   	var date = document.getElementById('datepicker').value;
     	var sDate = date.toString();
     	var datearray = sDate.split("/");
     	var newdatef = datearray[2] + '/' + datearray[0] + '/' + datearray[1];
     	var newDate1 = newdatef.replace("/","-");
     	var newDate2 = newDate1.replace("/","-");
     	var fDate = new Date(newDate2);
+
+     	var hw1 = "";
+	var dd1 = "2023-05-30";
+
+     	var hw2 = "";
+	var dd2 = "2023-06-30";
+
+     	var hw3 = "";
+	var dd3 = "";
+
+     	var hw4 = "";
+	var dd4 = "";
+
+ 	if(new Date(dd1) > fDate){hw1="คัดไทย";}
+ 	else{hw1="ครบกำหนดส่งคัดไทยแล้ว!!";}
+
+	if(new Date(dd2) > fDate){hw2="ท่องอขยาน";}
+ 	else{hw2="ครบกำหนดท่องอาขยานแล้ว!!";}
+   
+     var toDo = "* " + dd1 + " " + hw1 + "\n" + 
+"* " + dd2 + " " + hw2 + "\n" +
+dd3 + " " + hw3 + "\n" +
+dd4 + " " + hw4 + "\n"; 	
+
+
+ 
     	var tDay = fDate.getDay();
     	var tMonth = fDate.getMonth();
     	var thYear = fDate.getFullYear()+543;
@@ -47,7 +74,6 @@ function studyP3R1(){
 
     document.getElementById("myDate").innerHTML = 
 	"วัน" +  thDay + "ที่ "  +  thDate + " " + thMonth + " " + thYear + ":\n\n" 
-+ subjects;
-
++ subjects + "\n\n======\n" + toDo;
 }
-
+ 
