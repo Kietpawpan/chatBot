@@ -47,7 +47,7 @@ function studyP3R1(){
  	if(new Date(dd1) > fDate){hw1="* ตัดผม ตัดเล็บ ก่อนเปิดเทอม\n\n";}
  	else{hw1="&#9888; " + "ตัดผม ตัดเล็บก่อนเปิดเทอม\n\n";}
 	
-	var hw2 = "";
+	var hw2 = ""; 
 	var dd2 = "2023-06-30";
 	if(new Date(dd2) > fDate){hw2="* สอบท่องอาขยาน 2 บท ภายใน มิ.ย. 66\n\n";}
  	else{hw2="&#9888; " + "ครบกำหนดท่องอาขยาน\n\n";}
@@ -57,8 +57,13 @@ function studyP3R1(){
 	if(new Date(dd3) > fDate){hw3="* 9 มิ.ย. 66 ส่ง Handwriting P.1-15\n\n";}
  	else{hw3="&#9888; " + "ครบกำหนดส่ง Handwriting P.1-15\n\n";}
 
+    	var hw4 = "";
+	var dd4 = "2023-06-02";
+	if(new Date(dd3) > fDate){hw4="* ส่งคัดไทย หน้า 1-20 ภายใน มิ.ย. 66\n\n";}
+ 	else{hw4="&#9888; " + "ครบกำหนดส่ง ส่งคัดไทย หน้า 1-20\n\n";}
+
  	   
-     var toDo = hw1 + hw2 + hw3;
+     var toDo = hw1 + hw2 + hw4 + hw3;
  
     	var tDay = fDate.getDay();
     	var tMonth = fDate.getMonth();
