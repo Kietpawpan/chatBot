@@ -5,6 +5,7 @@
 
     
 function studyP3R1(){
+	var startSemesterDate = new Date("2023-05-18");
    	var date = document.getElementById('datepicker').value;
     	var sDate = date.toString();
     	var datearray = sDate.split("/");
@@ -15,53 +16,49 @@ function studyP3R1(){
 	var subjects = "";
 	var mathIE = "หนังสือ Targeting Mathematics Workbook 3A + สมุด Math IE สีขาว\n\n";
 	var mathTH = "สมุดคณิตศาสตร์สีขาว (เล่ม 1) + แบบฝึกหัดคณิตฯ เล่ม 1 (รับเปิดเทอม)\n\n";    	
-	var thaiPrinciples = "สมุดภาษาไทยสีขาว (เล่ม 3) + ดรุณศึกษา + วรรณคดีลำนำ + ภาษาพาที\n\n";
-	var thaiWriting = "สมุดภาษาไทยสีชมพู (เล่ม 4) + อ่าน คิด เขียน + แบบฝึกหัดคัดไทย + สมุดคัดศัพท์ (เล่ม 10)\n\n";
+	var thaiPrinciples1 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ภาษาพาที + ชีท\n\n";
+	var thaiPrinciples2 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ชีท\n\n";
+	var thaiPrinciples3 = "สมุดภาษาไทยสีขาว (เล่ม 3) + วรรณคดีลำนำ + ชีท\n\n";
+	var thaiWriting = "สมุดภาษาไทยสีชมพู (เล่ม 4) + อ่าน คิด เขียน + แบบฝึกหัดคัดไทย\n\n";
 	var scienceTH = "หนังสือวิทย์ เล่ม 1 + แบบฝึกหัดวิทย์ เล่ม 1\n\n";
-	var scienceIE = "สมุด ScienceIE สีชมพู (เล่ม 6) + My World of Science\n\n";
+	var scienceIE = "สมุด ScienceIE สีขาว (เล่ม 6) + My World of Science\n\n";
 	var socialTH = "สมุดสังคมสีขาว (เล่ม 2) + หนังสือสังคม-ประวัติศาสตร์\n\n";
-	var socialIE = "My World of Social\n\n";
-	var funEng = "Power Up + สมุด Fun Eng สีชมพู (เล่ม 7 เผื่อใช้)\n\n";
-	var devEng = "Value Education + Reading Aloud\n\n";
+	var socialIE = "หนังสือ My World of Social\n\n";
+	var funEng = "หนังสือ Power Up\n\n";
+	var devEng = "หนังสือ Value Education + หนังสือ Reading Aloud + หนังสือ 	Power Up\n\n";
     	var health = "สมุดสุขศึกษาสีชมพู + หนังสือสุขศึกษา\n\n";
 	var chinese = "สมุดภาษาจีนสีชมพู (เล่ม 9) + หนังสือภาษาจีน\n\n";
 	var art = "สมุดวาดเขียน + สี แปรง\n\n"
-    	var everyday = "สมุดจดการบ้าน + สมุดสำรอง (เล่ม 0)\n\n";
+    	var everyday = "สมุดจดการบ้าน + สมุดคัดศัพท์ (เล่ม 10) + สมุดสำรอง (เล่ม 0)\n\n";
     	var health = "สมุดสุขศึกษาสีชมพู + หนังสือสุขศึกษา\n\n";
 	var socialTH = "สมุดสังคมสีขาว (เล่ม 2) + หนังสือสังคม\n\n";
 	var computer = "สมุดวิทยาการคำนวณ (เล่ม 8)\n\n";
 	var history = "หนังสือประวัติศาสตร์ + สมุดสังคม ประวัติศาสตร์ (เล่ม 2)\n\n";
-
-    	var hw1 = "";
+	var club = "ชมรม\n\n";
+     var scout ="ชุดลูกเสือ\n\n";
+	var sport = "พละบก รองเท้าผ้าใบ\n\n";
+	var music = "ดนตรี\n\n";
+	var SGL = "SGL\n\n";
+	var engLab ="หนังสือ Power Up + หนังสือ Journal\n\n";
+	var period8 = "คาบ 8 (เลิก 16.40 น.)";
+    
+	var hw1 = "";
 	var dd1 = "2023-05-17";
-
-     	var hw2 = "";
+ 	if(new Date(dd1) > fDate){hw1="* ตัดผม ตัดเล็บ ก่อนเปิดเทอม\n\n";}
+ 	else{hw1="&#9888; " + "ตัดผม ตัดเล็บก่อนเปิดเทอม\n\n";}
+	
+	var hw2 = "";
 	var dd2 = "2023-06-30";
+	if(new Date(dd2) > fDate){hw2="* สอบท่องอาขยาน 2 บท ภายใน มิ.ย. 66\n\n";}
+ 	else{hw2="&#9888; " + "ครบกำหนดท่องอาขยาน\n\n";}
 
-     	var hw3 = "";
-	var dd3 = "2023-05-18";
+    	var hw3 = "";
+	var dd3 = "2023-06-09";
+	if(new Date(dd3) > fDate){hw3="* 9 มิ.ย. 66 ส่ง Handwriting P.1-15\n\n";}
+ 	else{hw3="&#9888; " + "ครบกำหนดส่ง Handwriting P.1-15\n\n";}
 
-     	var hw4 = "";
-	var dd4 = "2023-06-09";
-
- 	if(new Date(dd1) > fDate){hw1="ตัดผม ตัดเล็บ";}
- 	else{hw1="&#9888; " + "ตัดผม ตัดเล็บก่อนเปิดเทอม";}
-
-	if(new Date(dd2) > fDate){hw2="ท่องอาขยาน 2 บท";}
- 	else{hw2="&#9888; " + "ครบกำหนดท่องอาขยาน";}
-
-	if(new Date(dd3) >= fDate){hw3="เปิดเทอม ไม่มีคาบ 8 เลิก 15.30 น.";}
- 	else{hw2="เปิดเทอมแล้ว";}
-
-	if(new Date(dd4) > fDate){hw4="Handwriting P.1-15";}
- 	else{hw4="&#9888; " + "ครบกำหนดส่ง Handwriting P.1-15";}
-
-   
-     var toDo = 
-"* " + dd1 + " " + hw1 + "\n" +
-"* " + dd3 + " " + hw3 + "\n" +
-"* " + dd4 + " " + hw4 + "\n" + 
-"* " + dd2 + " " + hw2 + "\n";
+ 	   
+     var toDo = hw1 + hw2 + hw3;
  
     	var tDay = fDate.getDay();
     	var tMonth = fDate.getMonth();
@@ -71,11 +68,16 @@ function studyP3R1(){
     	var thDate = fDate.getDate();
     	var thDay = dayName[tDay];
     	var thMonth = monthName[tMonth];
-	if(thDay=="จันทร์"){subjects = everyday + mathIE + socialTH;}
-	else if(thDay=="อังคาร"){subjects = everyday + socialIE + socialTH;}
-	else if(thDay=="พุธ"){subjects = everyday + funEng + devEng;}
-	else if(thDay=="พฤหัสบดี"){subjects = everyday + health + chinese;}
-	else if(thDay=="ศุกร์"){subjects = everyday + art + computer;}
+	if(fDate < startSemesterDate){subjects ="ปิดเทอม";}
+	else if(thDay=="จันทร์" && fDate>=new Date("2023-05-22")){subjects = everyday + computer + engLab + thaiPrinciples1 + chinese + mathIE + socialTH + period8;}
+	else if(thDay=="อังคาร" && fDate>=new Date("2023-05-22")){subjects = everyday + devEng + mathTH + funEng + health + scienceTH + thaiPrinciples2 + club + period8;}
+	else if(thDay=="พุธ" && fDate>=new Date("2023-05-22")){subjects = everyday + thaiPrinciples2 + scout + scienceIE + mathTH + history + thaiWriting + scienceTH + period8;}
+	else if(thDay=="พฤหัสบดี" && fDate>=new Date("2023-05-22")){subjects = everyday + socialIE + sport + devEng + mathTH + scienceTH + scienceIE + thaiPrinciples2 + period8;} 
+	else if(thDay=="จันทร์"){subjects = everyday + computer + engLab + thaiPrinciples1 + chinese + mathIE + socialTH;}
+	else if(thDay=="อังคาร"){subjects = everyday + devEng + mathTH + funEng + health + scienceTH + thaiPrinciples2 + club;}
+	else if(thDay=="พุธ"){subjects = everyday + thaiPrinciples2 + scout + scienceIE + mathTH + history + thaiWriting + scienceTH;}
+	else if(thDay=="พฤหัสบดี"){subjects = everyday + socialIE + sport + devEng + mathTH + scienceTH + scienceIE + thaiPrinciples2;}
+	else if(thDay=="ศุกร์"){subjects = everyday + thaiPrinciples3 + funEng + mathIE + music + socialIE + mathTH + SGL;}
 	else{subjects="หยุดเรียน";}
 
     document.getElementById("myDate").innerHTML ="วัน" +  thDay + "ที่ "  +  thDate + " " + thMonth + " " + thYear + ":\n==================\n\n"   
