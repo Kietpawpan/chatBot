@@ -19,17 +19,17 @@ function studyP3R1(){
 	var thaiPrinciples1 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ภาษาพาที + ชีท\n\n";
 	var thaiPrinciples2 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ชีท\n\n";
 	var thaiPrinciples3 = "สมุดภาษาไทยสีขาว (เล่ม 3) + วรรณคดีลำนำ + ชีท\n\n";
-	var thaiWriting = "สมุดภาษาไทยสีชมพู (เล่ม 4) + อ่าน คิด เขียน + แบบฝึกหัดคัดไทย\n\n";
+	var thaiWriting = "สมุดภาษาไทยสีชมพู (เล่ม 4) + อ่าน คิด เขียน + แบบฝึกหัดคัดไทย + หนังสือดรุณศึกษา\n\n";
 	var scienceTH = "หนังสือวิทย์ เล่ม 1 + แบบฝึกหัดวิทย์ เล่ม 1\n\n";
 	var scienceIE = "สมุด ScienceIE สีขาว (เล่ม 6) + My World of Science\n\n";
 	var socialTH = "สมุดสังคมสีขาว (เล่ม 2) + หนังสือสังคม-ประวัติศาสตร์\n\n";
-	var socialIE = "หนังสือ My World of Social\n\n";
-	var funEng = "หนังสือ Power Up\n\n";
-	var devEng = "หนังสือ Value Education + หนังสือ Reading Aloud + หนังสือ 	Power Up\n\n";
+	var socialIE = "หนังสือ My World of Social Studies\n\n";
+	var funEng = "หนังสือ Power Up + หนังสือ Fear at the Festival + Handwriting + Worksheet\n\n";
+	var devEng = "หนังสือ Value Education + หนังสือ	Power Up\n\n";
     	var health = "สมุดสุขศึกษาสีชมพู + หนังสือสุขศึกษา\n\n";
 	var chinese = "สมุดภาษาจีนสีชมพู (เล่ม 9) + หนังสือภาษาจีน\n\n";
 	var art = "สมุดวาดเขียน + สี แปรง\n\n"
-    	var everyday = "สมุดจดการบ้าน + สมุดคัดศัพท์ (เล่ม 10) + สมุดสำรอง (เล่ม 0)\n\n";
+    	var everyday = "สมุดจดการบ้าน + สมุดคัดศัพท์ (เล่ม 10) + สมุดสำรอง (เล่ม 0) + หนังสือ Reading Aloud + หนังสือ My World of Vocabulary + สีไม้\n\n";
     	var health = "สมุดสุขศึกษาสีชมพู + หนังสือสุขศึกษา\n\n";
 	var socialTH = "สมุดสังคมสีขาว (เล่ม 2) + หนังสือสังคม\n\n";
 	var computer = "สมุดวิทยาการคำนวณ (เล่ม 8)\n\n";
@@ -39,7 +39,7 @@ function studyP3R1(){
 	var sport = "พละบก รองเท้าผ้าใบ\n\n";
 	var music = "ดนตรี\n\n";
 	var SGL = "SGL\n\n";
-	var engLab ="หนังสือ Power Up + หนังสือ Journal\n\n";
+	var engLab ="หนังสือ Power Up + หนังสือ Journal + สมุด Lab Eng สีชมพู\n\n";
 	var period8 = "คาบ 8 (เลิก 16.40 น.)";
     
 	var hw1 = "";
