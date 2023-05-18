@@ -24,7 +24,7 @@ function studyP3R1(){
 	var scienceIE = "สมุด ScienceIE สีขาว (เล่ม 6) + My World of Science\n\n";
 	var socialTH = "สมุดสังคมสีขาว (เล่ม 2) + หนังสือสังคม-ประวัติศาสตร์\n\n";
 	var socialIE = "หนังสือ My World of Social Studies\n\n";
-	var funEng = "หนังสือ Power Up + หนังสือ Fear at the Festival + Handwriting + Worksheet\n\n";
+	var funEng = "หนังสือ Power Up + หนังสือ Fear at the Festival + หนังสือ Handwriting + Worksheet\n\n";
 	var devEng = "หนังสือ Value Education + หนังสือ	Power Up\n\n";
     	var health = "สมุดสุขศึกษาสีชมพู + หนังสือสุขศึกษา\n\n";
 	var chinese = "สมุดภาษาจีนสีชมพู (เล่ม 9) + หนังสือภาษาจีน\n\n";
