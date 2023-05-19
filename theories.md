@@ -7,7 +7,13 @@ Let A is city in the coastal lowland, with with an average elevation of 1.5 metr
 function sinkingCity() {
 var A = getElementById(A).value; // city MLS
 var O = getElementById(O).value; // global ocean volume
-var V = O * A / 1000; // volume of sea level rise that can sink city A.
+var V = O * A / 1000; // max volume of sea level rise that can sink city A.
+var seaLevelRise = getElementById(S).value;
+let sinking = "";
+if(seaLevelRise > V) {
+sinking = "Sinked";}
+else {sinking = "Not sinked";}
+
 }
 ```
 
