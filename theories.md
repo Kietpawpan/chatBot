@@ -29,4 +29,5 @@ The mass of global ice above the global ocean surface, if half melt, is more tha
 var sinkingTime = landEvelvation / (rateOfSeaLevelRise / 1000);
 ```
 
+The question is not whether the lowland city will be sinked or not, but is when it will be sinked. High risk cities are located below 35.27 meters above mean sea level.  
   
