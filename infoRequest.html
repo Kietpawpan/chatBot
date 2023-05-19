@@ -32,10 +32,13 @@
       <div id="chatting" class="chatting">
 	<ul id="Answer">
    		<li><a href="#">
-
+			<form id="frm00">
+  				รหัสคำขอเดิม (ถ้ามี)<br><input type="text" id="oldCode" value="" placeholder="xxxxxxxxxxxxx"> 
+			</form>
+			<button onclick="oldCustomer()">ยืนยัน</button><br><br>
 			<form id="frm2">
-  				หมายเลขบัตรประจำตัวประชาชน<br><input type="text" name="iDCard" value="" size="13" placeholder="xxxxxxxxxxxxx">
-			</form> <button onclick="oldCustomer()">ยืนยัน</button><br><br>
+  				หมายเลขบัตรประจำตัวประชาชน<br><input type="text" id="iDCard" value="" size="13" placeholder="xxxxxxxxxxxxx">
+			</form> <br>
 			<form id="frm1">
   				ชื่อ-นามสกุล ผู้ขอ<br><input type="text" id="fname" value="" size="35" placeholder="นาย...."> <br><br>
 			</form> 
@@ -111,6 +114,6 @@
          <li><center><div id="copyRight"></div></center></li>
          </div>
          </div>
-	<script src="js/eRequest.js"></script><br>
+	<script src="js/iRequest.js"></script><br>
 </body>
 </html>
