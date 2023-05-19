@@ -6,7 +6,7 @@ Let A is a city where the land is 1.5 meters above mean sea level (MSL), remaini
 ```
 var A = getElementById(A).value; // city MLS
 var O = getElementById(O).value; // global ocean volume
-var V = O * A / 1000;
+var V = O * A / 1000; // volume of sea level rise that can sink city A.
 ```
 
 
