@@ -12,15 +12,12 @@
     <script src="js/chat.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="images/krut.png" />
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
-    <meta property="og:updated_time" content="1440432930" />
 
 <title>MNRE | Chatbot</title>
 
 </head>
 
-<body onload="startFunction()">
+<!body onload="startFunction()">
     	<nav>
         <div class="navbar">
             <img class="dpimg" onclick="openFullScreenDP()" src="images/mnre.png" alt="">
@@ -35,17 +32,18 @@
       <div id="chatting" class="chatting">
 	<ul id="Answer">
    		<li><a href="#">
-			<form id="frm1">
-  				ชื่อ-นามสกุล ผู้ขอ<br><input type="text" name="fname" value="" size="35" placeholder="นาย...."> <br><br>
-			</form> 
+
 			<form id="frm2">
-  				หมายเลขบัตรประจำตัวประชาชน<br><input type="text" name="iDCard" value="" size="13" placeholder="xxxxxxxxxxxxx"><br><br>
+  				หมายเลขบัตรประจำตัวประชาชน<br><input type="text" name="iDCard" value="" size="13" placeholder="xxxxxxxxxxxxx">
+			</form> <button onclick="oldCustomer()">ยืนยัน</button><br><br>
+			<form id="frm1">
+  				ชื่อ-นามสกุล ผู้ขอ<br><input type="text" id="fname" value="" size="35" placeholder="นาย...."> <br><br>
 			</form> 
 			<form id="frm7">
-  				ที่อยู่<br><input type="text" name="house" value="" size="50" placeholder="บ้านเลขที่...หมู่ที่...ตำบล...อำเภอ..จังหวัด..."><br><br>
+  				ที่อยู่<br><input type="text" id="house" value="" size="50" placeholder="บ้านเลขที่...หมู่ที่...ตำบล...อำเภอ..จังหวัด..."><br><br>
 			</form> 
 			<form id="frm54">
-  				หมายเลขโทรศัพท์<br><input type="text" name="tel" value="" size="10" placeholder="081xxxxxxx"><br><br>
+  				หมายเลขโทรศัพท์<br><input type="text" id="tel" value="" size="10" placeholder="081xxxxxxx"><br><br>
 			</form> 
 
 			<form id="frm3">
@@ -113,6 +111,6 @@
          <li><center><div id="copyRight"></div></center></li>
          </div>
          </div>
-	<script src="js/iRequest.js"></script><br>
+	<script src="js/eRequest.js"></script><br>
 </body>
 </html>
