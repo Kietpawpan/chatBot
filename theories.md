@@ -1,7 +1,7 @@
 # A Theory of Sinking City 
 © 2023 Monte Kietpapwpan | MIT License
 
-[Bangkok](https://en.wikipedia.org/wiki/Bangkok) is located in the flat and low-lying area, with an average elevation of 1.5 metres above sea level. Let A is a city where the land is 1.5 meters above [mean sea level (MSL)](https://en.wikipedia.org/wiki/Sea_level), remaining the Earth's crust above mean sea level. The city will be sinked by seawater if the mean sea level will have increased by greater than 1.5 m, or after the rising volume of water in the global ocean (v) will have been greater than the global ocean's surface area (O) multiplied by 0.0015 km.
+[Bangkok](https://en.wikipedia.org/wiki/Bangkok) is located in the flat and low-lying area, with an average elevation of 1.5 metres above [mean sea level (MSL)](https://en.wikipedia.org/wiki/Sea_level), remaining the Earth's crust above mean sea level. The city will be sinked by seawater if the mean sea level will have increased by greater than 1.5 m, or after the rising volume of water in the global ocean (v) will have been greater than the global ocean's surface area (O) multiplied by 0.0015 km.
 
 ```
 function sinkingCity() {
