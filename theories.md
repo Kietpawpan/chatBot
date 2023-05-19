@@ -4,7 +4,7 @@
 Let A is a city where the land is 1.5 meters above mean sea level (MSL), remaining the Earth's crust above mean sea level. The city will be sinked by seawater if the mean sea level will have increased by greater than 1.5 m, or after the rising volume of water in the global ocean (v) will have been greater than the global ocean's surface area (O) multiplied by 0.0015 km.
 
 ```
-function sinkigCity() {
+function sinkingCity() {
 var A = getElementById(A).value; // city MLS
 var O = getElementById(O).value; // global ocean volume
 var V = O * A / 1000; // volume of sea level rise that can sink city A.
