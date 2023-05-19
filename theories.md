@@ -6,7 +6,7 @@ Let A be a city in the coastal lowland, with with an average elevation of 1.5 me
 
 ```
 function sinkingCity() {
-  var A = 361.13 * 1000000; // city MLS
+  var A = 361.13 * 1000000; // global ocean's surface area
   var H = getElementById(A).value; // land elevation of city A (1.5 m) 
   var V = A * H / 1000; // volume of sea level rise that begins to sink city A.
   var seaLevelRise = getElementById(S).value;
