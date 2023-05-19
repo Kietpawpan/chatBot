@@ -2,7 +2,7 @@
 © 2023 Monte Kietpapwpan | MIT License
 
 ## Sea Water Volume to Sink a City
-Let A be a city in the coastal lowland, with with an average elevation of 1.5 meters above mean sea level. The city can be sinked by seawater if the sea level rise is greater than 1.5 meters, or if the rising volume of water in the global ocean (v) is greater than the global ocean's surface area (O) multiplied by 0.0015 km.
+Let A be a city in the coastal lowland, with with an average elevation of 1.5 meters above mean sea level. The city can be sinked by seawater if the sea level rise is greater than 1.5 meters, or if the rising volume of water in the global ocean is greater than the global ocean's surface area multiplied by 0.0015 km.
 
 ```
 function sinkingCity() {
