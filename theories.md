@@ -4,4 +4,4 @@ Let A is a city where the land is 1.5 m above mean sea level (MSL) and remains t
 
 We know that the global or world ocean's surface area is 361.13 million km<sup>2</sup>. So, the city will be sinked after V >= 361.13 million km<sup>2</sup>* 0.0015 km, or 0.541695 million km<sup>3</sup>. This ocean water might be from the melting of the two polar ice caps of Earth: Antarctic ice sheet and Artic ice sheet.
 
-Antartic ice sheet covers about 98% of the Antarctic continent and is the largest single mass of ice on Earth, with the average thickness of over 2 km covering an area of almost 14 million km<sup>2</sup>. Its ice volume is 2 km * 14 million km<sup>2</sup>, or 48 mllion km<sup>2</sup>.    
+Antartic ice sheet covers about 98% of the Antarctic continent and is the largest single mass of ice on Earth, with the average thickness of over 2 km covering an area of almost 14 million km<sup>2</sup>. Its ice volume is 2 km * 14 million km<sup>2</sup>, or 28 mllion km<sup>2</sup>.    
