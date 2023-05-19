@@ -2,7 +2,10 @@
 © 2023 Monte Kietpapwpan | MIT License
 
 ## Sea Water Volume to Sink a City
-Let A be a city in the coastal lowland, with with an average elevation of 1.5 meters above mean sea level. The city can be sinked by seawater if the sea level rise is greater than 1.5 meters, or if the rising volume of water in the global ocean is greater than the global ocean's surface area multiplied by 0.0015 km.
+1. Let A be a city in the coastal lowland, with with an average elevation of 1.5 meters above mean sea level. 
+2. The city can be sinked by seawater if the sea level rise is greater than 1.5 meters, or if the rising volume of water in the global ocean is greater than the global ocean's surface area multiplied by 0.0015 km. 
+3. We know that the global or world ocean's surface area is 361.13 million km<sup>2</sup>. 
+4. So, the city will be sinked after V > 361.13 million km<sup>2</sup>* 0.0015 km, or 0.541695 million km<sup>3</sup>:
 
 ```
 function sinkingCity() {
@@ -16,7 +19,7 @@ function sinkingCity() {
     else {sinking = "Not sinked";}
 }
 ```
-We know that the global or world ocean's surface area is 361.13 million km<sup>2</sup>. So, the city will be sinked after V > 361.13 million km<sup>2</sup>* 0.0015 km, or 0.541695 million km<sup>3</sup>. This ocean water might be from the melting of the two polar ice caps of Earth: Antarctic ice sheet and Artic ice sheet.
+This ocean water rise results from the melting of the two polar ice caps of Earth: Antarctic ice sheet and Artic ice sheet.
 
 Antarctic ice sheet covers about 98% of the Antarctic continent and is the largest single mass of ice on Earth, with the average thickness of over 2 km covering an area of almost 14 million km<sup>2</sup>. The total ice volume is 2 km * 14 million km<sup>2</sup>, or 28 million km<sup>3</sup>. If 50% of the total volume of glacier ice is below the surface of the ocean, the ice volume that causes sea level rise will be 28 million km<sup>3</sup> * 0.5, or 14 million km<sup>3</sup>.  
 
