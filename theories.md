@@ -42,7 +42,7 @@ function sinkingCity() {
   var volumeOfWaterFromIce = effectiveIceVolume * iceToWaterConversionFactor;
   var seaWaterRise = A/ (H/1000); // Volume of seawater that begins to sink the city.
 }
-
+```
 
 If the whole mass of the ice sheet is melt, the water mass will be densed by 9%, so the water volume melt from the ice sheet is 14 million km<sup>3</sup> * 0.91, or 12.74 million km<sup>3</sup>, which can increase the mean sea level by 12.74 million km<sup>3</sup>/361.13 million km<sup>2</sup>, or 0.035 km, or 35.27 meters, contributed by the melting of Antarctic ice sheet alone.
 
