@@ -1,6 +1,6 @@
 # A Theory of Sinking City 
 
-Let A is a city where the land is 1.5 meters above mean sea level (MSL), remaining the Earth's crust above mean sea level. The city will be sinked by seawater if the mean sea level will have increased by 1.5 m, or after the rising volume of water in the global ocean (v) will have been equal to or greater than the global ocean's surface area (O) multiplied by 0.0015 km.
+Let A is a city where the land is 1.5 meters above mean sea level (MSL), remaining the Earth's crust above mean sea level. The city will be sinked by seawater if the mean sea level will have increased by greater than 1.5 m, or after the rising volume of water in the global ocean (v) will have been greater than the global ocean's surface area (O) multiplied by 0.0015 km.
 
 We know that the global or world ocean's surface area is 361.13 million km<sup>2</sup>. So, the city will be sinked after V >= 361.13 million km<sup>2</sup>* 0.0015 km, or 0.541695 million km<sup>3</sup>. This ocean water might be from the melting of the two polar ice caps of Earth: Antarctic ice sheet and Artic ice sheet.
 
