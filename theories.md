@@ -23,7 +23,7 @@ Antartic ice sheet covers about 98% of the Antarctic continent and is the larges
 If the whole mass of the ice sheet is melt, the water mass will be densed by 9%, so the water volume melt from the ice sheet is 14 million km<sup>3</sup> * 0.91, or 12.74 million km<sup>3</sup>, which can increase the mean sea level by 12.74 million km<sup>3</sup>/361.13 million km<sup>2</sup>, or 0.035 km, or 35.27 meters, lower than another estimate (58 meters of sea level rise if all the ice were above sea level).
 
 ## Conclusion
-The mass of global ice above the global ocean surface, if half melt, is more than enough the flood the coastal lowland around the globe. The sinking time equals the land elevation (meters above MSL) of a given land divided by the rate of sea level rise (mm/year):
+The mass of global ice above the global ocean surface, if half melt, is more than enough to sink the coastal lowland around the globe. The sinking time equals the land elevation (meters above MSL) of a given land divided by the rate of sea level rise (mm/year):
 
 ```
 var sinkingTime = landEvelvation / (rateOfSeaLevelRise / 1000);
