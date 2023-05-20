@@ -14,7 +14,7 @@ function studyP3R1(){
     	var newDate2 = newDate1.replace("/","-");
     	var fDate = new Date(newDate2);
 	var subjects = "";
-	var mathIE = "หนังสือ Targeting Mathematics Workbook 3A (แยกเป็นบท ๆ) + สมุด Math IE สีขาว\n\n";
+	var mathIE = "หนังสือ Targeting Mathematics Workbook 3A (แยกเป็นบท ๆ) + สมุด Math IE สีขาว ส่งครู\n\n";
 	var mathTH = "สมุดคณิตศาสตร์สีขาว (เล่ม 1) + แบบฝึกหัดคณิตฯ เล่ม 1 (แยกเป็นบท ๆ)\n\n";    	
 	var thaiPrinciples1 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ภาษาพาที + ชีท\n\n";
 	var thaiPrinciples2 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ชีท\n\n";
@@ -59,16 +59,20 @@ function studyP3R1(){
 
     	var hw4 = "";
 	var dd4 = "2023-06-02";
-	if(new Date(dd3) > fDate){hw4="* ส่งคัดไทย (ห้ามคัดที่บ้าน) หน้า 1-20 ภายใน มิ.ย. 66\n\n";}
+	if(new Date(dd4) > fDate){hw4="* ส่งคัดไทย (ห้ามคัดที่บ้าน) หน้า 1-20 ภายใน มิ.ย. 66\n\n";}
  	else{hw4="&#9888; " + "ครบกำหนดส่ง ส่งคัดไทย หน้า 1-20\n\n";}
 	
 	var hw5 = "";
 	var dd5 = "2023-06-23";
-	if(new Date(dd3) > fDate){hw5="* 23 มิ.ย. 66 ส่งใบงาน irregular verbs\n\n";}
- 	else{hw4="&#9888; " + "ครบกำหนดส่งใบงาน irregular verbs\n\n";}
-
+	if(new Date(dd5) > fDate){hw5="* 23 มิ.ย. 66 ส่งใบงาน irregular verbs\n\n";}
+ 	else{hw5="&#9888; " + "ครบกำหนดส่งใบงาน irregular verbs\n\n";}
+	
+        var hw6 = "";
+	var dd6 = "2023-06-23";
+	if(new Date(dd6) > fDate){hw6 ="* 24 พ.ค. 66 ใส่บาตรเช้า\n\n";}
+ 	else{hw6 ="&#9888; " + "ครบใส่บาตร\n\n";}
  	   
-     var toDo = hw2 + hw4 + hw3 + hw5 + hw1;
+     var toDo = hw6 + hw2 + hw4 + hw3 + hw5 + hw1;
  
     	var tDay = fDate.getDay();
     	var tMonth = fDate.getMonth();
