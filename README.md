@@ -8,6 +8,7 @@ This bot can
 - make appointment with [seeMe](https://kietpawpan.github.io/chatBot/seeMe.html)
 - check the way to the Minitry with [mapTo](https://kietpawpan.github.io/chatBot/mapTo.html)
 - complain the service quality with [complaint](https://kietpawpan.github.io/chatBot/complaint.html)
+- check school affairs with [study](https://kietpawpan.github.io/chatBot/study.html)
 
 __Algorithm:__
 ```
