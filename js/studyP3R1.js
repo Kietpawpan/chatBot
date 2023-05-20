@@ -43,9 +43,9 @@ function studyP3R1(){
 	var period8 = "คาบ 8 (เลิก 16.40 น.)";
     
 	var hw1 = "";
-	var dd1 = "2023-05-17";
- 	if(new Date(dd1) > fDate){hw1="* ตัดผม ตัดเล็บ ก่อนเปิดเทอม\n\n";}
- 	else{hw1="&#9888; " + "ตัดผม ตัดเล็บก่อนเปิดเทอม\n\n";}
+	var dd1 = "2023-08-18";
+ 	if(new Date(dd1) > fDate){hw1="* 18 ส.ค. 66 สอบ Reading Aloud บทที่ 1-5 (สุ่ม 1 เรื่อง)\n\n";}
+ 	else{hw1="&#9888; " + "พ้นสอบ Reading Aloud\n\n";}
 	
 	var hw2 = ""; 
 	var dd2 = "2023-06-30";
@@ -61,9 +61,14 @@ function studyP3R1(){
 	var dd4 = "2023-06-02";
 	if(new Date(dd3) > fDate){hw4="* ส่งคัดไทย (ห้ามคัดที่บ้าน) หน้า 1-20 ภายใน มิ.ย. 66\n\n";}
  	else{hw4="&#9888; " + "ครบกำหนดส่ง ส่งคัดไทย หน้า 1-20\n\n";}
+	
+	var hw5 = "";
+	var dd5 = "2023-06-23";
+	if(new Date(dd3) > fDate){hw5="* 23 มิ.ย. 66 ส่งใบงาน irregular verbs\n\n";}
+ 	else{hw4="&#9888; " + "ครบกำหนดส่งใบงาน irregular verbs\n\n";}
 
  	   
-     var toDo = hw1 + hw2 + hw4 + hw3;
+     var toDo = hw2 + hw4 + hw3 + hw5 + hw1;
  
     	var tDay = fDate.getDay();
     	var tMonth = fDate.getMonth();
