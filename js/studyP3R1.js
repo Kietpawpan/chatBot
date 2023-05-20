@@ -68,7 +68,7 @@ function studyP3R1(){
  	else{hw5="&#9888; " + "ครบกำหนดส่งใบงาน irregular verbs\n\n";}
 	
         var hw6 = "";
-	var dd6 = "2023-06-23";
+	var dd6 = "2023-05-24";
 	if(new Date(dd6) > fDate){hw6 ="* 24 พ.ค. 66 ใส่บาตรเช้า\n\n";}
  	else{hw6 ="&#9888; " + "ครบใส่บาตร\n\n";}
  	   
