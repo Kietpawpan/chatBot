@@ -64,7 +64,7 @@ function studyP3R1(){
 	
 	var hw5 = "";
 	var dd5 = "2023-06-23";
-	if(new Date(dd5) > fDate){hw5="* 23 มิ.ย. 66 ส่งใบงาน irregular verbs\n\n";}
+	if(new Date(dd5) > fDate){hw5="* 23 มิ.ย. 66 ส่งใบงาน irregular verbs + ประเมินตนเอง\n\n";}
  	else{hw5="&#9888; " + "ครบกำหนดส่งใบงาน irregular verbs\n\n";}
 	
         var hw6 = "";
