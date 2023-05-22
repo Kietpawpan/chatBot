@@ -37,7 +37,7 @@ function studyP3R1(){
 	var club = "ชมรม\n\n";
      var scout ="ชุดลูกเสือ\n\n";
 	var sport = "พละบก รองเท้าผ้าใบ\n\n";
-	var music = "ดนตรี\n\n";
+	var music = "ดนตรี เมโลเดียน ร้องเพลง\n\n";
 	var SGL = "SGL\n\n";
 	var engLab ="หนังสือ Power Up + หนังสือ Journal + สมุด Lab Eng สีชมพู\n\n";
 	var period8 = "คาบ 8 (เลิก 16.40 น.)";
