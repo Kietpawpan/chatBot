@@ -9,6 +9,7 @@ This bot can
 - check the way to the Minitry with [mapTo](https://kietpawpan.github.io/chatBot/mapTo.html)
 - complain the service quality with [complaint](https://kietpawpan.github.io/chatBot/complaint.html)
 - check school affairs with [study](https://kietpawpan.github.io/chatBot/study.html)
+- romanize Thai name with [roman](https://kietpawpan.github.io/chatBot/romanName.html)
 
 __Algorithm:__
 ```
