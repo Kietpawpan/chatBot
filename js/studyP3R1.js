@@ -21,11 +21,11 @@ function studyP3R1(){
 	var thaiPrinciples3 = "สมุดภาษาไทยสีขาว (เล่ม 3) + วรรณคดีลำนำ + ชีท\n\n";
 	var thaiWriting = "สมุดภาษาไทยสีชมพู (เล่ม 4) + อ่าน คิด เขียน + แบบฝึกหัดคัดไทย + หนังสือดรุณศึกษา\n\n";
 	var scienceTH = "หนังสือวิทย์ เล่ม 1 + แบบฝึกหัดวิทย์ เล่ม 1\n\n";
-	var scienceIE = "สมุด ScienceIE สีขาว (เล่ม 6) + My World of Science\n\n";
+	var scienceIE = "สมุด ScienceIE สีขาว (เล่ม 6) + My World of Science (รอแจก)\n\n";
 	var socialTH = "สมุดสังคมสีขาว (เล่ม 2) + หนังสือสังคม-ประวัติศาสตร์\n\n";
-	var socialIE = "หนังสือ My World of Social Studies\n\n";
+	var socialIE = "หนังสือ My World of Social Studies (รอแจก)\n\n";
 	var funEng = "หนังสือ Power Up + หนังสือ Fear at the Festival + หนังสือ Handwriting + Worksheet\n\n";
-	var devEng = "หนังสือ Value Education + หนังสือ	Power Up\n\n";
+	var devEng = "หนังสือ Value Education (รอแจก)+ หนังสือ	Power Up\n\n";
     	var health = "สมุดสุขศึกษาสีชมพู + หนังสือสุขศึกษา\n\n";
 	var chinese = "สมุดภาษาจีนสีชมพู (เล่ม 9) + หนังสือภาษาจีน\n\n";
 	var art = "สมุดวาดเขียน + สี แปรง\n\n"
