@@ -1,3 +1,80 @@
+function romanize() {
+	var thName = document.getElementById("thaiName").value; // มนตรี
+	var thNameStr = thName.toString(); // "มนตรี"
+	var th = Array.from(thName); // ม,น,ต,รี,
+	var r1 = th[0]; // ม
+	var r2 = th[0]+th[1]; // มน
+	var r3 = th[0]+th[1]+th[2]; // กมล
+	var r4 = th[0]+th[1]+th[2]+th[3]; // รินท
+	var r5 = th[0]+th[1]+th[2]+th[3]+th[4]; // รินทร ไม่มีการรันต์
+	var r6 = th[0]+th[1]+th[2]+th[3]+th[4]+th[5];
+	var r7 = th[0]+th[1]+th[2]+th[3]+th[4]+th[5]+th[6];
+	const words = new Map([
+			['ะ','A'], ['บ','B'], ['จ','J'], ['ฎ','D'], ['ด','D'], ['เ','E'], ['ฝ','F'], ['ฟ','F'],
+			['ห','H'], ['ฮ','H'], ['ม','M'], ['น','N'], ['ณ','N'], ['โ','O'], ['ป','P'], ['ร','R'],
+			['ส','S'], ['ษ','S'], ['ศ','S'], ['ซ','S'], ['ฏ','T'], ['ต','T'],	['ว','W'], ['ย','Y'],
+			['ญ','Y'], ['ฐ','TH'], ['ฑ','TH'], ['ฒ','TH'], ['ถ','TH'], ['ท','TH'],	['ธ','TH'],
+			['ผ','PH'], ['พ','PH'],	['ภ','PH'],	['ข','KH'],	['ฆ','KH'],	['ค','KH'],	['ฅ','KH'],
+			['ฉ','CH'],	['ช','CH'],	['ฌ','CH'],	['ง','NG'],	
+			['เก','KE'],	
+			['แก','KAE'],
+			['เกา','KAO'],
+			['กะ','KA'],
+			['กัก','KAK'],['กัข','KAK'],['กัฆ','KAK'],['กัค','KAK'],['กัฅ','KAK'],
+			['กัง','KANG'],
+			['กัจ','KAT'],['กัฉ','KAT'],['กัช','KAT'],['กัซ','KAT'],['กัฎ','KAT'],['กัฏ','KAT'],['กัฐ','KAT'],['กัฑ','KAT'],['กัฒ','KAT'],
+			['กัด','KAT'],['กัต','KAT'],['กัถ','KAT'],['กัธ','KAT'],['กัท','KAT'],['กัจ','KAT'],['กัฉ','KAT'],['กัช','KAT'],['กัซ','KAT'],['กัฎ','KAT'],
+			['กัด','KAT'],['กัศ','KAT'],['กัส','KAT'],['กัษ','KAT'],
+			['กัญ','KAN'],['กัณ','KAN'],['กัน','KAN'],['กัร','KAN'],['กัล','KAN'],['กัฬ','KAN'],['กรร','KAN'],['กรรน','KAN'],['กรรณ','KAN'],
+			['กา','KA'],['ก่า','KA'],['ก้า','KA'],['ก๊า','KA'],['ก๋า','KA'],
+			['กิ','KI'],['กิ่','KI'],['กิ้','KI'],['กิ๊','KI'],['กิ๋','KI'],
+			['กี','KI'],['กี่','KI'],['กี้','KI'],['กี๊','KI'],['กี๋','KI'],
+			['กึ','KUE'],['กึ่','KUE'],['กึ้','KUE'],['กึ๊','KUE'],['กึ๋','KUE'],
+			['กุ','KU'],['กุ่','KU'],['กุ้','KU'],['กุ๊','KU'],['กุ๋','KU'],
+			['กู','KU'],['กู่','KU'],['กู้','KU'],['กู๊','KU'],['กู๋','KU'],
+			['เกะ','KAE'],
+			['แก','KAE'],['แกร','KAE'],['แกล','KAE'],
+			['แกะ','KAE'],
+			['เกีย','KIA'],
+			['เกียะ','KIA'],
+			['เกือ','KUEA'],
+			['กัว','KUEA'],
+			['กัวะ','KUA'],
+			['โกะ','KO'],
+			['โก','KO'],
+			['เกาะ','KO'],
+			['กอ','KO'],
+			['กำ','KAM'],['กรรม','KAM'],
+			['ไก','KAI'],['ไกร','KRAI'],['ไกล','KLAI'],
+			['ใก','KAI'],
+			['กาย','KAI'],
+			['กัย','KAI'],
+			['เกา','KAO'],
+			['กาว','KAO'],
+			['เกว','KEO'],
+			['เก็ว','KEO'],
+			['กอก','KOK'],
+			['แกว','KAEO'],
+			['เกียว','KIAO'],
+			['โกย','KOI'],
+			['กูย','KUI'],
+			['เกย','KOEI'],
+			['กวย','KUAI'],
+			['เกือย','KUEAI'],
+			['กอย','KOI'],
+			['มนตรี','MONTRI']
+]);
+if(words.has(r7)==true){document.getElementById("romanize").value = words.get(r7);}
+else if(words.has(r6)==true){document.getElementById("romanize").value = words.get(r6);}
+else if(words.has(r5)==true){document.getElementById("romanize").value = words.get(r5);}
+else if(words.has(r4)==true){document.getElementById("romanize").value = words.get(r4);}
+else if(words.has(r3)==true){document.getElementById("romanize").value = words.get(r3) ;}
+else if(words.has(r2)==true){document.getElementById("romanize").value = words.get(r2);}
+else{document.getElementById("romanize").value = words.get(r1);}
+
+}
+
+/*
 function roman() {
 	var thName = document.getElementById("thaiName").value; // มนตรี
 	var thNameStr = thName.toString(); // "มนตรี"
@@ -62,3 +139,4 @@ function roman() {
 
 	document.getElementById("romanize").value = one + two
 }
+*/
