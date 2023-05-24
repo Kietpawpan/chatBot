@@ -35,7 +35,7 @@ function studyP3R1(){
 	var computer = "สมุดวิทยาการคำนวณ (เล่ม 8)\n\n";
 	var history = "หนังสือประวัติศาสตร์ + สมุดสังคม ประวัติศาสตร์ (เล่ม 2)\n\n";
 	var club = "ชมรม\n\n";
-     var scout ="ชุดลูกเสือ\n\n";
+         var scout ="ชุดลูกเสือ เลขกอง 31 ดาว 3 ดวง อกซ้าย\n\n";
 	var sport = "พละบก รองเท้าผ้าใบ\n\n";
 	var music = "ดนตรี เมโลเดียน ร้องเพลง\n\n";
 	var SGL = "SGL\n\n";
