@@ -16,6 +16,8 @@ function romanize() {
 			['ฉ','CH'],	['ช','CH'],	['ฌ','CH'],	['ง','NG'],	['อำ','AM'],['อุม','UM'],['',''],
 
 			['ฤดี','RUEDI'],['ฤทัย','RUETHAI'],['ฤ','RUE'],['ฤิทธิ์','RIT'],['ฤา','RUE'],['ฤาษี','RUESI'],
+			['อยู','YU'],['อยู่','YU'],['อย่า','YA'],['หยู','YU'],['หยา','YA'],['หยาง','YANG'],['หยวน','YUAN'],
+			['อยาก','YAK'],['อย่าง','YANG'],['เหยี่ยว','YIAO'],['เหมี่ยว','MIAO'],
 			
 		
 //------ก
@@ -8017,7 +8019,7 @@ function romanize() {
 			['หลาย','LAI'],['หลราย','LRAI'],['หลลาย','LLAI'],['หลราด','LRAT'],['หลลาด','LALAD'],
 			['หลัย','LAI'],['หลรัย','LRAI'],['หลลัย','LLAI'],
 			['เหลา','LAO'],['เหลรา','LRAO'],['เหลลา','LLAO'],
-			['หลาว','LAO'],['หลราว','LRAO'],['หลลาว','LLAO'],['หลลาญ','LLAN'],
+			['หลาว','LAO'],['หลราว','LRAO'],['หลลาว','LLAO'],['หลลาญ','LLAN'],['หลาด','LAT'],
 			['เหลว','LEO'],
 			['เหล็ว','LEO'],['เหล็ม','LEM'],['เหล็บ','LEP'],['เหล็ด','LET'],['เหล็น','LEN'],['เหล็จ','LET'],['เหลด็จ','LADET'],['เหล็ก','LEK'],
 			['แหลว','LAEO'],['แหลรว','LRAEO'],['แหลลว','LLAEO'],['แหลลม','LALAEM'],['หลลอง','LALONG'],['หลลาม','LALAM'],['หลรอย','LALOI'],
@@ -11698,6 +11700,16 @@ function romanize() {
 	var r46 = th4[0]+th4[1]+th4[2]+th4[3]+th4[4]+th4[5];
 	var r47 = th4[0]+th4[1]+th4[2]+th4[3]+th4[4]+th4[5]+th4[6];
 
+	var th5 =["","","","","",""];
+	if(sName.length>4){th5 = Array.from(sName[4]);} // ม,น
+	var r51 = th5[0]; // ม
+	var r52 = th5[0]+th5[1]; // มน
+	var r53 = th5[0]+th5[1]+th5[2]; // กมล
+	var r54 = th5[0]+th5[1]+th5[2]+th5[3]; // รินท
+	var r55 = th5[0]+th5[1]+th5[2]+th5[3]+th5[4]; // รินทร ไม่มีการรันต์
+	var r56 = th5[0]+th5[1]+th5[2]+th5[3]+th5[4]+th5[5];
+	var r57 = th5[0]+th5[1]+th5[2]+th5[3]+th5[4]+th5[5]+th5[6];
+
 			var name1="";
 			var name2="";			
 			var name3="";
@@ -11740,6 +11752,14 @@ else if(words.has(r44)==true){name4 = words.get(r44);}
 else if(words.has(r43)==true){name4 = words.get(r43) ;}
 else if(words.has(r42)==true){name4 = words.get(r42);}
 else{name1 = words.get(r41);}
+
+if(words.has(r57)==true){name5= words.get(r57);}
+else if(words.has(r56)==true){name5 = words.get(r56);}
+else if(words.has(r55)==true){name5 = words.get(r55);}
+else if(words.has(r54)==true){name5 = words.get(r54);}
+else if(words.has(r53)==true){name5 = words.get(r53) ;}
+else if(words.has(r52)==true){name5 = words.get(r52);}
+else{name1 = words.get(r51);}
 
 
 document.getElementById("romanize").value = name1 + name2 + name3 + name4 + 
