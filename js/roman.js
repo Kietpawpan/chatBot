@@ -11671,42 +11671,42 @@ function romanize() {
 	var r7 = th[0]+th[1]+th[2]+th[3]+th[4]+th[5]+th[6];
 
 	var th2 =["","","","","",""];
-	if(sName.length>1){th2 = Array.from(sName[1]);} // ม,น
-	var r21 = th2[0]; // ม
-	var r22 = th2[0]+th2[1]; // มน
-	var r23 = th2[0]+th2[1]+th2[2]; // กมล
-	var r24 = th2[0]+th2[1]+th2[2]+th2[3]; // รินท
-	var r25 = th2[0]+th2[1]+th2[2]+th2[3]+th2[4]; // รินทร ไม่มีการรันต์
+	if(sName.length>1){th2 = Array.from(sName[1]);} 
+	var r21 = th2[0]; 
+	var r22 = th2[0]+th2[1]; 
+	var r23 = th2[0]+th2[1]+th2[2]; 
+	var r24 = th2[0]+th2[1]+th2[2]+th2[3]; 
+	var r25 = th2[0]+th2[1]+th2[2]+th2[3]+th2[4]; 
 	var r26 = th2[0]+th2[1]+th2[2]+th2[3]+th2[4]+th2[5];
 	var r27 = th2[0]+th2[1]+th2[2]+th2[3]+th2[4]+th2[5]+th2[6];
 
 	var th3 =["","","","","",""];
-	if(sName.length>2){th3 = Array.from(sName[2]);} // ม,น
-	var r31 = th3[0]; // ม
-	var r32 = th3[0]+th3[1]; // มน
-	var r33 = th3[0]+th3[1]+th3[2]; // กมล
-	var r34 = th3[0]+th3[1]+th3[2]+th3[3]; // รินท
-	var r35 = th3[0]+th3[1]+th3[2]+th3[3]+th3[4]; // รินทร ไม่มีการรันต์
+	if(sName.length>2){th3 = Array.from(sName[2]);} 
+	var r31 = th3[0]; 
+	var r32 = th3[0]+th3[1]; 
+	var r33 = th3[0]+th3[1]+th3[2]; 
+	var r34 = th3[0]+th3[1]+th3[2]+th3[3]; 
+	var r35 = th3[0]+th3[1]+th3[2]+th3[3]+th3[4]; 
 	var r36 = th3[0]+th3[1]+th3[2]+th3[3]+th3[4]+th3[5];
 	var r37 = th3[0]+th3[1]+th3[2]+th3[3]+th3[4]+th3[5]+th3[6];
 
 	var th4 =["","","","","",""];
-	if(sName.length>3){th4 = Array.from(sName[3]);} // ม,น
-	var r41 = th4[0]; // ม
-	var r42 = th4[0]+th4[1]; // มน
-	var r43 = th4[0]+th4[1]+th4[2]; // กมล
-	var r44 = th4[0]+th4[1]+th4[2]+th4[3]; // รินท
-	var r45 = th4[0]+th4[1]+th4[2]+th4[3]+th4[4]; // รินทร ไม่มีการรันต์
+	if(sName.length>3){th4 = Array.from(sName[3]);} 
+	var r41 = th4[0]; 
+	var r42 = th4[0]+th4[1]; 
+	var r43 = th4[0]+th4[1]+th4[2]; 
+	var r44 = th4[0]+th4[1]+th4[2]+th4[3];
+	var r45 = th4[0]+th4[1]+th4[2]+th4[3]+th4[4]; 
 	var r46 = th4[0]+th4[1]+th4[2]+th4[3]+th4[4]+th4[5];
 	var r47 = th4[0]+th4[1]+th4[2]+th4[3]+th4[4]+th4[5]+th4[6];
 
 	var th5 =["","","","","",""];
-	if(sName.length>4){th5 = Array.from(sName[4]);} // ม,น
-	var r51 = th5[0]; // ม
-	var r52 = th5[0]+th5[1]; // มน
-	var r53 = th5[0]+th5[1]+th5[2]; // กมล
-	var r54 = th5[0]+th5[1]+th5[2]+th5[3]; // รินท
-	var r55 = th5[0]+th5[1]+th5[2]+th5[3]+th5[4]; // รินทร ไม่มีการรันต์
+	if(sName.length>4){th5 = Array.from(sName[4]);} 
+	var r51 = th5[0]; 
+	var r52 = th5[0]+th5[1]; 
+	var r53 = th5[0]+th5[1]+th5[2]; 
+	var r54 = th5[0]+th5[1]+th5[2]+th5[3]; 
+	var r55 = th5[0]+th5[1]+th5[2]+th5[3]+th5[4]; 
 	var r56 = th5[0]+th5[1]+th5[2]+th5[3]+th5[4]+th5[5];
 	var r57 = th5[0]+th5[1]+th5[2]+th5[3]+th5[4]+th5[5]+th5[6];
 
@@ -11761,19 +11761,114 @@ else if(words.has(r53)==true){name5 = words.get(r53) ;}
 else if(words.has(r52)==true){name5 = words.get(r52);}
 else{name1 = words.get(r51);}
 
+	var thsName = document.getElementById("thaiSurname").value; 
+	var thsNameStr = thsName.toString(); 
+	var ssName = thsNameStr.split("-");
+
+	var sth = Array.from(ssName[0]); 
+	var s1 = sth[0]; 
+	var s2 = sth[0]+sth[1]; 
+	var s3 = sth[0]+sth[1]+sth[2]; 
+	var s4 = sth[0]+sth[1]+sth[2]+sth[3]; 
+	var s5 = sth[0]+sth[1]+sth[2]+sth[3]+sth[4];
+	var s6 = sth[0]+sth[1]+sth[2]+sth[3]+sth[4]+sth[5];
+	var s7 = sth[0]+sth[1]+sth[2]+sth[3]+sth[4]+sth[5]+sth[6];
+
+	var sth2 =["","","","","",""];
+	if(ssName.length>1){sth2 = Array.from(ssName[1]);} 
+	var s21 = sth2[0]; 
+	var s22 = sth2[0]+sth2[1]; 
+	var s23 = sth2[0]+sth2[1]+sth2[2]; 
+	var s24 = sth2[0]+sth2[1]+sth2[2]+sth2[3]; 
+	var s25 = sth2[0]+sth2[1]+sth2[2]+sth2[3]+sth2[4]; 
+	var s26 = sth2[0]+sth2[1]+sth2[2]+sth2[3]+sth2[4]+sth2[5];
+	var s27 = sth2[0]+sth2[1]+sth2[2]+sth2[3]+sth2[4]+sth2[5]+sth2[6];
+
+	var sth3 =["","","","","",""];
+	if(ssName.length>2){sth3 = Array.from(ssName[2]);} 
+	var s31 = sth3[0]; 
+	var s32 = sth3[0]+sth3[1]; 
+	var s33 = sth3[0]+sth3[1]+sth3[2]; 
+	var s34 = sth3[0]+sth3[1]+sth3[2]+sth3[3]; 
+	var s35 = sth3[0]+sth3[1]+sth3[2]+sth3[3]+sth3[4]; 
+	var s36 = sth3[0]+sth3[1]+sth3[2]+sth3[3]+sth3[4]+sth3[5];
+	var s37 = sth3[0]+sth3[1]+sth3[2]+sth3[3]+sth3[4]+sth3[5]+sth3[6];
+
+	var sth4 =["","","","","",""];
+	if(ssName.length>3){sth4 = Array.from(ssName[3]);} 
+	var s41 = sth4[0]; 
+	var s42 = sth4[0]+sth4[1]; 
+	var s43 = sth4[0]+sth4[1]+sth4[2]; 
+	var s44 = sth4[0]+sth4[1]+sth4[2]+sth4[3];
+	var s45 = sth4[0]+sth4[1]+sth4[2]+sth4[3]+sth4[4]; 
+	var s46 = sth4[0]+sth4[1]+sth4[2]+sth4[3]+sth4[4]+sth4[5];
+	var s47 = sth4[0]+sth4[1]+sth4[2]+sth4[3]+sth4[4]+sth4[5]+sth4[6];
+
+	var sth5 =["","","","","",""];
+	if(ssName.length>4){sth5 = Array.from(ssName[4]);} 
+	var s51 = sth5[0]; 
+	var s52 = sth5[0]+sth5[1]; 
+	var s53 = sth5[0]+sth5[1]+sth5[2]; 
+	var s54 = sth5[0]+sth5[1]+sth5[2]+sth5[3]; 
+	var s55 = sth5[0]+sth5[1]+sth5[2]+sth5[3]+sth5[4]; 
+	var s56 = sth5[0]+sth5[1]+sth5[2]+sth5[3]+sth5[4]+sth5[5];
+	var s57 = sth5[0]+sth5[1]+sth5[2]+sth5[3]+sth5[4]+sth5[5]+sth5[6];
+
+			var sName1="";
+			var sName2="ห";			
+			var sName3="ก";
+			var sName4="ก";
+			var sName5="";
+			var sName6="";
+			var sName7="";
+			var sName8="";
+			var sName9="";
+
+
+if(words.has(s7)==true){sName1 = words.get(s7);}
+else if(words.has(s6)==true){sName1 = words.get(s6);}
+else if(words.has(s5)==true){sName1 = words.get(s5);}
+else if(words.has(s4)==true){sName1 = words.get(s4);}
+else if(words.has(s3)==true){sName1 = words.get(s3) ;}
+else if(words.has(s2)==true){sName1 = words.get(s2);}
+else{sName1 = words.get(s1);}
+
+if(words.has(s27)==true){sName2= words.get(s27);}
+else if(words.has(s26)==true){sName2 = words.get(s26);}
+else if(words.has(s25)==true){sName2 = words.get(s25);}
+else if(words.has(s24)==true){sName2 = words.get(s24);}
+else if(words.has(s23)==true){sName2 = words.get(s23) ;}
+else if(words.has(s22)==true){sName2 = words.get(s22);}
+else{sName1 = words.get(s21);}
+
+if(words.has(s37)==true){sName3= words.get(s37);}
+else if(words.has(s36)==true){sName3 = words.get(s36);}
+else if(words.has(s35)==true){sName3 = words.get(s35);}
+else if(words.has(s34)==true){sName3 = words.get(s34);}
+else if(words.has(s33)==true){sName3 = words.get(s33) ;}
+else if(words.has(s32)==true){sName3 = words.get(s32);}
+else{sName1 = words.get(s31);}
+
+if(words.has(s47)==true){sName4= words.get(s47);}
+else if(words.has(s46)==true){sName4 = words.get(s46);}
+else if(words.has(s45)==true){sName4 = words.get(s45);}
+else if(words.has(s44)==true){sName4 = words.get(s44);}
+else if(words.has(s43)==true){sName4 = words.get(s43) ;}
+else if(words.has(s42)==true){sName4 = words.get(s42);}
+else{sName1 = words.get(s41);}
+
+if(words.has(s57)==true){sName5= words.get(s57);}
+else if(words.has(s56)==true){sName5 = words.get(s56);}
+else if(words.has(s55)==true){sName5 = words.get(s55);}
+else if(words.has(s54)==true){sName5 = words.get(s54);}
+else if(words.has(s53)==true){sName5 = words.get(s53) ;}
+else if(words.has(s52)==true){sName5 = words.get(s52);}
+else{sName1 = words.get(s51);}
 
 document.getElementById("romanize").value = name1 + name2 + name3 + name4 + 
-name5 + name6 + name7 + name8 + name9;
+name5 + name6 + name7 + name8 + name9 + "  " + sName1 + sName2 + sName3 + sName4 + 
+sName5 + sName6 + sName7 + sName8 + sName9;
 
-/*
-if(words.has(r7)==true){document.getElementById("romanize").value = words.get(r7);}
-else if(words.has(r6)==true){document.getElementById("romanize").value = words.get(r6);}
-else if(words.has(r5)==true){document.getElementById("romanize").value = words.get(r5);}
-else if(words.has(r4)==true){document.getElementById("romanize").value = words.get(r4);}
-else if(words.has(r3)==true){document.getElementById("romanize").value = words.get(r3) ;}
-else if(words.has(r2)==true){document.getElementById("romanize").value = words.get(r2);}
-else{document.getElementById("romanize").value = words.get(r1);}
-*/
 
 }
 
