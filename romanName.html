@@ -47,26 +47,32 @@
 	<input 
 		type="text" 
 		id="Question" 
-		placeholder="สะกดคำแบบราชบัณฑิต" 
+		placeholder="ถอดชื่อ-นามสกุลไทย เป็นอักษรโรมัน ตามประกาศราชบัณฑิตยสถาน" 
 		title="ID" disabled>
 
  	<div class="scrollable" id="myScrollable">
       	<div id="chatting" class="chatting">
 	<ul id="Answer">
    		<li><a href="#">           
- 		<h2>Thai Word</h2>
+ 		<h3>ชื่อ</h3>
 
-			<input  type="text" id="thaiName" value=""></input>
-			<div>
-			<button class="btn" onclick="romanize()"><i class="fa fa-print"></i> Romanized</button>
+			<input  type="text" id="thaiName" value="" placeholder="มน-ตรี"></input>
+			<div><font size="-1" color="red">*มีขีดแบ่งเสียง ไม่ต้องใส่การันต์ ไม่ต้องใส่วรรณยุกต์ (เอก โท ตรี จัตวา)</font><br><br>
+
+		<h3>นามสกุล</h3>
+
+			<input  type="text" id="thaiSurname" value="" placeholder="กิต-ติ-วัง-โส"></input>
+			<br><br>
+
+			<button class="btn" onclick="romanize()"><i class="fa fa-pencil"></i> Romanize</button>
                   </div><br>
 
 			<div>
 	                <textarea 
 				id="romanize" 
 				row="50" 
-				cols="70" 
-				style="height: 420px">
+				cols="100" 
+				style="height: 100px">
 			</textarea>
 <br><br>
                         <font size="-1"><center><b>"No Gift Policy ทส. โปรงใส และเป็นธรรม"</b></center></font>
