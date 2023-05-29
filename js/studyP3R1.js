@@ -88,7 +88,7 @@ function studyP3R1(){
     	var thDay = dayName[tDay];
     	var thMonth = monthName[tMonth];
 	if(fDate < startSemesterDate){subjects ="ปิดเทอม";}
-	else if(new Date(sd1)==fDate){subject=stop1;}
+	else if(new Date(sd1)==fDate){subjects=stop1;}
 	else if(thDay=="จันทร์" && fDate>=new Date("2023-05-22")){subjects = everyday + computer + engLab + thaiPrinciples1 + chinese + mathIE + socialTH + period8;}
 	else if(thDay=="อังคาร" && fDate>=new Date("2023-05-22")){subjects = everyday + devEng + mathTH + funEng + health + scienceTH + thaiPrinciples2 + club + period8;}
 	else if(thDay=="พุธ" && fDate>=new Date("2023-05-22")){subjects = everyday + thaiPrinciples2 + scout + scienceIE + mathTH + history + thaiWriting + scienceTH + period8;}
