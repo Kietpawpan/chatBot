@@ -16,9 +16,9 @@ function studyP3R1(){
 	var subjects = "";
 	var mathIE = "หนังสือ Targeting Mathematics Workbook 3A (แยกเป็นบท ๆ) + สมุด Math IE สีขาว ส่งครู\n\n";
 	var mathTH = "สมุดคณิตศาสตร์สีขาว (เล่ม 1) + แบบฝึกหัดคณิตฯ เล่ม 1 (แยกเป็นบท ๆ)\n\n";    	
-	var thaiPrinciples1 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ภาษาพาที + ชีทไตรยางศ์ (ส่งครู)\n\n";
+	var thaiPrinciples1 = "สมุดภาษาไทยสีขาว (เล่ม 3) + No ภาษาพาที + ชีทไตรยางศ์ (ส่งครู)\n\n";
 	var thaiPrinciples2 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ชีท\n\n";
-	var thaiPrinciples3 = "สมุดภาษาไทยสีขาว (เล่ม 3) + วรรณคดีลำนำ + ชีท\n\n";
+	var thaiPrinciples3 = "สมุดภาษาไทยสีขาว (เล่ม 3) + No วรรณคดีลำนำ + ชีท\n\n";
 	var thaiWriting = "สมุดภาษาไทยสีชมพู (เล่ม 4) + อ่าน คิด เขียน + แบบฝึกหัดคัดไทย + หนังสือดรุณศึกษา\n\n";
 	var scienceTH = "หนังสือวิทย์ เล่ม 1 + แบบฝึกหัดวิทย์ เล่ม 1\n\n";
 	var scienceIE = "สมุด ScienceIE สีขาว (เล่ม 6) + My World of Science (รอแจก)\n\n";
@@ -34,9 +34,9 @@ function studyP3R1(){
 	var socialTH = "สมุดสังคมสีขาว (เล่ม 2) + หนังสือสังคม\n\n";
 	var computer = "สมุดวิทยาการคำนวณ (เล่ม 8)\n\n";
 	var history = "หนังสือประวัติศาสตร์ + สมุดสังคม ประวัติศาสตร์ (เล่ม 2)\n\n";
-	var club = "ชมรม\n\n";
-         var scout ="ชุดลูกเสือ เลขกอง 31 ดาว 3 ดวง อกซ้าย\n\n";
-	var sport = "พละบก รองเท้าผ้าใบ\n\n";
+	var club = "ชมรมจีน\n\n";
+         var scout ="No ชุดลูกเสือ เลขกอง 31 ดาว 3 ดวง อกซ้าย\n\n";
+	var sport = "พละบก เสื้อยืดขาว รองเท้าผ้าใบ\n\n";
 	var music = "ดนตรี เมโลเดียน ร้องเพลง\n\n";
 	var SGL = "SGL\n\n";
 	var engLab ="หนังสือ Power Up + หนังสือ Journal + สมุด Lab Eng สีชมพู\n\n";
