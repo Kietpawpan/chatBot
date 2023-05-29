@@ -43,8 +43,8 @@ function studyP3R1(){
 	var period8 = "คาบ 8 (เลิก 16.40 น.)";
     
 	var hw1 = "";
-	var dd1 = "2023-08-18";
- 	if(new Date(dd1) > fDate){hw1="* 18 ส.ค. 66 สอบ Reading Aloud บทที่ 1-5 (สุ่ม 1 เรื่อง)\n\n";}
+	var dd1 = "2023-09-06";
+ 	if(new Date(dd1) > fDate){hw1="* 6 ก.ย.66 สอบอ่าน/ตอบคำถาม Reading Aloud บทที่ 1-5 (สุ่ม 1 เรื่อง)\n\n";}
  	else{hw1="&#9888; " + "พ้นสอบ Reading Aloud\n\n";}
 	
 	var hw2 = ""; 
@@ -70,9 +70,9 @@ function studyP3R1(){
         var hw6 = "";
 	var dd6 = "2023-05-24";
 	if(new Date(dd6) > fDate){hw6 ="* 24 พ.ค. 66 ใส่บาตรเช้า\n\n";}
- 	else{hw6 ="&#9888; " + "ครบใส่บาตร\n\n";}
+ 	else{hw6 ="&#9888; " + "";}
  	   
-     var toDo = hw6 + hw2 + hw4 + hw3 + hw5 + hw1;
+     var toDo = hw2 + hw4 + hw3 + hw5 + hw1;
  
     	var tDay = fDate.getDay();
     	var tMonth = fDate.getMonth();
