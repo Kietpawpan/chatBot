@@ -71,6 +71,11 @@ function studyP3R1(){
 	var dd6 = "2023-06-02";
 	if(new Date(dd6) > fDate){hw6 ="* 2 มิ.ย. 66 ส่งใบวัคซีนหวัดใหญ่ จ่ายเงิน\n\n";}
  	else{hw6 ="&#9888; " + "ครบกำหนดส่งใบวัคซีน จ่ายเงิน";}
+	
+	var stopDate="";
+	var sd1="2023-06-02";
+	var stop1="หยุดวันเฉลิม";
+	
  	   
      var toDo = hw2 + hw4 + hw3 + hw5 + hw6 + hw1;
  
@@ -83,6 +88,7 @@ function studyP3R1(){
     	var thDay = dayName[tDay];
     	var thMonth = monthName[tMonth];
 	if(fDate < startSemesterDate){subjects ="ปิดเทอม";}
+	else if(new Date(sd1)==fDate){subject=stop1;}
 	else if(thDay=="จันทร์" && fDate>=new Date("2023-05-22")){subjects = everyday + computer + engLab + thaiPrinciples1 + chinese + mathIE + socialTH + period8;}
 	else if(thDay=="อังคาร" && fDate>=new Date("2023-05-22")){subjects = everyday + devEng + mathTH + funEng + health + scienceTH + thaiPrinciples2 + club + period8;}
 	else if(thDay=="พุธ" && fDate>=new Date("2023-05-22")){subjects = everyday + thaiPrinciples2 + scout + scienceIE + mathTH + history + thaiWriting + scienceTH + period8;}
