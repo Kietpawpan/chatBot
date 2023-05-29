@@ -68,11 +68,11 @@ function studyP3R1(){
  	else{hw5="&#9888; " + "ครบกำหนดส่งใบงาน irregular verbs\n\n";}
 	
         var hw6 = "";
-	var dd6 = "2023-05-24";
-	if(new Date(dd6) > fDate){hw6 ="* 24 พ.ค. 66 ใส่บาตรเช้า\n\n";}
- 	else{hw6 ="&#9888; " + "";}
+	var dd6 = "2023-06-02";
+	if(new Date(dd6) > fDate){hw6 ="* 2 มิ.ย. 66 ส่งใบวัคซีนหวัดใหญ่ จ่ายเงิน\n\n";}
+ 	else{hw6 ="&#9888; " + "ครบกำหนดส่งใบวัคซีน จ่ายเงิน";}
  	   
-     var toDo = hw2 + hw4 + hw3 + hw5 + hw1;
+     var toDo = hw2 + hw4 + hw3 + hw5 + hw6 + hw1;
  
     	var tDay = fDate.getDay();
     	var tMonth = fDate.getMonth();
