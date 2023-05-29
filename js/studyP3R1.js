@@ -43,8 +43,8 @@ function studyP3R1(){
 	var period8 = "คาบ 8 (เลิก 16.40 น.)";
     
 	var hw1 = "";
-	var dd1 = "2023-09-06";
- 	if(new Date(dd1) > fDate){hw1="* 6 ก.ย.66 สอบอ่าน/ตอบคำถาม Reading Aloud บทที่ 1-5 (สุ่ม 1 เรื่อง)\n\n";}
+	var dd1 = "2023-09-04";
+ 	if(new Date(dd1) > fDate){hw1="* 4 ก.ย.66 สอบอ่าน/ตอบคำถาม Reading Aloud บทที่ 1-5 (สุ่ม 1 เรื่อง)\n\n";}
  	else{hw1="&#9888; " + "พ้นสอบ Reading Aloud\n\n";}
 	
 	var hw2 = ""; 
