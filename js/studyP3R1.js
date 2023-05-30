@@ -15,7 +15,7 @@ function studyP3R1(){
     	var fDate = new Date(newDate2);
 	var subjects = "";
 	var mathIE = "หนังสือ Targeting Mathematics Workbook 3A (แยกเป็นบท ๆ) + สมุด Math IE สีขาว ส่งครู\n\n";
-	var mathTH = "สมุดคณิตศาสตร์สีขาว (เล่ม 1) + แบบฝึกหัดคณิตฯ เล่ม 1 (แยกเป็นบท ๆ)\n\n";    	
+	var mathTH = "สมุดคณิตศาสตร์สีขาว (เล่ม 1) + แบบฝึกหัดคณิตฯ เล่ม 1 (บทที่ 2)\n\n";    	
 	var thaiPrinciples1 = "สมุดภาษาไทยสีขาว (เล่ม 3) + No ภาษาพาที + ชีทไตรยางศ์ (ส่งครู)\n\n";
 	var thaiPrinciples2 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ชีท\n\n";
 	var thaiPrinciples3 = "สมุดภาษาไทยสีขาว (เล่ม 3) + No วรรณคดีลำนำ + ชีท\n\n";
