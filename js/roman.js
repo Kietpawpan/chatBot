@@ -15032,9 +15032,71 @@ else if(words.has(s53)==true){sName5 = words.get(s53) ;}
 else if(words.has(s52)==true){sName5 = words.get(s52);}
 else{sName1 = words.get(s51);}
 
-document.getElementById("romanize").value = name1 + name2 + name3 + name4 + 
-name5 + name6 + name7 + name8 + name9 + "  " + sName1 + sName2 + sName3 + sName4 + 
-sName5 + sName6 + sName7 + sName8 + sName9;
+var word1 ="";
+var word2 ="";
+var word3 ="";
+var word4 ="";
+var word5 =name5;
+var words1 ="";
+var words2 ="";
+var words3 ="";
+var words4 ="";
+var words5 =sName5;
 
+
+
+const sara = new Map([
+	['A','เอ'],['E','อี'],['I','ไอ'],['O','โอ'],['U','ยู'],
+]) 
+
+var font1 = Array.from(String(name1));
+var font2 = Array.from(String(name2));
+var font3 = Array.from(String(name3));
+var font4 = Array.from(String(name4));
+var font5 = Array.from(String(name5));
+var fonts1 = Array.from(String(sName1));
+var fonts2 = Array.from(String(sName2));
+var fonts3 = Array.from(String(sName3));
+var fonts4 = Array.from(String(sName4));
+var fonts5 = Array.from(String(sName5));
+
+
+
+if(sara.has(font1[font1.length -1])==true && sara.has(font2[0])==true) {
+word1=name1+"-";}
+else{word1 = name1;}
+
+if(sara.has(font2[font2.length -1])==true && sara.has(font3[0])==true) {
+word2=name2+"-";}
+else{word2 = name2;}
+
+if(sara.has(font3[font3.length -1])==true && sara.has(font4[0])==true) {
+word3=name3+"-";}
+else{word3 = name3;}
+
+if(sara.has(font4[font4.length -1])==true && sara.has(font5[0])==true) {
+word4=name4+"-";}
+else{word4 = name4;}
+
+
+if(sara.has(fonts1[fonts1.length -1])==true && sara.has(fonts2[0])==true) {
+words1=sName1+"-";}
+else{words1 = sName1;}
+
+if(sara.has(fonts2[fonts2.length -1])==true && sara.has(fonts3[0])==true) {
+words2=name2+"-";}
+else{words2 = sName2;}
+
+if(sara.has(fonts3[fonts3.length -1])==true && sara.has(fonts4[0])==true) {
+words3=name3+"-";}
+else{words3 = sName3;}
+
+if(sara.has(fonts4[fonts4.length -1])==true && sara.has(fonts5[0])==true) {
+words4=name4+"-";}
+else{words4 = sName4;}
+
+
+document.getElementById("romanize").value = word1 + word2 + word3 + word4 + word5 +
+" " + words1 +words2 + words3 + words4 + words5
 
 }
