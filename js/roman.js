@@ -8,6 +8,7 @@ function romanize() {
 
 
 	const words = new Map([ 
+		['',''],
 		['ะ','A'], ['บ','B'], ['จ','CH'], ['ฎ','D'], ['ด','D'], ['เ','E'], ['ฝ','F'], ['ฟ','F'],
 		['ห','H'], ['ฮ','H'], ['ม','M'], ['น','N'], ['ณ','N'], ['โ','O'], ['ป','P'], ['ร','R'],
 		['ส','S'], ['ษ','S'], ['ศ','S'], ['ซ','S'], ['ฏ','T'], ['ต','T'],	['ว','W'], ['ย','Y'],
@@ -14894,7 +14895,8 @@ else if(words.has(r5)==true){name1 = words.get(r5);}
 else if(words.has(r4)==true){name1 = words.get(r4);}
 else if(words.has(r3)==true){name1 = words.get(r3) ;}
 else if(words.has(r2)==true){name1 = words.get(r2);}
-else{name1 = words.get(r1);}
+else if(words.has(r1)==true){name1 = words.get(r1);}
+else{name1 = "";}
 
 if(words.has(r27)==true){name2= words.get(r27);}
 else if(words.has(r26)==true){name2 = words.get(r26);}
@@ -14902,7 +14904,8 @@ else if(words.has(r25)==true){name2 = words.get(r25);}
 else if(words.has(r24)==true){name2 = words.get(r24);}
 else if(words.has(r23)==true){name2 = words.get(r23) ;}
 else if(words.has(r22)==true){name2 = words.get(r22);}
-else{name1 = words.get(r21);}
+else if(words.has(r21)==true){name2 = words.get(r21);}
+else{name1 = "";}
 
 if(words.has(r37)==true){name3= words.get(r37);}
 else if(words.has(r36)==true){name3 = words.get(r36);}
@@ -14910,7 +14913,8 @@ else if(words.has(r35)==true){name3 = words.get(r35);}
 else if(words.has(r34)==true){name3 = words.get(r34);}
 else if(words.has(r33)==true){name3 = words.get(r33) ;}
 else if(words.has(r32)==true){name3 = words.get(r32);}
-else{name1 = words.get(r31);}
+else if(words.has(r31)==true){name3 = words.get(r31);}
+else{name1 = "";}
 
 if(words.has(r47)==true){name4= words.get(r47);}
 else if(words.has(r46)==true){name4 = words.get(r46);}
@@ -14918,7 +14922,8 @@ else if(words.has(r45)==true){name4 = words.get(r45);}
 else if(words.has(r44)==true){name4 = words.get(r44);}
 else if(words.has(r43)==true){name4 = words.get(r43) ;}
 else if(words.has(r42)==true){name4 = words.get(r42);}
-else{name1 = words.get(r41);}
+else if(words.has(r41)==true){name4 = words.get(r41);}
+else{name1 = "";}
 
 if(words.has(r57)==true){name5= words.get(r57);}
 else if(words.has(r56)==true){name5 = words.get(r56);}
@@ -14926,7 +14931,8 @@ else if(words.has(r55)==true){name5 = words.get(r55);}
 else if(words.has(r54)==true){name5 = words.get(r54);}
 else if(words.has(r53)==true){name5 = words.get(r53) ;}
 else if(words.has(r52)==true){name5 = words.get(r52);}
-else{name1 = words.get(r51);}
+else if(words.has(r51)==true){name5 = words.get(r51);}
+else{name1 = "";}
 
 	var thsName = document.getElementById("thaiSurname").value; 
 	var thsNameStr = thsName.toString(); 
@@ -14982,9 +14988,9 @@ else{name1 = words.get(r51);}
 	var s57 = sth5[0]+sth5[1]+sth5[2]+sth5[3]+sth5[4]+sth5[5]+sth5[6];
 
 			var sName1="";
-			var sName2="ห";			
-			var sName3="ก";
-			var sName4="ก";
+			var sName2="";			
+			var sName3="";
+			var sName4="";
 			var sName5="";
 			var sName6="";
 			var sName7="";
@@ -14998,7 +15004,8 @@ else if(words.has(s5)==true){sName1 = words.get(s5);}
 else if(words.has(s4)==true){sName1 = words.get(s4);}
 else if(words.has(s3)==true){sName1 = words.get(s3) ;}
 else if(words.has(s2)==true){sName1 = words.get(s2);}
-else{sName1 = words.get(s1);}
+else if(words.has(s1)==true){sName1 = words.get(s1);}
+else{sName1 = "";}
 
 if(words.has(s27)==true){sName2= words.get(s27);}
 else if(words.has(s26)==true){sName2 = words.get(s26);}
@@ -15006,7 +15013,8 @@ else if(words.has(s25)==true){sName2 = words.get(s25);}
 else if(words.has(s24)==true){sName2 = words.get(s24);}
 else if(words.has(s23)==true){sName2 = words.get(s23) ;}
 else if(words.has(s22)==true){sName2 = words.get(s22);}
-else{sName1 = words.get(s21);}
+else if(words.has(s21)==true){sName2 = words.get(s21);}
+else{sName1 = "";}
 
 if(words.has(s37)==true){sName3= words.get(s37);}
 else if(words.has(s36)==true){sName3 = words.get(s36);}
@@ -15014,7 +15022,8 @@ else if(words.has(s35)==true){sName3 = words.get(s35);}
 else if(words.has(s34)==true){sName3 = words.get(s34);}
 else if(words.has(s33)==true){sName3 = words.get(s33) ;}
 else if(words.has(s32)==true){sName3 = words.get(s32);}
-else{sName1 = words.get(s31);}
+else if(words.has(s31)==true){sName3 = words.get(s31);}
+else{sName1 = "";}
 
 if(words.has(s47)==true){sName4= words.get(s47);}
 else if(words.has(s46)==true){sName4 = words.get(s46);}
@@ -15022,7 +15031,8 @@ else if(words.has(s45)==true){sName4 = words.get(s45);}
 else if(words.has(s44)==true){sName4 = words.get(s44);}
 else if(words.has(s43)==true){sName4 = words.get(s43) ;}
 else if(words.has(s42)==true){sName4 = words.get(s42);}
-else{sName1 = words.get(s41);}
+else if(words.has(s41)==true){sName4 = words.get(s41);}
+else{sName1 = "";}
 
 if(words.has(s57)==true){sName5= words.get(s57);}
 else if(words.has(s56)==true){sName5 = words.get(s56);}
@@ -15030,7 +15040,8 @@ else if(words.has(s55)==true){sName5 = words.get(s55);}
 else if(words.has(s54)==true){sName5 = words.get(s54);}
 else if(words.has(s53)==true){sName5 = words.get(s53) ;}
 else if(words.has(s52)==true){sName5 = words.get(s52);}
-else{sName1 = words.get(s51);}
+else if(words.has(s51)==true){sName5 = words.get(s51);}
+else{sName1 = "";}
 
 var word1 ="";
 var word2 ="";
@@ -15097,6 +15108,6 @@ else{words4 = sName4;}
 
 
 document.getElementById("romanize").value = word1 + word2 + word3 + word4 + word5 +
-" " + words1 +words2 + words3 + words4 + words5
+"  " + words1 +words2 + words3 + words4 + words5
 
 }
