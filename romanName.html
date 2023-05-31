@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!Copyright © 2023 Monte Kietpawpan | MIT License>
+<!Copyright © 2023 Monte Kietpawpan | All rights reserved.>
 
 <html>
 <head>
@@ -10,18 +10,11 @@
     <link rel="stylesheet" href="css/answer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/chat.js"></script>
-   <link rel="stylesheet" href="css/calendarStyle.css">
-  <!script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <!script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="images/krut.png" />
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
     <meta property="og:updated_time" content="1440432930" />
-<script>
-  window.console = window.console || function(t) {};
-</script>
 
 
 
@@ -33,14 +26,14 @@
     	<nav>
         <div class="navbar">
             <img 
-		class="dpimg" 
-		onclick="openFullScreenDP()" 
-		src="images/mnre.png" alt="">
-            <div 
-		class="personalInfo">
-                	<label id="name">ศูนย์บริการร่วม ทส.</label>
+			class="dpimg" 
+			onclick="openFullScreenDP()" 
+			src="images/mnre.png" alt="">
+            	<div 
+				class="personalInfo">
+                		<label id="name">ศูนย์บริการร่วม ทส.</label>
                
-            </div>
+            	</div>
         </div>
     	</nav>
 
@@ -50,41 +43,71 @@
 		placeholder="ถอดอักษรไทย-โรมัน ตามราชบัณฑิตยสถาน" 
 		title="ID" disabled>
 
- 	<div class="scrollable" id="myScrollable">
-      	<div id="chatting" class="chatting">
-	<ul id="Answer">
-   		<li><a href="#">           
- 		<h3>ชื่อ</h3>
+ 	<div 
+		class="scrollable" 
+		id="myScrollable">
+      	<div 
+			id="chatting" 
+			class="chatting">
+		<ul id="Answer">
+   			<li><a href="#">           
+ 				<h3>ชื่อ</h3>
+				<input  
+					type="text" 
+					id="thaiName" 
+					value="" 
+					placeholder="อา-รี">
+				</input>
+					<div>
+						<font 
+							size="-1" 
+							color="red">*มีขีดแบ่งเสียง ไม่ใส่การันต์ ไม่ใส่วรรณยุกต์
+						</font>
+				<br><br>
+				<h3>นามสกุล</h3>
+				<input  
+					type="text" 
+					id="thaiSurname" 
+					value="" 
+					placeholder="พะ-ยา-ไท">
+				</input>
+				<br><br>
+			<button 
+				class="btn" 
+				onclick="romanize()">
+					<i 
+					class="fa fa-pencil">
+					</i> 
+				RTGS (Thai-Roman)
+			</button>
+          	</div>
+		<br>
 
-			<input  type="text" id="thaiName" value="" placeholder="อา-รี"></input>
-			<div><font size="-1" color="red">*มีขีดแบ่งเสียง ไม่ต้องใส่การันต์และวรรณยุกต์ (เอก โท ตรี จัตวา)</font><br><br>
-
-		<h3>นามสกุล</h3>
-
-			<input  type="text" id="thaiSurname" value="" placeholder="พะ-ยา-ไท"></input>
-			<br><br>
-
-			<button class="btn" onclick="romanize()"><i class="fa fa-pencil"></i> Romanize</button>
-                  </div><br>
-
-			<div>
-	                <textarea 
+		<div>
+			<textarea 
 				id="romanize" 
-				row="50" 
-				cols="100" 
-				style="height: 100px">
+				row="1" 
+				cols="1" 
+				style="height: 50px">
 			</textarea>
-<br><br>
-                        <font size="-1"><center><b>"No Gift Policy ทส. โปรงใส และเป็นธรรม"</b></center></font>
-			</div>		
-            	</a>
-		</li>
-      
+		</a>
+
+            <font size="-2">
+			<center><b><a 
+					href='https://ratchakitcha.soc.go.th/documents/1714357.pdf'>
+					<i 
+						class="fa fa-file-pdf-o">
+					</i> หลักเกณฑ์การถอดอักษร (ไทย-โรมัน):<br>ใช้วิธีถ่ายเสียง ไม่คำนึงการสะกดการันต์และวรรรณยุกต์ <br>(ตรงกับ ISO 11940-2 ยกเว้นใช้ CH แทน C สำหรับ จ)</a></b>
+				
+			</center>
+					
+		</font>
+
+		
          </div>
-         </div>
-	<script src="js/roman.js"></script><br>
+	<script src="js/roman.js"></script>
      
-   
+
        
 </body>
 </html>
