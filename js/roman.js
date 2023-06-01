@@ -1,11 +1,11 @@
-/* Copyright © 2023 Monte Kietpawpan
+/* Copyright © 2023 Montri Kiatphaophan
  * roman.js | All rights reserved. 
  * May 30, 2023
  */
 
 
 const words = new Map([ 
-		['',''],['/',' '],
+		[' ',' '],
 		['ะ','A'], ['บ','B'], ['จ','CH'], ['ฎ','D'], ['ด','D'], ['เ','E'], ['ฝ','F'], ['ฟ','F'],
 		['ห','H'], ['ฮ','H'], ['ม','M'], ['น','N'], ['ณ','N'], ['โ','O'], ['ป','P'], ['ร','R'],
 		['ส','S'], ['ษ','S'], ['ศ','S'], ['ซ','S'], ['ฏ','T'], ['ต','T'],	['ว','W'], ['ย','Y'],
@@ -5217,7 +5217,7 @@ const words = new Map([
 			['อาบ','UP'],['อาป','UP'],['อาพ','UP'],['อาภ','UP'],['อาฟ','UP'],
 
 
-			['อิ','AI'],['อริ','ARI'],['อลิ','ALI'],['อริบ','ARIB'],['อลิบ','ALIB'],
+			['อิ','I'],['อริ','ARI'],['อลิ','ALI'],['อริบ','ARIB'],['อลิบ','ALIB'],
 			['อิก','IK'],['อิข','IK'],['อิฆ','IK'],['อิค','IK'],['อิฅ','IK'],
 			['อิง','ING'],
 			['อิจ','IT'],['อิฉ','IT'],['อิช','IT'],['อิซ','IT'],['อิฎ','IT'],['อิฏ','IT'],['อิฐ','IT'],['อิฑ','IT'],['อิฒ','IT'],
@@ -5227,7 +5227,7 @@ const words = new Map([
 			['อิม','IM'],
 			['อิบ','IP'],['อิป','IP'],['อิพ','IP'],['อิภ','IP'],['อิฟ','IP'],
 
-			['อี','AI'],['อรี','ARI'],['อลี','ALI'],['อรีบ','ARIB'],['อลีบ','ALIB'],
+			['อี','I'],['อรี','ARI'],['อลี','ALI'],['อรีบ','ARIB'],['อลีบ','ALIB'],
 			['อีก','IK'],['อีข','IK'],['อีฆ','IK'],['อีค','IK'],['อีฅ','IK'],
 			['อีง','ING'],
 			['อีจ','IT'],['อีฉ','IT'],['อีช','IT'],['อีซ','IT'],['อีฎ','IT'],['อีฏ','IT'],['อีฐ','IT'],['อีฑ','IT'],['อีฒ','IT'],
@@ -14905,156 +14905,397 @@ function romanize() {
 	var r76 = th7[0]+th7[1]+th7[2]+th7[3]+th7[4]+th7[5];
 	var r77 = th7[0]+th7[1]+th7[2]+th7[3]+th7[4]+th7[5]+th7[6];
 
-			var name1="";
-			var name2="";			
-			var name3="";
-			var name4="";
-			var name5="";
-			var name6="";
-			var name7="";
-			var name8="";
-			var name9="";
+	var th8 =["","","","","","",""];
+	if(sName.length>7){th8 = Array.from(sName[7]);} 
+	var r81 = th8[0]; 
+	var r82 = th8[0]+th8[1]; 
+	var r83 = th8[0]+th8[1]+th8[2]; 
+	var r84 = th8[0]+th8[1]+th8[2]+th8[3]; 
+	var r85 = th8[0]+th8[1]+th8[2]+th8[3]+th8[4]; 
+	var r86 = th8[0]+th8[1]+th8[2]+th8[3]+th8[4]+th8[5];
+	var r87 = th8[0]+th8[1]+th8[2]+th8[3]+th8[4]+th8[5]+th8[6];
+
+	var th9 =["","","","","","",""];
+	if(sName.length>8){th9 = Array.from(sName[8]);} 
+	var r91 = th9[0]; 
+	var r92 = th9[0]+th9[1]; 
+	var r93 = th9[0]+th9[1]+th9[2]; 
+	var r94 = th9[0]+th9[1]+th9[2]+th9[3]; 
+	var r95 = th9[0]+th9[1]+th9[2]+th9[3]+th9[4]; 
+	var r96 = th9[0]+th9[1]+th9[2]+th9[3]+th9[4]+th9[5];
+	var r97 = th9[0]+th9[1]+th9[2]+th9[3]+th9[4]+th9[5]+th9[6];
+
+	var th10 =["","","","","","",""];
+	if(sName.length>9){th10 = Array.from(sName[9]);} 
+	var r101 = th10[0]; 
+	var r102 = th10[0]+th10[1]; 
+	var r103 = th10[0]+th10[1]+th10[2]; 
+	var r104 = th10[0]+th10[1]+th10[2]+th10[3]; 
+	var r105 = th10[0]+th10[1]+th10[2]+th10[3]+th10[4]; 
+	var r106 = th10[0]+th10[1]+th10[2]+th10[3]+th10[4]+th10[5];
+	var r107 = th10[0]+th10[1]+th10[2]+th10[3]+th10[4]+th10[5]+th10[6];
+
+	var th11 =["","","","","","",""];
+	if(sName.length>10){th11 = Array.from(sName[10]);} 
+	var r111 = th11[0]; 
+	var r112 = th11[0]+th11[1]; 
+	var r113 = th11[0]+th11[1]+th11[2]; 
+	var r114 = th11[0]+th11[1]+th11[2]+th11[3]; 
+	var r115 = th11[0]+th11[1]+th11[2]+th11[3]+th11[4]; 
+	var r116 = th11[0]+th11[1]+th11[2]+th11[3]+th11[4]+th11[5];
+	var r117 = th11[0]+th11[1]+th11[2]+th11[3]+th11[4]+th11[5]+th11[6];
+
+	var th12 =["","","","","","",""];
+	if(sName.length>11){th12 = Array.from(sName[11]);} 
+	var r121 = th12[0]; 
+	var r122 = th12[0]+th12[1]; 
+	var r123 = th12[0]+th12[1]+th12[2]; 
+	var r124 = th12[0]+th12[1]+th12[2]+th12[3]; 
+	var r125 = th12[0]+th12[1]+th12[2]+th12[3]+th12[4]; 
+	var r126 = th12[0]+th12[1]+th12[2]+th12[3]+th12[4]+th12[5];
+	var r127 = th12[0]+th12[1]+th12[2]+th12[3]+th12[4]+th12[5]+th12[6];
+
+	var th13 =["","","","","","",""];
+	if(sName.length>12){th13 = Array.from(sName[12]);} 
+	var r131 = th13[0]; 
+	var r132 = th13[0]+th13[1]; 
+	var r133 = th13[0]+th13[1]+th13[2]; 
+	var r134 = th13[0]+th13[1]+th13[2]+th13[3]; 
+	var r135 = th13[0]+th13[1]+th13[2]+th13[3]+th13[4]; 
+	var r136 = th13[0]+th13[1]+th13[2]+th13[3]+th13[4]+th13[5];
+	var r137 = th13[0]+th13[1]+th13[2]+th13[3]+th13[4]+th13[5]+th13[6];
+
+	var th14 =["","","","","","",""];
+	if(sName.length>13){th14 = Array.from(sName[13]);} 
+	var r141 = th14[0]; 
+	var r142 = th14[0]+th14[1]; 
+	var r143 = th14[0]+th14[1]+th14[2]; 
+	var r144 = th14[0]+th14[1]+th14[2]+th14[3]; 
+	var r145 = th14[0]+th14[1]+th14[2]+th14[3]+th14[4]; 
+	var r146 = th14[0]+th14[1]+th14[2]+th14[3]+th14[4]+th14[5];
+	var r147 = th14[0]+th14[1]+th14[2]+th14[3]+th14[4]+th14[5]+th14[6];
+
+	var th15 =["","","","","","",""];
+	if(sName.length>14){th15 = Array.from(sName[14]);} 
+	var r151 = th15[0]; 
+	var r152 = th15[0]+th15[1]; 
+	var r153 = th15[0]+th15[1]+th15[2]; 
+	var r154 = th15[0]+th15[1]+th15[2]+th15[3]; 
+	var r155 = th15[0]+th15[1]+th15[2]+th15[3]+th15[4]; 
+	var r156 = th15[0]+th15[1]+th15[2]+th15[3]+th15[4]+th15[5];
+	var r157 = th15[0]+th15[1]+th15[2]+th15[3]+th15[4]+th15[5]+th15[6];
+
+	var name1="";
+	var name2="";			
+	var name3="";
+	var name4="";
+	var name5="";
+	var name6="";
+	var name7="";
+	var name8="";
+	var name9="";
+	var name10="";
+	var name11="";
+	var name12="";
+	var name13="";
+	var name14="";
+	var name15="";
+
+// Romanize by getting the relevant roman word from the database.
+	if(words.has(r7)==true){name1 = words.get(r7);}
+	else if(words.has(r6)==true){name1 = words.get(r6);}
+	else if(words.has(r5)==true){name1 = words.get(r5);}
+	else if(words.has(r4)==true){name1 = words.get(r4);}
+	else if(words.has(r3)==true){name1 = words.get(r3) ;}
+	else if(words.has(r2)==true){name1 = words.get(r2);}
+	else if(words.has(r1)==true){name1 = words.get(r1);}
+	else{name1 = "";}
+
+	if(words.has(r27)==true){name2= words.get(r27);}
+	else if(words.has(r26)==true){name2 = words.get(r26);}
+	else if(words.has(r25)==true){name2 = words.get(r25);}
+	else if(words.has(r24)==true){name2 = words.get(r24);}
+	else if(words.has(r23)==true){name2 = words.get(r23) ;}
+	else if(words.has(r22)==true){name2 = words.get(r22);}
+	else if(words.has(r21)==true){name2 = words.get(r21);}
+	else{name2 = "";}
+
+	if(words.has(r37)==true){name3= words.get(r37);}
+	else if(words.has(r36)==true){name3 = words.get(r36);}
+	else if(words.has(r35)==true){name3 = words.get(r35);}
+	else if(words.has(r34)==true){name3 = words.get(r34);}
+	else if(words.has(r33)==true){name3 = words.get(r33) ;}
+	else if(words.has(r32)==true){name3 = words.get(r32);}
+	else if(words.has(r31)==true){name3 = words.get(r31);}
+	else{name3 = "";}
+
+	if(words.has(r47)==true){name4= words.get(r47);}
+	else if(words.has(r46)==true){name4 = words.get(r46);}
+	else if(words.has(r45)==true){name4 = words.get(r45);}
+	else if(words.has(r44)==true){name4 = words.get(r44);}
+	else if(words.has(r43)==true){name4 = words.get(r43) ;}
+	else if(words.has(r42)==true){name4 = words.get(r42);}
+	else if(words.has(r41)==true){name4 = words.get(r41);}
+	else{name4 = "";}
+
+	if(words.has(r57)==true){name5= words.get(r57);}
+	else if(words.has(r56)==true){name5 = words.get(r56);}
+	else if(words.has(r55)==true){name5 = words.get(r55);}
+	else if(words.has(r54)==true){name5 = words.get(r54);}
+	else if(words.has(r53)==true){name5 = words.get(r53) ;}
+	else if(words.has(r52)==true){name5 = words.get(r52);}
+	else if(words.has(r51)==true){name5 = words.get(r51);}
+	else{name5 = "";}
+
+	if(words.has(r67)==true){name6= words.get(r67);}
+	else if(words.has(r66)==true){name6 = words.get(r66);}
+	else if(words.has(r65)==true){name6 = words.get(r65);}
+	else if(words.has(r64)==true){name6 = words.get(r64);}
+	else if(words.has(r63)==true){name6 = words.get(r63) ;}
+	else if(words.has(r62)==true){name6 = words.get(r62);}
+	else if(words.has(r61)==true){name6 = words.get(r61);}
+	else{name6 = "";}
+
+	if(words.has(r77)==true){name7= words.get(r77);}
+	else if(words.has(r76)==true){name7 = words.get(r76);}
+	else if(words.has(r75)==true){name7 = words.get(r75);}
+	else if(words.has(r74)==true){name7 = words.get(r74);}
+	else if(words.has(r73)==true){name7 = words.get(r73) ;}
+	else if(words.has(r72)==true){name7 = words.get(r72);}
+	else if(words.has(r71)==true){name7 = words.get(r71);}
+	else{name7 = "";}
+
+	if(words.has(r87)==true){name8= words.get(r87);}
+	else if(words.has(r86)==true){name8 = words.get(r86);}
+	else if(words.has(r85)==true){name8 = words.get(r85);}
+	else if(words.has(r84)==true){name8 = words.get(r84);}
+	else if(words.has(r83)==true){name8 = words.get(r83);}
+	else if(words.has(r82)==true){name8 = words.get(r82);}
+	else if(words.has(r81)==true){name8 = words.get(r81);}
+	else{name8 = "";}
+
+	if(words.has(r97)==true){name9= words.get(r97);}
+	else if(words.has(r96)==true){name9 = words.get(r96);}
+	else if(words.has(r95)==true){name9 = words.get(r95);}
+	else if(words.has(r94)==true){name9 = words.get(r94);}
+	else if(words.has(r93)==true){name9 = words.get(r93) ;}
+	else if(words.has(r92)==true){name9 = words.get(r92);}
+	else if(words.has(r91)==true){name9 = words.get(r91);}
+	else{name9 = "";}
+
+	if(words.has(r107)==true){name10= words.get(r107);}
+	else if(words.has(r106)==true){name10 = words.get(r106);}
+	else if(words.has(r105)==true){name10 = words.get(r105);}
+	else if(words.has(r104)==true){name10 = words.get(r104);}
+	else if(words.has(r103)==true){name10 = words.get(r103) ;}
+	else if(words.has(r102)==true){name10 = words.get(r102);}
+	else if(words.has(r101)==true){name10 = words.get(r101);}
+	else{name10 = "";}
+
+	if(words.has(r117)==true){name11= words.get(r117);}
+	else if(words.has(r116)==true){name11 = words.get(r116);}
+	else if(words.has(r115)==true){name11 = words.get(r115);}
+	else if(words.has(r114)==true){name11 = words.get(r114);}
+	else if(words.has(r113)==true){name11 = words.get(r113) ;}
+	else if(words.has(r112)==true){name11 = words.get(r112);}
+	else if(words.has(r111)==true){name11 = words.get(r111);}
+	else{name11 = "";}
+
+	if(words.has(r127)==true){name12= words.get(r127);}
+	else if(words.has(r126)==true){name12 = words.get(r126);}
+	else if(words.has(r125)==true){name12 = words.get(r125);}
+	else if(words.has(r124)==true){name12 = words.get(r124);}
+	else if(words.has(r123)==true){name12 = words.get(r123) ;}
+	else if(words.has(r122)==true){name12 = words.get(r122);}
+	else if(words.has(r121)==true){name12 = words.get(r121);}
+	else{name12 = "";}
+
+	if(words.has(r137)==true){name13= words.get(r137);}
+	else if(words.has(r136)==true){name13 = words.get(r136);}
+	else if(words.has(r135)==true){name13 = words.get(r135);}
+	else if(words.has(r134)==true){name13 = words.get(r134);}
+	else if(words.has(r133)==true){name13 = words.get(r133) ;}
+	else if(words.has(r132)==true){name13 = words.get(r132);}
+	else if(words.has(r131)==true){name13 = words.get(r131);}
+	else{name13 = "";}
+
+	if(words.has(r147)==true){name14= words.get(r147);}
+	else if(words.has(r146)==true){name14 = words.get(r146);}
+	else if(words.has(r145)==true){name14 = words.get(r145);}
+	else if(words.has(r144)==true){name14 = words.get(r144);}
+	else if(words.has(r143)==true){name14 = words.get(r143) ;}
+	else if(words.has(r142)==true){name14 = words.get(r142);}
+	else if(words.has(r141)==true){name14 = words.get(r141);}
+	else{name14 = "";}
+
+	if(words.has(r157)==true){name14= words.get(r157);}
+	else if(words.has(r156)==true){name14 = words.get(r156);}
+	else if(words.has(r155)==true){name14 = words.get(r155);}
+	else if(words.has(r154)==true){name14 = words.get(r154);}
+	else if(words.has(r153)==true){name14 = words.get(r153) ;}
+	else if(words.has(r152)==true){name14 = words.get(r152);}
+	else if(words.has(r151)==true){name14 = words.get(r151);}
+	else{name15 = "";}
 
 
-if(words.has(r7)==true){name1 = words.get(r7);}
-else if(words.has(r6)==true){name1 = words.get(r6);}
-else if(words.has(r5)==true){name1 = words.get(r5);}
-else if(words.has(r4)==true){name1 = words.get(r4);}
-else if(words.has(r3)==true){name1 = words.get(r3) ;}
-else if(words.has(r2)==true){name1 = words.get(r2);}
-else if(words.has(r1)==true){name1 = words.get(r1);}
-else{name1 = "";}
+	var word1 ="";
+	var word2 ="";
+	var word3 ="";
+	var word4 ="";
+	var word5 ="";
+	var word6 ="";
+	var word7 ="";
+	var word8 ="";
+	var word9 ="";
+	var word10 ="";
+	var word11 ="";
+	var word12 ="";
+	var word13 ="";
+	var word14 ="";
 
-if(words.has(r27)==true){name2= words.get(r27);}
-else if(words.has(r26)==true){name2 = words.get(r26);}
-else if(words.has(r25)==true){name2 = words.get(r25);}
-else if(words.has(r24)==true){name2 = words.get(r24);}
-else if(words.has(r23)==true){name2 = words.get(r23) ;}
-else if(words.has(r22)==true){name2 = words.get(r22);}
-else if(words.has(r21)==true){name2 = words.get(r21);}
-else{name2 = "";}
+	const sara = new Map([
+		['A','เอ'],['E','อี'],['I','ไอ'],['O','โอ'],['U','ยู'],
+			]) 
 
-if(words.has(r37)==true){name3= words.get(r37);}
-else if(words.has(r36)==true){name3 = words.get(r36);}
-else if(words.has(r35)==true){name3 = words.get(r35);}
-else if(words.has(r34)==true){name3 = words.get(r34);}
-else if(words.has(r33)==true){name3 = words.get(r33) ;}
-else if(words.has(r32)==true){name3 = words.get(r32);}
-else if(words.has(r31)==true){name3 = words.get(r31);}
-else{name3 = "";}
+	const ng = new Map([
+		['G','ง'],['NG','ง'],
+			]) 
+// Convert each romanizd word into array for checking the front and he final character
+	var font1 = Array.from(String(name1));
+	var font2 = Array.from(String(name2));
+	var font3 = Array.from(String(name3));
+	var font4 = Array.from(String(name4));
+	var font5 = Array.from(String(name5));
+	var font6 = Array.from(String(name6));
+	var font7 = Array.from(String(name7));
+	var font8 = Array.from(String(name8));
+	var font9 = Array.from(String(name9));
+	var font10 = Array.from(String(name10));
+	var font11 = Array.from(String(name11));
+	var font12 = Array.from(String(name12));
+	var font13 = Array.from(String(name13));
+	var font14 = Array.from(String(name14));
+	var font14 = Array.from(String(name15));
 
-if(words.has(r47)==true){name4= words.get(r47);}
-else if(words.has(r46)==true){name4 = words.get(r46);}
-else if(words.has(r45)==true){name4 = words.get(r45);}
-else if(words.has(r44)==true){name4 = words.get(r44);}
-else if(words.has(r43)==true){name4 = words.get(r43) ;}
-else if(words.has(r42)==true){name4 = words.get(r42);}
-else if(words.has(r41)==true){name4 = words.get(r41);}
-else{name4 = "";}
+// Add a dash between vowels or between ng and vowel
+	if(sara.has(font1[font1.length -1])==true && sara.has(font2[0])==true) {
+		word1=name1+"-";}
+		else if(ng.has(font1[font1.length -1])==true && sara.has(font2[0])==true) {
+		word1=name1+"-";}
+		else if(sara.has(font1[font1.length -1])==true && ng.has(font2[0]+font2[1])==true) {
+		word1=name1+"-";}
+		else{word1 = name1;}
 
-if(words.has(r57)==true){name5= words.get(r57);}
-else if(words.has(r56)==true){name5 = words.get(r56);}
-else if(words.has(r55)==true){name5 = words.get(r55);}
-else if(words.has(r54)==true){name5 = words.get(r54);}
-else if(words.has(r53)==true){name5 = words.get(r53) ;}
-else if(words.has(r52)==true){name5 = words.get(r52);}
-else if(words.has(r51)==true){name5 = words.get(r51);}
-else{name5 = "";}
+	if(sara.has(font2[font2.length -1])==true && sara.has(font3[0])==true) {
+		word2=name2+"-";}
+		else if(ng.has(font2[font2.length -1])==true && sara.has(font3[0])==true) {
+		word2=name2+"-";}
+		else if(sara.has(font2[font2.length -1])==true && ng.has(font3[0]+font3[1])==true) {
+		word2=name2+"-";}
+		else{word2 = name2;}
 
-if(words.has(r67)==true){name6= words.get(r67);}
-else if(words.has(r66)==true){name6 = words.get(r66);}
-else if(words.has(r65)==true){name6 = words.get(r65);}
-else if(words.has(r64)==true){name6 = words.get(r64);}
-else if(words.has(r63)==true){name6 = words.get(r63) ;}
-else if(words.has(r62)==true){name6 = words.get(r62);}
-else if(words.has(r61)==true){name6 = words.get(r61);}
-else{name6 = "";}
+	if(sara.has(font3[font3.length -1])==true && sara.has(font4[0])==true) {
+		word3=name3+"-";}
+		else if(ng.has(font3[font3.length -1])==true && sara.has(font4[0])==true) {
+		word3=name3+"-";}
+		else if(sara.has(font3[font3.length -1])==true && ng.has(font4[0]+font4[1])==true) {
+		word3=name3+"-";}
+		else{word3 = name3;}
 
-if(words.has(r77)==true){name7= words.get(r77);}
-else if(words.has(r76)==true){name7 = words.get(r76);}
-else if(words.has(r75)==true){name7 = words.get(r75);}
-else if(words.has(r74)==true){name7 = words.get(r74);}
-else if(words.has(r73)==true){name7 = words.get(r73) ;}
-else if(words.has(r72)==true){name7 = words.get(r72);}
-else if(words.has(r71)==true){name7 = words.get(r71);}
-else{name7 = "";}
+	if(sara.has(font4[font4.length -1])==true && sara.has(font5[0])==true) {
+		word4=name4+"-";}
+		else if(ng.has(font4[font4.length -1])==true && sara.has(font5[0])==true) {
+		word4=name4+"-";}
+		else if(sara.has(font4[font4.length -1])==true && ng.has(font5[0]+font5[1])==true) {
+		word4=name4+"-";}
+		else{word4 = name4;}
+
+	if(sara.has(font5[font5.length -1])==true && sara.has(font6[0])==true) {
+		word5=name5+"-";}
+		else if(ng.has(font5[font5.length -1])==true && sara.has(font6[0])==true) {
+		word5=name5+"-";}
+		else if(sara.has(font5[font5.length -1])==true && ng.has(font6[0]+font6[1])==true) {
+		word5=name5+"-";}
+		else{word5 = name5;}
+
+	if(sara.has(font6[font6.length -1])==true && sara.has(font7[0])==true) {
+		word6=name6+"-";}
+		else if(ng.has(font6[font6.length -1])==true && sara.has(font7[0])==true) {
+		word6=name6+"-";}
+		else if(sara.has(font6[font6.length -1])==true && ng.has(font7[0]+font7[1])==true) {
+		word6=name6+"-";}
+	else{word6 = name6;}
+
+	if(sara.has(font7[font7.length -1])==true && sara.has(font8[0])==true) {
+		word7=name7+"-";}
+		else if(ng.has(font7[font7.length -1])==true && sara.has(font8[0])==true) {
+		word7=name7+"-";}
+		else if(sara.has(font7[font7.length -1])==true && ng.has(font8[0]+font8[1])==true) {
+		word7=name7+"-";}
+		else{word7 = name7;}
+
+	if(sara.has(font8[font8.length -1])==true && sara.has(font9[0])==true) {
+		word8=name8+"-";}
+		else if(ng.has(font8[font8.length -1])==true && sara.has(font9[0])==true) {
+		word8=name8+"-";}
+		else if(sara.has(font8[font8.length -1])==true && ng.has(font9[0]+font9[1])==true) {
+		word8=name8+"-";}
+		else{word8 = name8;}
+
+	if(sara.has(font9[font9.length -1])==true && sara.has(font10[0])==true) {
+		word9=name9+"-";}
+		else if(ng.has(font9[font9.length -1])==true && sara.has(font10[0])==true) {
+		word9=name9+"-";}
+		else if(sara.has(font9[font9.length -1])==true && ng.has(font10[0]+font10[1])==true) {
+		word9=name9+"-";}
+		else{word9 = name9;}
+
+	if(sara.has(font10[font10.length -1])==true && sara.has(font11[0])==true) {
+		word10=name10+"-";}
+		else if(ng.has(font10[font10.length -1])==true && sara.has(font11[0])==true) {
+		word10=name10+"-";}
+		else if(sara.has(font10[font10.length -1])==true && ng.has(font11[0]+font11[1])==true) {
+		word10=name10+"-";}
+		else{word10 = name10;}
+
+	if(sara.has(font11[font11.length -1])==true && sara.has(font12[0])==true) {
+		word11=name11+"-";}
+		else if(ng.has(font11[font11.length -1])==true && sara.has(font12[0])==true) {
+		word11=name11+"-";}
+		else if(sara.has(font11[font11.length -1])==true && ng.has(font12[0]+font12[1])==true) {
+		word11=name11+"-";}
+		else{word11 = name11;}
+
+	if(sara.has(font12[font12.length -1])==true && sara.has(font13[0])==true) {
+		word12=name12+"-";}
+		else if(ng.has(font12[font12.length -1])==true && sara.has(font13[0])==true) {
+		word12=name12+"-";}
+		else if(sara.has(font12[font12.length -1])==true && ng.has(font13[0]+font13[1])==true) {
+		word12=name12+"-";}
+		else{word12 = name12;}
+
+	if(sara.has(font13[font13.length -1])==true && sara.has(font14[0])==true) {
+		word13=name13+"-";}
+		else if(ng.has(font13[font13.length -1])==true && sara.has(font14[0])==true) {
+		word13=name13+"-";}
+		else if(sara.has(font13[font13.length -1])==true && ng.has(font14[0]+font14[1])==true) {
+		word13=name13+"-";}
+		else{word13 = name13;}
+
+	if(sara.has(font14[font14.length -1])==true && sara.has(font15[0])==true) {
+		word14=name14+"-";}
+		else if(ng.has(font14[font14.length -1])==true && sara.has(font15[0])==true) {
+		word14=name14+"-";}
+		else if(sara.has(font14[font14.length -1])==true && ng.has(font15[0]+font15[1])==true) {
+		word14=name14+"-";}
+		else{word14 = name14;}
 
 
-var word1 ="";
-var word2 ="";
-var word3 ="";
-var word4 ="";
-var word5 =name5;
-
-
-
-const sara = new Map([
-	['A','เอ'],['E','อี'],['I','ไอ'],['O','โอ'],['U','ยู'],
-]) 
-
-const ng = new Map([
-	['G','ง'],['NG','ง'],
-]) 
-
-var font1 = Array.from(String(name1));
-var font2 = Array.from(String(name2));
-var font3 = Array.from(String(name3));
-var font4 = Array.from(String(name4));
-var font5 = Array.from(String(name5));
-var font6 = Array.from(String(name6));
-var font7 = Array.from(String(name7));
-
-
-// add the dash between vowels or between ng and vowel
-if(sara.has(font1[font1.length -1])==true && sara.has(font2[0])==true) {
-word1=name1+"-";}
-else if(ng.has(font1[font1.length -1])==true && sara.has(font2[0])==true) {
-word1=name1+"-";}
-else if(sara.has(font1[font1.length -1])==true && ng.has(font2[0]+font2[1])==true) {
-word1=name1+"-";}
-else{word1 = name1;}
-
-if(sara.has(font2[font2.length -1])==true && sara.has(font3[0])==true) {
-word2=name2+"-";}
-else if(ng.has(font2[font2.length -1])==true && sara.has(font3[0])==true) {
-word2=name2+"-";}
-else if(sara.has(font2[font2.length -1])==true && ng.has(font3[0]+font3[1])==true) {
-word2=name2+"-";}
-else{word2 = name2;}
-
-if(sara.has(font3[font3.length -1])==true && sara.has(font4[0])==true) {
-word3=name3+"-";}
-else if(ng.has(font3[font3.length -1])==true && sara.has(font4[0])==true) {
-word3=name3+"-";}
-else if(sara.has(font3[font3.length -1])==true && ng.has(font4[0]+font4[1])==true) {
-word3=name3+"-";}
-else{word3 = name3;}
-
-if(sara.has(font4[font4.length -1])==true && sara.has(font5[0])==true) {
-word4=name4+"-";}
-else if(ng.has(font4[font4.length -1])==true && sara.has(font5[0])==true) {
-word4=name4+"-";}
-else if(sara.has(font4[font4.length -1])==true && ng.has(font5[0]+font5[1])==true) {
-word4=name4+"-";}
-else{word4 = name4;}
-
-if(sara.has(font5[font5.length -1])==true && sara.has(font6[0])==true) {
-word5=name5+"-";}
-else if(ng.has(font5[font5.length -1])==true && sara.has(font6[0])==true) {
-word5=name5+"-";}
-else if(sara.has(font5[font5.length -1])==true && ng.has(font6[0]+font6[1])==true) {
-word5=name5+"-";}
-else{word5 = name5;}
-
-if(sara.has(font6[font6.length -1])==true && sara.has(font7[0])==true) {
-word6=name6+"-";}
-else if(ng.has(font6[font6.length -1])==true && sara.has(font7[0])==true) {
-word6=name6+"-";}
-else if(sara.has(font6[font6.length -1])==true && ng.has(font7[0]+font7[1])==true) {
-word6=name6+"-";}
-else{word6 = name6;}
-
-
-document.getElementById("romanize").value = word1 + word2 + word3 + word4 + word5 + word6 
+	document.getElementById("romanize").value = 
+			word1 + word2 + word3 + 
+			word4 + word5 + word6 + 
+			word7 + word8 + word9 + 
+			word10 + word11 + word12 + 
+			word13 + word14
 
 }
