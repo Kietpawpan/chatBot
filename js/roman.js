@@ -3,8 +3,8 @@
  * May 30, 2023
  */
 
-
-const words = new Map([ 
+function romanize() {
+	const words = new Map([ 
 		[' ',' '],
 		['ะ','A'], ['บ','B'], ['จ','CH'], ['ฎ','D'], ['ด','D'], ['เ','E'], ['ฝ','F'], ['ฟ','F'],
 		['ห','H'], ['ฮ','H'], ['ม','M'], ['น','N'], ['ณ','N'], ['โ','O'], ['ป','P'], ['ร','R'],
@@ -41,6 +41,8 @@ const words = new Map([
 		['มหา','MAHA'],['มเห','MAHE'],
 		['เอร็ด','ARET'],['อราม','ARAM'],
 
+	
+		
 
 //--Base	
 		['ปลวก','PLUAK'],['ปลวข','PLUAK'],['ปลวฆ','PLUAK'],['ปลวค','PLUAK'],['ปลวฅ','PLUAK'],	
@@ -843,6 +845,22 @@ const words = new Map([
 
 	
 //Master
+		['เกีย','KIA'],['เขีย','KHIA'],['เฃีย','KHIA'],['เคีย','KHIA'],['เฆีย','KHIA'],['เฅีย','KHIA'],
+		['เงีย','NGIA'],['เจีย','CHIA'],['เฉีย','CHIA'],['เชีย','CHIA'],['เฌีย','CHIA'],
+		['เซีย','SIA'],['เศีย','SIA'],['เสีย','SIA'],['เษีย','SIA'],
+		['เฝีย','FIA'],['เฟีย','FIA'],
+		['เตีย','TIA'],['เฏีย','TIA'],
+		['เฎีย','DIA'],['เดีย','DIA'],
+		['เนีย','NIA'],['เมีย','MIA'],
+		['เบีย','BIA'],['เปีย','PIA'],
+		['เพีย','PHIA'],['เผีย','PHIA'],['เภีย','PHIA'],
+		['เญีย','YIA'],['เยีย','YIA'],		
+		['เลีย','LIA'],['เฬีย','LIA'],['เรีย','RIA'],
+		['เทีย','THIA'],['เธีย','THIA'],['เทีย','THIA'],['เฒีย','THIA'],['เถีย','THIA'],
+		['เวีย','WIA'],
+		['เหีย','HIA'],['เฮีย','HIA'],
+		['เอีย','IA'],
+
 		['เก็ก','KEK'],['เข็ก','KHEK'],['เฃ็ก','KHEK'],['เค็ก','KHEK'],['เฆ็ก','KHEK'],['เฅ็ก','KHEK'],
 		['เง็ก','NGEK'],['เจ็ก','CHEK'],['เฉ็ก','CHEK'],['เช็ก','CHEK'],['เฌ็ก','CHEK'],
 		['เซ็ก','SEK'],['เศ็ก','SEK'],['เส็ก','SEK'],['เษ็ก','SEK'],
@@ -14831,10 +14849,98 @@ const words = new Map([
 
 ]);
 
-function romanize() {
+
 	var thName = document.getElementById("thaiName").value; // มน-ตรี-ศรี-นะ-คอน
-	var thNameStr = thName.toString(); // "มน-ตรี"
-	var sName = thNameStr.split("-"); // มน = sName[0], ตรี = sName [1], ศรี = sName [2], คอน = sName [3]
+	var n0 = thName.toString(); // "มน-ตรี"
+	var n1 = n0.replace(/ก่|ก้|ก๊|ก๋/g,"ก");	
+	var n2 = n1.replace(/กิ่|กิ้|กิ๊|กิ๋/g,"กิ");	
+	var n3 = n2.replace(/กี่|กี้|กี๊|กี๋/g,"กี");	
+	var n4 = n3.replace(/กึ่|กึ้|กึ๊|กึ๋/g,"กึ");
+	var n5 = n4.replace(/ก่ำ|ก้ำ|ก๊ำ|ก๋ำ/g,"กำ");	
+	var n6 = n5.replace(/กุ่|กุ้|กุ๊|กุ๋/g,"กุ");	
+	var n7 = n6.replace(/กื่|กื้|กื๊|กื๋/g,"กื");	
+	var n8 = n7.replace(/กั่|กั้|กั๊|กั๋/g,"กั");		
+	var n9 = n8.replace(/กู่|กู้|กู๊|กู๋/g,"กู");
+
+	var n11 = n9.replace(/ร่|ร้|ร๊|ร๋/g,"ร");	
+	var n12 = n11.replace(/ริ่|ริ้|ริ๊|ริ๋/g,"ริ");	
+	var n13 = n12.replace(/รี่|รี้|รี๊|รี๋/g,"รี");	
+	var n14 = n13.replace(/รึ่|รึ้|รึ๊|รึ๋/g,"รึ");
+	var n15 = n14.replace(/ร่ำ|ร้ำ|ร๊ำ|ร๋ำ/g,"รำ");	
+	var n16 = n15.replace(/รุ่|รุ้|รุ๊|รุ๋/g,"รุ");	
+	var n17 = n16.replace(/รู่|รู้|รู๊|รู๋/g,"รู");	
+	var n18 = n17.replace(/รื่|รื้|รื๊|รื๋/g,"รื");	
+	var n19 = n18.replace(/รั่|รั้|รั๊|รั๋/g,"รั");	
+
+	var n21 = n19.replace(/ข่|ข้|ข๊|ข๋/g,"ข");	
+	var n22 = n21.replace(/ขิ่|ขิ้|ขิ๊|ขิ๋/g,"ขิ");	
+	var n23 = n22.replace(/ขี่|ขี้|ขี๊|ขี๋/g,"ขี");	
+	var n24 = n23.replace(/ขึ่|ขึ้|ขึ๊|ขึ๋/g,"ขึ");
+	var n25 = n24.replace(/ข่ำ|ข้ำ|ข๊ำ|ข๋ำ/g,"ขำ");	
+	var n26 = n25.replace(/ขุ่|ขุ้|ขุ๊|ขุ๋/g,"ขุ");	
+	var n27 = n26.replace(/ขู่|ขู้|ขู๊|ขู๋/g,"ขู");	
+	var n28 = n27.replace(/ขื่|ขื้|ขื๊|ขื๋/g,"ขื");	
+	var n29 = n28.replace(/ขั่|ขั้|ขั๊|ขั๋/g,"ขั");	
+
+	var n31 = n29.replace(/ค่|ค้|ค๊|ค๋/g,"ค");	
+	var n32 = n31.replace(/คิ่|คิ้|คิ๊|คิ๋/g,"คิ");	
+	var n33 = n32.replace(/คี่|คี้|คี๊|คี๋/g,"คี");	
+	var n34 = n33.replace(/คึ่|คึ้|คึ๊|คึ๋/g,"คึ");
+	var n35 = n34.replace(/ค่ำ|ค้ำ|ค๊ำ|ค๋ำ/g,"คำ");	
+	var n36 = n35.replace(/คุ่|คุ้|คุ๊|คุ๋/g,"คุ");	
+	var n37 = n36.replace(/คู่|คู้|คู๊|คู๋/g,"คู");	
+	var n38 = n37.replace(/คื่|คื้|คื๊|คื๋/g,"คื");	
+	var n39 = n38.replace(/คั่|คั้|คั๊|คั๋/g,"คั");	
+	
+	var n41 = n39.replace(/ฆ่|ฆ้|ฆ๊|ฆ๋/g,"ฆ");	
+	var n42 = n41.replace(/ฆิ่|ฆิ้|ฆิ๊|ฆิ๋/g,"ฆิ");	
+	var n43 = n42.replace(/ฆี่|ฆี้|ฆี๊|ฆี๋/g,"ฆี");	
+	var n44 = n43.replace(/ฆึ่|ฆึ้|ฆึ๊|ฆึ๋/g,"ฆึ");
+	var n45 = n44.replace(/ฆ่ำ|ฆ้ำ|ฆ๊ำ|ฆ๋ำ/g,"ฆำ");	
+	var n46 = n45.replace(/ฆุ่|ฆุ้|ฆุ๊|ฆุ๋/g,"ฆุ");	
+	var n47 = n46.replace(/ฆู่|ฆู้|ฆู๊|ฆู๋/g,"ฆู");	
+	var n48 = n47.replace(/ฆื่|ฆื้|ฆื๊|ฆื๋/g,"ฆื");	
+	var n49 = n48.replace(/ฆั่|ฆั้|ฆั๊|ฆั๋/g,"ฆั");	
+	
+	var n51 = n49.replace(/ฃ่|ฃ้|ฃ๊|ฃ๋/g,"ฃ");	
+	var n52 = n51.replace(/ฃิ่|ฃิ้|ฃิ๊|ฃิ๋/g,"ฃิ");	
+	var n53 = n52.replace(/ฃี่|ฃี้|ฃี๊|ฃี๋/g,"ฃี");	
+	var n54 = n53.replace(/ฃึ่|ฃึ้|ฃึ๊|ฃึ๋/g,"ฃึ");
+	var n55 = n54.replace(/ฃ่ำ|ฃ้ำ|ฃ๊ำ|ฃ๋ำ/g,"ฃำ");	
+	var n56 = n55.replace(/ฃุ่|ฃุ้|ฃุ๊|ฃุ๋/g,"ฃุ");	
+	var n57 = n56.replace(/ฃู่|ฃู้|ฃู๊|ฃู๋/g,"ฃู");	
+	var n58 = n57.replace(/ฃื่|ฃื้|ฃื๊|ฃื๋/g,"ฃื");	
+	var n59 = n58.replace(/ฃั่|ฃั้|ฃั๊|ฃั๋/g,"ฃั");	
+	
+	var n61 = n59.replace(/ง่|ง้|ง๊|ง๋/g,"ง");	
+	var n62 = n61.replace(/งิ่|งิ้|งิ๊|งิ๋/g,"งิ");	
+	var n63 = n62.replace(/งี่|งี้|งี๊|งี๋/g,"งี");	
+	var n64 = n63.replace(/งึ่|งึ้|งึ๊|งึ๋/g,"งึ");
+	var n65 = n64.replace(/ง่ำ|ง้ำ|ง๊ำ|ง๋ำ/g,"งำ");	
+	var n66 = n65.replace(/งุ่|งุ้|งุ๊|งุ๋/g,"งุ");	
+	var n67 = n66.replace(/งู่|งู้|งู๊|งู๋/g,"งู");	
+	var n68 = n67.replace(/งื่|งื้|งื๊|งื๋/g,"งื");	
+	var n69 = n68.replace(/งั่|งั้|งั๊|งั๋/g,"งั");	
+	
+	var n71 = n69.replace(/จ่|จ้|จ๊|จ๋/g,"จ");	
+	var n72 = n71.replace(/จิ่|จิ้|จิ๊|จิ๋/g,"จิ");	
+	var n73 = n72.replace(/จี่|จี้|จี๊|จี๋/g,"จี");	
+	var n74 = n73.replace(/จึ่|จึ้|จึ๊|จึ๋/g,"จึ");
+	var n75 = n74.replace(/จ่ำ|จ้ำ|จ๊ำ|จ๋ำ/g,"จำ");	
+	var n76 = n75.replace(/จุ่|จุ้|จุ๊|จุ๋/g,"จุ");	
+	var n77 = n76.replace(/จู่|จู้|จู๊|จู๋/g,"จู");	
+	var n78 = n77.replace(/จื่|จื้|จื๊|จื๋/g,"จื");	
+	var n79 = n78.replace(/จั่|จั้|จั๊|จั๋/g,"จั");	
+	
+
+
+
+
+
+
+
+	
+	var sName = n79.split("-"); // มน = sName[0], ตรี = sName [1], ศรี = sName [2], คอน = sName [3]
 
 	var th = Array.from(sName[0]); // ม,น
 	var r1 = th[0]; // ม
@@ -15155,11 +15261,12 @@ function romanize() {
 
 	const sara = new Map([
 		['A','เอ'],['E','อี'],['I','ไอ'],['O','โอ'],['U','ยู'],
-			]) 
+			]); 
 
 	const ng = new Map([
 		['G','ง'],['NG','ง'],
-			]) 
+			]);
+ 
 // Convert each romanizd word into array for checking the front and he final character
 	var font1 = Array.from(String(name1));
 	var font2 = Array.from(String(name2));
@@ -15296,12 +15403,13 @@ function romanize() {
 			word4 + word5 + word6 + 
 			word7 + word8 + word9 + 
 			word10 + word11 + word12 + 
-			word13 + word14
+			word13 + word14;
 
-;}
-
-function clear(){
-	document.getElementById("romanize").value ="";
-	document.getElementById("thaiName").value ="";
 }
 
+function clearText(){
+
+	document.getElementById("romanize").value ="";
+	document.getElementById("thaiName").value ="";
+
+}
