@@ -5,7 +5,7 @@
 
 function romanize() {
 	const words = new Map([ 
-		[' ',' '],
+		[' ',' '],['(','('],[')',')'],
 		['ะ','A'], ['บ','B'], ['จ','CH'], ['ฎ','D'], ['ด','D'], ['เ','E'], ['ฝ','F'], ['ฟ','F'],
 		['ห','H'], ['ฮ','H'], ['ม','M'], ['น','N'], ['ณ','N'], ['โ','O'], ['ป','P'], ['ร','R'],
 		['ส','S'], ['ษ','S'], ['ศ','S'], ['ซ','S'], ['ฏ','T'], ['ต','T'],['ว','W'], ['ย','Y'],
@@ -41,7 +41,7 @@ function romanize() {
 		['มหา','MAHA'],['มเห','MAHE'],
 		['เอร็ด','ARET'],['อราม','ARAM'],
 		['หญิง','YING'],['หญา','YA'],['หญิบ','YIB'],
-		
+		['โพธิ์','PHO'],['โพธิ','PHOTHI'],		
 
 //--Base	
 		['ปลวก','PLUAK'],['ปลวข','PLUAK'],['ปลวฆ','PLUAK'],['ปลวค','PLUAK'],['ปลวฅ','PLUAK'],	
@@ -15270,11 +15270,67 @@ function romanize() {
 	var n416 = n415.replace(/อุ่|อุ้|อุ๊|อุ๋/g,"อุ");	
 	var n417 = n416.replace(/อู่|อู้|อู๊|อู๋/g,"อู");	
 	var n418 = n417.replace(/อื่|อื้|อื๊|อื๋/g,"อื");	
-	var n419 = n418.replace(/อั่|อั้|อั๊|อั๋/g,"อั")
-	
-	var sName = n419.split("-"); // มน = sName[0], ตรี = sName [1], 
+	var n419 = n418.replace(/อั่|อั้|อั๊|อั๋/g,"อั");
 
-	var th = Array.from(sName[0]); // ม,น,ต,รี
+	var n421 = n419.replace(/กิ์/g,"");	
+	var n422 = n421.replace(/ขิ์/g,"");	
+	var n423 = n422.replace(/ฃิ์/g,"");	
+	var n424 = n423.replace(/คิ์/g,"");
+	var n425 = n424.replace(/ฅิ์/g,"");	
+	var n426 = n425.replace(/ภิ์/g,"");	
+	var n427 = n426.replace(/ถิ์/g,"");	
+	var n428 = n427.replace(/ติ์/g,"");	
+	var n429 = n428.replace(/จิ์/g,"");
+
+	var n431 = n429.replace(/ชิ์/g,"");	
+	var n432 = n431.replace(/ฎิ์/g,"");	
+	var n433 = n432.replace(/ฑิ์/g,"");	
+	var n434 = n433.replace(/พิ์/g,"");
+	var n435 = n434.replace(/ธิ์/g,"");	
+	var n436 = n435.replace(/ริ์/g,"");	
+	var n437 = n436.replace(/ณิ์/g,"");	
+	var n438 = n437.replace(/นิ์/g,"");	
+	var n439 = n438.replace(/ยิ์/g,"");
+
+	var n441 = n439.replace(/ญิ์/g,"");	
+	var n442 = n441.replace(/บิ์/g,"");	
+	var n443 = n442.replace(/ฐิ์/g,"");	
+	var n444 = n443.replace(/ลิ์/g,"");
+	var n445 = n444.replace(/ฤิ์/g,"");	
+	var n446 = n445.replace(/ฟิ์/g,"");	
+	var n447 = n446.replace(/ฆิ์/g,"");	
+	var n448 = n447.replace(/หิ์/g,"");	
+	var n449 = n448.replace(/ฏิ์/g,"");
+
+	var n451 = n449.replace(/ดิ์/g,"");	
+	var n452 = n451.replace(/ฌิ์/g,"");	
+	var n453 = n452.replace(/ษิ์/g,"");	
+	var n454 = n453.replace(/ศิ์/g,"");
+	var n455 = n454.replace(/สิ์/g,"");	
+	var n456 = n455.replace(/ซิ์/g,"");	
+	var n457 = n456.replace(/วิ์/g,"");	
+	var n458 = n457.replace(/งิ์/g,"");	
+	var n459 = n458.replace(/ผิ์/g,"");
+
+	var n461 = n459.replace(/ปิ์/g,"");	
+	var n462 = n461.replace(/ฉิ์/g,"");	
+	var n463 = n462.replace(/อิ์/g,"");	
+	var n464 = n463.replace(/ฮิ์/g,"");
+	var n465 = n464.replace(/ทิ์/g,"");	
+	var n466 = n465.replace(/มิ์/g,"");	
+	var n467 = n466.replace(/ฒิ์/g,"");	
+	var n468 = n467.replace(/ฬิ์/g,"");	
+	var n469 = n468.replace(/ฦิ์/g,"");
+	var n469 = n468.replace(/ฝิ์/g,"");
+
+	
+	var s0Name = n469.replaceAll(" ","- -");
+	var s1Name = s0Name.replaceAll("(","-(-");
+	var s2Name = s1Name.replaceAll(")","-)-");
+
+	var sName = s2Name.split("-"); // มน = sName[0], ตรี = sName [1], เกียรติ = sName [2] 
+
+	var th = Array.from(sName[0]); // ม,น
 	var r1 = th[0]; // ม
 	var r2 = th[0]+th[1]; // มน
 	var r3 = th[0]+th[1]+th[2]; // กมล
@@ -15284,7 +15340,7 @@ function romanize() {
 	var r7 = th[0]+th[1]+th[2]+th[3]+th[4]+th[5]+th[6];
 
 	var th2 =["","","","","","",""];
-	if(sName.length>1){th2 = Array.from(sName[1]);} 
+	if(sName.length>1){th2 = Array.from(sName[1]);} // ต, รี
 	var r21 = th2[0]; 
 	var r22 = th2[0]+th2[1]; 
 	var r23 = th2[0]+th2[1]+th2[2]; 
@@ -15294,7 +15350,7 @@ function romanize() {
 	var r27 = th2[0]+th2[1]+th2[2]+th2[3]+th2[4]+th2[5]+th2[6];
 
 	var th3 =["","","","","","",""];
-	if(sName.length>2){th3 = Array.from(sName[2]);} 
+	if(sName.length>2){th3 = Array.from(sName[2]);} // /, เ, กี, ย, ร, ติ 
 	var r31 = th3[0]; 
 	var r32 = th3[0]+th3[1]; 
 	var r33 = th3[0]+th3[1]+th3[2]; 
@@ -15745,4 +15801,12 @@ function clearText(){
 	document.getElementById("romanize").value ="";
 	document.getElementById("thaiName").value ="";
 
+}
+
+function copy() {
+	var name = document.getElementById('romanize');
+	name.setSelectionRange(0, 99999);
+	name.select();
+	navigator.clipboard.writeText(name.value);
+	alert("คัดลอก: " + name.value + ' ไว้บน clipboard แล้ว');
 }
