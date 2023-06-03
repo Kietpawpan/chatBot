@@ -15861,5 +15861,5 @@ function copy() {
 	name.setSelectionRange(0, 99999);
 	name.select();
 	navigator.clipboard.writeText(name.value);
-	alert("คัดลอก: " + name.value + ' ไว้บน clipboard แล้ว');
+	alert(name.value + ' copied!');
 }
