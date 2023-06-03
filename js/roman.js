@@ -15321,10 +15321,63 @@ function romanize() {
 	var n467 = n466.replace(/ฒิ์/g,"");	
 	var n468 = n467.replace(/ฬิ์/g,"");	
 	var n469 = n468.replace(/ฦิ์/g,"");
-	var n469 = n468.replace(/ฝิ์/g,"");
 
-	
-	var s0Name = n469.replaceAll(" ","- -");
+	var n470 = n469.replace(/ฝิ์/g,"");
+
+	var n471 = n470.replace(/ก์/g,"");	
+	var n472 = n471.replace(/ข์/g,"");	
+	var n473 = n472.replace(/ฃ์/g,"");	
+	var n474 = n473.replace(/ค์/g,"");
+	var n475 = n474.replace(/ฅ์/g,"");	
+	var n476 = n475.replace(/ภ์/g,"");	
+	var n477 = n476.replace(/ถ์/g,"");	
+	var n478 = n477.replace(/ต์/g,"");	
+	var n479 = n478.replace(/จ์/g,"");
+
+	var n481 = n479.replace(/ช์/g,"");	
+	var n482 = n481.replace(/ฎ์/g,"");	
+	var n483 = n482.replace(/ฑ์/g,"");	
+	var n484 = n483.replace(/พ์/g,"");
+	var n485 = n484.replace(/ธ์/g,"");	
+	var n486 = n485.replace(/ร์/g,"");	
+	var n487 = n486.replace(/ณ์/g,"");	
+	var n488 = n487.replace(/น์/g,"");	
+	var n489 = n488.replace(/ย์/g,"");
+
+	var n491 = n489.replace(/ญ์/g,"");	
+	var n492 = n491.replace(/บ์/g,"");	
+	var n493 = n492.replace(/ฐ์/g,"");	
+	var n494 = n493.replace(/ล์/g,"");
+	var n495 = n494.replace(/ฤ์/g,"");	
+	var n496 = n495.replace(/ฟ์/g,"");	
+	var n497 = n496.replace(/ฆิ์/g,"");	
+	var n498 = n497.replace(/ห์/g,"");	
+	var n499 = n498.replace(/ฏ์/g,"");
+
+	var n501 = n499.replace(/ด์/g,"");	
+	var n502 = n501.replace(/ฌ์/g,"");	
+	var n503 = n502.replace(/ษ์/g,"");	
+	var n504 = n503.replace(/ศ์/g,"");
+	var n505 = n504.replace(/ส์/g,"");	
+	var n506 = n505.replace(/ซ์/g,"");	
+	var n507 = n506.replace(/ว์/g,"");	
+	var n508 = n507.replace(/ง์/g,"");	
+	var n509 = n508.replace(/ผ์/g,"");
+
+	var n511 = n509.replace(/ป์/g,"");	
+	var n512 = n511.replace(/ฉ์/g,"");	
+	var n513 = n512.replace(/อ์/g,"");	
+	var n514 = n513.replace(/ฮ์/g,"");
+	var n515 = n514.replace(/ท์/g,"");	
+	var n516 = n515.replace(/ม์/g,"");	
+	var n517 = n516.replace(/ฒ์/g,"");	
+	var n518 = n517.replace(/ฬ์/g,"");	
+	var n519 = n518.replace(/ฦ์/g,"");
+
+	var n520 = n519.replace(/ฝ์/g,"");
+
+
+	var s0Name = n520.replaceAll(" ","- -");
 	var s1Name = s0Name.replaceAll("(","-(-");
 	var s2Name = s1Name.replaceAll(")","-)-");
 
