@@ -40,7 +40,7 @@
 	<input 
 		type="text" 
 		id="Question" 
-		placeholder="ถอดอักษรไทย-โรมัน ตามหลักเกณฑ์ราชบัณฑิตยสถาน" 
+		placeholder="ถอดอักษรไทย-โรมัน ตามประกาศสำนักนายกรัฐมนตรี" 
 		title="ID" disabled>
 
  	<div 
@@ -51,18 +51,17 @@
 			class="chatting">
 		<ul id="Answer">
    			<li><a href="#">           
- 				<h3>ชื่อบุคคล ชื่อภูมิศาสตร์ ชื่อท้องถิ่น</h3>
+ 				<h3>คำอ่าน</h3>
 				<input  
 					type="text" 
 					id="thaiName" 
 					value="" 
-					placeholder="ชื่อ-บุค-คล- -นาม-สะ-กุล">
+					placeholder="แม่-น้ำ เจ้า-พระ-ยา">
 				</input>
 	
 						<font 
 							size="-1" 
-							color="red">1. ใช้ - แยกเสียง เช่น มา-นี<br> 
-								    2. ใช้ - - แยกคำ เช่น มา-นี- -มา-นะ<br>
+							color="red">1. ใช้ยัติภังค์ <-> แบ่งเสียง<br> 2. เว้นวรรค แบ่งคำ<br>
 								
 						</font>
 
@@ -76,6 +75,16 @@
 					</i> 
 				Romanize (RTGS)
 			</button>
+
+			<button 
+				class="btn" 
+				onclick="copy()">
+					<i 
+					class="fa fa-clipboard">
+					</i> 
+				Copy
+			</button>
+
 
 			<button 
 				class="btn" 
@@ -97,11 +106,7 @@
 
 						<font 
 							size="-1" 
-							color="blue">RTGS หมือน ISO 11940-2 ยกเว้น จ และเส้นเสียง (glottal stop)<br>
-<u>ตัวอย่าง</u><br>
-&nbsp;&nbsp;Thai:   <b>อาจารย์</b><br>
-&nbsp;&nbsp;RTGS: <b>Achan</b> <br>
-&nbsp;&nbsp;ISO 11940-2: <b>'Acan</b>
+							color="blue">*ชื่อบุคคล ชื่อภูมิศาสตร์ สถานที่ พืช สัตว์ ภาษาถิ่น</b>
 
 						</font>
 		</a>
