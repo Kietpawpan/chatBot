@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!Copyright © 2023 Montri Kiatphaophan | All rights reserved.>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/iRequest.css">
+    <link rel="stylesheet" href="css/answer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/chat.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+
+
+
+<title>MNRE | Chatbot</title>
+
+</head>
+
+<body onload="startFunction()">
+    	<nav>
+        <div class="navbar">
+            <img 
+			class="dpimg" 
+			onclick="openFullScreenDP()" 
+			src="images/mnre.png" alt="">
+            	<div 
+				class="personalInfo">
+                		<label id="name">ศูนย์บริการร่วม ทส.</label>
+               
+            	</div>
+        </div>
+    	</nav>
+
+	<input 
+		type="text" 
+		id="Question" 
+		placeholder="ค่าธรรมเนียมการจัดทำสำเนาข้อมูลข่าวสาร" 
+		title="ID" disabled>
+
+ 	<div 
+		class="scrollable" 
+		id="myScrollable">
+      	<div 
+			id="chatting" 
+			class="chatting">
+		<ul id="Answer">
+   			<li><a href="#">        
+				<h3>จำนวนหน้า (A4)</h3>
+				<input  
+					type="text" 
+					id="page" 
+					class="number-separator"
+					value="" 
+					placeholder="1,000">
+				</input>
+<font size="-1" color='blue'>หน้าละ 50 สตางค์</font>
+					<br><br>
+				<h3>จำนวนคำรับรองสำเนาถูกต้อง (แห่ง)</h3>
+				<input  
+					type="text" 
+					id="sign" 
+					class="number-separator"
+					value="" 
+					placeholder="10">
+				</input>
+<font size="-1" color='blue'>แห่งละ 5 บาท</font>
+					<br><br>
+				<button 
+				class="btn" 
+				onclick="copyFee()">
+					<i 
+					class="">
+					</i> 
+				ประเมินค่าธรรมเนียม 
+			</button>
+   
+				<textarea id="amount" class="number-separator">
+
+				</textarea>
+					<br><br>
+
+			<button 
+				class="btn" 
+				onclick="copy()">
+					<i 
+					class="">
+					</i> 
+				Copy
+			</button>
+
+			<button 
+				class="btn" 
+				onclick="clearText()"> 
+				Clear
+			</button>
+			       	
+		<br>
+
+						
+		</a>
+		
+         </div>
+
+<script src="js/copyFeeCal.js"></script>
+
+<!The code below was taken from https://github.com/amiryxe/easy-number-separator>
+
+<script src="js/easy-number-separator.js"></script>       
+<script>
+    easyNumberSeparator({
+      selector: '.number-separator',
+      separator: ',',
+      decimalSeparator: '.',
+      resultInput: '#result_input',
+    })
+ </script>
+
+</body>
+</html>
