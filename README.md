@@ -10,6 +10,7 @@ This bot can
 - complain the service quality with [complaint](https://kietpawpan.github.io/chatBot/complaint.html)
 - check school affairs with [study](https://kietpawpan.github.io/chatBot/study.html)
 - romanize Thai words with [roman](https://kietpawpan.github.io/chatBot/romanName.html) (RTGS)
+- convert number to Thai currency text [bahtText](https://kietpawpan.github.io/chatBot/bahtText.html)
 
 __Algorithm:__
 ```
