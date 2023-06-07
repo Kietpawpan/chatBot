@@ -181,3 +181,11 @@ function clearText(){
 	document.getElementById("thaiName").value ="";
 
 }
+
+function copy() {
+	var name = document.getElementById('romanize');
+	name.setSelectionRange(0, 99999);
+	name.select();
+	navigator.clipboard.writeText(name.value);
+	alert(name.value + ' copied!');
+}
