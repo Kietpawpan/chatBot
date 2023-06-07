@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!Copyright © 2023 Montri Kiatphaophan | All rights reserved.>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/iRequest.css">
+    <link rel="stylesheet" href="css/answer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/chat.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/krut.png" />
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:updated_time" content="1440432930" />
+
+
+
+<title>MNRE | Chatbot</title>
+
+</head>
+
+<body onload="startFunction()">
+    	<nav>
+        <div class="navbar">
+            <img 
+			class="dpimg" 
+			onclick="openFullScreenDP()" 
+			src="images/mnre.png" alt="">
+            	<div 
+				class="personalInfo">
+                		<label id="name">ศูนย์บริการร่วม ทส.</label>
+               
+            	</div>
+        </div>
+    	</nav>
+
+	<input 
+		type="text" 
+		id="Question" 
+		placeholder="อ่านจำนวนเงินบาท" 
+		title="ID" disabled>
+
+ 	<div 
+		class="scrollable" 
+		id="myScrollable">
+      	<div 
+			id="chatting" 
+			class="chatting">
+		<ul id="Answer">
+   			<li><a href="#">           
+ 				<h3>ตัวเลข</h3>
+				<input  
+					type="text" 
+					id="thaiName" 
+					class="number-separator"
+					value="" 
+					placeholder="1,000,000.00">
+				</input>
+					<br><br>
+
+			<button 
+				class="btn" 
+				onclick="romanize()">
+					<i 
+					class="fa fa-pencil">
+					</i> 
+				BahtText
+			</button>
+
+			<button 
+				class="btn" 
+				onclick="clearText()">
+					<i 
+					class="fa fa-eraser">
+					</i> 
+				Clear
+			</button>
+			       	
+		<br>
+
+			<textarea 
+				id="romanize" 
+				row="1" 
+				cols="2" 
+				style="height: 80px">
+			</textarea>
+
+						
+		</a>
+		
+         </div>
+
+<script src="js/baht.js"></script>
+
+<!The code below was taken from https://github.com/amiryxe/easy-number-separator>
+
+<script src="js/easy-number-separator.js"></script>       
+<script>
+    easyNumberSeparator({
+      selector: '.number-separator',
+      separator: ',',
+      decimalSeparator: '.',
+      resultInput: '#result_input',
+    })
+ </script>
+
+</body>
+</html>
