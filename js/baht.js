@@ -69,7 +69,7 @@ function romanize() {
 ]);
 
 	const nuoi = new Map([ 
-		['0','ศูนย์'],['1','หนึ่ง'],['2','สอง'],['3','สาม'],
+		['0',''],['1','หนึ่ง'],['2','สอง'],['3','สาม'],
 		['4','สี่'],['5','ห้า'],['6','หก'], 
 		['7','เจ็ด'],['8','แปด'],['9','เก้า'], 
 ]);
@@ -155,7 +155,11 @@ function romanize() {
 	if(nuoi.has(t11[0])==true && sip.has(t11[1])==false){nameNuoi = nuoi.get(t11[0]);}
 	else{nameNuoi = nuoi2.get(t11[0]);}
 
-	if(sName[1]!=='00'){bathUnit ='บาท';}
+	var leadNumber = namePanLan + nameRoiLan + nameSipLan + nameLan + nameSaen + nameMuen + namePan + nameRoi + nameSip + 
+		nameNuoi;
+
+	if(leadNumber==''){bathUnit ='';}
+	else if(sName[1]!=='00'){bathUnit ='บาท';}
 	else{bathUnit ='บาทถ้วน';}
 
 
