@@ -26,12 +26,12 @@
     	<nav>
         <div class="navbar">
             <img 
-			class="dpimg" 
-			onclick="openFullScreenDP()" 
-			src="images/mnre.png" alt="">
-            	<div 
-				class="personalInfo">
-                		<label id="name">ศูนย์บริการร่วม ทส.</label>
+		class="dpimg" 
+		onclick="openFullScreenDP()" 
+		src="images/mnre.png" alt="">
+         	<div 
+			class="personalInfo">
+                	<label id="name">ศูนย์บริการร่วม ทส.</label>
                
             	</div>
         </div>
@@ -40,7 +40,7 @@
 	<input 
 		type="text" 
 		id="Question" 
-		placeholder="ค่าธรรมเนียมการจัดทำสำเนาข้อมูลข่าวสาร" 
+		placeholder="ค่าธรรมเนียมการขอสำเนาข้อมูลข่าวสารของราชการ" 
 		title="ID" disabled>
 
  	<div 
@@ -51,17 +51,17 @@
 			class="chatting">
 		<ul id="Answer">
    			<li><a href="#">        
-				<h3>จำนวนหน้า (A4)</h3>
+				<h3>จำนวนหน้า A4 </h3>
 				<input  
 					type="text" 
 					id="page" 
 					class="number-separator"
 					value="" 
-					placeholder="1,000">
+					placeholder="10">
 				</input>
-<font size="-1" color='blue'>หน้าละ 50 สตางค์</font>
+				
 					<br><br>
-				<h3>จำนวนคำรับรองสำเนาถูกต้อง (แห่ง)</h3>
+				<h3>จำนวนคำรับรองถูกต้อง</h3>
 				<input  
 					type="text" 
 					id="sign" 
@@ -69,7 +69,7 @@
 					value="" 
 					placeholder="10">
 				</input>
-<font size="-1" color='blue'>แห่งละ 5 บาท</font>
+			
 					<br><br>
 				<button 
 				class="btn" 
@@ -79,12 +79,6 @@
 					</i> 
 				ประเมินค่าธรรมเนียม 
 			</button>
-   
-				<textarea id="amount" class="number-separator">
-
-				</textarea>
-					<br><br>
-
 			<button 
 				class="btn" 
 				onclick="copy()">
@@ -100,26 +94,37 @@
 				Clear
 			</button>
 			       	
-		<br>
-
-						
+   
+			<textarea id="amount" rows="12">
+			</textarea>
+			<font size="-1" color='blue'>
+				<a href='https://www.mnre.go.th/th/view/?file=qTMcMUujpP5gBKpmGQugYJqcqTScnUuHpP1gBKp3GQIgBTp1qQucZ3tlpQqgBUp5GQEgZJpgqTEcMKufpTygMapiGTIgoTqcqTMcY3u3pTEgY3qxGTSgo2qfqUOcqKti&n=article_20150928134306&t=GTMgq2qxqS9cMUug'>
+				<i class="fa fa-file-pdf-o"></i>	 
+				ประกาศสำนักงานปลัดกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม เรื่อง การเรียกค่าธรรมเนียมการขอสำเนา หรือขอสำเนาที่มีคำรับรองถูกต้องของข้อมูลข่าวสารของราชการ ลงวันที่ 27 พฤศจิกายน พ.ศ. 2549</a>
+				
+			</font>	
+		<br>			
 		</a>
 		
          </div>
 
-<script src="js/copyFeeCal.js"></script>
+	<script 
+		src="js/copyFeeCal.js">
+	</script>
 
-<!The code below was taken from https://github.com/amiryxe/easy-number-separator>
+	<!The code below was taken from https://github.com/amiryxe/easy-number-separator>
+	<script 
+		src="js/easy-number-separator.js">
+	</script>       
 
-<script src="js/easy-number-separator.js"></script>       
-<script>
-    easyNumberSeparator({
-      selector: '.number-separator',
-      separator: ',',
-      decimalSeparator: '.',
-      resultInput: '#result_input',
-    })
- </script>
+	<script>
+    		easyNumberSeparator({
+      		selector: '.number-separator',
+    		  separator: ',',
+     		 decimalSeparator: '.',
+     		 resultInput: '#result_input',
+   		 })
+	</script>
 
 </body>
 </html>
