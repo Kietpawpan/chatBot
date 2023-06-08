@@ -1,6 +1,6 @@
 /* Copyright © 2023 Montri Kiatphaophan
  * baht.js | All rights reserved. 
- * May 30, 2023
+ * v1.0.1 June 8, 2023
  */
 
 function copyFee() {
@@ -104,7 +104,6 @@ function copyFee() {
 	var s1 = s0.replace(/,/g,""); // 1000
 	var s2 = Number(s1);
 	var sFee = s2 * 5;
-
 	var totalFee = copyFee + sFee;
 	var n0 = totalFee.toString(); // "1,000,000,000.00"
 	var n1 = n0.replace(/,/g,""); //"1000000000.00"
@@ -115,7 +114,6 @@ function copyFee() {
 	var t1 = Array.from(sName[0]); // 1,0,0,0,0,0,0,0,0,0
 	var t11 = t1.reverse(); // 0,0,0,0,0,0,0,0,0,1
 	var t2 = Array.from(sName[1]); // 0,0
-
 	var namePanLan="";
 	var nameRoiLan="";
 	var nameSipLan="";
@@ -184,15 +182,23 @@ function copyFee() {
 	if(sName[1]!=='00'){satangUnit ='สตางค์';}
 	else{satangUnit ='';}
 
-	n2s=Array.from(totalFee.toString());
-	numberFinal ="";
-	if(totalFee<1000){numberFinal=totalFee;}
-	else if(totalFee<10000) {numberFinal=n2s[0] + ',' + n2s[1] + n2s[2] + n2s[3];}
-	else if(totalFee<100000) {numberFinal=n2s[0] + n2s[1] + ',' + n2s[2] + n2s[3] + n2s[4];}
-	else{numberFinal=totalFee;}
+	pageR ="";
+	if(p2>0){pageR=page;}
+	else{pageR ='0';}
+	
+	signR ="";
+	if(s2>0){signR=sign;}
+	else{signR ='0';}
 
-	document.getElementById("amount").value =numberFinal + '\n(' + namePanLan + nameRoiLan + nameSipLan + nameLan + nameSaen + nameMuen + namePan + nameRoi + nameSip + 
-		nameNuoi + bathUnit + nameSipSatang + nameNuoiSatang + satangUnit +')';
+	allFee = totalFee.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+	bahtText= "";
+	if(totalFee.toFixed(2)=='0.00'){bahtText='ศูนย์บาท';}
+	else{bahtText=namePanLan + nameRoiLan + nameSipLan + nameLan + nameSaen + nameMuen + namePan + nameRoi + nameSip + 
+		nameNuoi + bathUnit + nameSipSatang + nameNuoiSatang + satangUnit;}
+
+	document.getElementById("amount").value = 'รวมทั้งสิ้น ' + allFee + ' บาท\n(' + bahtText +')' +
+'\n\nประกอบด้วย\n- ค่าธรรมเนียมการทำสำเนา โดยเครื่องถ่ายเอกสาร จำนวน ' + pageR + ' หน้า ขนาดกระดาษ A4 หน้าละ 0.5 บาท เป็นเงิน ' + copyFee.toFixed(2) + ' บาท\n- ค่าธรรมเนียมการให้คำรับรองถูกต้องของข้อมูลข่าวสาร จำนวน ' + signR + ' คำรับรอง ๆ ละ 5 บาท เป็นเงิน '  + sFee.toFixed(2) + ' บาท';
+	
 		
 
 }
@@ -205,7 +211,7 @@ function clearText(){
 }
 
 function copy() {
-	var name = document.getElementById('romanize');
+	var name = document.getElementById('amount');
 	name.setSelectionRange(0, 99999);
 	name.select();
 	navigator.clipboard.writeText(name.value);
