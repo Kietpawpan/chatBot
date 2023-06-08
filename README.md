@@ -11,7 +11,7 @@ This bot can
 - check school affairs with [study](https://kietpawpan.github.io/chatBot/study.html)
 - romanize Thai words with [roman](https://kietpawpan.github.io/chatBot/romanName.html) (RTGS)
 - convert currency number to Thai text with [bahtText](https://kietpawpan.github.io/chatBot/bahtText.html)
-- calculate the amount of copy fee with [calFee](https://kietpawpan.github.io/chatBot/calFee.html)
+- calculate the amount of copy fee with [feeCal](https://kietpawpan.github.io/chatBot/feeCal.html)
 
 __Algorithm:__
 ```
