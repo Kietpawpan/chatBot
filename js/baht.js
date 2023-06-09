@@ -1,6 +1,6 @@
 /* Copyright © 2023 Montri Kiatphaophan
  * baht.js | All rights reserved. 
- * v.1.0.2 June 9, 2023
+ * May 30, 2023
  */
 
 function bahtText() {
@@ -92,11 +92,6 @@ function bahtText() {
 		['4','สี่'],['5','ห้า'],['6','หก'], 
 		['7','เจ็ด'],['8','แปด'],['9','เก้า'], 
 ]);
-	const satang12 = new Map([ 
-		['0',''],['1','เอ็ด'],['2','สอง'],['3','สาม'],
-		['4','สี่'],['5','ห้า'],['6','หก'], 
-		['7','เจ็ด'],['8','แปด'],['9','เก้า'], 
-]);
 
 	var thName = document.getElementById("thaiName").value; // 1,000,000,000.00
 	var n0 = thName.toString(); // "1,000,000,000.00"
@@ -160,11 +155,10 @@ function bahtText() {
 	if(nuoi.has(t11[0])==true && sip.has(t11[1])==false){nameNuoi = nuoi.get(t11[0]);}
 	else{nameNuoi = nuoi2.get(t11[0]);}
 
-
 	var leadNumber = namePanLan + nameRoiLan + nameSipLan + nameLan + nameSaen + nameMuen + namePan + nameRoi + nameSip + 
 		nameNuoi;
-
-	if(leadNumber==''){bathUnit ='';}
+	if(sName[0]=='0' && sName[1]=='0'){bathUnit ='ศูนย์บาท';}
+	else if(leadNumber==''){bathUnit ='';}
 	else if(sName[1]!=='00'){bathUnit ='บาท';}
 	else{bathUnit ='บาทถ้วน';}
 
@@ -172,16 +166,26 @@ function bahtText() {
 	if(satang10.has(t2[0])==true){nameSipSatang = satang10.get(t2[0]);}
 	else{nameSipSatang = "";}
 
-	if(satang1.has(t2[1])==true && t2[0]=='0'){nameNuoiSatang = satang1.get(t2[1]);}
-	else if(satang1.has(t2[1])==true){nameNuoiSatang = satang12.get(t2[1]);}
+	if(satang1.has(t2[1])==true){nameNuoiSatang = satang1.get(t2[1]);}
 	else{nameNuoiSatang = "";}
 
-	if(sName[1]!=='00'){satangUnit ='สตางค์';}
-	else{satangUnit ='';}
+	if(sName[1]=='00'){satangUnit ='';}
+	else if(sName[1]=='0'){satangUnit ='';}
+	else if(sName[1]=='001'){satangUnit ='';}
+	else if(sName[1]=='002'){satangUnit ='';}
+	else if(sName[1]=='003'){satangUnit ='';}
+	else if(sName[1]=='004'){satangUnit ='';}
+	else if(sName[1]=='005'){satangUnit ='หนึ่งสตางค์';}
+	else if(sName[1]=='006'){satangUnit ='หนึ่งสตางค์';}
+	else if(sName[1]=='007'){satangUnit ='หนึ่งสตางค์';}
+	else if(sName[1]=='008'){satangUnit ='หนึ่งสตางค์';}
+	else if(sName[1]=='009'){satangUnit ='หนึ่งสตางค์';}
+	else if(sName[1]==''){satangUnit ='';}
+	else{satangUnit ='สตางค์';}
 
 
 	document.getElementById("romanize").value = namePanLan + nameRoiLan + nameSipLan + nameLan + nameSaen + nameMuen + namePan + nameRoi + nameSip + 
-		nameNuoi + bathUnit + ' ' + nameSipSatang + nameNuoiSatang + satangUnit;
+		nameNuoi + bathUnit + nameSipSatang + nameNuoiSatang + satangUnit;
 			
 
 }
