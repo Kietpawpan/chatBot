@@ -164,6 +164,7 @@ function bahtText() {
 	var leadNumber = namePanLan + nameRoiLan + nameSipLan + nameLan + nameSaen + nameMuen + namePan + nameRoi + nameSip + 
 		nameNuoi;
 	if(sName[0]=='0' && sName[1]=='0'){bathUnit ='ศูนย์บาท';}
+	else if(sName[0]=='0' && sName[1]==''){bathUnit ='ศูนย์บาท';}
 	else if(leadNumber==''){bathUnit ='';}
 	else if(sName[1]!=='00'){bathUnit ='บาท';}
 	else{bathUnit ='บาทถ้วน';}
@@ -192,7 +193,7 @@ function bahtText() {
 
 
 	document.getElementById("romanize").value = namePanLan + nameRoiLan + nameSipLan + nameLan + nameSaen + nameMuen + namePan + nameRoi + nameSip + 
-		nameNuoi + bathUnit + nameSipSatang + nameNuoiSatang + satangUnit;
+		nameNuoi + bathUnit + ' ' + nameSipSatang + nameNuoiSatang + satangUnit;
 			
 
 }
