@@ -88,6 +88,12 @@ function bahtText() {
 
 	const satang1 = new Map([
 		['',''],
+		['0',''],['1','เอ็ด'],['2','สอง'],['3','สาม'],
+		['4','สี่'],['5','ห้า'],['6','หก'], 
+		['7','เจ็ด'],['8','แปด'],['9','เก้า'], 
+]);
+	const satang0 = new Map([
+		['',''],
 		['0',''],['1','หนึ่ง'],['2','สอง'],['3','สาม'],
 		['4','สี่'],['5','ห้า'],['6','หก'], 
 		['7','เจ็ด'],['8','แปด'],['9','เก้า'], 
@@ -166,7 +172,8 @@ function bahtText() {
 	if(satang10.has(t2[0])==true){nameSipSatang = satang10.get(t2[0]);}
 	else{nameSipSatang = "";}
 
-	if(satang1.has(t2[1])==true){nameNuoiSatang = satang1.get(t2[1]);}
+	if(satang1.has(t2[1])==true && t2[0]=='0'){nameNuoiSatang = satang0.get(t2[1]);}
+	else if(satang1.has(t2[1])==true){nameNuoiSatang = satang1.get(t2[1]);}
 	else{nameNuoiSatang = "";}
 
 	if(sName[1]=='00'){satangUnit ='';}
