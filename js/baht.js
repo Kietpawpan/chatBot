@@ -1,9 +1,9 @@
 /* Copyright © 2023 Montri Kiatphaophan
  * baht.js | All rights reserved. 
- * May 30, 2023
+ * v.1.0.2 June 9, 2023
  */
 
-function romanize() {
+function bahtText() {
 	const panLan = new Map([ 
 		['',''],
 		['0',''],['1','หนึ่งพัน'],['2','สองพัน'],['3','สามพัน'],
@@ -92,6 +92,11 @@ function romanize() {
 		['4','สี่'],['5','ห้า'],['6','หก'], 
 		['7','เจ็ด'],['8','แปด'],['9','เก้า'], 
 ]);
+	const satang12 = new Map([ 
+		['0',''],['1','เอ็ด'],['2','สอง'],['3','สาม'],
+		['4','สี่'],['5','ห้า'],['6','หก'], 
+		['7','เจ็ด'],['8','แปด'],['9','เก้า'], 
+]);
 
 	var thName = document.getElementById("thaiName").value; // 1,000,000,000.00
 	var n0 = thName.toString(); // "1,000,000,000.00"
@@ -155,6 +160,7 @@ function romanize() {
 	if(nuoi.has(t11[0])==true && sip.has(t11[1])==false){nameNuoi = nuoi.get(t11[0]);}
 	else{nameNuoi = nuoi2.get(t11[0]);}
 
+
 	var leadNumber = namePanLan + nameRoiLan + nameSipLan + nameLan + nameSaen + nameMuen + namePan + nameRoi + nameSip + 
 		nameNuoi;
 
@@ -166,7 +172,8 @@ function romanize() {
 	if(satang10.has(t2[0])==true){nameSipSatang = satang10.get(t2[0]);}
 	else{nameSipSatang = "";}
 
-	if(satang1.has(t2[1])==true){nameNuoiSatang = satang1.get(t2[1]);}
+	if(satang1.has(t2[1])==true && t2[0]=='0'){nameNuoiSatang = satang1.get(t2[1]);}
+	else if(satang1.has(t2[1])==true){nameNuoiSatang = satang12.get(t2[1]);}
 	else{nameNuoiSatang = "";}
 
 	if(sName[1]!=='00'){satangUnit ='สตางค์';}
@@ -174,7 +181,7 @@ function romanize() {
 
 
 	document.getElementById("romanize").value = namePanLan + nameRoiLan + nameSipLan + nameLan + nameSaen + nameMuen + namePan + nameRoi + nameSip + 
-		nameNuoi + bathUnit + nameSipSatang + nameNuoiSatang + satangUnit;
+		nameNuoi + bathUnit + ' ' + nameSipSatang + nameNuoiSatang + satangUnit;
 			
 
 }
