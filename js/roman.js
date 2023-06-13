@@ -5,7 +5,7 @@
 
 function romanize() {
 	const words = new Map([ 
-		[' ',' '],['(','('],[')',')'],
+		[' ',' '],
 		['ะ','A'], ['บ','B'], ['จ','CH'], ['ฎ','D'], ['ด','D'], ['เ','E'], ['ฝ','F'], ['ฟ','F'],
 		['ห','H'], ['ฮ','H'], ['ม','M'], ['น','N'], ['ณ','N'], ['โ','O'], ['ป','P'], ['ร','R'],
 		['ส','S'], ['ษ','S'], ['ศ','S'], ['ซ','S'], ['ฏ','T'], ['ต','T'],['ว','W'], ['ย','Y'],
@@ -40,8 +40,7 @@ function romanize() {
 		['ฦ','LUE'],['ฦา','LUE'],
 		['มหา','MAHA'],['มเห','MAHE'],
 		['เอร็ด','ARET'],['อราม','ARAM'],
-		['หญิง','YING'],['หญา','YA'],['หญิบ','YIB'],
-		['โพธิ์','PHO'],['โพธิ','PHOTHI'],		
+
 
 //--Base	
 		['ปลวก','PLUAK'],['ปลวข','PLUAK'],['ปลวฆ','PLUAK'],['ปลวค','PLUAK'],['ปลวฅ','PLUAK'],	
@@ -844,22 +843,6 @@ function romanize() {
 
 	
 //Master
-		['เกีย','KIA'],['เขีย','KHIA'],['เฃีย','KHIA'],['เคีย','KHIA'],['เฆีย','KHIA'],['เฅีย','KHIA'],
-		['เงีย','NGIA'],['เจีย','CHIA'],['เฉีย','CHIA'],['เชีย','CHIA'],['เฌีย','CHIA'],
-		['เซีย','SIA'],['เศีย','SIA'],['เสีย','SIA'],['เษีย','SIA'],
-		['เฝีย','FIA'],['เฟีย','FIA'],
-		['เตีย','TIA'],['เฏีย','TIA'],
-		['เฎีย','DIA'],['เดีย','DIA'],
-		['เนีย','NIA'],['เมีย','MIA'],
-		['เบีย','BIA'],['เปีย','PIA'],
-		['เพีย','PHIA'],['เผีย','PHIA'],['เภีย','PHIA'],
-		['เญีย','YIA'],['เยีย','YIA'],		
-		['เลีย','LIA'],['เฬีย','LIA'],['เรีย','RIA'],
-		['เทีย','THIA'],['เธีย','THIA'],['เทีย','THIA'],['เฒีย','THIA'],['เถีย','THIA'],
-		['เวีย','WIA'],
-		['เหีย','HIA'],['เฮีย','HIA'],
-		['เอีย','IA'],
-
 		['เก็ก','KEK'],['เข็ก','KHEK'],['เฃ็ก','KHEK'],['เค็ก','KHEK'],['เฆ็ก','KHEK'],['เฅ็ก','KHEK'],
 		['เง็ก','NGEK'],['เจ็ก','CHEK'],['เฉ็ก','CHEK'],['เช็ก','CHEK'],['เฌ็ก','CHEK'],
 		['เซ็ก','SEK'],['เศ็ก','SEK'],['เส็ก','SEK'],['เษ็ก','SEK'],
@@ -4508,8 +4491,7 @@ function romanize() {
 			['จาบ','CHAP'],['จาป','CHAP'],['จาพ','CHAP'],['จาภ','CHAP'],['จาฟ','CHAP'],
 
 
-			['จิ','CHI'],['จริ','CHRI'],['จลิ','CHLI'],['จริบ','CHRIB'],['จลิบ','CHLIB'],['จริง','CHRING'],['จรด','CHROT'],
-
+			['จิ','CHI'],['จริ','CHRI'],['จลิ','CHLI'],['จริบ','CHRIB'],['จลิบ','CHLIB'],
 			['จิก','CHIK'],['จิข','CHIK'],['จิฆ','CHIK'],['จิค','CHIK'],['จิฅ','CHIK'],
 			['จิง','CHING'],
 			['จิจ','CHIT'],['จิฉ','CHIT'],['จิช','CHIT'],['จิซ','CHIT'],['จิฎ','CHIT'],['จิฏ','CHIT'],['จิฐ','CHIT'],['จิฑ','CHIT'],['จิฒ','CHIT'],
@@ -14789,7 +14771,6 @@ function romanize() {
 			['โสรม','SAROM'],
 			['โสรบ','SAROP'],['โสรป','SAROP'],['โสรพ','SAROP'],['โสรภ','SAROP'],['โสรฟ','SAROP'],
 
-			['สร','SORA'],
 			['สรก','SAROK'],['สรข','SAROK'],['สรฆ','SAROK'],['สรค','SAROK'],['สรฅ','SAROK'],
 			['สรง','SONG'],
 			['สรจ','SAROT'],['สรฉ','SAROT'],['สรช','SAROT'],['สรซ','SAROT'],['สรฎ','SAROT'],['สรฏ','SAROT'],['สรฐ','SAROT'],['สรฑ','SAROT'],['สรฒ','SAROT'],
@@ -14851,550 +14832,20 @@ function romanize() {
 
 
 	var thName = document.getElementById("thaiName").value; // มน-ตรี-ศรี-นะ-คอน
-	var n0 = thName.toString(); // "มน-ตรี"
-	var n1 = n0.replace(/ก่|ก้|ก๊|ก๋/g,"ก");	
-	var n2 = n1.replace(/กิ่|กิ้|กิ๊|กิ๋/g,"กิ");	
-	var n3 = n2.replace(/กี่|กี้|กี๊|กี๋/g,"กี");	
-	var n4 = n3.replace(/กึ่|กึ้|กึ๊|กึ๋/g,"กึ");
-	var n5 = n4.replace(/ก่ำ|ก้ำ|ก๊ำ|ก๋ำ/g,"กำ");	
-	var n6 = n5.replace(/กุ่|กุ้|กุ๊|กุ๋/g,"กุ");	
-	var n7 = n6.replace(/กื่|กื้|กื๊|กื๋/g,"กื");	
-	var n8 = n7.replace(/กั่|กั้|กั๊|กั๋/g,"กั");		
-	var n9 = n8.replace(/กู่|กู้|กู๊|กู๋/g,"กู");
-
-	var n11 = n9.replace(/ร่|ร้|ร๊|ร๋/g,"ร");	
-	var n12 = n11.replace(/ริ่|ริ้|ริ๊|ริ๋/g,"ริ");	
-	var n13 = n12.replace(/รี่|รี้|รี๊|รี๋/g,"รี");	
-	var n14 = n13.replace(/รึ่|รึ้|รึ๊|รึ๋/g,"รึ");
-	var n15 = n14.replace(/ร่ำ|ร้ำ|ร๊ำ|ร๋ำ/g,"รำ");	
-	var n16 = n15.replace(/รุ่|รุ้|รุ๊|รุ๋/g,"รุ");	
-	var n17 = n16.replace(/รู่|รู้|รู๊|รู๋/g,"รู");	
-	var n18 = n17.replace(/รื่|รื้|รื๊|รื๋/g,"รื");	
-	var n19 = n18.replace(/รั่|รั้|รั๊|รั๋/g,"รั");	
-
-	var n21 = n19.replace(/ข่|ข้|ข๊|ข๋/g,"ข");	
-	var n22 = n21.replace(/ขิ่|ขิ้|ขิ๊|ขิ๋/g,"ขิ");	
-	var n23 = n22.replace(/ขี่|ขี้|ขี๊|ขี๋/g,"ขี");	
-	var n24 = n23.replace(/ขึ่|ขึ้|ขึ๊|ขึ๋/g,"ขึ");
-	var n25 = n24.replace(/ข่ำ|ข้ำ|ข๊ำ|ข๋ำ/g,"ขำ");	
-	var n26 = n25.replace(/ขุ่|ขุ้|ขุ๊|ขุ๋/g,"ขุ");	
-	var n27 = n26.replace(/ขู่|ขู้|ขู๊|ขู๋/g,"ขู");	
-	var n28 = n27.replace(/ขื่|ขื้|ขื๊|ขื๋/g,"ขื");	
-	var n29 = n28.replace(/ขั่|ขั้|ขั๊|ขั๋/g,"ขั");	
-
-	var n31 = n29.replace(/ค่|ค้|ค๊|ค๋/g,"ค");	
-	var n32 = n31.replace(/คิ่|คิ้|คิ๊|คิ๋/g,"คิ");	
-	var n33 = n32.replace(/คี่|คี้|คี๊|คี๋/g,"คี");	
-	var n34 = n33.replace(/คึ่|คึ้|คึ๊|คึ๋/g,"คึ");
-	var n35 = n34.replace(/ค่ำ|ค้ำ|ค๊ำ|ค๋ำ/g,"คำ");	
-	var n36 = n35.replace(/คุ่|คุ้|คุ๊|คุ๋/g,"คุ");	
-	var n37 = n36.replace(/คู่|คู้|คู๊|คู๋/g,"คู");	
-	var n38 = n37.replace(/คื่|คื้|คื๊|คื๋/g,"คื");	
-	var n39 = n38.replace(/คั่|คั้|คั๊|คั๋/g,"คั");	
-	
-	var n41 = n39.replace(/ฆ่|ฆ้|ฆ๊|ฆ๋/g,"ฆ");	
-	var n42 = n41.replace(/ฆิ่|ฆิ้|ฆิ๊|ฆิ๋/g,"ฆิ");	
-	var n43 = n42.replace(/ฆี่|ฆี้|ฆี๊|ฆี๋/g,"ฆี");	
-	var n44 = n43.replace(/ฆึ่|ฆึ้|ฆึ๊|ฆึ๋/g,"ฆึ");
-	var n45 = n44.replace(/ฆ่ำ|ฆ้ำ|ฆ๊ำ|ฆ๋ำ/g,"ฆำ");	
-	var n46 = n45.replace(/ฆุ่|ฆุ้|ฆุ๊|ฆุ๋/g,"ฆุ");	
-	var n47 = n46.replace(/ฆู่|ฆู้|ฆู๊|ฆู๋/g,"ฆู");	
-	var n48 = n47.replace(/ฆื่|ฆื้|ฆื๊|ฆื๋/g,"ฆื");	
-	var n49 = n48.replace(/ฆั่|ฆั้|ฆั๊|ฆั๋/g,"ฆั");	
-	
-	var n51 = n49.replace(/ฃ่|ฃ้|ฃ๊|ฃ๋/g,"ฃ");	
-	var n52 = n51.replace(/ฃิ่|ฃิ้|ฃิ๊|ฃิ๋/g,"ฃิ");	
-	var n53 = n52.replace(/ฃี่|ฃี้|ฃี๊|ฃี๋/g,"ฃี");	
-	var n54 = n53.replace(/ฃึ่|ฃึ้|ฃึ๊|ฃึ๋/g,"ฃึ");
-	var n55 = n54.replace(/ฃ่ำ|ฃ้ำ|ฃ๊ำ|ฃ๋ำ/g,"ฃำ");	
-	var n56 = n55.replace(/ฃุ่|ฃุ้|ฃุ๊|ฃุ๋/g,"ฃุ");	
-	var n57 = n56.replace(/ฃู่|ฃู้|ฃู๊|ฃู๋/g,"ฃู");	
-	var n58 = n57.replace(/ฃื่|ฃื้|ฃื๊|ฃื๋/g,"ฃื");	
-	var n59 = n58.replace(/ฃั่|ฃั้|ฃั๊|ฃั๋/g,"ฃั");	
-	
-	var n61 = n59.replace(/ง่|ง้|ง๊|ง๋/g,"ง");	
-	var n62 = n61.replace(/งิ่|งิ้|งิ๊|งิ๋/g,"งิ");	
-	var n63 = n62.replace(/งี่|งี้|งี๊|งี๋/g,"งี");	
-	var n64 = n63.replace(/งึ่|งึ้|งึ๊|งึ๋/g,"งึ");
-	var n65 = n64.replace(/ง่ำ|ง้ำ|ง๊ำ|ง๋ำ/g,"งำ");	
-	var n66 = n65.replace(/งุ่|งุ้|งุ๊|งุ๋/g,"งุ");	
-	var n67 = n66.replace(/งู่|งู้|งู๊|งู๋/g,"งู");	
-	var n68 = n67.replace(/งื่|งื้|งื๊|งื๋/g,"งื");	
-	var n69 = n68.replace(/งั่|งั้|งั๊|งั๋/g,"งั");	
-	
-	var n71 = n69.replace(/จ่|จ้|จ๊|จ๋/g,"จ");	
-	var n72 = n71.replace(/จิ่|จิ้|จิ๊|จิ๋/g,"จิ");	
-	var n73 = n72.replace(/จี่|จี้|จี๊|จี๋/g,"จี");	
-	var n74 = n73.replace(/จึ่|จึ้|จึ๊|จึ๋/g,"จึ");
-	var n75 = n74.replace(/จ่ำ|จ้ำ|จ๊ำ|จ๋ำ/g,"จำ");	
-	var n76 = n75.replace(/จุ่|จุ้|จุ๊|จุ๋/g,"จุ");	
-	var n77 = n76.replace(/จู่|จู้|จู๊|จู๋/g,"จู");	
-	var n78 = n77.replace(/จื่|จื้|จื๊|จื๋/g,"จื");	
-	var n79 = n78.replace(/จั่|จั้|จั๊|จั๋/g,"จั");	
-	
-	var n81 = n79.replace(/ฉ่|ฉ้|ฉ๊|ฉ๋/g,"ฉ");	
-	var n82 = n81.replace(/ฉิ่|ฉิ้|ฉิ๊|ฉิ๋/g,"ฉิ");	
-	var n83 = n82.replace(/ฉี่|ฉี้|ฉี๊|ฉี๋/g,"ฉี");	
-	var n84 = n83.replace(/ฉึ่|ฉึ้|ฉึ๊|ฉึ๋/g,"ฉึ");
-	var n85 = n84.replace(/ฉ่ำ|ฉ้ำ|ฉ๊ำ|ฉ๋ำ/g,"ฉำ");	
-	var n86 = n85.replace(/ฉุ่|ฉุ้|ฉุ๊|ฉุ๋/g,"ฉุ");	
-	var n87 = n86.replace(/ฉู่|ฉู้|ฉู๊|ฉู๋/g,"ฉู");	
-	var n88 = n87.replace(/ฉื่|ฉื้|ฉื๊|ฉื๋/g,"ฉื");	
-	var n89 = n88.replace(/ฉั่|ฉั้|ฉั๊|ฉั๋/g,"ฉั");	
-	
-	var n91 = n89.replace(/ช่|ช้|ช๊|ช๋/g,"ช");	
-	var n92 = n91.replace(/ชิ่|ชิ้|ชิ๊|ชิ๋/g,"ชิ");	
-	var n93 = n92.replace(/ชี่|ชี้|ชี๊|ชี๋/g,"ชี");	
-	var n94 = n93.replace(/ชึ่|ชึ้|ชึ๊|ชึ๋/g,"ชึ");
-	var n95 = n94.replace(/ช่ำ|ช้ำ|ช๊ำ|ช๋ำ/g,"ชำ");	
-	var n96 = n95.replace(/ชุ่|ชุ้|ชุ๊|ชุ๋/g,"ชุ");	
-	var n97 = n96.replace(/ชู่|ชู้|ชู๊|ชู๋/g,"ชู");	
-	var n98 = n97.replace(/ชื่|ชื้|ชื๊|ชื๋/g,"ชื");	
-	var n99 = n98.replace(/ชั่|ชั้|ชั๊|ชั๋/g,"ชั");	
-	
-
-	var n101 = n99.replace(/ซ่|ซ้|ซ๊|ซ๋/g,"ซ");	
-	var n102 = n101.replace(/ซิ่|ซิ้|ซิ๊|ซิ๋/g,"ซิ");	
-	var n103 = n102.replace(/ซี่|ซี้|ซี๊|ซี๋/g,"ซี");	
-	var n104 = n103.replace(/ซึ่|ซึ้|ซึ๊|ซึ๋/g,"ซึ");
-	var n105 = n104.replace(/ซ่ำ|ซ้ำ|ซ๊ำ|ซ๋ำ/g,"ซำ");	
-	var n106 = n105.replace(/ซุ่|ซุ้|ซุ๊|ซุ๋/g,"ซุ");	
-	var n107 = n106.replace(/ซู่|ซู้|ซู๊|ซู๋/g,"ซู");	
-	var n108 = n107.replace(/ซื่|ซื้|ซื๊|ซื๋/g,"ซื");	
-	var n109 = n108.replace(/ซั่|ซั้|ซั๊|ซั๋/g,"ซั");	
-	
-	var n111 = n109.replace(/ฌ่|ฌ้|ฌ๊|ฌ๋/g,"ฌ");	
-	var n112 = n111.replace(/ฌิ่|ฌิ้|ฌิ๊|ฌิ๋/g,"ฌิ");	
-	var n113 = n112.replace(/ฌี่|ฌี้|ฌี๊|ฌี๋/g,"ฌี");	
-	var n114 = n113.replace(/ฌึ่|ฌึ้|ฌึ๊|ฌึ๋/g,"ฌึ");
-	var n115 = n114.replace(/ฌ่ำ|ฌ้ำ|ฌ๊ำ|ฌ๋ำ/g,"ฌำ");	
-	var n116 = n115.replace(/ฌุ่|ฌุ้|ฌุ๊|ฌุ๋/g,"ฌุ");	
-	var n117 = n116.replace(/ฌู่|ฌู้|ฌู๊|ฌู๋/g,"ฌู");	
-	var n118 = n117.replace(/ฌื่|ฌื้|ฌื๊|ฌื๋/g,"ฌื");	
-	var n119 = n118.replace(/ฌั่|ฌั้|ฌั๊|ฌั๋/g,"ฌั");	
-	
-	var n121 = n119.replace(/ศ่|ศ้|ศ๊|ศ๋/g,"ศ");	
-	var n122 = n121.replace(/ศิ่|ศิ้|ศิ๊|ศิ๋/g,"ศิ");	
-	var n123 = n122.replace(/ศี่|ศี้|ศี๊|ศี๋/g,"ศี");	
-	var n124 = n123.replace(/ศึ่|ศึ้|ศึ๊|ศึ๋/g,"ศึ");
-	var n125 = n124.replace(/ศ่ำ|ศ้ำ|ศ๊ำ|ศ๋ำ/g,"ศำ");	
-	var n126 = n125.replace(/ศุ่|ศุ้|ศุ๊|ศุ๋/g,"ศุ");	
-	var n127 = n126.replace(/ศู่|ศู้|ศู๊|ศู๋/g,"ศู");	
-	var n128 = n127.replace(/ศื่|ศื้|ศื๊|ศื๋/g,"ศื");	
-	var n129 = n128.replace(/ศั่|ศั้|ศั๊|ศั๋/g,"ศั");	
-	
-	var n131 = n129.replace(/ษ่|ษ้|ษ๊|ษ๋/g,"ษ");	
-	var n132 = n131.replace(/ษิ่|ษิ้|ษิ๊|ษิ๋/g,"ษิ");	
-	var n133 = n132.replace(/ษี่|ษี้|ษี๊|ษี๋/g,"ษี");	
-	var n134 = n133.replace(/ษึ่|ษึ้|ษึ๊|ษึ๋/g,"ษึ");
-	var n135 = n134.replace(/ษ่ำ|ษ้ำ|ษ๊ำ|ษ๋ำ/g,"ษำ");	
-	var n136 = n135.replace(/ษุ่|ษุ้|ษุ๊|ษุ๋/g,"ษุ");	
-	var n137 = n136.replace(/ษู่|ษู้|ษู๊|ษู๋/g,"ษู");	
-	var n138 = n137.replace(/ษื่|ษื้|ษื๊|ษื๋/g,"ษื");	
-	var n139 = n138.replace(/ษั่|ษั้|ษั๊|ษั๋/g,"ษั");	
-	
-	var n141 = n139.replace(/ส่|ส้|ส๊|ส๋/g,"ส");	
-	var n142 = n141.replace(/สิ่|สิ้|สิ๊|สิ๋/g,"สิ");	
-	var n143 = n142.replace(/สี่|สี้|สี๊|สี๋/g,"สี");	
-	var n144 = n143.replace(/สึ่|สึ้|สึ๊|สึ๋/g,"สึ");
-	var n145 = n144.replace(/ส่ำ|ส้ำ|ส๊ำ|ส๋ำ/g,"สำ");	
-	var n146 = n145.replace(/สุ่|สุ้|สุ๊|สุ๋/g,"สุ");	
-	var n147 = n146.replace(/สู่|สู้|สู๊|สู๋/g,"สู");	
-	var n148 = n147.replace(/สื่|สื้|สื๊|สื๋/g,"สื");	
-	var n149 = n148.replace(/สั่|สั้|สั๊|สั๋/g,"สั");	
-	
-	var n151 = n149.replace(/ญ่|ญ้|ญ๊|ญ๋/g,"ญ");	
-	var n152 = n151.replace(/ญิ่|ญิ้|ญิ๊|ญิ๋/g,"ญิ");	
-	var n153 = n152.replace(/ญี่|ญี้|ญี๊|ญี๋/g,"ญี");	
-	var n154 = n153.replace(/ญึ่|ญึ้|ญึ๊|ญึ๋/g,"ญึ");
-	var n155 = n154.replace(/ญ่ำ|ญ้ำ|ญ๊ำ|ญ๋ำ/g,"ญำ");	
-	var n156 = n155.replace(/ญุ่|ญุ้|ญุ๊|ญุ๋/g,"ญุ");	
-	var n157 = n156.replace(/ญู่|ญู้|ญู๊|ญู๋/g,"ญู");	
-	var n158 = n157.replace(/ญื่|ญื้|ญื๊|ญื๋/g,"ญื");	
-	var n159 = n158.replace(/ญั่|ญั้|ญั๊|ญั๋/g,"ญั");	
-	
-	var n161 = n159.replace(/ฎ่|ฎ้|ฎ๊|ฎ๋/g,"ฎ");	
-	var n162 = n161.replace(/ฎิ่|ฎิ้|ฎิ๊|ฎิ๋/g,"ฎิ");	
-	var n163 = n162.replace(/ฎี่|ฎี้|ฎี๊|ฎี๋/g,"ฎี");	
-	var n164 = n163.replace(/ฎึ่|ฎึ้|ฎึ๊|ฎึ๋/g,"ฎึ");
-	var n165 = n164.replace(/ฎ่ำ|ฎ้ำ|ฎ๊ำ|ฎ๋ำ/g,"ฎำ");	
-	var n166 = n165.replace(/ฎุ่|ฎุ้|ฎุ๊|ฎุ๋/g,"ฎุ");	
-	var n167 = n166.replace(/ฎู่|ฎู้|ฎู๊|ฎู๋/g,"ฎู");	
-	var n168 = n167.replace(/ฎื่|ฎื้|ฎื๊|ฎื๋/g,"ฎื");	
-	var n169 = n168.replace(/ฎั่|ฎั้|ฎั๊|ฎั๋/g,"ฎั");
-
-	var n171 = n169.replace(/ฑ่|ฑ้|ฑ๊|ฑ๋/g,"ฑ");	
-	var n172 = n171.replace(/ฑิ่|ฑิ้|ฑิ๊|ฑิ๋/g,"ฑิ");	
-	var n173 = n172.replace(/ฑี่|ฑี้|ฑี๊|ฑี๋/g,"ฑี");	
-	var n174 = n173.replace(/ฑึ่|ฑึ้|ฑึ๊|ฑึ๋/g,"ฑึ");
-	var n175 = n174.replace(/ฑ่ำ|ฑ้ำ|ฑ๊ำ|ฑ๋ำ/g,"ฑำ");	
-	var n176 = n175.replace(/ฑุ่|ฑุ้|ฑุ๊|ฑุ๋/g,"ฑุ");	
-	var n177 = n176.replace(/ฑู่|ฑู้|ฑู๊|ฑู๋/g,"ฑู");	
-	var n178 = n177.replace(/ฑื่|ฑื้|ฑื๊|ฑื๋/g,"ฑื");	
-	var n179 = n178.replace(/ฑั่|ฑั้|ฑั๊|ฑั๋/g,"ฑั");	
-	
-	var n181 = n179.replace(/ด่|ด้|ด๊|ด๋/g,"ด");	
-	var n182 = n181.replace(/ดิ่|ดิ้|ดิ๊|ดิ๋/g,"ดิ");	
-	var n183 = n182.replace(/ดี่|ดี้|ดี๊|ดี๋/g,"ดี");	
-	var n184 = n183.replace(/ดึ่|ดึ้|ดึ๊|ดึ๋/g,"ดึ");
-	var n185 = n184.replace(/ด่ำ|ด้ำ|ด๊ำ|ด๋ำ/g,"ดำ");	
-	var n186 = n185.replace(/ดุ่|ดุ้|ดุ๊|ดุ๋/g,"ดุ");	
-	var n187 = n186.replace(/ดู่|ดู้|ดู๊|ดู๋/g,"ดู");	
-	var n188 = n187.replace(/ดื่|ดื้|ดื๊|ดื๋/g,"ดื");	
-	var n189 = n188.replace(/ดั่|ดั้|ดั๊|ดั๋/g,"ดั");	
-	
-	var n191 = n189.replace(/ฏ่|ฏ้|ฏ๊|ฏ๋/g,"ฏ");	
-	var n192 = n191.replace(/ฏิ่|ฏิ้|ฏิ๊|ฏิ๋/g,"ฏิ");	
-	var n193 = n192.replace(/ฏี่|ฏี้|ฏี๊|ฏี๋/g,"ฏี");	
-	var n194 = n193.replace(/ฏึ่|ฏึ้|ฏึ๊|ฏึ๋/g,"ฏึ");
-	var n195 = n194.replace(/ฏ่ำ|ฏ้ำ|ฏ๊ำ|ฏ๋ำ/g,"ฏำ");	
-	var n196 = n195.replace(/ฏุ่|ฏุ้|ฏุ๊|ฏุ๋/g,"ฏุ");	
-	var n197 = n196.replace(/ฏู่|ฏู้|ฏู๊|ฏู๋/g,"ฏู");	
-	var n198 = n197.replace(/ฏื่|ฏื้|ฏื๊|ฏื๋/g,"ฏื");	
-	var n199 = n198.replace(/ฏั่|ฏั้|ฏั๊|ฏั๋/g,"ฏั");	
-	
-	var n201 = n199.replace(/ต่|ต้|ต๊|ต๋/g,"ต");	
-	var n202 = n201.replace(/ติ่|ติ้|ติ๊|ติ๋/g,"ติ");	
-	var n203 = n202.replace(/ตี่|ตี้|ตี๊|ตี๋/g,"ตี");	
-	var n204 = n203.replace(/ตึ่|ตึ้|ตึ๊|ตึ๋/g,"ตึ");
-	var n205 = n204.replace(/ต่ำ|ต้ำ|ต๊ำ|ต๋ำ/g,"ตำ");	
-	var n206 = n205.replace(/ตุ่|ตุ้|ตุ๊|ตุ๋/g,"ตุ");	
-	var n207 = n206.replace(/ตู่|ตู้|ตู๊|ตู๋/g,"ตู");	
-	var n208 = n207.replace(/ตื่|ตื้|ตื๊|ตื๋/g,"ตื");	
-	var n209 = n208.replace(/ตั่|ตั้|ตั๊|ตั๋/g,"ตั");	
-	
-	var n211 = n209.replace(/ฐ่|ฐ้|ฐ๊|ฐ๋/g,"ฐ");	
-	var n212 = n211.replace(/ฐิ่|ฐิ้|ฐิ๊|ฐิ๋/g,"ฐิ");	
-	var n213 = n212.replace(/ฐี่|ฐี้|ฐี๊|ฐี๋/g,"ฐี");	
-	var n214 = n213.replace(/ฐึ่|ฐึ้|ฐึ๊|ฐึ๋/g,"ฐึ");
-	var n215 = n214.replace(/ฐ่ำ|ฐ้ำ|ฐ๊ำ|ฐ๋ำ/g,"ฐำ");	
-	var n216 = n215.replace(/ฐุ่|ฐุ้|ฐุ๊|ฐุ๋/g,"ฐุ");	
-	var n217 = n216.replace(/ฐู่|ฐู้|ฐู๊|ฐู๋/g,"ฐู");	
-	var n218 = n217.replace(/ฐื่|ฐื้|ฐื๊|ฐื๋/g,"ฐื");	
-	var n219 = n218.replace(/ฐั่|ฐั้|ฐั๊|ฐั๋/g,"ฐั");	
-	
-	var n221 = n219.replace(/ฒ่|ฒ้|ฒ๊|ฒ๋/g,"ฒ");	
-	var n222 = n221.replace(/ฒิ่|ฒิ้|ฒิ๊|ฒิ๋/g,"ฒิ");	
-	var n223 = n222.replace(/ฒี่|ฒี้|ฒี๊|ฒี๋/g,"ฒี");	
-	var n224 = n223.replace(/ฒึ่|ฒึ้|ฒึ๊|ฒึ๋/g,"ฒึ");
-	var n225 = n224.replace(/ฒ่ำ|ฒ้ำ|ฒ๊ำ|ฒ๋ำ/g,"ฒำ");	
-	var n226 = n225.replace(/ฒุ่|ฒุ้|ฒุ๊|ฒุ๋/g,"ฒุ");	
-	var n227 = n226.replace(/ฒู่|ฒู้|ฒู๊|ฒู๋/g,"ฒู");	
-	var n228 = n227.replace(/ฒื่|ฒื้|ฒื๊|ฒื๋/g,"ฒื");	
-	var n229 = n228.replace(/ฒั่|ฒั้|ฒั๊|ฒั๋/g,"ฒั");	
-	
-	var n231 = n229.replace(/ถ่|ถ้|ถ๊|ถ๋/g,"ถ");	
-	var n232 = n231.replace(/ถิ่|ถิ้|ถิ๊|ถิ๋/g,"ถิ");	
-	var n233 = n232.replace(/ถี่|ถี้|ถี๊|ถี๋/g,"ถี");	
-	var n234 = n233.replace(/ถึ่|ถึ้|ถึ๊|ถึ๋/g,"ถึ");
-	var n235 = n234.replace(/ถ่ำ|ถ้ำ|ถ๊ำ|ถ๋ำ/g,"ถำ");	
-	var n236 = n235.replace(/ถุ่|ถุ้|ถุ๊|ถุ๋/g,"ถุ");	
-	var n237 = n236.replace(/ถู่|ถู้|ถู๊|ถู๋/g,"ถู");	
-	var n238 = n237.replace(/ถื่|ถื้|ถื๊|ถื๋/g,"ถื");	
-	var n239 = n238.replace(/ถั่|ถั้|ถั๊|ถั๋/g,"ถั");	
-	
-	var n241 = n239.replace(/ท่|ท้|ท๊|ท๋/g,"ท");	
-	var n242 = n241.replace(/ทิ่|ทิ้|ทิ๊|ทิ๋/g,"ทิ");	
-	var n243 = n242.replace(/ที่|ที้|ที๊|ที๋/g,"ที");	
-	var n244 = n243.replace(/ทึ่|ทึ้|ทึ๊|ทึ๋/g,"ทึ");
-	var n245 = n244.replace(/ท่ำ|ท้ำ|ท๊ำ|ท๋ำ/g,"ทำ");	
-	var n246 = n245.replace(/ทุ่|ทุ้|ทุ๊|ทุ๋/g,"ทุ");	
-	var n247 = n246.replace(/ทู่|ทู้|ทู๊|ทู๋/g,"ทู");	
-	var n248 = n247.replace(/ทื่|ทื้|ทื๊|ทื๋/g,"ทื");	
-	var n249 = n248.replace(/ทั่|ทั้|ทั๊|ทั๋/g,"ทั");	
-	
-	var n251 = n249.replace(/ธ่|ธ้|ธ๊|ธ๋/g,"ธ");	
-	var n252 = n251.replace(/ธิ่|ธิ้|ธิ๊|ธิ๋/g,"ธิ");	
-	var n253 = n252.replace(/ธี่|ธี้|ธี๊|ธี๋/g,"ธี");	
-	var n254 = n253.replace(/ธึ่|ธึ้|ธึ๊|ธึ๋/g,"ธึ");
-	var n255 = n254.replace(/ธ่ำ|ธ้ำ|ธ๊ำ|ธ๋ำ/g,"ธำ");	
-	var n256 = n255.replace(/ธุ่|ธุ้|ธุ๊|ธุ๋/g,"ธุ");	
-	var n257 = n256.replace(/ธู่|ธู้|ธู๊|ธู๋/g,"ธู");	
-	var n258 = n257.replace(/ธื่|ธื้|ธื๊|ธื๋/g,"ธื");	
-	var n259 = n258.replace(/ธั่|ธั้|ธั๊|ธั๋/g,"ธั");	
-	
-	var n261 = n259.replace(/น่|น้|น๊|น๋/g,"น");	
-	var n262 = n261.replace(/นิ่|นิ้|นิ๊|นิ๋/g,"นิ");	
-	var n263 = n262.replace(/นี่|นี้|นี๊|นี๋/g,"นี");	
-	var n264 = n263.replace(/นึ่|นึ้|นึ๊|นึ๋/g,"นึ");
-	var n265 = n264.replace(/น่ำ|น้ำ|น๊ำ|น๋ำ/g,"นำ");	
-	var n266 = n265.replace(/นุ่|นุ้|นุ๊|นุ๋/g,"นุ");	
-	var n267 = n266.replace(/นู่|นู้|นู๊|นู๋/g,"นู");	
-	var n268 = n267.replace(/นื่|นื้|นื๊|นื๋/g,"นื");	
-	var n269 = n268.replace(/นั่|นั้|นั๊|นั๋/g,"นั");	
-	
-	var n271 = n269.replace(/บ่|บ้|บ๊|บ๋/g,"บ");	
-	var n272 = n271.replace(/บิ่|บิ้|บิ๊|บิ๋/g,"บิ");	
-	var n273 = n272.replace(/บี่|บี้|บี๊|บี๋/g,"บี");	
-	var n274 = n273.replace(/บึ่|บึ้|บึ๊|บึ๋/g,"บึ");
-	var n275 = n274.replace(/บ่ำ|บ้ำ|บ๊ำ|บ๋ำ/g,"บำ");	
-	var n276 = n275.replace(/บุ่|บุ้|บุ๊|บุ๋/g,"บุ");	
-	var n277 = n276.replace(/บู่|บู้|บู๊|บู๋/g,"บู");	
-	var n278 = n277.replace(/บื่|บื้|บื๊|บื๋/g,"บื");	
-	var n279 = n278.replace(/บั่|บั้|บั๊|บั๋/g,"บั");	
-	
-	var n281 = n279.replace(/ป่|ป้|ป๊|ป๋/g,"ป");	
-	var n282 = n281.replace(/ปิ่|ปิ้|ปิ๊|ปิ๋/g,"ปิ");	
-	var n283 = n282.replace(/ปี่|ปี้|ปี๊|ปี๋/g,"ปี");	
-	var n284 = n283.replace(/ปึ่|ปึ้|ปึ๊|ปึ๋/g,"ปึ");
-	var n285 = n284.replace(/ป่ำ|ป้ำ|ป๊ำ|ป๋ำ/g,"ปำ");	
-	var n286 = n285.replace(/ปุ่|ปุ้|ปุ๊|ปุ๋/g,"ปุ");	
-	var n287 = n286.replace(/ปู่|ปู้|ปู๊|ปู๋/g,"ปู");	
-	var n288 = n287.replace(/ปื่|ปื้|ปื๊|ปื๋/g,"ปื");	
-	var n289 = n288.replace(/ปั่|ปั้|ปั๊|ปั๋/g,"ปั");	
-	
-	var n291 = n289.replace(/ผ่|ผ้|ผ๊|ผ๋/g,"ผ");	
-	var n292 = n291.replace(/ผิ่|ผิ้|ผิ๊|ผิ๋/g,"ผิ");	
-	var n293 = n292.replace(/ผี่|ผี้|ผี๊|ผี๋/g,"ผี");	
-	var n294 = n293.replace(/ผึ่|ผึ้|ผึ๊|ผึ๋/g,"ผึ");
-	var n295 = n294.replace(/ผ่ำ|ผ้ำ|ผ๊ำ|ผ๋ำ/g,"ผำ");	
-	var n296 = n295.replace(/ผุ่|ผุ้|ผุ๊|ผุ๋/g,"ผุ");	
-	var n297 = n296.replace(/ผู่|ผู้|ผู๊|ผู๋/g,"ผู");	
-	var n298 = n297.replace(/ผื่|ผื้|ผื๊|ผื๋/g,"ผื");	
-	var n299 = n298.replace(/ผั่|ผั้|ผั๊|ผั๋/g,"ผั");	
-	
-	var n301 = n299.replace(/พ่|พ้|พ๊|พ๋/g,"พ");	
-	var n302 = n301.replace(/พิ่|พิ้|พิ๊|พิ๋/g,"พิ");	
-	var n303 = n302.replace(/พี่|พี้|พี๊|พี๋/g,"พี");	
-	var n304 = n303.replace(/พึ่|พึ้|พึ๊|พึ๋/g,"พึ");
-	var n305 = n304.replace(/พ่ำ|พ้ำ|พ๊ำ|พ๋ำ/g,"พำ");	
-	var n306 = n305.replace(/พุ่|พุ้|พุ๊|พุ๋/g,"พุ");	
-	var n307 = n306.replace(/พู่|พู้|พู๊|พู๋/g,"พู");	
-	var n308 = n307.replace(/พื่|พื้|พื๊|พื๋/g,"พื");	
-	var n309 = n308.replace(/พั่|พั้|พั๊|พั๋/g,"พั");	
-	
-	var n311 = n309.replace(/ภ่|ภ้|ภ๊|ภ๋/g,"ภ");	
-	var n312 = n311.replace(/ภิ่|ภิ้|ภิ๊|ภิ๋/g,"ภิ");	
-	var n313 = n312.replace(/ภี่|ภี้|ภี๊|ภี๋/g,"ภี");	
-	var n314 = n313.replace(/ภึ่|ภึ้|ภึ๊|ภึ๋/g,"ภึ");
-	var n315 = n314.replace(/ภ่ำ|ภ้ำ|ภ๊ำ|ภ๋ำ/g,"ภำ");	
-	var n316 = n315.replace(/ภุ่|ภุ้|ภุ๊|ภุ๋/g,"ภุ");	
-	var n317 = n316.replace(/ภู่|ภู้|ภู๊|ภู๋/g,"ภู");	
-	var n318 = n317.replace(/ภื่|ภื้|ภื๊|ภื๋/g,"ภื");	
-	var n319 = n318.replace(/ภั่|ภั้|ภั๊|ภั๋/g,"ภั");	
-	
-	var n321 = n319.replace(/ฝ่|ฝ้|ฝ๊|ฝ๋/g,"ฝ");	
-	var n322 = n321.replace(/ฝิ่|ฝิ้|ฝิ๊|ฝิ๋/g,"ฝิ");	
-	var n323 = n322.replace(/ฝี่|ฝี้|ฝี๊|ฝี๋/g,"ฝี");	
-	var n324 = n323.replace(/ฝึ่|ฝึ้|ฝึ๊|ฝึ๋/g,"ฝึ");
-	var n325 = n324.replace(/ฝ่ำ|ฝ้ำ|ฝ๊ำ|ฝ๋ำ/g,"ฝำ");	
-	var n326 = n325.replace(/ฝุ่|ฝุ้|ฝุ๊|ฝุ๋/g,"ฝุ");	
-	var n327 = n326.replace(/ฝู่|ฝู้|ฝู๊|ฝู๋/g,"ฝู");	
-	var n328 = n327.replace(/ฝื่|ฝื้|ฝื๊|ฝื๋/g,"ฝื");	
-	var n329 = n328.replace(/ฝั่|ฝั้|ฝั๊|ฝั๋/g,"ฝั");	
-	
-	var n331 = n329.replace(/ฟ่|ฟ้|ฟ๊|ฟ๋/g,"ฟ");	
-	var n332 = n331.replace(/ฟิ่|ฟิ้|ฟิ๊|ฟิ๋/g,"ฟิ");	
-	var n333 = n332.replace(/ฟี่|ฟี้|ฟี๊|ฟี๋/g,"ฟี");	
-	var n334 = n333.replace(/ฟึ่|ฟึ้|ฟึ๊|ฟึ๋/g,"ฟึ");
-	var n335 = n334.replace(/ฟ่ำ|ฟ้ำ|ฟ๊ำ|ฟ๋ำ/g,"ฟำ");	
-	var n336 = n335.replace(/ฟุ่|ฟุ้|ฟุ๊|ฟุ๋/g,"ฟุ");	
-	var n337 = n336.replace(/ฟู่|ฟู้|ฟู๊|ฟู๋/g,"ฟู");	
-	var n338 = n337.replace(/ฟื่|ฟื้|ฟื๊|ฟื๋/g,"ฟื");	
-	var n339 = n338.replace(/ฟั่|ฟั้|ฟั๊|ฟั๋/g,"ฟั");	
-	
-	var n341 = n339.replace(/ม่|ม้|ม๊|ม๋/g,"ม");	
-	var n342 = n341.replace(/มิ่|มิ้|มิ๊|มิ๋/g,"มิ");	
-	var n343 = n342.replace(/มี่|มี้|มี๊|มี๋/g,"มี");	
-	var n344 = n343.replace(/มึ่|มึ้|มึ๊|มึ๋/g,"มึ");
-	var n345 = n344.replace(/ม่ำ|ม้ำ|ม๊ำ|ม๋ำ/g,"มำ");	
-	var n346 = n345.replace(/มุ่|มุ้|มุ๊|มุ๋/g,"มุ");	
-	var n347 = n346.replace(/มู่|มู้|มู๊|มู๋/g,"มู");	
-	var n348 = n347.replace(/มื่|มื้|มื๊|มื๋/g,"มื");	
-	var n349 = n348.replace(/มั่|มั้|มั๊|มั๋/g,"มั");	
-	
-	var n351 = n349.replace(/ย่|ย้|ย๊|ย๋/g,"ย");	
-	var n352 = n351.replace(/ยิ่|ยิ้|ยิ๊|ยิ๋/g,"ยิ");	
-	var n353 = n352.replace(/ยี่|ยี้|ยี๊|ยี๋/g,"ยี");	
-	var n354 = n353.replace(/ยึ่|ยึ้|ยึ๊|ยึ๋/g,"ยึ");
-	var n355 = n354.replace(/ย่ำ|ย้ำ|ย๊ำ|ย๋ำ/g,"ยำ");	
-	var n356 = n355.replace(/ยุ่|ยุ้|ยุ๊|ยุ๋/g,"ยุ");	
-	var n357 = n356.replace(/ยู่|ยู้|ยู๊|ยู๋/g,"ยู");	
-	var n358 = n357.replace(/ยื่|ยื้|ยื๊|ยื๋/g,"ยื");	
-	var n359 = n358.replace(/ยั่|ยั้|ยั๊|ยั๋/g,"ยั");	
-	
-	var n361 = n359.replace(/ล่|ล้|ล๊|ล๋/g,"ล");	
-	var n362 = n361.replace(/ลิ่|ลิ้|ลิ๊|ลิ๋/g,"ลิ");	
-	var n363 = n362.replace(/ลี่|ลี้|ลี๊|ลี๋/g,"ลี");	
-	var n364 = n363.replace(/ลึ่|ลึ้|ลึ๊|ลึ๋/g,"ลึ");
-	var n365 = n364.replace(/ล่ำ|ล้ำ|ล๊ำ|ล๋ำ/g,"ลำ");	
-	var n366 = n365.replace(/ลุ่|ลุ้|ลุ๊|ลุ๋/g,"ลุ");	
-	var n367 = n366.replace(/ลู่|ลู้|ลู๊|ลู๋/g,"ลู");	
-	var n368 = n367.replace(/ลื่|ลื้|ลื๊|ลื๋/g,"ลื");	
-	var n369 = n368.replace(/ลั่|ลั้|ลั๊|ลั๋/g,"ลั");	
-	
-	var n371 = n369.replace(/ฬ่|ฬ้|ฬ๊|ฬ๋/g,"ฬ");	
-	var n372 = n371.replace(/ฬิ่|ฬิ้|ฬิ๊|ฬิ๋/g,"ฬิ");	
-	var n373 = n372.replace(/ฬี่|ฬี้|ฬี๊|ฬี๋/g,"ฬี");	
-	var n374 = n373.replace(/ฬึ่|ฬึ้|ฬึ๊|ฬึ๋/g,"ฬึ");
-	var n375 = n374.replace(/ฬ่ำ|ฬ้ำ|ฬ๊ำ|ฬ๋ำ/g,"ฬำ");	
-	var n376 = n375.replace(/ฬุ่|ฬุ้|ฬุ๊|ฬุ๋/g,"ฬุ");	
-	var n377 = n376.replace(/ฬู่|ฬู้|ฬู๊|ฬู๋/g,"ฬู");	
-	var n378 = n377.replace(/ฬื่|ฬื้|ฬื๊|ฬื๋/g,"ฬื");	
-	var n379 = n378.replace(/ฬั่|ฬั้|ฬั๊|ฬั๋/g,"ฬั");	
-	
-	var n381 = n379.replace(/ว่|ว้|ว๊|ว๋/g,"ว");	
-	var n382 = n381.replace(/วิ่|วิ้|วิ๊|วิ๋/g,"วิ");	
-	var n383 = n382.replace(/วี่|วี้|วี๊|วี๋/g,"วี");	
-	var n384 = n383.replace(/วึ่|วึ้|วึ๊|วึ๋/g,"วึ");
-	var n385 = n384.replace(/ว่ำ|ว้ำ|ว๊ำ|ว๋ำ/g,"วำ");	
-	var n386 = n385.replace(/วุ่|วุ้|วุ๊|วุ๋/g,"วุ");	
-	var n387 = n386.replace(/วู่|วู้|วู๊|วู๋/g,"วู");	
-	var n388 = n387.replace(/วื่|วื้|วื๊|วื๋/g,"วื");	
-	var n389 = n388.replace(/วั่|วั้|วั๊|วั๋/g,"วั");	
-	
-	var n391 = n389.replace(/ห่|ห้|ห๊|ห๋/g,"ห");	
-	var n392 = n391.replace(/หิ่|หิ้|หิ๊|หิ๋/g,"หิ");	
-	var n393 = n392.replace(/หี่|หี้|หี๊|หี๋/g,"หี");	
-	var n394 = n393.replace(/หึ่|หึ้|หึ๊|หึ๋/g,"หึ");
-	var n395 = n394.replace(/ห่ำ|ห้ำ|ห๊ำ|ห๋ำ/g,"หำ");	
-	var n396 = n395.replace(/หุ่|หุ้|หุ๊|หุ๋/g,"หุ");	
-	var n397 = n396.replace(/หู่|หู้|หู๊|หู๋/g,"หู");	
-	var n398 = n397.replace(/หื่|หื้|หื๊|หื๋/g,"หื");	
-	var n399 = n398.replace(/หั่|หั้|หั๊|หั๋/g,"หั");	
-
-	var n401 = n399.replace(/ฮ่|ฮ้|ฮ๊|ฮ๋/g,"ฮ");	
-	var n402 = n401.replace(/ฮิ่|ฮิ้|ฮิ๊|ฮิ๋/g,"ฮิ");	
-	var n403 = n402.replace(/ฮี่|ฮี้|ฮี๊|ฮี๋/g,"ฮี");	
-	var n404 = n403.replace(/ฮึ่|ฮึ้|ฮึ๊|ฮึ๋/g,"ฮึ");
-	var n405 = n404.replace(/ฮ่ำ|ฮ้ำ|ฮ๊ำ|ฮ๋ำ/g,"ฮำ");	
-	var n406 = n405.replace(/ฮุ่|ฮุ้|ฮุ๊|ฮุ๋/g,"ฮุ");	
-	var n407 = n406.replace(/ฮู่|ฮู้|ฮู๊|ฮู๋/g,"ฮู");	
-	var n408 = n407.replace(/ฮื่|ฮื้|ฮื๊|ฮื๋/g,"ฮื");	
-	var n409 = n408.replace(/ฮั่|ฮั้|ฮั๊|ฮั๋/g,"ฮั");	
-
-	var n411 = n409.replace(/อ่|อ้|อ๊|อ๋/g,"อ");	
-	var n412 = n411.replace(/อิ่|อิ้|อิ๊|อิ๋/g,"อิ");	
-	var n413 = n412.replace(/อี่|อี้|อี๊|อี๋/g,"อี");	
-	var n414 = n413.replace(/อึ่|อึ้|อึ๊|อึ๋/g,"อึ");
-	var n415 = n414.replace(/อ่ำ|อ้ำ|อ๊ำ|อ๋ำ/g,"อำ");	
-	var n416 = n415.replace(/อุ่|อุ้|อุ๊|อุ๋/g,"อุ");	
-	var n417 = n416.replace(/อู่|อู้|อู๊|อู๋/g,"อู");	
-	var n418 = n417.replace(/อื่|อื้|อื๊|อื๋/g,"อื");	
-	var n419 = n418.replace(/อั่|อั้|อั๊|อั๋/g,"อั");
-
-	var n421 = n419.replace(/กิ์/g,"");	
-	var n422 = n421.replace(/ขิ์/g,"");	
-	var n423 = n422.replace(/ฃิ์/g,"");	
-	var n424 = n423.replace(/คิ์/g,"");
-	var n425 = n424.replace(/ฅิ์/g,"");	
-	var n426 = n425.replace(/ภิ์/g,"");	
-	var n427 = n426.replace(/ถิ์/g,"");	
-	var n428 = n427.replace(/ติ์/g,"");	
-	var n429 = n428.replace(/จิ์/g,"");
-
-	var n431 = n429.replace(/ชิ์/g,"");	
-	var n432 = n431.replace(/ฎิ์/g,"");	
-	var n433 = n432.replace(/ฑิ์/g,"");	
-	var n434 = n433.replace(/พิ์/g,"");
-	var n435 = n434.replace(/ธิ์/g,"");	
-	var n436 = n435.replace(/ริ์/g,"");	
-	var n437 = n436.replace(/ณิ์/g,"");	
-	var n438 = n437.replace(/นิ์/g,"");	
-	var n439 = n438.replace(/ยิ์/g,"");
-
-	var n441 = n439.replace(/ญิ์/g,"");	
-	var n442 = n441.replace(/บิ์/g,"");	
-	var n443 = n442.replace(/ฐิ์/g,"");	
-	var n444 = n443.replace(/ลิ์/g,"");
-	var n445 = n444.replace(/ฤิ์/g,"");	
-	var n446 = n445.replace(/ฟิ์/g,"");	
-	var n447 = n446.replace(/ฆิ์/g,"");	
-	var n448 = n447.replace(/หิ์/g,"");	
-	var n449 = n448.replace(/ฏิ์/g,"");
-
-	var n451 = n449.replace(/ดิ์/g,"");	
-	var n452 = n451.replace(/ฌิ์/g,"");	
-	var n453 = n452.replace(/ษิ์/g,"");	
-	var n454 = n453.replace(/ศิ์/g,"");
-	var n455 = n454.replace(/สิ์/g,"");	
-	var n456 = n455.replace(/ซิ์/g,"");	
-	var n457 = n456.replace(/วิ์/g,"");	
-	var n458 = n457.replace(/งิ์/g,"");	
-	var n459 = n458.replace(/ผิ์/g,"");
-
-	var n461 = n459.replace(/ปิ์/g,"");	
-	var n462 = n461.replace(/ฉิ์/g,"");	
-	var n463 = n462.replace(/อิ์/g,"");	
-	var n464 = n463.replace(/ฮิ์/g,"");
-	var n465 = n464.replace(/ทิ์/g,"");	
-	var n466 = n465.replace(/มิ์/g,"");	
-	var n467 = n466.replace(/ฒิ์/g,"");	
-	var n468 = n467.replace(/ฬิ์/g,"");	
-	var n469 = n468.replace(/ฦิ์/g,"");
-
-	var n470 = n469.replace(/ฝิ์/g,"");
-
-	var n471 = n470.replace(/ก์/g,"");	
-	var n472 = n471.replace(/ข์/g,"");	
-	var n473 = n472.replace(/ฃ์/g,"");	
-	var n474 = n473.replace(/ค์/g,"");
-	var n475 = n474.replace(/ฅ์/g,"");	
-	var n476 = n475.replace(/ภ์/g,"");	
-	var n477 = n476.replace(/ถ์/g,"");	
-	var n478 = n477.replace(/ต์/g,"");	
-	var n479 = n478.replace(/จ์/g,"");
-
-	var n481 = n479.replace(/ช์/g,"");	
-	var n482 = n481.replace(/ฎ์/g,"");	
-	var n483 = n482.replace(/ฑ์/g,"");	
-	var n484 = n483.replace(/พ์/g,"");
-	var n485 = n484.replace(/ธ์/g,"");	
-	var n486 = n485.replace(/ร์/g,"");	
-	var n487 = n486.replace(/ณ์/g,"");	
-	var n488 = n487.replace(/น์/g,"");	
-	var n489 = n488.replace(/ย์/g,"");
-
-	var n491 = n489.replace(/ญ์/g,"");	
-	var n492 = n491.replace(/บ์/g,"");	
-	var n493 = n492.replace(/ฐ์/g,"");	
-	var n494 = n493.replace(/ล์/g,"");
-	var n495 = n494.replace(/ฤ์/g,"");	
-	var n496 = n495.replace(/ฟ์/g,"");	
-	var n497 = n496.replace(/ฆิ์/g,"");	
-	var n498 = n497.replace(/ห์/g,"");	
-	var n499 = n498.replace(/ฏ์/g,"");
-
-	var n501 = n499.replace(/ด์/g,"");	
-	var n502 = n501.replace(/ฌ์/g,"");	
-	var n503 = n502.replace(/ษ์/g,"");	
-	var n504 = n503.replace(/ศ์/g,"");
-	var n505 = n504.replace(/ส์/g,"");	
-	var n506 = n505.replace(/ซ์/g,"");	
-	var n507 = n506.replace(/ว์/g,"");	
-	var n508 = n507.replace(/ง์/g,"");	
-	var n509 = n508.replace(/ผ์/g,"");
-
-	var n511 = n509.replace(/ป์/g,"");	
-	var n512 = n511.replace(/ฉ์/g,"");	
-	var n513 = n512.replace(/อ์/g,"");	
-	var n514 = n513.replace(/ฮ์/g,"");
-	var n515 = n514.replace(/ท์/g,"");	
-	var n516 = n515.replace(/ม์/g,"");	
-	var n517 = n516.replace(/ฒ์/g,"");	
-	var n518 = n517.replace(/ฬ์/g,"");	
-	var n519 = n518.replace(/ฦ์/g,"");
-
-	var n520 = n519.replace(/ฝ์/g,"");
-
-
-	var s0Name = n520.replaceAll(" ","- -");
-	var s1Name = s0Name.replaceAll("(","-(-");
-	var s2Name = s1Name.replaceAll(")","-)-");
-
-	var sName = s2Name.split("-"); // มน = sName[0], ตรี = sName [1], เกียรติ = sName [2] 
+	var thNameStr = thName.toString(); // "มน-ตรี"
+	var sName = thNameStr.split("-"); // มน = sName[0], ตรี = sName [1], ศรี = sName [2], คอน = sName [3]
 
 	var th = Array.from(sName[0]); // ม,น
 	var r1 = th[0]; // ม
 	var r2 = th[0]+th[1]; // มน
 	var r3 = th[0]+th[1]+th[2]; // กมล
 	var r4 = th[0]+th[1]+th[2]+th[3]; // รินท
-	var r5 = th[0]+th[1]+th[2]+th[3]+th[4]; // รินทร 
+	var r5 = th[0]+th[1]+th[2]+th[3]+th[4]; // รินทร ไม่มีการรันต์
 	var r6 = th[0]+th[1]+th[2]+th[3]+th[4]+th[5];
 	var r7 = th[0]+th[1]+th[2]+th[3]+th[4]+th[5]+th[6];
 
 	var th2 =["","","","","","",""];
-	if(sName.length>1){th2 = Array.from(sName[1]);} // ต, รี
+	if(sName.length>1){th2 = Array.from(sName[1]);} 
 	var r21 = th2[0]; 
 	var r22 = th2[0]+th2[1]; 
 	var r23 = th2[0]+th2[1]+th2[2]; 
@@ -15404,7 +14855,7 @@ function romanize() {
 	var r27 = th2[0]+th2[1]+th2[2]+th2[3]+th2[4]+th2[5]+th2[6];
 
 	var th3 =["","","","","","",""];
-	if(sName.length>2){th3 = Array.from(sName[2]);} // /, เ, กี, ย, ร, ติ 
+	if(sName.length>2){th3 = Array.from(sName[2]);} 
 	var r31 = th3[0]; 
 	var r32 = th3[0]+th3[1]; 
 	var r33 = th3[0]+th3[1]+th3[2]; 
@@ -15676,13 +15127,13 @@ function romanize() {
 	else if(words.has(r141)==true){name14 = words.get(r141);}
 	else{name14 = "";}
 
-	if(words.has(r157)==true){name15= words.get(r157);}
-	else if(words.has(r156)==true){name15 = words.get(r156);}
-	else if(words.has(r155)==true){name15 = words.get(r155);}
-	else if(words.has(r154)==true){name15 = words.get(r154);}
-	else if(words.has(r153)==true){name15 = words.get(r153) ;}
-	else if(words.has(r152)==true){name15 = words.get(r152);}
-	else if(words.has(r151)==true){name15 = words.get(r151);}
+	if(words.has(r157)==true){name14= words.get(r157);}
+	else if(words.has(r156)==true){name14 = words.get(r156);}
+	else if(words.has(r155)==true){name14 = words.get(r155);}
+	else if(words.has(r154)==true){name14 = words.get(r154);}
+	else if(words.has(r153)==true){name14 = words.get(r153) ;}
+	else if(words.has(r152)==true){name14 = words.get(r152);}
+	else if(words.has(r151)==true){name14 = words.get(r151);}
 	else{name15 = "";}
 
 
@@ -15709,7 +15160,7 @@ function romanize() {
 		['G','ง'],['NG','ง'],
 			]);
  
-// Convert each romanizd word into array for checking the front and the final characters
+// Convert each romanizd word into array for checking the front and he final character
 	var font1 = Array.from(String(name1));
 	var font2 = Array.from(String(name2));
 	var font3 = Array.from(String(name3));
@@ -15724,12 +15175,10 @@ function romanize() {
 	var font12 = Array.from(String(name12));
 	var font13 = Array.from(String(name13));
 	var font14 = Array.from(String(name14));
-	var font15 = Array.from(String(name15));
-
+	var font14 = Array.from(String(name15));
 
 // Add a dash between vowels or between ng and vowel
-
-	if(sara.has(font2[0])==true && font1[font1.length -1]!==" ") {
+	if(sara.has(font1[font1.length -1])==true && sara.has(font2[0])==true) {
 		word1=name1+"-";}
 		else if(ng.has(font1[font1.length -1])==true && sara.has(font2[0])==true) {
 		word1=name1+"-";}
@@ -15737,7 +15186,7 @@ function romanize() {
 		word1=name1+"-";}
 		else{word1 = name1;}
 
-	if(sara.has(font3[0])==true && font2[font2.length -1]!==" ") {
+	if(sara.has(font2[font2.length -1])==true && sara.has(font3[0])==true) {
 		word2=name2+"-";}
 		else if(ng.has(font2[font2.length -1])==true && sara.has(font3[0])==true) {
 		word2=name2+"-";}
@@ -15745,7 +15194,7 @@ function romanize() {
 		word2=name2+"-";}
 		else{word2 = name2;}
 
-	if(sara.has(font4[0])==true && font3[font3.length -1]!==" ") {
+	if(sara.has(font3[font3.length -1])==true && sara.has(font4[0])==true) {
 		word3=name3+"-";}
 		else if(ng.has(font3[font3.length -1])==true && sara.has(font4[0])==true) {
 		word3=name3+"-";}
@@ -15753,7 +15202,7 @@ function romanize() {
 		word3=name3+"-";}
 		else{word3 = name3;}
 
-	if(sara.has(font5[0])==true && font4[font4.length -1]!==" ") {
+	if(sara.has(font4[font4.length -1])==true && sara.has(font5[0])==true) {
 		word4=name4+"-";}
 		else if(ng.has(font4[font4.length -1])==true && sara.has(font5[0])==true) {
 		word4=name4+"-";}
@@ -15761,7 +15210,7 @@ function romanize() {
 		word4=name4+"-";}
 		else{word4 = name4;}
 
-	if(sara.has(font6[0])==true && font5[font5.length -1]!==" ") {
+	if(sara.has(font5[font5.length -1])==true && sara.has(font6[0])==true) {
 		word5=name5+"-";}
 		else if(ng.has(font5[font5.length -1])==true && sara.has(font6[0])==true) {
 		word5=name5+"-";}
@@ -15769,15 +15218,15 @@ function romanize() {
 		word5=name5+"-";}
 		else{word5 = name5;}
 
-	if(sara.has(font7[0])==true && font6[font6.length -1]!==" ") {
+	if(sara.has(font6[font6.length -1])==true && sara.has(font7[0])==true) {
 		word6=name6+"-";}
 		else if(ng.has(font6[font6.length -1])==true && sara.has(font7[0])==true) {
 		word6=name6+"-";}
 		else if(sara.has(font6[font6.length -1])==true && ng.has(font7[0]+font7[1])==true) {
 		word6=name6+"-";}
-		else{word6 = name6;}
+	else{word6 = name6;}
 
-	if(sara.has(font8[0])==true && font7[font7.length -1]!==" ") {
+	if(sara.has(font7[font7.length -1])==true && sara.has(font8[0])==true) {
 		word7=name7+"-";}
 		else if(ng.has(font7[font7.length -1])==true && sara.has(font8[0])==true) {
 		word7=name7+"-";}
@@ -15785,7 +15234,7 @@ function romanize() {
 		word7=name7+"-";}
 		else{word7 = name7;}
 
-	if(sara.has(font9[0])==true && font8[font8.length -1]!==" ") {
+	if(sara.has(font8[font8.length -1])==true && sara.has(font9[0])==true) {
 		word8=name8+"-";}
 		else if(ng.has(font8[font8.length -1])==true && sara.has(font9[0])==true) {
 		word8=name8+"-";}
@@ -15793,7 +15242,7 @@ function romanize() {
 		word8=name8+"-";}
 		else{word8 = name8;}
 
-	if(sara.has(font10[0])==true && font9[font9.length -1]!==" ") {
+	if(sara.has(font9[font9.length -1])==true && sara.has(font10[0])==true) {
 		word9=name9+"-";}
 		else if(ng.has(font9[font9.length -1])==true && sara.has(font10[0])==true) {
 		word9=name9+"-";}
@@ -15801,7 +15250,7 @@ function romanize() {
 		word9=name9+"-";}
 		else{word9 = name9;}
 
-	if(sara.has(font11[0])==true && font10[font10.length -1]!==" ") {
+	if(sara.has(font10[font10.length -1])==true && sara.has(font11[0])==true) {
 		word10=name10+"-";}
 		else if(ng.has(font10[font10.length -1])==true && sara.has(font11[0])==true) {
 		word10=name10+"-";}
@@ -15809,7 +15258,7 @@ function romanize() {
 		word10=name10+"-";}
 		else{word10 = name10;}
 
-	if(sara.has(font12[0])==true && font11[font11.length -1]!==" ") {
+	if(sara.has(font11[font11.length -1])==true && sara.has(font12[0])==true) {
 		word11=name11+"-";}
 		else if(ng.has(font11[font11.length -1])==true && sara.has(font12[0])==true) {
 		word11=name11+"-";}
@@ -15817,7 +15266,7 @@ function romanize() {
 		word11=name11+"-";}
 		else{word11 = name11;}
 
-	if(sara.has(font13[0])==true && font12[font12.length -1]!==" ") {
+	if(sara.has(font12[font12.length -1])==true && sara.has(font13[0])==true) {
 		word12=name12+"-";}
 		else if(ng.has(font12[font12.length -1])==true && sara.has(font13[0])==true) {
 		word12=name12+"-";}
@@ -15825,7 +15274,7 @@ function romanize() {
 		word12=name12+"-";}
 		else{word12 = name12;}
 
-	if(sara.has(font14[0])==true && font13[font13.length -1]!==" ") {
+	if(sara.has(font13[font13.length -1])==true && sara.has(font14[0])==true) {
 		word13=name13+"-";}
 		else if(ng.has(font13[font13.length -1])==true && sara.has(font14[0])==true) {
 		word13=name13+"-";}
@@ -15833,13 +15282,14 @@ function romanize() {
 		word13=name13+"-";}
 		else{word13 = name13;}
 
-	if(sara.has(font15[0])==true && font14[font14.length -1]!==" ") {
+	if(sara.has(font14[font14.length -1])==true && sara.has(font15[0])==true) {
 		word14=name14+"-";}
 		else if(ng.has(font14[font14.length -1])==true && sara.has(font15[0])==true) {
 		word14=name14+"-";}
 		else if(sara.has(font14[font14.length -1])==true && ng.has(font15[0]+font15[1])==true) {
 		word14=name14+"-";}
 		else{word14 = name14;}
+
 
 	document.getElementById("romanize").value = 
 			word1 + word2 + word3 + 
@@ -15855,12 +15305,4 @@ function clearText(){
 	document.getElementById("romanize").value ="";
 	document.getElementById("thaiName").value ="";
 
-}
-
-function copy() {
-	var name = document.getElementById('romanize');
-	name.setSelectionRange(0, 99999);
-	name.select();
-	navigator.clipboard.writeText(name.value);
-	alert(name.value + ' copied!');
 }
