@@ -13,6 +13,7 @@ This bot can
 - convert currency number to Thai text with [bahtText](https://kietpawpan.github.io/chatBot/bahtText.html)
 - calculate the amount of copy fee with [feeCal](https://kietpawpan.github.io/chatBot/feeCal.html)
 - track the progress on any requests with [tracking](https://kietpawpan.github.io/chatBot/tracking.html)
+- check meeting schedule with [meeting](https://kietpawpan.github.io/chatBot/meeting.html)
 
 ## Architecture:
 1. UI is tracking.html: two inputs (Submission ID and standard English Name).
