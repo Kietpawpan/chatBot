@@ -13,8 +13,12 @@ This bot can
 - convert currency number to Thai text with [bahtText](https://kietpawpan.github.io/chatBot/bahtText.html)
 - calculate the amount of copy fee with [feeCal](https://kietpawpan.github.io/chatBot/feeCal.html)
 - track the progress on any requests with [tracking](https://kietpawpan.github.io/chatBot/tracking.html)
--- Architecture:
-  *** UI is tracking.html with two inputs (Submission ID and standard English Name).  
+
+## Architecture:
+1. UI is tracking.html: two inputs (Submission ID and standard English Name).
+2. Accompanying e-service is the romanization program.
+3. infoTracking.js get the input values and open the target url that contains the most up-to-date progress information.
+4. information for each submission is a separate static file stored in the other site.     
 
 __Algorithm:__
 ```
