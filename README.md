@@ -12,6 +12,7 @@ This bot can
 - romanize Thai words with [roman](https://kietpawpan.github.io/chatBot/romanName.html) (RTGS)
 - convert currency number to Thai text with [bahtText](https://kietpawpan.github.io/chatBot/bahtText.html)
 - calculate the amount of copy fee with [feeCal](https://kietpawpan.github.io/chatBot/feeCal.html)
+- track the progress on any requests with [tracking](https://github.com/Kietpawpan/chatBot/tracking.html) 
 
 __Algorithm:__
 ```
