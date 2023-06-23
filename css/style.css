@@ -58,6 +58,13 @@
   margin-bottom: 10px;
 }
 
+.serial {
+  text-align: center;
+  margin: 0 10px 10px;
+  justify-content: space-between;
+}
+
+
 .transactionDetails {
   display: flex;
   justify-content: space-between;
