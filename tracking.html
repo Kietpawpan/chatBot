@@ -16,9 +16,9 @@
 
 
 <div id="showScroll" class="container">
-	<div class="receipt"><div class="logo">
-		<div class='companyName'>MNRE SLC</div>
-		<div class='slogan'>e-Services | Tracking System</div>
+	<div class="receipt"><div class="logo"><img src='https://kietpawpan.github.io/e-Receipt/img/krut.png' width='72px'></img>
+		<div class='companyName'>ศูนย์บริการร่วม ทส.</div>
+		<div class='slogan'>e-Services | Tracking</div>
 	</div>
 		<div class="address">
 รหัสคำขอ<br>
@@ -27,11 +27,18 @@
 ชื่อผู้ขอ*<br>
 <input type='text' id='name' placeholder='MONTRI'></input><br><br>
 
-<button onclick="login()">Submit</button><br><br><br>
+<button onclick="track()">Submit</button>
+<button onclick="
+	document.getElementById('did').value = '';
+	document.getElementById('name').value = ''">
+	Clear
+</button>
+
+<br><br><br>
 <script src='js/infoTrack.js'></script>
 
 <div class="motto">
-*ชื่อภาษาอังกฤษ สะกดตามหลักเกณฑ์ของราชการ <br>หรือใช้โปรแกรม <a href='https://kietpawpan.github.io/chatBot/romanName.html'>Romanization</a>
+*ชื่อภาษาอังกฤษ ตัวพิมพ์ใหญ่ สะกดตามหลักเกณฑ์ของราชการ <br>หรือใช้โปรแกรม <a href='https://kietpawpan.github.io/chatBot/romanName.html'>Romanization</a>
 </div>
 </body>
 </html>
