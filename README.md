@@ -15,6 +15,7 @@ This bot can
 - track the progress on any requests with [tracking](https://kietpawpan.github.io/chatBot/tracking.html)
 - check meeting schedule with [meeting](https://kietpawpan.github.io/chatBot/meeting.html)
 - generate software serial number with [serialGen](https://kietpawpan.github.io/chatBot/serialGen.html)
+- check service fee with [feeCheck](https://kietpawpan.github.io/feeCheck/)
 
 ## Architecture:
 1. UI is tracking.html: two inputs (Submission ID and standard English Name).
