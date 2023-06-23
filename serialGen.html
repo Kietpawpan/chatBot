@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<link href='https://fonts.googleapis.com/css?family=Orbitron'>
+
+</head>
+
+<body>
+
+
+<div id="showScroll" class="container">
+	<div class="receipt"><div class="logo"><img src='https://kietpawpan.github.io/e-Receipt/img/krut.png' width='72px'></img>
+		<div class='companyName'>ศูนย์บริการร่วม ทส.</div>
+		<div class='slogan'>e-Services | Serial Number</div>
+	</div>
+
+		<div class="serial">
+<br><br>
+<button onclick="serialNumber()" id='gen'>ออกรหัสซอฟแวร์</button>
+<button onclick="copy()" id='copy'>คัดลอก</button>
+
+<br><br>
+
+<textarea id='serial'></textarea><br><br>
+
+<script>
+var button = document.getElementById("gen");
+var div = document.getElementById("serial");
+var chars = "1234567890";
+var random = Math.floor(Math.random()*chars.length);
+var serialNumbers = 15;
+var count=0;
+
+button.onclick = function generateSerialNumbers(){
+    var serial="";
+    var count=0;
+    for(count;count<serialNumbers;count++){
+    var random = Math.floor(Math.random()*chars.length);
+    serial+= chars[random];   
+   }
+var s1 = serial.slice(0, 4);
+var s2 = serial.slice(6, 10);
+var s3 = serial.slice(11, 15);
+
+
+var date = new Date();  
+var m1 = date.getMonth()+1;  
+var m ='';
+if(m1<10) { m='0'+m1;}
+else{m=m1;}
+
+var y = date.getFullYear().toString().slice(2, 4);  
+  
+    div.textContent = y+m+'-'+s1+'-'+s2+'-'+s3;
+
+var button2 = document.getElementById("copy");
+button2.onclick = function copyForm() {
+  const element = document.querySelector('#serial');
+  element.select();
+  element.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+  window.alert(y+m+'-'+s1+'-'+s2+'-'+s3 +" copied!");
+}
+
+
+}
+</script>
+
+</body>
+</html>
