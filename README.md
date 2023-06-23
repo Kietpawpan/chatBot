@@ -14,6 +14,7 @@ This bot can
 - calculate the amount of copy fee with [feeCal](https://kietpawpan.github.io/chatBot/feeCal.html)
 - track the progress on any requests with [tracking](https://kietpawpan.github.io/chatBot/tracking.html)
 - check meeting schedule with [meeting](https://kietpawpan.github.io/chatBot/meeting.html)
+- generate software serial number with [serialGen](https://kietpawpan.github.io/chatBot/serialGen.html)
 
 ## Architecture:
 1. UI is tracking.html: two inputs (Submission ID and standard English Name).
