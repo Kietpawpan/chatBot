@@ -16,7 +16,7 @@ function studyP3R1(){
 	var subjects = "";
 	var mathIE = "หนังสือ Targeting Mathematics Workbook 3A (Unit 2) + สมุด Math IE สีขาว ส่งครู\n\n";
 	var mathTH = "สมุดคณิตศาสตร์สีขาว (เล่ม 1) + แบบฝึกหัดคณิตฯ เล่ม 1 (บทที่ 2)\n\n";    	
-	var thaiPrinciples1 = "สมุดภาษาไทยสีขาว (เล่ม 3) + No ภาษาพาที + ชีทไตรยางศ์ (ส่งครู)\n\n";
+	var thaiPrinciples1 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ภาษาพาที + ลำนำ\n\n";
 	var thaiPrinciples2 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ชีท\n\n";
 	var thaiPrinciples3 = "สมุดภาษาไทยสีขาว (เล่ม 3) + (ศุกร์) วรรณคดีลำนำ + ชีท\n\n";
 	var thaiWriting = "สมุดภาษาไทยสีชมพู (เล่ม 4) + อ่าน คิด เขียน + แบบฝึกหัดคัดไทย + หนังสือดรุณศึกษา ส่งเขียนไทย 10 คำ\n\n";
@@ -38,7 +38,7 @@ function studyP3R1(){
          var scout ="30 มิย ใส่ชุดลูกเสือ เลขกอง 31 ดาว 3 ดวง อกซ้าย\n\n";
 	var sport = "พละบก เสื้อยืดขาว รองเท้าผ้าใบ\n\n";
 	var music = "ดนตรี เมโลเดียน ร้องเพลง + ชีททฤษฎี\n\n";
-	var SGL = "SGL\n\n";
+	var SGL = "ศุกร์ 30 ลูกเสือ SGL\n\n";
 	var engLab ="หนังสือ Power Up + หนังสือ Journal + สมุด Lab Eng สีชมพู\n\n";
 	var period8 = "คาบ 8 (เลิก 16.40 น.)";
     
