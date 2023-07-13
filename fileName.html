@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<link href='https://fonts.googleapis.com/css?family=Orbitron'>
+
+</head>
+
+<body>
+
+
+<div id="showScroll" class="container">
+	<div class="receipt"><div class="logo"><img src='https://kietpawpan.github.io/e-Receipt/img/krut.png' width='72px'></img>
+		<div class='companyName'>ศูนย์บริการร่วม ทส.</div>
+		<div class='slogan'>e-Services | Thai Official File Name</div>
+	</div>
+
+		<div class="serial">
+<br><br>
+<b>เลขที่หนังสือ</b> <br>
+<input type='text' id='book' placeholder='ทส 0201.3/542'></input><br><br>
+
+<b>ปีที่ออกหนังสือ</b> <br>
+<input type='text' id='year' placeholder='2566'></input><br><br>
+
+<b>ลำดับไฟล์ (เฉพาะสิ่งที่ส่งมาด้วย)</b> <br>
+<input type='text' id='a' placeholder='1'></input><br><br>
+
+
+<button onclick="gen()" id='gen'>ตั้งชื่อไฟล์*</button>
+<button onclick="copy()" id='copy'>คัดลอก</button>
+
+<br><br>
+
+<textarea id='fileName'></textarea><br>
+<font size='-1'>*ตามระเบียบสำนักนายกรัฐมนตรี ว่าด้วยงานสารบรรณ (ฉบับที่ 4) พ.ศ. 2564 <a href='https://www.ratchakitcha.soc.go.th/DATA/PDF/2564/E/113/T_0001.PDF'>icon</a></font>
+<script src='js/fileName.js'></script>
+</body>
+</html>
