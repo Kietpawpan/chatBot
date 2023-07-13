@@ -16,7 +16,8 @@ This bot can
 - check meeting schedule with [meeting](https://kietpawpan.github.io/chatBot/meeting.html)
 - generate software serial number with [serialGen](https://kietpawpan.github.io/chatBot/serialGen.html)
 - check service fee with [feeCheck](https://kietpawpan.github.io/feeCheck/)
-
+- Name an official file with [fileName](https://kietpawpan.github.io/chatBot/fileName.html)
+- 
 ## Architecture:
 1. UI is tracking.html: two inputs (Submission ID and standard English Name).
 2. Accompanying e-service is the romanization program.
