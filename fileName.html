@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-<link type="text/css" rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/styleFileName.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 <link href='https://fonts.googleapis.com/css?family=Orbitron'>
@@ -24,13 +24,14 @@
 		<div class="serial">
 <br><br>
 <b>เลขที่หนังสือ</b> <br>
-<input type='text' id='book' placeholder='ทส 0201.3/542'></input><br><br>
+
+<input type='text' id='book' placeholder='ทส 0201.3/542' style='width:50%'></input><br><br>
 
 <b>ปีที่ออกหนังสือ</b> <br>
-<input type='text' id='year' placeholder='2566'></input><br><br>
+<input type='text' id='year' placeholder='2566' style='width:50px'></input><br><br>
 
 <b>ลำดับไฟล์ (เฉพาะสิ่งที่ส่งมาด้วย)</b> <br>
-<input type='text' id='a' placeholder='1'></input><br><br>
+<input type='text' id='a' placeholder='1' style='width:50px'></input><br><br>
 
 
 <button onclick="gen()" id='gen'>ตั้งชื่อไฟล์*</button>
@@ -38,8 +39,8 @@
 
 <br><br>
 
-<textarea id='fileName'></textarea><br>
-<font size='-1'>*ตามระเบียบสำนักนายกรัฐมนตรี ว่าด้วยงานสารบรรณ (ฉบับที่ 4) พ.ศ. 2564 <a href='https://www.ratchakitcha.soc.go.th/DATA/PDF/2564/E/113/T_0001.PDF'>icon</a></font>
+<textarea id='fileName' style='width:100%'></textarea><br>
+<font size='-1'>*ตาม<!a href='https://www.ratchakitcha.soc.go.th/DATA/PDF/2564/E/113/T_0001.PDF'>ระเบียบสำนักนายกรัฐมนตรี ว่าด้วยงานสารบรรณ (ฉบับที่ 4) พ.ศ. 2564 <!/a></font>
 <script src='js/fileName.js'></script>
 </body>
 </html>
