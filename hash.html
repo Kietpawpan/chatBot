@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHA3 256</title>
+  </head>
+  <body> 
+<input id="pwd"/>
+<div id=“output”></div>
+<button onlcick=“hash()”>Hash</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptography-js/4.1.1/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cryptography-js/4.1.1/sha3.js"></script>
+    <script>
+     function hash(){
+      var password = doument.getElementById(“pwd”).value;
+      var passhash = cryptographyJS.SHA3(password, { outputLength: 256 });
+      document.getElementById(“output”).innerHTML=passhash;
+}
+    </script>
+  </body>
+</html>
