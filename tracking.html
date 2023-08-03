@@ -1,44 +1,92 @@
+<!DOCTYPE html>
+<!Copyright © 2023 MNRE-SLC | All rights reserved.>
+<!Developer: servicelinkcenter@mnre.go.th>
+
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/iRequest.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="img/krut.png">
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
 
 
-<link type="text/css" rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-<link href='https://fonts.googleapis.com/css?family=Orbitron'>
+<title>MNRE | Chatbot</title>
 
 </head>
 
 <body>
+      <script src="js/main.js"></script>
 
 
-<div id="showScroll" class="container">
-	<div class="receipt"><div class="logo"><img src='https://kietpawpan.github.io/e-Receipt/img/krut.png' width='72px'></img>
-		<div class='companyName'>ศูนย์บริการร่วม ทส.</div>
-		<div class='slogan'>e-Services | Tracking</div>
-	</div>
-		<div class="address">
-รหัสคำขอ<br>
-<input type='text' id='did' placeholder='xxx-xxx-xxx' ></input><br><br>
 
-ชื่อผู้ขอ*<br>
-<input type='text' id='name' placeholder='MONTRI'></input><br><br>
 
-<button onclick="track()">Submit</button>
-<button onclick="
-	document.getElementById('did').value = '';
-	document.getElementById('name').value = ''">
-	Clear
-</button>
+    	<nav>
+        <div class="navbar">
+            <img class="dpimg" onclick="openFullScreenDP()" src="img/mnre.png" alt="">
+            <div class="personalInfo">
+                <label id="name">ศูนย์บริการร่วม ทส.</label>
+                <label id="lastseen">กลับ <a href='index.html'><font color='#94bab3'>หน้าหลัก</font></a></label><br>
+            </div>
+        </div>
+    	</nav>
+	<input style='color:black;background-color:lightgrey;border-color:grey'  type="text" id="Question" value="ระบบติดตามความคืบหน้า (e-Tracking)"title="ID">
+ 	<div class="scrollable" id="myScrollable">
+      <div id="chatting" class="chatting">
+	<ul id="Answer">
+   		<li><a href="#">
 
-<br><br><br>
-<script src='js/infoTrack.js'></script>
+			หมายเลขประจำตัวประชาชน<br><input type="text" id="input" size="13" placeholder="xxxxxxxxxxxxx">
+			<br>
+		        <input class="btn" id="execute" type="button" value="ยืนยัน" style='width:100px'><br><br>
 
-<div class="motto">
-*ชื่อภาษาอังกฤษ ตัวพิมพ์ใหญ่ สะกดตามหลักเกณฑ์ของราชการ <br>หรือใช้โปรแกรม <a href='https://kietpawpan.github.io/chatBot/romanName.html'>Romanization</a>
-</div>
+			<form>Public Key<br><input type="text" id="output"><br><br>
+			<input class='btn' type='button' value='OK*' style='width:100px' onclick='progress()'>
+
+			</form> 
+
+			<div>
+	                   <textarea name='form' id="progress" row="30" cols="70" style="height: 100px"></textarea><br>
+			<font size='-1' color='red'>*กรณียื่นคำขอวันนี้ สามารถติดตามความคืบหน้าในวันถัดไป</font>
+			<br>		
+	
+
+
+
+			</div>
+            	</a>
+		</li>
+         <li><center><div id="copyRight"></div></center></li>
+         </div>
+         </div>
+<br>
+	
+    <script src="js/sha3.min.js"></script>
+    <script>method = sha3_512;</script>
+
+<script type='text/javascript'>
+function progress(){
+	let i = document.getElementById('input').value;
+	let u = document.getElementById('output').value;
+	const p = new Map([
+	['ca2c70bc13298c5109ee0cb342d014906e6365249005fd4beee6f01aee44edb531231e98b50bf6810de6cf687882b09320fdd5f6375d1f2debd966fbf8d03efa',
+	'ทดสอบ 1 ได้รับคำขอแล้ว'],
+	
+	['564e1971233e098c26d412f2d4e652742355e616fed8ba88fc9750f869aac1c29cb944175c374a7b6769989aa7a4216198ee12f53bf7827850dfe28540587a97',
+	'ทดสอบ 2 อยู่ระหว่างพิจารณา']
+	]);
+
+	let pro = p.get(u);
+	if(i==''){alert('โปรดกรอกหมายเลขประจำตัวประชาชน');}
+	else if(pro==undefined){alert('ไม่พบข้อมูล โปรดตรวจสอบหมายเลขประจำตัวประชาชนอีกครั้ง หรือติดต่อเจ้าหน้าที่ โทร. 0 2265 6223-5');}
+	else {document.getElementById('progress').value = pro;}
+}
+
+</script>
+
 </body>
 </html>
