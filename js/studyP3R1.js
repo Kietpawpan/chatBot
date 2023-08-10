@@ -14,7 +14,7 @@ function studyP3R1(){
     	var newDate2 = newDate1.replace("/","-");
     	var fDate = new Date(newDate2);
 	var subjects = "";
-	var mathIE = "หนังสือ Targeting Mathematics Workbook 3A (Unit 2) + สมุด Math IE สีขาว ส่งครู\n\n";
+	var mathIE = "หนังสือ Math (Unit 5) + นำสมุด Math IE สีขาว ส่ง homework\n\n";
 	var mathTH = "สมุดคณิตศาสตร์สีขาว (เล่ม 1) + แบบฝึกหัดคณิตฯ เล่ม 1 (บทที่ 2)\n\n";    	
 	var thaiPrinciples1 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ภาษาพาที + ลำนำ\n\n";
 	var thaiPrinciples2 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ชีท\n\n";
@@ -37,7 +37,7 @@ function studyP3R1(){
 	var club = "ชมรมจีน\n\n";
          var scout ="30 มิย ใส่ชุดลูกเสือ เลขกอง 31 ดาว 3 ดวง อกซ้าย\n\n";
 	var sport = "พละบก เสื้อยืดขาว รองเท้าผ้าใบ\n\n";
-	var music = "ดนตรี เมโลเดียน ร้องเพลง + ชีททฤษฎี\n\n";
+	var music = "ดนตรีไทย ดินสอ ยางลบ เล่นอังกะลุง\n\n";
 	var SGL = "ศุกร์ 30 ลูกเสือ SGL\n\n";
 	var engLab ="หนังสือ Power Up + หนังสือ Journal + สมุด Lab Eng สีชมพู\n\n";
 	var period8 = "คาบ 8 (เลิก 16.40 น.)";
@@ -73,8 +73,8 @@ function studyP3R1(){
  	else{hw6 ="&#9888; " + "ครบกำหนดส่งเขียนไทยสมุดขมพู 10 คำ";}
 	
 	var stopDate="";
-	var sd1="2023-06-05";
-	var stop1="หยุดวันเฉลิม";
+	var sd1="2023-09-14";
+	var stop1="หยุดวันแม่";
 	
  	   
      var toDo = hw2 + hw4 + hw3 + hw5 + hw6 + hw1;
