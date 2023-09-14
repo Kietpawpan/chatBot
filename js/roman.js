@@ -1,6 +1,6 @@
 /* Copyright © 2023 Montri Kiatphaophan
- * roman.js | All rights reserved. 
- * May 30, 2023
+ * roman.js | MIT License 
+ * Sep 14, 2023
  */
 
 function romanize() {
