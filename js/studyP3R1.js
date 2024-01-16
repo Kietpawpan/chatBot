@@ -14,7 +14,7 @@ function studyP3R1(){
     	var newDate2 = newDate1.replace("/","-");
     	var fDate = new Date(newDate2);
 	var subjects = "";
-	var mathIE = "หนังสือ Math (Fraction) + สมุด Math สีขาว\n\n";
+	var mathIE = "หนังสือ Math (Unit 10 p.97-144) + สมุด Math สีขาว\n\n";
 	var mathTH = "สมุดคณิตศาสตร์สีขาว + แบบฝึกหัดการวัดความยาว + บทที่ 12 เงินและบันทึกรับจ่าย\n\n";    	
 	var thaiPrinciples1 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ภาษาพาที + ลำนำ\n\n";
 	var thaiPrinciples2 = "สมุดภาษาไทยสีขาว (เล่ม 3) + อ่านคิดเขียน + พาที\n\n";
@@ -43,14 +43,14 @@ function studyP3R1(){
 	var period8 = "คาบ 8 (เลิก 16.40 น.)";
     
 	var hw1 = "";
-	var dd1 = "2023-09-04";
- 	if(new Date(dd1) > fDate){hw1="* 4 ก.ย.66 สอบอ่าน/ตอบคำถาม Reading Aloud บทที่ 1-5 (สุ่ม 1 เรื่อง)\n\n";}
+	var dd1 = "2024-01-17";
+ 	if(new Date(dd1) > fDate){hw1="* 19 ม.ค. 67 สอบ Reading Aloud\n\n";}
  	else{hw1="&#9888; " + "พ้นสอบ Reading Aloud\n\n";}
 	
 	var hw2 = ""; 
-	var dd2 = "2023-06-30";
-	if(new Date(dd2) > fDate){hw2="* สอบท่องอาขยาน 2 บท ท่องสูตรคูณ ภายใน มิ.ย. 66\n\n";}
- 	else{hw2="&#9888; " + "ครบกำหนดท่องอาขยาน สูตรคูณ\n\n";}
+	var dd2 = "2024-01-22";
+	if(new Date(dd2) > fDate){hw2="* 22 ม.ค. 67 สอบภาษาจีน\n\n";}
+ 	else{hw2="&#9888; " + "พ้นสอบภาษาจีน\n\n";}
 
     	var hw3 = "";
 	var dd3 = "2023-06-09";
