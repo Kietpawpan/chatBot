@@ -77,7 +77,7 @@ function studyP3R1(){
 	var stop1="หยุดวันแม่";
 	
  	   
-     var toDo = "";
+     var toDo = hw1 + hw2;
  
     	var tDay = fDate.getDay();
     	var tMonth = fDate.getMonth();
