@@ -15,9 +15,9 @@ function studyP3R1(){
     	var fDate = new Date(newDate2);
 	var subjects = "";
 	var mathIE = "หนังสือ Math (Fraction) + สมุด Math สีขาว\n\n";
-	var mathTH = "สมุดคณิตศาสตร์สีขาว + แบบฝึกหัดคณิตฯ เล่ม 1 เศษส่วน\n\n";    	
+	var mathTH = "สมุดคณิตศาสตร์สีขาว + แบบฝึกหัดการวัดความยาว + บทที่ 12 เงินและบันทึกรับจ่าย\n\n";    	
 	var thaiPrinciples1 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ภาษาพาที + ลำนำ\n\n";
-	var thaiPrinciples2 = "สมุดภาษาไทยสีขาว (เล่ม 3) + ชีท\n\n";
+	var thaiPrinciples2 = "สมุดภาษาไทยสีขาว (เล่ม 3) + อ่านคิดเขียน + พาที\n\n";
 	var thaiPrinciples3 = "สมุดภาษาไทยสีขาว (เล่ม 3) + (ศุกร์) วรรณคดีลำนำ + ชีท\n\n";
 	var thaiWriting = "สมุดภาษาไทยสีชมพู + ส่งแบบฝึกหัดคัดไทย\n\n";
 	var scienceTH = "หนังสือวิทย์ เล่ม 2 + แบบฝึกหัดวิทย์ เล่ม 2\n\n";
@@ -27,7 +27,7 @@ function studyP3R1(){
 	var funEng = "หนังสือ Power Up + ส่งหนังสือ Handwriting + Worksheet\n\n";
 	var devEng = "หนังสือ Power Up\n\n";
     	var health = "สมุดสุขศึกษาสีชมพู + หนังสือสุขศึกษา\n\n";
-	var chinese = "สมุดภาษาจีนสีชมพู (เล่ม 9) + หนังสือภาษาจีน\n\n";
+	var chinese = "สมุดภาษาจีนสีชมพู (เล่ม 9) + หนังสือภาษาจีน + สอบเก็บคะแนน\n\n";
 	var art = "สมุดวาดเขียน + สี แปรง ใส่กระเป๋าเล็ก\n\n"
     	var everyday = "สมุดจดการบ้าน + สมุดคัดศัพท์ (เล่ม 10) + สมุดสำรอง (เล่ม 0) + หนังสือ Reading Aloud + หนังสือ My World of Vocabulary + สีไม้\n\n";
     	var health = "สมุดสุขศึกษาสีชมพู + หนังสือสุขศึกษา อาหาร 5 หมู่\n\n";
