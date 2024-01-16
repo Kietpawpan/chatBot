@@ -43,7 +43,7 @@ function studyP3R1(){
 	var period8 = "คาบ 8 (เลิก 16.40 น.)";
     
 	var hw1 = "";
-	var dd1 = "2024-01-17";
+	var dd1 = "2024-01-19";
  	if(new Date(dd1) > fDate){hw1="* 19 ม.ค. 67 สอบ Reading Aloud\n\n";}
  	else{hw1="&#9888; " + "พ้นสอบ Reading Aloud\n\n";}
 	
@@ -53,12 +53,12 @@ function studyP3R1(){
  	else{hw2="&#9888; " + "พ้นสอบภาษาจีน\n\n";}
 
     	var hw3 = "";
-	var dd3 = "2023-06-09";
-	if(new Date(dd3) > fDate){hw3="* 9 มิ.ย. 66 ส่ง Handwriting P.1-15\n\n";}
+	var dd3 = "2024-01-22";
+	if(new Date(dd3) > fDate){hw3="* 22 ม.ค. 67 เตรียมอุปกรณ์ Integrated Project\n\n";}
  	else{hw3="&#9888; " + "ครบกำหนดส่ง Handwriting P.1-15\n\n";}
 
     	var hw4 = "";
-	var dd4 = "2023-06-02";
+	var dd4 = "2024-01-02";
 	if(new Date(dd4) > fDate){hw4="* ส่งคัดไทย (ห้ามคัดที่บ้าน) หน้า 1-20 ภายใน มิ.ย. 66\n\n";}
  	else{hw4="&#9888; " + "ครบกำหนดส่ง ส่งคัดไทย หน้า 1-20\n\n";}
 	
@@ -77,7 +77,7 @@ function studyP3R1(){
 	var stop1="หยุดวันแม่";
 	
  	   
-     var toDo = hw1 + hw2;
+     var toDo = hw1 + hw2 + hw3;
  
     	var tDay = fDate.getDay();
     	var tMonth = fDate.getMonth();
