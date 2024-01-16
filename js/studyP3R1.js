@@ -44,18 +44,18 @@ function studyP3R1(){
     
 	var hw1 = "";
 	var dd1 = "2024-01-19";
- 	if(new Date(dd1) > fDate){hw1="* 19 ม.ค. 67 สอบ Reading Aloud\n\n";}
- 	else{hw1="&#9888; " + "พ้นสอบ Reading Aloud\n\n";}
+ 	if(new Date(dd1) > fDate){hw1="* 19 ม.ค. สอบ Reading Aloud\n\n";}
+ 	else{hw1="&#9888; " + "19 ม.ค. สอบ Reading Aloud\n\n";}
 	
 	var hw2 = ""; 
 	var dd2 = "2024-01-22";
-	if(new Date(dd2) > fDate){hw2="* 22 ม.ค. 67 สอบภาษาจีน\n\n";}
- 	else{hw2="&#9888; " + "พ้นสอบภาษาจีน\n\n";}
+	if(new Date(dd2) > fDate){hw2="* 22 ม.ค. สอบภาษาจีน\n\n";}
+ 	else{hw2="&#9888; " + "22 ม.ค. สอบภาษาจีน\n\n";}
 
     	var hw3 = "";
 	var dd3 = "2024-01-22";
-	if(new Date(dd3) > fDate){hw3="* 22 ม.ค. 67 เตรียมอุปกรณ์ Integrated Project\n\n";}
- 	else{hw3="&#9888; " + "ครบกำหนดส่ง Handwriting P.1-15\n\n";}
+	if(new Date(dd3) > fDate){hw3="* 22 ม.ค. เตรียมอุปกรณ์ Integrated Project\n\n";}
+ 	else{hw3="&#9888; " + "22 ม.ค. เตรียมอุปกรณ์ Integrated Project \n\n";}
 
     	var hw4 = "";
 	var dd4 = "2024-01-02";
