@@ -4,7 +4,7 @@ This bot can
 - generate customer ID with [idGen](https://kietpawpan.github.io/chatBot/IDGen.html)
 - track the progress of request submission with [e-Tracking](https://kietpawpan.github.io/chatBot/iTracking.html)
 - answer questions about MNRE services with [e-FAQ](https://kietpawpan.github.io/chatBot/FAQ.html)
-- get a requestion for MNRE information from people with [e-Request](https://kietpawpan.github.io/chatBot/infoRequest.html)
+- get a requestion for MNRE information from people with [e-Request](https://kietpawpan.github.io/info)
 - make appointment with [seeMe](https://kietpawpan.github.io/chatBot/seeMe.html)
 - check the way to the Minitry with [mapTo](https://kietpawpan.github.io/chatBot/mapTo.html)
 - complain the service quality with [complaint](https://kietpawpan.github.io/chatBot/complaint.html)
