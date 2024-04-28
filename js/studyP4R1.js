@@ -5,7 +5,7 @@
 
     
 function study(){
-	var startSemesterDate = new Date("2023-05-18");
+	var startSemesterDate = new Date("2024-05-16");
    	var date = document.getElementById('datepicker').value;
     	var sDate = date.toString();
     	var datearray = sDate.split("/");
