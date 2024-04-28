@@ -41,44 +41,7 @@ function study(){
 	var SGL = "ศุกร์ 30 ลูกเสือ SGL\n\n";
 	var engLab ="หนังสือ Power Up + หนังสือ Journal + สมุด Lab Eng สีชมพู\n\n";
 	var period8 = "คาบ 8 (เลิก 16.40 น.)";
-    
-	var hw1 = "";
-	var dd1 = "2024-01-19";
- 	if(new Date(dd1) > fDate){hw1="* 19 ม.ค. สอบ Reading Aloud\n\n";}
- 	else{hw1="&#9888; " + "19 ม.ค. สอบ Reading Aloud\n\n";}
-	
-	var hw2 = ""; 
-	var dd2 = "2024-01-22";
-	if(new Date(dd2) > fDate){hw2="* 22 ม.ค. สอบภาษาจีน\n\n";}
- 	else{hw2="&#9888; " + "22 ม.ค. สอบภาษาจีน\n\n";}
-
-    	var hw3 = "";
-	var dd3 = "2024-01-22";
-	if(new Date(dd3) > fDate){hw3="* 22 ม.ค. เตรียมอุปกรณ์ Integrated Project\n\n";}
- 	else{hw3="&#9888; " + "22 ม.ค. เตรียมอุปกรณ์ Integrated Project \n\n";}
-
-    	var hw4 = "";
-	var dd4 = "2024-01-02";
-	if(new Date(dd4) > fDate){hw4="* ส่งคัดไทย (ห้ามคัดที่บ้าน) หน้า 1-20 ภายใน มิ.ย. 66\n\n";}
- 	else{hw4="&#9888; " + "ครบกำหนดส่ง ส่งคัดไทย หน้า 1-20\n\n";}
-	
-	var hw5 = "";
-	var dd5 = "2023-06-23";
-	if(new Date(dd5) > fDate){hw5="* 23 มิ.ย. 66 ส่งใบงาน irregular verbs + ประเมินตนเอง\n\n";}
- 	else{hw5="&#9888; " + "ครบกำหนดส่งใบงาน irregular verbs\n\n";}
-	
-        var hw6 = "";
-	var dd6 = "2023-06-07";
-	if(new Date(dd6) > fDate){hw6 ="* 7 มิ.ย. 66 ส่งเขียนไทยสมุดชมพู 10 คำ\n\n";}
- 	else{hw6 ="&#9888; " + "ครบกำหนดส่งเขียนไทยสมุดขมพู 10 คำ";}
-	
-	var stopDate="";
-	var sd1="2023-09-14";
-	var stop1="หยุดวันแม่";
-	
- 	   
-     var toDo = hw1 + hw2 + hw3;
- 
+     
     	var tDay = fDate.getDay();
     	var tMonth = fDate.getMonth();
     	var thYear = fDate.getFullYear()+543;
@@ -101,6 +64,6 @@ function study(){
 	else{subjects="หยุดเรียน";}
 
     document.getElementById("myDate").innerHTML ="วัน" +  thDay + "ที่ "  +  thDate + " " + thMonth + " " + thYear + ":\n==================\n\n"   
-+ subjects + "\n\n======\n" + toDo;
++ subjects + "\n\n======\n";
 }
  
