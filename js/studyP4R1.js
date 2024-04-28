@@ -4,7 +4,7 @@
  */
 
     
-function studyP4R1(){
+function study(){
 	var startSemesterDate = new Date("2023-05-18");
    	var date = document.getElementById('datepicker').value;
     	var sDate = date.toString();
