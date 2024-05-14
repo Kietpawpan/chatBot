@@ -1,6 +1,6 @@
 /* Copyright (c) 2023 Monte Kietpawpan
  * All rights reserved.
- * studyP3R1.js v1.0.1 | May 14, 2023
+ * studyP3R1.js v2.0 | May 14, 2024
  */
 
     
