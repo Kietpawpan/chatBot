@@ -15,7 +15,7 @@ function studyP3R1(){
     	var fDate = new Date(newDate2);
 	var subjects = "";
 	var engLab = "Eng Lab";
-	var Thai = "ไทย";
+	var thai = "ไทย";
 	var mathIE = "หนังสือ Math\n\n";
 	var mathTH = "สมุดคณิตศาสตร์สีขาว\n\n";    	
 	var thaiPrinciples1 = "สมุดภาษาไทยสีชมพู + ภาษาพาที + ลำนำ\n\n";
@@ -53,16 +53,13 @@ function studyP3R1(){
     	var thDate = fDate.getDate();
     	var thDay = dayName[tDay];
     	var thMonth = monthName[tMonth];
-	if(fDate < startSemesterDate){subjects ="ปิดเทอม";}
-	else if(new Date(sd1)==fDate){subjects=stop1;}
-	else if(thDay=="จันทร์"){subjects = everyday + computer + scienceIE + chinese + Thai + scienceTH + mathTH + period8;}
-	else if(thDay=="อังคาร"){subjects = everyday + scienceTH + mathIE + health + Thai + socialIE + mathTH + club + period8;}
-	else if(thDay=="พุธ"){subjects = everyday + mathTH + scienceTH + funEng + Thai + socialTH + mathIE + SGL + period8;}
-	else if(thDay=="พฤหัสบดี"){subjects = everyday + Thai + sport + engLab + funEng + scienceIE + devEng + scout + period8;} 
-	else if(thDay=="ศุกร์"){subjects = everyday + socialIE + devEng + socialTH + music + history + mathTH + Thai + period8;} 
+	if(thDay=="จันทร์"){subjects = everyday + computer + scienceIE + chinese + thai + scienceTH + mathTH + period8;}
+	else if(thDay=="อังคาร"){subjects = everyday + scienceTH + mathIE + health + thai + socialIE + mathTH + club + period8;}
+	else if(thDay=="พุธ"){subjects = everyday + mathTH + scienceTH + funEng + thai + socialTH + mathIE + SGL + period8;}
+	else if(thDay=="พฤหัสบดี"){subjects = everyday + thai + sport + engLab + funEng + scienceIE + devEng + scout + period8;} 
+	else if(thDay=="ศุกร์"){subjects = everyday + socialIE + devEng + socialTH + music + history + mathTH + thai + period8;} 
 	else{subjects="หยุดเรียน";}
 
     document.getElementById("myDate").innerHTML ="วัน" +  thDay + "ที่ "  +  thDate + " " + thMonth + " " + thYear + ":\n==================\n\n"   
 + subjects + "\n\n======\n";
-}
- 
+} 
