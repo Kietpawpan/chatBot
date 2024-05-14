@@ -55,12 +55,11 @@ function studyP3R1(){
     	var thMonth = monthName[tMonth];
 	if(fDate < startSemesterDate){subjects ="ปิดเทอม";}
 	else if(new Date(sd1)==fDate){subjects=stop1;}
-	else if(thDay=="จันทร์" && fDate>=new Date("2024-05-15")){subjects = everyday + computer + scienceIE + chinese + Thai + scienceTH + mathTH + period8;}
-	else if(thDay=="อังคาร" && fDate>=new Date("2024-05-15")){subjects = everyday + scienceTH + mathIE + health + Thai + socialIE + mathTH + club + period8;}
-	else if(thDay=="พุธ" && fDate>=new Date("2023-04-15")){subjects = everyday + mathTH + scienceTH + funEng + Thai + socialTH + mathIE + SGL + period8;}
-	else if(thDay=="พฤหัสบดี" && fDate>=new Date("2024-05-15")){subjects = everyday + Thai + sport + engLab + funEng + scienceIE + devEng + scout + period8;} 
-	else if(thDay=="ศุกร์" && fDate>=new Date("2024-05-15")){subjects = everyday + socialIE + devEng + socialTH + music + history + mathTH + Thai + period8;} 
-		
+	else if(thDay=="จันทร์"){subjects = everyday + computer + scienceIE + chinese + Thai + scienceTH + mathTH + period8;}
+	else if(thDay=="อังคาร"){subjects = everyday + scienceTH + mathIE + health + Thai + socialIE + mathTH + club + period8;}
+	else if(thDay=="พุธ"){subjects = everyday + mathTH + scienceTH + funEng + Thai + socialTH + mathIE + SGL + period8;}
+	else if(thDay=="พฤหัสบดี"){subjects = everyday + Thai + sport + engLab + funEng + scienceIE + devEng + scout + period8;} 
+	else if(thDay=="ศุกร์"){subjects = everyday + socialIE + devEng + socialTH + music + history + mathTH + Thai + period8;} 
 	else{subjects="หยุดเรียน";}
 
     document.getElementById("myDate").innerHTML ="วัน" +  thDay + "ที่ "  +  thDate + " " + thMonth + " " + thYear + ":\n==================\n\n"   
