@@ -14,6 +14,8 @@ function studyP3R1(){
     	var newDate2 = newDate1.replace("/","-");
     	var fDate = new Date(newDate2);
 	var subjects = "";
+	var engLab = "Eng Lab";
+	var Thai = "ไทย";
 	var mathIE = "หนังสือ Math\n\n";
 	var mathTH = "สมุดคณิตศาสตร์สีขาว\n\n";    	
 	var thaiPrinciples1 = "สมุดภาษาไทยสีชมพู + ภาษาพาที + ลำนำ\n\n";
@@ -89,15 +91,12 @@ function studyP3R1(){
     	var thMonth = monthName[tMonth];
 	if(fDate < startSemesterDate){subjects ="ปิดเทอม";}
 	else if(new Date(sd1)==fDate){subjects=stop1;}
-	else if(thDay=="จันทร์" && fDate>=new Date("2023-05-22")){subjects = everyday + computer + engLab + thaiPrinciples1 + chinese + mathIE + socialTH + period8;}
-	else if(thDay=="อังคาร" && fDate>=new Date("2023-05-22")){subjects = everyday + devEng + mathTH + funEng + health + scienceTH + thaiPrinciples2 + club + period8;}
-	else if(thDay=="พุธ" && fDate>=new Date("2023-05-22")){subjects = everyday + thaiPrinciples2 + scout + scienceIE + mathTH + history + thaiWriting + scienceTH + period8;}
-	else if(thDay=="พฤหัสบดี" && fDate>=new Date("2023-05-22")){subjects = everyday + socialIE + sport + devEng + mathTH + scienceTH + scienceIE + thaiPrinciples2 + period8;} 
-	else if(thDay=="จันทร์"){subjects = everyday + computer + engLab + thaiPrinciples1 + chinese + mathIE + socialTH;}
-	else if(thDay=="อังคาร"){subjects = everyday + devEng + mathTH + funEng + health + scienceTH + thaiPrinciples2 + club;}
-	else if(thDay=="พุธ"){subjects = everyday + thaiPrinciples2 + scout + scienceIE + mathTH + history + thaiWriting + scienceTH;}
-	else if(thDay=="พฤหัสบดี"){subjects = everyday + socialIE + sport + devEng + mathTH + scienceTH + scienceIE + thaiPrinciples2;}
-	else if(thDay=="ศุกร์"){subjects = everyday + thaiPrinciples3 + funEng + mathIE + art + socialIE + mathTH + SGL;}
+	else if(thDay=="จันทร์" && fDate>=new Date("2024-05-15")){subjects = everyday + computer + scienceIE + chinese + Thai + scienceTH + mathTH + period8;}
+	else if(thDay=="อังคาร" && fDate>=new Date("2024-05-15")){subjects = everyday + scienceTH + mathIE + health + Thai + socialIE + mathTH + club + period8;}
+	else if(thDay=="พุธ" && fDate>=new Date("2023-04-15")){subjects = everyday + mathTH + scienceTH + funEng + Thai + socialTH + mathIE + SGL + period8;}
+	else if(thDay=="พฤหัสบดี" && fDate>=new Date("2024-05-15")){subjects = everyday + Thai + sport + engLab + funEng + scienceIE + devEng + scout + period8;} 
+	else if(thDay=="ศุกร์" && fDate>=new Date("2024-05-15")){subjects = everyday + socialIE + devEng + socialTH + music + history + mathTH + Thai + period8;} 
+		
 	else{subjects="หยุดเรียน";}
 
     document.getElementById("myDate").innerHTML ="วัน" +  thDay + "ที่ "  +  thDate + " " + thMonth + " " + thYear + ":\n==================\n\n"   
